@@ -1,0 +1,21 @@
+{
+    "root": "./",
+    "title": "タイトル",
+    "description": "説明",
+    "author": "UNCHAIN",
+    "languages": {
+        "ja": "ja",
+        "en": "en"
+    },
+    "structure": {
+        "readme": "README.md",
+        "summary": "SUMMARY.md"
+    },
+    "plugins": [],    
+    "pluginsConfig": {
+        "lunr": {
+            "maxIndexSize": 200000,
+            "ignoreSpecialCharacters": true
+        }
+    }
+}
