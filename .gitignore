@@ -6,3 +6,5 @@ node_modules
 .textlintcache
 
 .DS_Store
+
+_book
