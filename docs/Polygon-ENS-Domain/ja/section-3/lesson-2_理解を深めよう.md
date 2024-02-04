@@ -8,7 +8,7 @@
 
 以下のロジックを見て、上記を行う方法を確認してください。
 
-```solidity
+```
 // コントラクトの最初に付け加えてください（他のマッピングに続けて）。
 mapping(uint => string) public names;
 
@@ -29,7 +29,7 @@ function getAllNames() public view returns (string[] memory) {
 
 これを`register`関数の最後の`_tokenIds.increment()`の直前に追加します。
 
-```solidity
+```
 names[newRecordId] = name;
 ```
 
@@ -58,7 +58,7 @@ Section-2のLesson-2を参照くださいね👋
 
 下のように加えてみましょう。
 
-```solidity
+```
 function valid(string calldata name) public pure returns (bool) {
     return StringUtils.strlen(name) >= 3 && StringUtils.strlen(name) <= 10;
 }
@@ -74,13 +74,13 @@ Solidityの最近のバージョンで追加された機能ですがカスタム
 
 この機能を使用するためにコントラクトのどこかに追加してください。
 
-```solidity
+```
 error Unauthorized();
 error AlreadyRegistered();
 error InvalidName(string name);
 ```
 
-```solidity
+```
 function setRecord(string calldata name, string calldata record) public {
     if (msg.sender != domains[name]) revert Unauthorized();
     records[name] = record;
@@ -222,21 +222,21 @@ describe('ENS-Domain', () => {
 
 import文を削除します。
 
-```solidity
+```
 // === 下記を削除 ===
 import "hardhat/console.sol";
 ```
 
 constructor関数内の`console.log`を削除します。
 
-```solidity
+```
     // === 下記を削除 ===
     console.log('%s name service deployed', _tld);
 ```
 
 `register`関数内の`console.log`を削除します。
 
-```solidity
+```
     // === 下記を削除 ===
     console.log(
       'Registering %s.%s on the contract with tokenID %d',
@@ -246,7 +246,7 @@ constructor関数内の`console.log`を削除します。
     );
 ```
 
-```solidity
+```
     // === 下記を削除 ===
     console.log('\n--------------------------------------------------------');
     console.log('Final tokenURI', finalTokenUri);

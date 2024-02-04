@@ -6,7 +6,7 @@
 
 `AMM.sol`のAMMコントラクトの最後の行に以下の2つの関数を追加してください。
 
-```solidity
+```
     // swap元のトークン量からswap先のトークン量を算出
     function getSwapEstimateOut(IERC20 inToken, uint256 amountIn)
         public
@@ -62,7 +62,7 @@
 
 さらにその下の行に以下の関数を追加し、コントラクトを完成させてください。
 
-```solidity
+```
     function swap(
         IERC20 inToken,
         IERC20 outToken,

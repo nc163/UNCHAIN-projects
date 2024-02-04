@@ -16,7 +16,7 @@
 
 `Domains.sol`に以下を追加します。
 
-```solidity
+```
 modifier onlyOwner() {
     require(isOwner(), "You aren't the owner");
     _;
@@ -56,7 +56,7 @@ function withdraw() public onlyOwner {
 
 厄介な`owner`エラーを修正するには、コントラクトの先頭にグローバルな`owner`変数を作成し、次のようにコンストラクターに設定するだけです。
 
-```solidity
+```
 address payable public owner;
 
 constructor(string memory _tld) ERC721 ("Ninja Name Service", "NNS") payable {

@@ -334,7 +334,7 @@ const txn = await gameContract.checkIfUserHasNFT();
 
 `MyEpicGame.sol`に記載されている`checkIfUserHasNFT()`メソッドは、下記のような内容になります。
 
-```solidity
+```
 // ユーザーがすでに NFT キャラクターを持っているかどうかを確認します。
 // ユーザーのウォレットに NFT キャラクターがすでに存在する場合は、その属性を取得情報（ HP など）を取得します。
 function checkIfUserHasNFT() public view returns (CharacterAttributes memory) {

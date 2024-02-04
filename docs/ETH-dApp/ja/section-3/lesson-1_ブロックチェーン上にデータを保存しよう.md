@@ -12,7 +12,7 @@
 
 それでは、`WavePortal.sol`を更新していきます。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 
@@ -89,7 +89,7 @@ contract WavePortal {
 
 下記のコードに注目してください。
 
-```solidity
+```
 event NewWave(address indexed from, uint256 timestamp, string message);
 ```
 
@@ -101,7 +101,7 @@ event NewWave(address indexed from, uint256 timestamp, string message);
 
 次に下記のコードを見ていきましょう。
 
-```solidity
+```
 emit NewWave(msg.sender, block.timestamp, _message);
 ```
 

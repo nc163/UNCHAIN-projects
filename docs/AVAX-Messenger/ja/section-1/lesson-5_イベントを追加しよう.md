@@ -237,21 +237,21 @@ import { anyValue } from '@nomicfoundation/hardhat-chai-matchers/withArgs';
 
 まずはimport文を削除します。
 
-```soidity
+```
 // === 下記を削除 ===
 import "hardhat/console.sol";
 ```
 
 次に、コンストラクタ内のconsole.logを削除します。
 
-```solidity
+```
         // === 下記を削除 ===
         console.log("Here is my first smart contract!");
 ```
 
 最後にpost関数内のconsole.logを削除します。
 
-```solidity
+```
         // === 下記を削除 ===
         console.log(
             "%s posts text:[%s] token:[%d]",

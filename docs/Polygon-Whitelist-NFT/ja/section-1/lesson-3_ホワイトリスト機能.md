@@ -4,7 +4,7 @@
 
 スマートコントラクトに関する基本的な知識は準備できました。`Whitelist.sol`コントラクトを更新してみましょう。更新後のコードはこんな感じです：
 
-```solidity
+```
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.20;
 
@@ -75,14 +75,14 @@ contract Whitelist {
 
 このコードがどのように機能しているのかを順を追って理解しましょう。
 
-```solidity
+```
     // The address that can operate addAddressToWhitelist function
     address public owner;
 ```
 
 まず、`owner`と呼ばれる状態[変数](https://solidity-by-example.org/variables/)を設定します。この変数は`address`型で、ウォレットアドレス`(例："0xa323A54987cE8F51A648AF2826beb49c368B8bC6")`を指します。この変数の可視性はpublicに設定されており、任意のコントラクトやアカウントからアクセスできるようになります。デフォルトでは`owner`は0に設定されていますが、後でこれを設定します。
 
-```solidity
+```
     // Create a mapping of whitelistedAddresses
     // if an address is whitelisted, we would set it to true, it is false by default for all other addresses.
     mapping(address => bool) private _isWhitelisted;
@@ -90,7 +90,7 @@ contract Whitelist {
 
 `_isWhitelisted`は、アドレスがホワイトリストに含まれているかどうかを判断するために使用され、[mapping](https://solidity-by-example.org/app/iterable-mapping/)型に設定されています。もしアドレスがホワイトリストに含まれていれば、対応するboolはtrueに設定され、そうでなければfalseに設定されます。デフォルトでは、boolはfalseです（なぜこんなことをするのか？ これにより、配列を使用せずにホワイトリストにあるアドレスを知ることができ、かなりの量のガスを節約できるからです）。
 
-```solidity
+```
     //Event: record the addresses added to the whitelist
     event AddToWhitelist(address indexed account);
     //Event: record whitelisted excluded addresses
@@ -99,7 +99,7 @@ contract Whitelist {
 
 [Events](https://solidity-by-example.org/events/)は、Ethereumネットワーク上でログを記録することができ、ユーザーがいつでもホワイトリストに追加または削除されたアドレスを追跡することができます。
 
-```solidity
+```
     // Setting the initial whitelisted addresses
     // Setting the address that can operate addAddressToWhitelist function
     // User will put the value at the time of deployment
@@ -113,7 +113,7 @@ contract Whitelist {
 
 [constructor](https://solidity-by-example.org/constructor/)は、コントラクトのデプロイ時に許可される関数です（注：コンストラクタは必須ではありません）。この場合、コンストラクタはホワイトリストに登録されたアドレスの初期配列を受け取り、[loop](https://solidity-by-example.org/loop/)を使用してaddTowhitelistメソッドを呼び出し、これらのアドレスをホワイトリストに登録します（後で説明するのでご安心を）。同時に、ownerはmsg.sender（この場合、コントラクトのデプロイヤーを表すEVMの特有の[global](https://solidity-by-example.org/variables/)変数）に設定されます。これによって、後で管理する権限の基礎ができあがります。
 
-```solidity
+```
     /**
         addToWhitelist - This function adds the address of the sender to the
         whitelist
@@ -145,7 +145,7 @@ contract Whitelist {
 
 この関数は、新しいアドレスをホワイトリストに追加する機能を効果的に実装しています。
 
-```solidity
+```
     /**
         removeFromWhitelist - This function removes the address of the sender to the
         whitelist
@@ -165,7 +165,7 @@ contract Whitelist {
 
 この関数の機能は、上記のものと正反対ですが、推論すればこの結論が導き出せると思います。
 
-```solidity
+```
     /**
         whitelistedAddresses - This function gives feedback on whether the input address belongs to the whitelist
      */

@@ -98,19 +98,19 @@ contract Messenger {
 
 追加内容を見ていきます。
 
-```solidity
+```
     // ユーザが保留できるメッセージ数の上限を設定します。
     uint256 public numOfPendingLimits;
 ```
 
-```solidity
+```
     // ユーザが保留中のメッセージの数を保存します。
     mapping(address => uint256) private _numOfPendingAtAddress;
 ```
 
 上記の2つはメッセージ保留数の上限値と、各アドレス宛のメッセージがどのくらい保留されているかを保持する状態変数です。
 
-```solidity
+```
     constructor(uint256 _numOfPendingLimits) payable {
         numOfPendingLimits = _numOfPendingLimits;
     }
@@ -119,7 +119,7 @@ contract Messenger {
 コンストラクタは引数により、デプロイ時に上限値を受け取れるようになっています。
 そして状態変数にセットします。
 
-```solidity
+```
     // ユーザからメッセージを受け取り、状態変数に格納します。
     function post(string memory _text, address payable _receiver)
         public
@@ -253,7 +253,7 @@ contracts
 
 `Ownable.sol`内に以下のコードを記述してください。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.17;

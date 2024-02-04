@@ -22,7 +22,7 @@ packages/
 
 `MyEpicNFT.sol`のファイル内に以下のコードを記載します。
 
-```solidity
+```
 // MyEpicNFT.sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
@@ -46,7 +46,7 @@ contract MyEpicNFT {
 
 さて、行ごとにコードをみていきましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 // SPDX-License-Identifier: MIT
 ```
@@ -55,7 +55,7 @@ contract MyEpicNFT {
 
 詳細については、[ここ](https://www.skyarch.net/blog/?p=15940)を参照してみてください。
 
-```solidity
+```
 // MyEpicNFT.sol
 pragma solidity ^0.8.18;
 ```
@@ -68,7 +68,7 @@ pragma solidity ^0.8.18;
 
 もし、`hardhat.config.js`の中に記載されているSolidityのバージョンが`0.8.18`でなかった場合は、`MyEpicNFT.sol`の中身を`hardhat.config.js`に記載されているバージョンに変更しましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 import "hardhat/console.sol";
 ```
@@ -83,7 +83,7 @@ Hardhatのおかげで、コントラクトでコンソールログを実行で�
 
 よって、Hardhatはローカル環境でコントラクトのデプロイを行えるため、ブロックチェーン上にアップロードする前に簡単にデバッグができる便利なツールといえます。
 
-```solidity
+```
 // MyEpicNFT.sol
 contract MyEpicNFT {
     constructor() {

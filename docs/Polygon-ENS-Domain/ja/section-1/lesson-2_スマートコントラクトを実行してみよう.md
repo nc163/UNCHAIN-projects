@@ -33,7 +33,7 @@ VS Codeをターミナルから起動する方法は [こちら](https://maku.bl
 
 `Domains.sol`をVS Codeで開き、下記を入力します。
 
-```solidity
+```
 // SPDX-License-Identifier: UNLICENSED
 
 pragma solidity ^0.8.17;
@@ -48,7 +48,7 @@ contract Domains {
 ```
 コードを詳しくみていきましょう。
 
-```solidity
+```
 // SPDX-License-Identifier: UNLICENSED
 ```
 
@@ -56,7 +56,7 @@ contract Domains {
 
 詳細については、[こちら](https://www.skyarch.net/blog/?p=15940) を参照してみてください。
 
-```solidity
+```
 pragma solidity ^0.8.17;
 ```
 
@@ -68,7 +68,7 @@ pragma solidity ^0.8.17;
 
 もし記載されているSolidityのバージョンが`0.8.17`でなかった場合は、`Domains.sol`の中身を`hardhat.config.js`に記載されているバージョンに変更しましょう。
 
-```solidity
+```
 import "hardhat/console.sol";
 ```
 コントラクトを実行する際、コンソールログをターミナルに出力するためにHardhatの`console.sol`のファイルをインポートしています。
@@ -76,7 +76,7 @@ import "hardhat/console.sol";
 これは、今後スマートコントラクトのデバッグが発生した場合に、とても役立つツールです。
 
 
-```solidity
+```
 contract Domains{
     constructor() {
         console.log("THIS IS MY DOMAIN CONTRACT. NICE.");

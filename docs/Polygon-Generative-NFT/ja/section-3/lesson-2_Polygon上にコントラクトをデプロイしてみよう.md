@@ -128,7 +128,7 @@ Compiled 17 Solidity files successfully
 
 私たちは、NFTの基本価格を0.01 ETHに設定しました。
 
-```solidity
+```
 uint public constant PRICE = 0.01 ether;
 ```
 
@@ -156,7 +156,7 @@ uint public constant PRICE = 0.01 ether;
 
 この変更を反映させるために、`NFTCollectible.sol`の価格表記を下記のように更新しましょう。
 
-```solidity
+```
 // NFTCollectible.sol
 uint public constant PRICE = 17 ether;
 ```
@@ -193,7 +193,7 @@ Polygonでは、`10¹⁸ Wei`が`1 MATIC`です。
 
 **下記のように、`NFTCollectible.sol`の価格をもう一度書き換えてください。**
 
-```solidity
+```
 uint public constant PRICE = 0.01 ether;
 ```
 

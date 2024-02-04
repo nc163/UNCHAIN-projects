@@ -33,7 +33,7 @@ const CONTRACT_ADDRESS = "0x.."; ← こちら
 
 `string[] thirdWords`が定義されているコードの直下に、下記のコードを追加してください。
 
-```solidity
+```
 // MyEpicNFT.sol
 event NewEpicNFTMinted(address sender, uint256 tokenId);
 ```
@@ -42,7 +42,7 @@ event NewEpicNFTMinted(address sender, uint256 tokenId);
 
 `makeAnEpicNFT`関数の一番下に、下記のコードを追加しましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 emit NewEpicNFTMinted(msg.sender, newItemId);
 ```
@@ -296,7 +296,7 @@ const setupEventListener = async () => {
 
 **`MyEpicNFT.sol`はこちら:**
 
-```solidity
+```
 // MyEpicNFT.sol
 // SPDX-License-Identifier: MIT
 

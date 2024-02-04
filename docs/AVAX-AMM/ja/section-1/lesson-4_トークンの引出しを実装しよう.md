@@ -7,7 +7,7 @@
 
 それでは`AMM.sol`のAMMコントラクトの最後の行に以下の2つの関数を追加してください。
 
-```solidity
+```
     // ユーザのシェアから引き出せるトークンの量を算出します。
     function getWithdrawEstimate(IERC20 token, uint256 _share)
         public

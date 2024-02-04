@@ -4,7 +4,7 @@
 
 `WavePortal.sol`に実装した`getTotalWaves`関数を覚えていますか？
 
-```solidity
+```
   function getTotalWaves() public view returns (uint256) {
       console.log("We have %d total waves!", totalWaves);
       return totalWaves;

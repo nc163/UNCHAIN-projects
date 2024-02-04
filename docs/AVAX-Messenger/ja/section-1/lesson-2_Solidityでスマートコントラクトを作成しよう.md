@@ -31,7 +31,7 @@ VS Codeをターミナルから起動する方法は [こちら](https://maku.bl
 
 `Messenger.sol`をVS Codeで開き、下記を入力します。
 
-```solidity
+```
 // Messenger.sol
 // SPDX-License-Identifier: MIT
 
@@ -52,7 +52,7 @@ contract Messenger {
 
 コードを詳しくみていきましょう。
 
-```solidity
+```
 // Messenger.sol
 // SPDX-License-Identifier: MIT
 ```
@@ -61,7 +61,7 @@ contract Messenger {
 
 詳細については、[こちら](https://www.skyarch.net/blog/?p=15940) を参照してみてください。
 
-```solidity
+```
 // Messenger.sol
 pragma solidity ^0.8.17;
 ```
@@ -84,7 +84,7 @@ MAJOR.MINOR.PATCH
 
 もし、`hardhat.config.ts`の中に記載されているSolidityのバージョンが`0.8.17`でなかった場合は、`Messenger.sol`の中身を`hardhat.config.ts`に記載されているバージョンに変更しましょう。
 
-```solidity
+```
 // Messenger.sol
 import "hardhat/console.sol";
 ```
@@ -93,7 +93,7 @@ import "hardhat/console.sol";
 
 これは、今後スマートコントラクトのデバッグが発生した場合に、とても役立つツールです。
 
-```solidity
+```
 // Messenger.sol
 contract Messenger {
     uint256 public state;

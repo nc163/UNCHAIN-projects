@@ -2,7 +2,7 @@
 
 For our dApp smart contract, we choose the ERC 721 contract which is the same as BAYC. We will modify it by adding a whitelist restriction feature.
 
-```solidity
+```
     address public owner;
 
     constructor(address[] memory initialAddresses) {
@@ -46,7 +46,7 @@ Within the "`interfaces`" folder, we'll create a contract named `IWhitelist.sol`
 
 We'll insert the following code into the `IWhitelist.sol`.
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
@@ -62,7 +62,7 @@ Next, we will create `Shield.sol` under the folder `contracts`.
 
 We insert the code below in `Shield.sol`.
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
@@ -152,7 +152,7 @@ contract Shield is ERC721Enumerable, Ownable {
 ```
 Don't worry, lets talk about this contract step by step.
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
@@ -168,7 +168,7 @@ A lot is happening here like `ERC721Enumerable` and `Ownable`. First, you'll not
 
 Let's explain a few of the more significant state variables below.
 
-```solidity
+```
     /**
       * @dev _baseTokenURI for computing {tokenURI}. If set, the resulting URI for each
       * token will be the concatenation of the `baseURI` and the `tokenId`.
@@ -182,7 +182,7 @@ Let's explain a few of the more significant state variables below.
 
 `tokenIds` represent the numerical IDs for each NFT, and these IDs are unique. When combined with `_baseTokenURI`, they form the Metadata for each NFT. (We'll talk about Metadata shortly. For now, just remember that having Metadata allows your NFT to be displayed on various NFT platforms.)
 
-```solidity
+```
     // price is the price of one Shield NFT
     uint256 public price = 0.01 ether;
     
@@ -194,7 +194,7 @@ Let's explain a few of the more significant state variables below.
 
 `maxTokenIds` indicates the maximum quantity of NFTs. Here, it's set to 4, which means you need to prepare metadata for four NFTs.
 
-```solidity
+```
     /**
       * @dev ERC721 constructor takes in a `name` and a `symbol` to the token collection.
       * name in our case is `Shields` and symbol is `CS`.
@@ -209,7 +209,7 @@ Let's explain a few of the more significant state variables below.
 
 When deploying the contract, we need to input the `_baseTokenURI` and the address of the `_whitelist` contract. Simultaneously, we also set the name of this NFT as "ChainIDE Shields," with the symbol "CS".
 
-```solidity
+```
      /**
       * @dev presaleMint allows a user to mint one NFT per transaction during the presale.
       */
@@ -229,7 +229,7 @@ Let's focus on explaining the `mint` function:
 
 1. The keyword `payable` indicates that this function can receive tokens directly, as the price of an NFT is 0.01 ether. The usage of onlyWhenNotPaused employs a [modifier](https://solidity-by-example.org/function-modifier/), which signifies that the function can only proceed when `paused` is `false`. (Note: The contract starts with paused being false, allowing whitelist users to directly mint after contract deployment.)
 
-```solidity
+```
     modifier onlyWhenNotPaused {
         require(!paused, "Contract currently paused");
         _;
@@ -246,7 +246,7 @@ Let's focus on explaining the `mint` function:
 
 6.  `_safeMint(msg.sender, tokenIds);` This is the functionality implemented by `"@openzeppelin/contracts/token/ERC721/ERC721.sol"`. You can explore the specific functionalities by opening that contract. For now, we only need to understand that this will result in minting an NFT to the caller of this function.
 
-```solidity
+```
     /**
     * @dev setPaused makes the contract paused or unpaused
       */
@@ -257,7 +257,7 @@ Let's focus on explaining the `mint` function:
 
 Setting the minting of the contract to be paused is achieved through the `paused` variable, which is of type bool and is initially set to `false`. Therefore, only the `owner` needs to invoke this function before users can start minting.
 
-```solidity
+```
     /**
     * @dev withdraw sends all the ether in the contract
     * to the owner of the contract

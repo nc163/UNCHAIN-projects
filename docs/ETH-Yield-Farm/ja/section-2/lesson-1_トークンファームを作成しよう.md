@@ -23,7 +23,7 @@
 
 `TokenFarm`コントラクトで`Dai`トークンと`Dapp`トークンが使えるようにするために`TokenFarm.sol`を次のように更新しましょう。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
@@ -44,7 +44,7 @@ contract TokenFarm{
 
 まず`DappToken`と`MockDaiToken`をインポートすることで`DappToken`と`DaiToken`を使えるようにします。
 
-```solidity
+```
 import "./DappToken.sol";
 import "./MockDaiToken.sol";
 ```
@@ -55,7 +55,7 @@ import "./MockDaiToken.sol";
 
 DaiTokenとDappTokenはネットワークにすでにデプロイされていると仮定しているので、あとはTokenFarmのコントラクトが作成されるたびにDaiTokenとDappTokenのコントラクトアドレスを取得し、`constructor`に渡すだけです。
 
-```solidity
+```
 constructor(DappToken _dappToken, DaiToken _daiToken){
         dappToken = _dappToken;
         daiToken = _daiToken;

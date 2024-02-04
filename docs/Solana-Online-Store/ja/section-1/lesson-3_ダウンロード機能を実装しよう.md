@@ -6,7 +6,7 @@
 
 IPFSはInterPlanetary File Systemの略で、データを分散的に保存してくれる分散型ストレージです。
 
-IPFSに保存されたデータは一定期間内にアクセスがないと消えてしまう可能性があるので、ユーザーは定期的にストレージにアクセス([ピン](https://docs.ipfs.io/how-to/pin-files/))する必要があります（今回のチュートリアルでは実施しません）。
+IPFSに保存されたデータは一定期間内にアクセスがないと消えてしまう可能性があるので、ユーザーは定期的にストレージにアクセス[ピン](https://docs.ipfs.io/how-to/pin-files/)する必要があります（今回のチュートリアルでは実施しません）。
 
 ※IPFSの詳細については [ここ](https://decrypt.co/resources/how-to-use-ipfs-the-backbone-of-web3) を参照してみてください。
 

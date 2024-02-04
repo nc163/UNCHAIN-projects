@@ -54,7 +54,7 @@ contract
 
 `Bank.sol`の中に以下のコードを貼り付けてください。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
@@ -116,7 +116,7 @@ contract Bank {
 
 次に`Bank`の最後の行に以下のコードを貼り付けてください。
 
-```solidity
+```
     function _sendToken(address payable _to, uint256 _amount) private {
         (bool success, ) = (_to).call{value: _amount}("");
         require(success, "Failed to send token");
@@ -180,7 +180,7 @@ contract Bank {
 
 次に`Bank`の最後の行に以下のコードを貼り付けてください。
 
-```solidity
+```
     function issueBill(uint256 _amount, address _recipient) public {
         Bill memory bill = Bill(
             allBills.length,

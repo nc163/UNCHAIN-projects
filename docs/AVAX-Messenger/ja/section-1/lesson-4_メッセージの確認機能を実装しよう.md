@@ -78,7 +78,7 @@ contract Messenger {
 
 それでは追加した部分を見ていきましょう。
 
-```solidity
+```
     // メッセージ受け取りを承諾して、AVAXを受け取ります。
     function accept(uint256 _index) public {
         //指定インデックスのメッセージを確認します。
@@ -109,7 +109,7 @@ contract Messenger {
 メッセージトークンの送信先がメッセージの送信者となっている部分が違います。
 該当箇所 -> `_sendAvax(message.sender, message.depositInWei);`
 
-```solidity
+```
     function _confirmMessage(uint256 _index) private {
         Message storage message = _messagesAtAddress[msg.sender][_index];
 
@@ -144,7 +144,7 @@ contract Messenger {
 > 何らかの条件が`true`もしくは`false`であることを確認する`if`文のような役割を果たします。
 > もし`require`の結果が`false`の場合（＝コントラクトが持つ資金が足りない場合）は、トランザクションをキャンセルします。
 
-```solidity
+```
     function _sendAvax(address payable _to, uint256 _amountInWei) private {
         (bool success, ) = (_to).call{value: _amountInWei}("");
         require(success, "Failed to withdraw AVAX from contract");

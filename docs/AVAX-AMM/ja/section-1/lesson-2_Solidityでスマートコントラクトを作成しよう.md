@@ -69,7 +69,7 @@ contract
 
 `ERC20Tokens.sol`の中に以下のコードを貼り付けてください。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
@@ -106,7 +106,7 @@ contract JOEToken is ERC20 {
 
 `USDCToken`を例に中身を見ます。
 
-```solidity
+```
 contract USDCToken is ERC20 {
     constructor() ERC20("USDC Token", "USDC") {
         _mint(msg.sender, 10000 ether);
@@ -136,7 +136,7 @@ contract USDCToken is ERC20 {
 
 次に`AMM.sol`のなかに以下のコードを貼り付けてください。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
@@ -163,7 +163,7 @@ contract AMM {
 
 その下に続く`AMMコントラクト`の実装では`IERC20`を型としたオブジェクトを2つ保持しています。
 
-```solidity
+```
 contract AMM {
     IERC20 private _tokenX; // ERC20を実装したコントラクト
     IERC20 private _tokenY; // ERC20を実装したコントラクト
@@ -183,7 +183,7 @@ contract AMM {
 
 例えば`IERC20 tokenX`の関数を呼び出す際はこのように呼び出すことができます。
 
-```solidity
+```
 tokenX.transfer()
 ```
 
@@ -207,7 +207,7 @@ DEXで用意されていることが多いLPトークンと同じ役目を果た
 
 シェアに関する状態変数は以下です。
 
-```solidity
+```
 uint256 public totalShare; // シェアの総量
 mapping(address => uint256) public share; // 各ユーザのシェア
 

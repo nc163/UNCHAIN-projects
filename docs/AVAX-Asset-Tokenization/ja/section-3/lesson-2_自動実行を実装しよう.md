@@ -16,11 +16,11 @@ chainlinkの自動化には以下の2つの起動方法があります。
 `AssetTokenization.sol`の中に以下のimport文を追加し、 さらに`AutomationCompatibleInterface`を継承するようにしてください。
 ※ 継承を記述した時点ではコードエディタにより`AutomationCompatibleInterface`を実装できていない警告が出るかもしれませんが、 この時点では無視して構いません。
 
-```solidity
+```
 import "@chainlink/contracts/src/v0.8/AutomationCompatible.sol";
 ```
 
-```solidity
+```
 contract AssetTokenization is AutomationCompatibleInterface {
     ...
 ```
@@ -29,7 +29,7 @@ contract AssetTokenization is AutomationCompatibleInterface {
 
 次に`AssetTokenization`の最後の行に以下の関数を貼り付けてください。
 
-```solidity
+```
     // For upkeep that chainlink automation function.
     // Check whether there are expired contracts.
     // If checkUpkeep() returns true, chainlink automatically runs performUpkeep() that follows below.

@@ -195,7 +195,7 @@ runMain();
 
 - `Base64.encode`の中身を更新してください。
 
-```solidity
+```
 string memory json = Base64.encode(
       bytes(
         string(
@@ -218,7 +218,7 @@ string memory json = Base64.encode(
 
 コントラクトを再度デプロイした後、最終的なメタデータは下記のような形になります。
 
-```solidity
+```
 {
 	"name": "USOPP -- NFT #: 1",
 	"description": "An epic NFT game.",
@@ -445,14 +445,14 @@ describe('MyEpicGame', () => {
 
 import文を削除します。
 
-```solidity
+```
 // === 下記を削除 ===
 import 'hardhat/console.sol';
 ```
 
 constructor内の`bigBoss`をログ出力している箇所を削除します。
 
-```solidity
+```
     // === 下記を削除 ===
     console.log(
       'Done initializing boss %s w/ HP %s, img %s',
@@ -464,7 +464,7 @@ constructor内の`bigBoss`をログ出力している箇所を削除します。
 
 constructor内の`character`変数と`defaultCharacters`をログ出力している箇所を削除します。
 
-```solidity
+```
       // === 下記を削除 ===
       CharacterAttributes memory character = defaultCharacters[i];
 
@@ -480,7 +480,7 @@ constructor内の`character`変数と`defaultCharacters`をログ出力してい
 
 `mintCharacterNFT`関数内のログ出力を削除します。
 
-```solidity
+```
     // === 下記を削除 ===
     console.log(
       'Minted NFT w/ tokenId %s and characterIndex %s',
@@ -491,7 +491,7 @@ constructor内の`character`変数と`defaultCharacters`をログ出力してい
 
 `attackBoss`関数内の4つのログ出力を削除します。
 
-```solidity
+```
     // === 下記を削除 ===
     console.log(
       '\nPlayer w/ character %s about to attack. Has %s HP and %s AD',

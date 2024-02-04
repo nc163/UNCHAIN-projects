@@ -2,7 +2,7 @@
 
 このdAppスマートコントラクトには、BAYCと同じERC 721コントラクトを選択します。コントラクトにホワイトリスト制限機能を追加していきましょう。
 
-```solidity
+```
     address public owner;
 
     constructor(address[] memory initialAddresses) {
@@ -45,7 +45,7 @@ Whitelistコントラクトでは、オーナーアドレスを設定し、`requ
 
 `IWhitelist.sol`に次のコードを記述します。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
@@ -62,7 +62,7 @@ interface IWhitelist {
 
 `Shield.sol`に次のコードを記述します。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
@@ -153,7 +153,7 @@ contract Shield is ERC721Enumerable, Ownable {
 
 心配いりません、このコントラクトを順に解説していきましょう。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
@@ -170,7 +170,7 @@ contract Shield is ERC721Enumerable, Ownable {
 
 以下のより重要な状態変数について説明しましょう。
 
-```solidity
+```
     /**
       * @dev _baseTokenURI for computing {tokenURI}. If set, the resulting URI for each
       * token will be the concatenation of the `baseURI` and the `tokenId`.
@@ -184,7 +184,7 @@ contract Shield is ERC721Enumerable, Ownable {
 
 `tokenIds`は各NFTの数値IDを表しており、これらのIDはユニークです。`_baseTokenURI`と組み合わせることで、各NFTのメタデータが形成されます（メタデータについては後ほど説明します。今は、メタデータがあることでNFTをさまざまなNFTプラットフォームで表示できることを覚えておいてください）。
 
-```solidity
+```
     //  price is the price of one Shield NFT
     uint256 public price = 0.01 ether;
     
@@ -196,7 +196,7 @@ contract Shield is ERC721Enumerable, Ownable {
 
 `maxTokenIds`はNFTの最大数を示しています。ここでは4に設定されているため、4つのNFTのメタデータを準備する必要があります。
 
-```solidity
+```
     /**
       * @dev ERC721 constructor takes in a `name` and a `symbol` to the token collection.
       * name in our case is `Shields` and symbol is `CS`.
@@ -211,7 +211,7 @@ contract Shield is ERC721Enumerable, Ownable {
 
 コントラクトをデプロイする際には、`_baseTokenURI`と`Whitelist`コントラクトのアドレスを入力する必要があります。同時に、このNFTの名前を「ChainIDE Shields」、記号を「CS」と設定します。
 
-```solidity
+```
      /**
       * @dev presaleMint allows a user to mint one NFT per transaction during the presale.
       */
@@ -231,7 +231,7 @@ contract Shield is ERC721Enumerable, Ownable {
 
 1. `payable`というキーワードは、この関数が直接トークンを受け取ることができることを示しており、NFTの価格は0.01 etherです。onlyWhenNotPausedは[modifier](https://solidity-by-example.org/function-modifier/)が定義されています。`paused`が`false`のときのみ関数が実行されることを示しています（注：コントラクトはpausedがfalseの状態で開始されるため、ホワイトリストのユーザーはコントラクトのデプロイ後に直接ミントを行うことができます）。
 
-```solidity
+```
     modifier onlyWhenNotPaused {
         require(!paused, "Contract currently paused");
         _;
@@ -248,7 +248,7 @@ contract Shield is ERC721Enumerable, Ownable {
 
 6. `_safeMint(msg.sender, tokenIds);`：この機能は`"@openzeppelin/contracts/token/ERC721/ERC721.sol"`によって実装されています。そのコントラクトを参照することで具体的な機能を確認することができます。今のところ、この関数を呼び出した人にNFTがミントされるということだけ理解しておけば良いです。
 
-```solidity
+```
     /**
     * @dev setPaused makes the contract paused or unpaused
       */
@@ -259,7 +259,7 @@ contract Shield is ERC721Enumerable, Ownable {
 
 コントラクトのミントを一時停止する機能は、`paused`変数を通じて実現されています。この変数はbool型で、初期値は`false`です。したがって、ユーザーがミントを開始する前に、オーナーだけがこの関数を呼び出す必要があります。
 
-```solidity
+```
     /**
     * @dev withdraw sends all the ether in the contract
     * to the owner of the contract

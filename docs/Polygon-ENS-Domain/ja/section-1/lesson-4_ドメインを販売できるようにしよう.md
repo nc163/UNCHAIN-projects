@@ -20,7 +20,7 @@
 
 `Domains.sol`を変更します。
 
-```solidity
+```
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.17;
 
@@ -76,7 +76,7 @@ contract Domains {
 
 `register`に`payable`を追加しました。
 
-```solidity
+```
 uint _price = price(name);
 require(msg.value >= _price, "Not enough Matic paid");
 ```
@@ -101,7 +101,7 @@ require(msg.value >= _price, "Not enough Matic paid");
 
 MATICトークンには小数点以下18桁があるため、価格の最後に`* 10**18`を付ける必要があります。
 
-```solidity
+```
 function price(string calldata name) public pure returns(uint) {
   uint len = StringUtils.strlen(name);
   require(len > 0);
@@ -231,7 +231,7 @@ OpenSeaにENSドメインを所有している場合、実際には次のよう�
 
 `Domains.sol`のコードを以下のように変更します。`register`関数が特に大きく変更されています。あとでまた説明しますね。
 
-```solidity
+```
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.17;
 
@@ -329,7 +329,7 @@ contract Domains is ERC721URIStorage {
 
 _注：引き続き`price`、` getAddress`、`setRecord`および`getRecord`関数は必要です。変更されていないため、ここでは省略していますが消さないでください。_
 
-```solidity
+```
 // 最初にOpenZeppelinライブラリをインポートします.
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
@@ -352,7 +352,7 @@ OpenZeppelinは、NFTの標準を実装していて、それをベースに独�
 
 `Base64`は外部ライブラリの関数で、NFTイメージに使用されるSVGとそのメタデータのJSONを、Solidityの`Base64`に変換するのに役立ちます。 ライブラリフォルダ`libraries`に`Base64.sol`という名前のファイルを作成し、[ここ](https://gist.github.com/farzaa/f13f5d9bda13af68cc96b54851345832)からコードをコピーして貼り付けます。
 
-```solidity
+```
 using Counters for Counters.Counter;
 Counters.Counter private _tokenIds;
 ```
@@ -363,7 +363,7 @@ Counters.Counter private _tokenIds;
 
 したがって、最初に`register`を呼び出すと、`newRecordId`は0になります。再度実行すると、 `newRecordId`は1になり、以下同様に続きます。 `_tokenIds`は**状態変数**であることに注意してください。これは、変更されると、値がコントラクトに直接保存されることを意味します。
 
-```solidity
+```
 constructor(string memory _tld) payable ERC721("Ninja Name Service", "NNS") {
   tld = _tld;
   console.log("%s name service deployed", _tld);
@@ -454,7 +454,7 @@ SVGをカスタマイズしてみても面白いでしょう。興味がある�
 
 ここで行っているのは、ドメインに基づいてSVGを作成することだけです。SVGを2つに分割し、その間にドメインを配置します。
 
-```solidity
+```
 string memory _name = string(abi.encodePacked(name, ".", tld));
 string memory finalSvg = string(abi.encodePacked(svgPartOne, _name, svgPartTwo));
 ```
@@ -467,7 +467,7 @@ Solidityの文字列が特殊だと言ったのを覚えていますでしょう
 
 代わりに、`encodePacked`関数を使用して、一連の文字列をバイトに変換してから結合する必要があります。
 
-```solidity
+```
 string(abi.encodePacked(svgPartOne, _name, svgPartTwo));
 ```
 
@@ -475,7 +475,7 @@ string(abi.encodePacked(svgPartOne, _name, svgPartTwo));
 
 ドメインのアセットができたので、`register`関数を詳しく見て、メタデータがどのように構築されているかを確認しましょう。
 
-```solidity
+```
 function register(string calldata name) public payable {
   require(domains[name] == address(0));
 
@@ -522,7 +522,7 @@ function register(string calldata name) public payable {
 
 `_tokenIds`について知っておく必要があるのは、NFTの一意のトークン番号にアクセスして設定できるオブジェクトであるということだけです。 各NFTには一意の`id`があり、それはNFTを確認するのに役立ちます。 以下の2つの行は、実際にNFTを作成する行です。
 
-```solidity
+```
 // newRecordId にNFTをミントします。
 _safeMint(msg.sender, newRecordId);
 

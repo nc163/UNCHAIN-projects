@@ -6,7 +6,7 @@
 
 `AssetTokenization.sol`の中に以下のコードを貼り付けてください。
 
-```solidity
+```
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.17;
 
@@ -36,7 +36,7 @@ contract AssetTokenization {
 
 次に`AssetTokenization`の最後の行に以下のコードを貼り付けてください。
 
-```solidity
+```
     function availableContract(address farmer) public view returns (bool) {
         return address(_farmerToNftContract[farmer]) != address(0);
     }
@@ -90,7 +90,7 @@ contract AssetTokenization {
 
 次に`AssetTokenization`の最後の行に以下のコードを貼り付けてください。
 
-```solidity
+```
     function getNftContractDetails(address farmerAddress)
         public
         view

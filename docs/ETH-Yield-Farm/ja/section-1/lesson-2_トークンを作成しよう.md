@@ -48,7 +48,7 @@ ERC-20標準規格を使用することで、トークンは以下のユース�
 
 ERC-20規格に準拠した機能を実装するために、`DappToken.sol`を下のように編集しましょう。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
@@ -115,7 +115,7 @@ contract DappToken {
 ```
 
 次に`MockDaiToken.sol`を以下のように編集しましょう。
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
@@ -179,7 +179,7 @@ contract DaiToken {
 
 まず、`DappToken.sol`の4-10行目に注目してください。
 
-```solidity
+```
 // トークン名を格納
 string  public name = "DApp Token";
 // 暗号通貨交換用のトークンシンボルを格納
@@ -192,7 +192,7 @@ uint256 public totalSupply = 1000000000000000000000000;
 ここでは、`DappToken.sol`で使用する変数を定義し、値を格納しています。
 
 次に、25行目を見ていきましょう。
-```solidity
+```
 mapping(address => uint256) public balanceOf;
 ```
 
@@ -206,7 +206,7 @@ mapping(address => uint256) public balanceOf;
 
 次に、`transfer`関数( `DappToken.sol`の31-38行)を見ていきましょう。
 
-```solidity
+```
 // ユーザーがトークンを別のアカウントに送信できるようにする機能を実装
 function transfer(address _to, uint256 _value) public returns (bool success) {
    // 移動したい額のトークンがユーザーのアドレスに存在するか確認
@@ -226,7 +226,7 @@ function transfer(address _to, uint256 _value) public returns (bool success) {
 
 `Transfer`イベントを発生させるために、`DappToken.sol`の12-16行目に以下の`event`が定義されています。
 
-```solidity
+```
 event Transfer(
    address indexed _from,
    address indexed _to,
@@ -246,13 +246,13 @@ event Transfer(
 
 まず、`allowance`マッピング( `DappToken.sol`の26行目)に着目してください。
 
-```solidity
+```
 mapping(address => mapping(address => uint256)) public allowance;
 ```
 
 `allowance`マッピングはネストされたマッピングの形をとっていますが、至って簡単なコンセプトです。以下を見ていきましょう。
 
-```solidity
+```
 mapping(address => mapping(address => uint256)) public allowance;
           (1)                (2)        (3)
 ```
@@ -267,7 +267,7 @@ mapping(address => mapping(address => uint256)) public allowance;
 
 次に、`approve`関数(`DappToken.sol`の41-45行目)を見ていきましょう。
 
-```solidity
+```
 // 別のアカウントがトークンを使用できるようにする機能を実装
 function approve(address _spender, uint256 _value) public returns (bool success) {
    allowance[msg.sender][_spender] = _value;
@@ -279,7 +279,7 @@ function approve(address _spender, uint256 _value) public returns (bool success)
 
 次に、26行目で定義した`allowance`マッピングが`approve`関数の中で呼び出されていることを確認しましょう。
 
-```solidity
+```
 allowance[msg.sender][_spender] = _value;
 ```
 
@@ -287,7 +287,7 @@ allowance[msg.sender][_spender] = _value;
 
 最後に、`Approval`イベントを発生させていることに着目してください。
 
-```solidity
+```
 emit Approval(msg.sender, _spender, _value);
 ```
 
@@ -295,7 +295,7 @@ emit Approval(msg.sender, _spender, _value);
 
 `Approval`イベントを発生させるために、`DappToken.sol`の18-22行目に以下の`event`が定義されていることを確認してください。
 
-```solidity
+```
 event Approval(
    address indexed _owner,
    address indexed _spender,
@@ -307,7 +307,7 @@ event Approval(
 
 最後に、`DappToken.sol`の47-56行目に記載されている`transferFrom`関数を見ていきましょう。
 
-```solidity
+```
 // 別のアカウントからトークンを転送できるようにする
 function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
    require(_value <= balanceOf[_from]);

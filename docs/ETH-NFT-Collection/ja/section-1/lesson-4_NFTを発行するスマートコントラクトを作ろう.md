@@ -4,7 +4,7 @@
 
 下記のように、`MyEpicNFT.sol`を更新しましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
@@ -51,7 +51,7 @@ contract MyEpicNFT is ERC721URIStorage {
 
 1行ずつコードを見ていきましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 contract MyEpicNFT is ERC721URIStorage {
   :
@@ -69,7 +69,7 @@ NFTのモジュールは`ERC721`として知られています。
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 using Counters for Counters.Counter;
 ```
@@ -96,7 +96,7 @@ using Counters for Counters.Counter;
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 Counters.Counter private _tokenIds;
 ```
@@ -109,7 +109,7 @@ tokenIdはNFTの一意な識別子で、0, 1, 2, .. Nのように付与されま
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 constructor() ERC721 ("TanyaNFT", "TANYA") {
     console.log("This is my NFT contract.");
@@ -125,7 +125,7 @@ constructor() ERC721 ("TanyaNFT", "TANYA") {
 
 次に、下記の`makeAnEpicNFT`関数を段階的に見ていきましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 // ユーザーが NFT を取得するために実行する関数です。
 function makeAnEpicNFT() public {
@@ -144,7 +144,7 @@ function makeAnEpicNFT() public {
 
 まず、下記のコードを見ていきます。
 
-```solidity
+```
 // MyEpicNFT.sol
 _tokenIds.increment();
 ```
@@ -157,7 +157,7 @@ _tokenIds.increment();
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 uint256 newItemId = _tokenIds.current();
 ```
@@ -182,7 +182,7 @@ uint256 newItemId = _tokenIds.current();
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 _safeMint(msg.sender, newItemId);
 ```
@@ -198,7 +198,7 @@ _safeMint(msg.sender, newItemId);
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 _setTokenURI(newItemId, "Valuable data!");
 ```
@@ -274,7 +274,7 @@ console.log("An NFT w/ ID %s has been minted to %s", newItemId, msg.sender);
 
 それでは、スマートコントラクトに向かい、下記の行を変更しましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 _setTokenURI(newItemId, "Valuable data!");
 ```
@@ -283,7 +283,7 @@ _setTokenURI(newItemId, "Valuable data!");
 
 そのリンクを下記に貼り付けましょう。
 
-```solidity
+```
 // MyEpicNFT.sol
 _setTokenURI(
     newItemId,

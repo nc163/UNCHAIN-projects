@@ -7,7 +7,7 @@
 下記のように、`Web3Mint.sol`を更新しましょう。
 まずは、NFTの仕組みをわかりやすくみるために`ERC721URIStorage`とそれのfunctionである`_setTokenURI`を使ってNFTを作成しますが、これはあとで変更します。
 
-```solidity
+```
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.17;
 
@@ -51,7 +51,7 @@ contract Web3Mint is ERC721URIStorage {
 
 これは[ETH-NFT-Collection](/docs/ETH-NFT-Collection/ja/section-1/lesson-4_NFTを発行するスマートコントラクトを作ろう.md)と同様の構成になっています。復習も兼ねて是非一度戻ってみることをおすすめします。
 
-```solidity
+```
 // Web3Mint.sol
 contract Web3Mint is ERC721URIStorage {
 	:
@@ -66,7 +66,7 @@ contract Web3Mint is ERC721URIStorage {
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 // Web3Mint.sol
 using Counters for Counters.Counter;
 ```
@@ -82,7 +82,7 @@ uint256のNFTをオーバーフローさせるのに必要なETHはとんでも�
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 // Web3Mint.sol
 Counters.Counter private _tokenIds;
 ```
@@ -94,7 +94,7 @@ Counters.Counter private _tokenIds;
   これが初めから強調してきた、NFTの本体と言ってもいい識別子になるので、これに注意してコードを書いていきましょう!
   次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 // Web3Mint.sol
 constructor() ERC721 ("TanyaNFT", "TANYA") {
     console.log("This is my NFT contract.");
@@ -111,7 +111,7 @@ node_modulesの中にある`ERC721.sol`を見ればわかるのですが、継�
 
 次に、下記の`makeAnEpicNFT`関数を段階的に見ていきましょう。
 
-```solidity
+```
 // Web3Mint.sol
 // ユーザーが NFT を取得するために実行する関数です。
 function makeAnEpicNFT() public {
@@ -128,7 +128,7 @@ function makeAnEpicNFT() public {
 
 まず、下記のコードを見ていきます。
 
-```solidity
+```
 // Web3Mint.sol
 uint256 newItemId = _tokenIds.current();
 ```
@@ -150,7 +150,7 @@ Project2でも同じような解説が乗っていたと思いますが、これ
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 // Web3Mint.sol
 _safeMint(msg.sender, newItemId);
 ```
@@ -167,7 +167,7 @@ _safeMint(msg.sender, newItemId);
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 // Web3Mint.sol
 _setTokenURI(newItemId, "Valuable data!");
 ```
@@ -181,7 +181,7 @@ _setTokenURI(newItemId, "Valuable data!");
 
 最後に、下記のコードを見ていきましょう。
 
-```solidity
+```
 // Web3Mint.sol
 _tokenIds.increment();
 ```
@@ -243,14 +243,14 @@ NFTが発行された後、`_tokenIds.increment()`（＝ OpenZeppelinが提供�
 
 それでは、スマートコントラクトに向かい、下記の行を変更しましょう。
 
-```solidity
+```
 _setTokenURI(newItemId, "Valuable data!");
 ```
 
 先ほど取得したJSONファイルへのリンクこそ、`tokenURI`(＝ **NFT データが保存されている場所**)です。
 そのリンクを下記に貼り付けましょう。
 
-```solidity
+```
 _setTokenURI(
   newItemId,
   "こちらに、JSON ファイルへのリンクを貼り付けてください"

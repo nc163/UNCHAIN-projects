@@ -6,7 +6,7 @@
 
 これを防ぐために、これから下記の機能を`WavePortal.sol`に実装していきます。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.19;
@@ -86,13 +86,13 @@ contract WavePortal {
 
 コードを見ていきましょう。
 
-```solidity
+```
 uint256 private _seed;
 ```
 
 ここでは、乱数を生成するために使用する初期シード（乱数の種）を定義しています。
 
-```solidity
+```
 constructor() payable {
 	console.log("We have been constructed!");
 	/* 初期シードを設定 */
@@ -112,7 +112,7 @@ constructor() payable {
 
 次に下記のコードを確認しましょう。
 
-```solidity
+```
 function wave(string memory _message) public {
     _totalWaves += 1;
     console.log("%s has waved!", msg.sender);
@@ -133,7 +133,7 @@ function wave(string memory _message) public {
 
 最後に下記のコードを見ていきましょう。
 
-```solidity
+```
 if (_seed <= 50) {
 	console.log("%s won!", msg.sender);
 	:
@@ -293,7 +293,7 @@ Contract balance: 0.0999
 
 それでは、下記のように`WavePortal.sol`を更新しましょう。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.19;
@@ -379,7 +379,7 @@ contract WavePortal {
 
 新しく追加したコードを見ていきましょう。
 
-```solidity
+```
 mapping(address => uint256) public lastWavedAt;
 ```
 
@@ -397,7 +397,7 @@ mapping（_Key => _Value）public mappingName
 
 理解を深めるために、次のコードを見ていきましょう。
 
-```solidity
+```
 function wave(string memory _message) public {
 	/* 現在ユーザーがwaveを送信している時刻と、前回waveを送信した時刻が15分以上離れていることを確認。*/
 	require(
@@ -414,7 +414,7 @@ function wave(string memory _message) public {
 
 最後に、下記のコードを確認してください。
 
-```solidity
+```
 lastWavedAt[msg.sender] = block.timestamp;
 ```
 
@@ -594,7 +594,7 @@ describe('WavePortal', function () {
 
 ここで、`wave`関数のテストを確認してみましょう。2種類のテストが記述されています。これは、wave関数が正常に実行された際の動作と、期待するエラーが発生するかの動作、2種類の動作を確認したいためです。正常時は、生成されたランダム値に応じてトークンが配布されたかどうかを確認します。期待するエラーとは、最後に追加した「スパムを防ぐためのクールダウン機能」に関するエラーです。
 
-```solidity
+```
         require(
             lastWavedAt[msg.sender] + 15 minutes < block.timestamp,
             "Wait 15m"

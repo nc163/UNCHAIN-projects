@@ -38,7 +38,7 @@ cd src/Components/SelectCharacter
 
 ターミナル上で、`SelectCharacter`フォルダにいる状態で、下記を実行すると、`index.js`が簡単に作成できます。
 
-```bach
+```bash
 touch index.js
 ```
 

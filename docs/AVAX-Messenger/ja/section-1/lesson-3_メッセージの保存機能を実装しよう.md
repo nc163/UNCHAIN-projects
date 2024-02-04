@@ -54,7 +54,7 @@
 
 `Messenger.sol`内を以下のコードで書き換えて下さい。
 
-```solidity
+```
 // Messenger.sol
 // SPDX-License-Identifier: MIT
 
@@ -84,7 +84,7 @@ contract Messenger {
 
 追加した内容を見ていきましょう！
 
-```solidity
+```
     struct Message {
         address payable sender;
         address payable receiver;
@@ -124,7 +124,7 @@ contract Messenger {
 - `address payable`: `address`と同じですが、加えてトークンのやり取りを可能にする型です。
   具体的には`transfer`と`send`というメンバーが追加されています（後ほど出てきます 😏）。
 
-```solidity
+```
     // メッセージの受取人アドレスをkeyにメッセージを保存します。
     mapping(address => Message[]) private _messagesAtAddress;
 ```
@@ -143,7 +143,7 @@ contract Messenger {
 
 今回は、ユーザーのアドレス(= `_Key` = `address`)をそのユーザー宛のメッセージの集合(= `_Value` = `Message[]`)に関連付けるために`mapping`を使用しました。
 
-```solidity
+```
     constructor() payable {
         console.log("Here is my first smart contract!");
     }
@@ -222,7 +222,7 @@ contract Messenger {
 
 追加した関数を見ていきましょう。
 
-```solidity
+```
 function post(string memory _text, address payable _receiver)
     public
     payable
@@ -254,7 +254,7 @@ function post(string memory _text, address payable _receiver)
 さらに関数呼び出し時にはトークン（メッセージトークンに当たります）が併せて送られるので、修飾子として`payable`を指定しています。
 関数内ではログの出力と、メッセージ情報を格納しています。
 
-```solidity
+```
 _messagesAtAddress[_receiver].push(
     Message(
         payable(msg.sender), // 関数を呼び出したアドレス値をメッセージ送信者として記録します。
@@ -276,7 +276,7 @@ _messagesAtAddress[_receiver].push(
 
 関数を呼び出す際にどのようにトークンを送信するのかはテストで行います。
 
-```solidity
+```
     // ユーザのアドレス宛のメッセージを全て取得します。
     function getOwnMessages() public view returns (Message[] memory) {
         return _messagesAtAddress[msg.sender];

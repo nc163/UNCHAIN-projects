@@ -12,7 +12,7 @@
 
 `Domains.sol`に向かいます。
 
-```solidity
+```
 // SPDX-License-Identifier: UNLICENSED
 
 pragma solidity ^0.8.17;
@@ -192,7 +192,7 @@ ENSを使用すると、前に示したように、さまざまなものを保�
 
 `Domains.sol`を変更します。
 
-```solidity
+```
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.17;
 
@@ -247,7 +247,7 @@ require文の括弧の中の条件が満たされない場合、トランザク�
 
 順番に見ていきましょう。
 
-```solidity
+```
 require(domains[name] == address(0));
 ```
 
@@ -259,7 +259,7 @@ Solidityではアドレスマッピングが初期化されると、その中の
 したがって、ドメインが登録されていない場合は、ゼロアドレスを指します。
 
 
-```solidity
+```
 require(domains[name] == msg.sender);
 ```
 

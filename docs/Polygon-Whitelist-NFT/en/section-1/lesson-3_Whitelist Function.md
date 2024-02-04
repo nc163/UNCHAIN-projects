@@ -4,7 +4,7 @@
 
 The basic knowledge about smart contracts is ready. Let's update the `Whitelist.sol` contract. Here's what it looks like after the update:
 
-```solidity
+```
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.20;
 
@@ -75,13 +75,13 @@ contract Whitelist {
 
 Let's take it step by step and understand what's happening with this code.
 
-```solidity
+```
     // The address that can operate addAddressToWhitelist function
     address public owner;
 ```
 First, we've set up a state [variable](https://solidity-by-example.org/variables/) called `owner`, with the `data type` address, which refers to the type of wallet address `(e.g., "0xa323A54987cE8F51A648AF2826beb49c368B8bC6")`. The visibility of this variable is set to public, allowing any contract and account to access it. By default, the `owner` is set to 0, but we will configure it later.
 
-```solidity
+```
     // Create a mapping of whitelistedAddresses
     // if an address is whitelisted, we would set it to true, it is false by default for all other addresses.
     mapping(address => bool) private _isWhitelisted;
@@ -89,7 +89,7 @@ First, we've set up a state [variable](https://solidity-by-example.org/variables
 
 `_isWhitelisted` is used to determine whether an address is in the whitelist, and it has been set to a [mapping](https://solidity-by-example.org/app/iterable-mapping/) type. If the address is in the whitelist, the corresponding bool is set to true; otherwise, it's false. By default, the bool is false. (Why do we do this? Because it allows us to know which addresses are in the whitelist without using an array, saving a significant amount of gas).
 
-```solidity
+```
     //Event: record the addresses added to the whitelist
     event AddToWhitelist(address indexed account);
     //Event: record whitelisted excluded addresses
@@ -99,7 +99,7 @@ First, we've set up a state [variable](https://solidity-by-example.org/variables
 
 [Events](https://solidity-by-example.org/events/) allow users to log on the Ethereum network, enabling them to keep track of which addresses have been added to or removed from the whitelist at any time.
 
-```solidity
+```
     // Setting the initial whitelisted addresses
     // Setting the address that can operate addAddressToWhitelist function
     // User will put the value at the time of deployment
@@ -113,7 +113,7 @@ First, we've set up a state [variable](https://solidity-by-example.org/variables
 
 The [constructor](https://solidity-by-example.org/constructor/) is a function allowed at the time of contract deployment (Note: the constructor is not mandatory). In this case, the constructor takes an initial array of whitelisted addresses and uses a [loop](https://solidity-by-example.org/loop/) to call the addTowhitelist method to set these addresses as whitelisted (don't worry, this will be explained later). At the same time, the owner is set to msg.sender (one of the EVM's unique [global](https://solidity-by-example.org/variables/) variables, which represents the initiator of the call, in this case, the deployer of the contract). This lays the groundwork for permissions to be managed later on.
 
-```solidity
+```
     /**
         addToWhitelist - This function adds the address of the sender to the
         whitelist
@@ -145,7 +145,7 @@ Then, the event is triggered, logging the addition of this address to the whitel
 
 This function effectively implements the functionality of adding a new address to the whitelist.
 
-```solidity
+```
     /**
         removeFromWhitelist - This function removes the address of the sender to the
         whitelist
@@ -165,7 +165,7 @@ This function effectively implements the functionality of adding a new address t
 
 This function's functionality is the opposite of the one above, and I believe you can deduce this conclusion by reasoning through it.
 
-```solidity
+```
     /**
         whitelistedAddresses - This function gives feedback on whether the input address belongs to the whitelist
      */

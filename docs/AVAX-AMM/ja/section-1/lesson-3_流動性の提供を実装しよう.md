@@ -13,7 +13,7 @@
 
 それでは実装に入りますが、まずは`AMM.sol`内が以下になるようにコンストラクタの下にコードを追加してください。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
@@ -82,7 +82,7 @@ contract AMM {
 
 次に、以下の関数をコントラクトの最後の行に追加してください。
 
-```solidity
+```
     // 引数のトークンの量に値するペアのトークンの量を返します。
     function getEquivalentToken(IERC20 inToken, uint256 amountIn)
         public
@@ -113,7 +113,7 @@ contract AMM {
 次に実際に流動性を提供する関数を実装します。
 コントラクトの最後の行に以下の関数を追加してください。
 
-```solidity
+```
     // プールに流動性を提供します。
     function provide(
         IERC20 tokenX,
@@ -162,7 +162,7 @@ modifierやrequireを使って各値が正常か確認しています。
 預けられたトークンのシェアを求め、`newShare`に格納します。
 ここでは条件分岐があります。
 
-```solidity
+```
 uint256 newshare;
 if (totalShare == 0) {
     // 初期は100
@@ -189,7 +189,7 @@ if (totalShare == 0) {
 
 シェアの計算後の処理について見ていきましょう。
 
-```solidity
+```
 tokenX.transferFrom(msg.sender, address(this), amountX);
 tokenY.transferFrom(msg.sender, address(this), amountY);
 ```
@@ -204,14 +204,14 @@ tokenY.transferFrom(msg.sender, address(this), amountY);
 
 `transferFrom`に関してはこの後さらに詳しく理解していきます。
 
-```solidity
+```
 totalAmount[tokenX] += amountX;
 totalAmount[tokenY] += amountY;
 ```
 
 ここではプールにあるトークンの総量を増やしています。
 
-```solidity
+```
 totalShare += newshare;
 share[msg.sender] += newshare;
 ```

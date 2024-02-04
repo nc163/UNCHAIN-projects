@@ -10,7 +10,7 @@
 
 `WavePortal.sol`の`wave`関数を下記のように更新していきます。
 
-```solidity
+```
     function wave(string memory _message) public {
         _totalWaves += 1;
         console.log("%s waved w/ message %s", msg.sender, _message);
@@ -43,13 +43,13 @@
 
 > まず、下記で`prizeAmount`という変数を定義し、`0.0001` ETH を指定しています。
 >
-> ```solidity
+> ```
 > uint256 prizeAmount = 0.0001 ether;
 > ```
 >
 > そして、下記では、ユーザーに送る ETH の額が**コントラクトが持つ残高**より下回っていることを確認しています。
 >
-> ```solidity
+> ```
 > require(
 >     prizeAmount <= address(this).balance,
 >     "Trying to withdraw more money than the contract has."
@@ -65,13 +65,13 @@
 >
 > 下記のコードはユーザーに送金を行うために実装されています。
 >
-> ```solidity
+> ```
 > (bool success, ) = (msg.sender).call{value：prizeAmount}("")
 > ```
 >
 > 下記のコードは、トランザクション（＝送金）が成功したことを確認しています。
 >
-> ```solidity
+> ```
 > require(success, "Failed to withdraw money from contract.");
 > ```
 >
@@ -79,7 +79,7 @@
 
 次に、`WavePortal.sol`の`constructor`を下記のように変更します。
 
-```solidity
+```
 constructor() payable {
     console.log("We have been constructed!");
 }

@@ -66,7 +66,7 @@ NFTにおける「Mint（ミント）」とは、スマートコントラクト�
 
 それでは、`MyEpicGame.sol`を以下のように更新しましょう。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 import "hardhat/console.sol";
@@ -117,7 +117,7 @@ contract MyEpicGame {
 
 それでは、一行ずつコードの理解を深めましょう。
 
-```solidity
+```
 struct CharacterAttributes {
   uint characterIndex;
   string name;
@@ -132,7 +132,7 @@ struct CharacterAttributes {
 
 `CharacterAttributes`には、下記の属性情報が格納されます。
 
-```solidity
+```
 uint characterIndex; // キャラクターID（1番、2番.. N番）
 string name; // キャラクターの名前
 string imageURI; // キャラクターの画像情報
@@ -143,7 +143,7 @@ uint attackDamage; // キャラクターの攻撃力
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 CharacterAttributes[] defaultCharacters;
 ```
 
@@ -153,7 +153,7 @@ CharacterAttributes[] defaultCharacters;
 
 次に下記のコードを見ていきましょう。
 
-```solidity
+```
 constructor(
 	string[] memory characterNames,
 	string[] memory characterImageURIs,
@@ -172,7 +172,7 @@ constructor(
 
 最後に、次のコードを見ていきましょう。
 
-```solidity
+```
 for(uint i = 0; i < characterNames.length; i += 1) {
 	defaultCharacters.push(CharacterAttributes({
 	characterIndex: i,
@@ -238,7 +238,7 @@ runMain();
 
 **上記の`gameContractFactory.deploy()`の中に格納されている情報が、`MyEpicGame.sol`の`constructor`に渡されます。**
 
-```solidity
+```
 // 例：["ZORO", "NAMI", "USOPP"] = キャラクターの名前 が `characterNames` 配列に渡されます。
 string[] memory characterNames,
 string[] memory characterImageURIs,

@@ -50,7 +50,7 @@ Hardhatを使用する場合ファイル構造は非常に重要ですので、 
 
 `FarmNft.sol`の中に以下のコードを貼り付けてください。
 
-```solidity
+```
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.17;
 
@@ -104,7 +104,7 @@ constructorでは、 引数で受け取った値を元に状態変数に値を�
 
 次に`FarmNft`の最後の行に以下のコードを貼り付けてください。
 
-```solidity
+```
     function mintNFT(address to) public payable {
         require(availableMint > 0, "Not enough nft");
         require(isExpired() == false, "Already expired");
@@ -174,7 +174,7 @@ constructorでは、 引数で受け取った値を元に状態変数に値を�
 
 1つずつ関数を見ていきましょう。
 
-```solidity
+```
     function mintNFT(address to) public payable {
         require(availableMint > 0, "Not enough nft");
         require(isExpired() == false, "Already expired");
@@ -202,7 +202,7 @@ mint後にidのインクリメントやmint可能なNFTの数を更新します�
 
 最後に、 農家に`AVAX`を送信します。
 
-```solidity
+```
     function tokenURI(uint256 _tokenId)
         public
         view
@@ -238,7 +238,7 @@ openseaなどのNFTマーケットサービスは、 このtokenURI関数のデ�
 
 トークン化された資産をNFTマーケットで取引するというような活用方法を想定したため`tokenURI`を実装していますが、 本プロジェクトで実際に利用することはありません。
 
-```solidity
+```
     function isExpired() public view returns (bool) {
         if (expirationDate < block.timestamp) {
             return true;
@@ -258,7 +258,7 @@ openseaなどのNFTマーケットサービスは、 このtokenURI関数のデ�
 > Ethereum のコントラクトでは、 `block.number`を使用した方法([参考](https://zoom-blc.com/solidity-time-logic))などもありますが、 Avalanche では定期的にブロックが生成されるという仕組みではないためこちらは使用できなそうです。
 > 正確な情報を取得するためにはオラクルを使用する必要があります。
 
-```solidity
+```
     function burnNFT() public {
         require(isExpired(), "still available");
         for (uint256 id = 0; id < _tokenIds.current(); id++) {
@@ -270,7 +270,7 @@ openseaなどのNFTマーケットサービスは、 このtokenURI関数のデ�
 `burnNFT`はコントラクトの期限が切れた後に既に発行されているNFTをバーンするために使用します。
 発行済みのNFTの数だけループ処理でトークンをバーンします。
 
-```solidity
+```
     function getTokenOwners() public view returns (address[] memory) {
         address[] memory owners = new address[](_tokenIds.current());
         for (uint256 index = 0; index < _tokenIds.current(); index++) {

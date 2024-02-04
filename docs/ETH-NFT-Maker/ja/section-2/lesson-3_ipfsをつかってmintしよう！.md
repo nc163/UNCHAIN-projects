@@ -4,7 +4,7 @@ IPFSに写真をアップロードできたところで、その写真を使っ�
 
 `Web3Mint.sol`を下記のように更新してみましょう。
 
-```solidity
+```
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.17;
 
@@ -71,7 +71,7 @@ contract Web3Mint is ERC721 {
 
 解説していきましょう
 
-```solidity
+```
 // Web3Mint.sol
 import "./libraries/Base64.sol";
 ```
@@ -85,7 +85,7 @@ Base64のやり方は、[project3](https://app.unchain.tech/learn/ETH-NFT-Game/j
 
 その`libraries`ディレクトリの下に`Base64.sol`ファイルを作成して、下記のコードを貼り付けてください
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.17;
@@ -164,7 +164,7 @@ library Base64 {
 
 次は、下記のコードを解説します。
 
-```solidity
+```
 // Web3Mint.sol
 struct NftAttributes {
     string name;
@@ -181,7 +181,7 @@ NftAttributes[] Web3Nfts;
 
 次はmintIpfsNFT関数です。
 
-```solidity
+```
 // Web3Mint.sol
 function mintIpfsNFT(string memory name,string memory imageURI) public {
     uint256 newItemId = _tokenIds.current();
@@ -197,7 +197,7 @@ function mintIpfsNFT(string memory name,string memory imageURI) public {
 
 先程のコードから`setTokenURI`関数が消え、代わりに下記のコードが追加されています。
 
-```solidity
+```
 // Web3Mint.sol
 Web3Nfts.push(NftAttributes({
     name: name,
@@ -209,7 +209,7 @@ Web3Nfts.push(NftAttributes({
 
 次は`tokenURI`関数です。
 
-```solidity
+```
 // Web3Mint.sol
 function tokenURI(uint256 _tokenId) public override view returns(string memory) {
     string memory json = Base64.encode(
@@ -287,21 +287,21 @@ describe('Web3Mint', () => {
 
 import文を削除します。
 
-```solidity
+```
 // === 下記を削除 ===
 import "hardhat/console.sol";
 ```
 
 constructor関数内の`console.log`を削除します。
 
-```solidity
+```
     // === 下記を削除 ===
     console.log('This is my NFT contract.');
 ```
 
 `mintIpfsNFT`関数内の`console.log`を削除します。
 
-```solidity
+```
         // === 下記を削除 ===
         console.log(
             "An NFT w/ ID %s has been minted to %s",

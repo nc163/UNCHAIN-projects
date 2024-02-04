@@ -4,7 +4,7 @@
 
 下記のように、`MyEpicGame.sol`を更新してください。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
@@ -108,7 +108,7 @@ contract MyEpicGame is ERC721 {
 
 一行ずつ、更新されたコードを見ていきましょう。
 
-```solidity
+```
 // NFT発行のコントラクト ERC721.sol をインポートします。
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
@@ -123,7 +123,7 @@ OpenZeppelinは、NFTの標準規格を実装し、そのうえに独自のロ�
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 contract MyEpicGame is ERC721 {
 ```
 
@@ -143,7 +143,7 @@ contract MyEpicGame is ERC721 {
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 using Counters for Counters.Counter;
 ```
 
@@ -169,7 +169,7 @@ using Counters for Counters.Counter;
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 Counters.Counter private _tokenIds;
 ```
 
@@ -181,7 +181,7 @@ tokenIdはNFTの一意な識別子で、0, 1, 2, .. Nのように付与されま
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 mapping(uint256 => CharacterAttributes) public nftHolderAttributes;
 ```
 
@@ -198,7 +198,7 @@ mapping(uint256 => CharacterAttributes) public nftHolderAttributes;
 >
 > 例：
 >
-> ```solidity
+> ```
 > mapping（_Key=> _Value）public mappingName
 > ```
 
@@ -212,7 +212,7 @@ mapping(uint256 => CharacterAttributes) public nftHolderAttributes;
 
 同じように`mapping`を使用している下記のコードを見ていきましょう。
 
-```solidity
+```
 mapping(address => uint256) public nftHolders;
 ```
 
@@ -225,7 +225,7 @@ mapping(address => uint256) public nftHolders;
 
 次に下記のコードを見ていきましょう。
 
-```solidity
+```
 ERC721("OnePiece", "ONEPIECE");
 ```
 
@@ -240,7 +240,7 @@ NFTはNon-Fungible "Token" の略であり、Tokenには、必ず名前とシン
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 _tokenIds.increment();
 ```
 
@@ -254,7 +254,7 @@ Solidityにおいて、すべての数は`0`から始まるため、`_tokenIds`�
 
 次に、`mintCharacterNFT`関数の中身を見ていきましょう。
 
-```solidity
+```
 function mintCharacterNFT(uint _characterIndex) external {
 ```
 
@@ -268,7 +268,7 @@ function mintCharacterNFT(uint _characterIndex) external {
 
 次に下記のコードを見ていきましょう。
 
-```solidity
+```
 uint256 newItemId = _tokenIds.current();
 ```
 
@@ -288,7 +288,7 @@ NFTの一意な識別子を追跡するために`_tokenIds`を使用していま
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 _safeMint(msg.sender, newItemId);
 ```
 
@@ -349,7 +349,7 @@ HPは200 → 150になります。
 
 それでは、下記のコードを見ていきましょう。
 
-```solidity
+```
 nftHolderAttributes[newItemId] = CharacterAttributes({
   characterIndex: _characterIndex,
   name: defaultCharacters[_characterIndex].name,
@@ -372,7 +372,7 @@ nftHolderAttributes[newItemId] = CharacterAttributes({
 
 > ✍️: `mapping`を覚えていますか？
 >
-> ```solidity
+> ```
 > // MyEpicGame.sol
 > mapping(uint256 => CharacterAttributes) public nftHolderAttributes
 > ```
@@ -385,7 +385,7 @@ NFTのメタデータは変更できないと思われがちですが、そん�
 
 次に、下記の処理を見ていきましょう。
 
-```solidity
+```
 nftHolders[msg.sender] = newItemId;
 ```
 
@@ -401,7 +401,7 @@ nftHolders[msg.sender] = newItemId;
 
 最後に、下記のコードを見ていきましょう。
 
-```solidity
+```
 _tokenIds.increment();
 ```
 
@@ -499,7 +499,7 @@ contract
 
 `libraries`ディレクトリに`Base64.sol`という名前のファイルを作成し、下記のコードを貼り付けてください。
 
-```solidity
+```
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.17;
@@ -582,7 +582,7 @@ library Base64 {
 
 下記のコードを、`MyEpicGame.sol`の先頭付近（ライブラリをインポートしているコードブロックの近く）に、追加してください。
 
-```solidity
+```
 // Base64.sol からヘルパー関数をインポートする。
 import "./libraries/Base64.sol";
 ```
@@ -591,7 +591,7 @@ import "./libraries/Base64.sol";
 
 - `mintCharacterNFT`関数の下に、下記の関数を追加してください。
 
-```solidity
+```
 // nftHolderAttributes を更新して、tokenURI を添付する関数を作成
 function tokenURI(uint256 _tokenId) public view override returns (string memory) {
   CharacterAttributes memory charAttributes = nftHolderAttributes[_tokenId];
@@ -624,7 +624,7 @@ function tokenURI(uint256 _tokenId) public view override returns (string memory)
 
 コードを見ていきましょう。
 
-```solidity
+```
   // nftHolderAttributes を更新して、tokenURI を添付する関数を作成
 function tokenURI(uint256 _tokenId) public view override returns (string memory) {
 // _tokenId を使って特定の NFT データを照会し、データを取得しています。
@@ -638,7 +638,7 @@ CharacterAttributes memory charAttributes = nftHolderAttributes[_tokenId];
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 string memory strHp = Strings.toString(charAttributes.hp);
 string memory strMaxHp = Strings.toString(charAttributes.maxHp);
 string memory strAttackDamage = Strings.toString(charAttributes.attackDamage);
@@ -648,7 +648,7 @@ string memory strAttackDamage = Strings.toString(charAttributes.attackDamage);
 
 次に、下記のコードを見ていきましょう。
 
-```solidity
+```
 string memory json = Base64.encode(
   // abi.encodePacked で文字列を結合します。
   abi.encodePacked(
@@ -684,7 +684,7 @@ NFTのメタデータとして使用できるJSONは、下記のようなデー�
 
 最後に、下記のコードを見ていきましょう。
 
-```solidity
+```
 abi.encodePacked("data:application/json;base64,", json);
 ```
 

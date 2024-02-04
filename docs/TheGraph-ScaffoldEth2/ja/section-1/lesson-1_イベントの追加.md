@@ -10,7 +10,7 @@
 
 以下の新しいコード行を追加します。
 
-```solidity
+```
     event SendMessage(address _from, address _to, string message);
 
     function sendMessage(address _to, string calldata message) external {
