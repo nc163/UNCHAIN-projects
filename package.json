@@ -5,6 +5,8 @@
   "repository": "https://github.com/unchain-dev/UNCHAIN-projects.git",
   "author": "SHØ <neila@users.noreply.github.com> (https://akxra.art/)",
   "scripts": {
+    "serve": "honkit serve",
+    "build": "honkit build",
     "textlint:check": "textlint docs/*/ja/**/*.md --ignore-path .textlintignore",
     "textlint:fix": "textlint --fix docs/*/ja/**/*.md --ignore-path .textlintignore",
     "prepare": "simple-git-hooks"
