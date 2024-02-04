@@ -1,0 +1,10 @@
+node_modules
+.yarn
+!.yarn/plugins
+!.yarn/releases
+
+.textlintcache
+
+.DS_Store
+
+_book
