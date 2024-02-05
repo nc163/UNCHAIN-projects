@@ -7989,13 +7989,13 @@
 <h3 id="🤖-ログインボタンを実装しよう">🤖 ログインボタンを実装しよう</h3>
 <p>それでは、ログインボタンを実装していきましょう。実装には<a href="https://agent-js.icp.xyz/auth-client/index.html" target="_blank"><code>@dfinity/auth-client</code></a>というライブラリを使用します。</p>
 <p>@dfinity/auth-clientは、WebアプリケーションをInternet Identityで認証するためのインタフェースを提供しています。ライブラリの<a href="https://agent-js.icp.xyz/auth-client/index.html" target="_blank">ドキュメント</a>で、&quot;login&quot;と検索すると<a href="https://agent-js.icp.xyz/auth-client/classes/AuthClient.html#login" target="_blank"><code>AuthClient.login</code></a>が出てきます。</p>
-<p><img src="../../public/images/ICP-Encrypted-Notes/section-1/1_3_1.png" alt></p>
+<p><img src="1_3_1.png" alt></p>
 <p>参照してみると、これはAuthClientクラスから提供されるメソッドで「Internet Identityで認証するための新しいウィンドウを開く」とあります。ログインボタンが押されたときに呼び出すことで、ユーザーの認証機能に接続することができそうです。</p>
-<p><img src="../../public/images/ICP-Encrypted-Notes/section-1/1_3_2.png" alt></p>
+<p><img src="1_3_2.png" alt></p>
 <p>exampleのコードを確認すると、loginの前に<a href="https://agent-js.icp.xyz/auth-client/classes/AuthClient.html#create" target="_blank"><code>AuthClient.create</code></a>を呼び出しています。createメソッドもドキュメントに記載がありますが、「認証とアイデンティティを管理する<code>AuthClient</code>を作成する」メソッドのようです。</p>
 <p>createメソッドを実行することで、<code>AuthClient</code>というオブジェクトが作成されてloginなどのメソッドを呼び出すことができるようになります。</p>
-<p><img src="../../public/images/ICP-Encrypted-Notes/section-1/1_3_3.png" alt></p>
-<p><img src="../../public/images/ICP-Encrypted-Notes/section-1/1_3_4.png" alt></p>
+<p><img src="1_3_3.png" alt></p>
+<p><img src="1_3_4.png" alt></p>
 <p>ですのでloginメソッドの例にあったように、まずはcreateメソッドを呼び出してAuthClientを作成し、loginメソッドを呼び出すという流れになります。</p>
 <pre><code class="lang-tsx"><span class="hljs-keyword">const</span> authClient = <span class="hljs-keyword">await</span> <span class="hljs-title class_">AuthClient</span>.<span class="hljs-title function_">create</span>();
 authClient.<span class="hljs-title function_">login</span>({
@@ -8008,12 +8008,12 @@ authClient.<span class="hljs-title function_">login</span>({
 });
 </code></pre>
 <p>loginメソッドに戻って引数を確認してみましょう。すべてがオプションですが、<code>identityProvider</code>という引数にデフォルト値が設定されています。新しいウィンドウが開かれる際に、この引数で指定したURLにアクセスします。</p>
-<p><img src="../../public/images/ICP-Encrypted-Notes/section-1/1_3_5.png" alt></p>
+<p><img src="1_3_5.png" alt></p>
 <p>ローカル環境にデプロイをする開発用のInternet Identityを使用したいので、下記のようにURLを設定します。</p>
 <pre><code class="lang-tsx"><span class="hljs-keyword">const</span> iiUrl = <span class="hljs-string">`http://<span class="hljs-subst">${process.env.INTERNET_IDENTITY_CANISTER_ID}</span>.localhost:4943`</span>;
 </code></pre>
 <p>最後に、loginメソッドが成功したときと失敗したときの処理を考えます。成功時にはInternet Identityの値を取得したいので、利用できそうなメソッドを探してみると<a href="https://agent-js.icp.xyz/auth-client/classes/AuthClient.html#getIdentity" target="_blank"><code>getIdentity</code></a>メソッドが見つかります。</p>
-<p><img src="../../public/images/ICP-Encrypted-Notes/section-1/1_3_6.png" alt></p>
+<p><img src="1_3_6.png" alt></p>
 <pre><code class="lang-tsx"><span class="hljs-keyword">const</span> identity = authClient.<span class="hljs-title function_">getIdentity</span>();
 </code></pre>
 <p>それでは、ここまでの内容をフロントエンドキャニスターに実装していきましょう！ ここからは、<code>src/encrypted_notes_frontend</code>ディレクトリ内のファイルを編集していきます。</p>
@@ -8093,19 +8093,19 @@ authClient.<span class="hljs-title function_">login</span>({
 npm run deploy:local
 npm run start
 </code></pre><p>Loopbackに表示されたURLにアクセスします。ここでは、ブラウザに<a href="https://brave.com/ja/" target="_blank">Brave</a>を使用します。</p>
-<p><img src="../../public/images/ICP-Encrypted-Notes/section-1/1_3_7.png" alt></p>
+<p><img src="1_3_7.png" alt></p>
 <p>ホーム画面の「Login with Internet Identity」をクリックします。</p>
-<p><img src="../../public/images/ICP-Encrypted-Notes/section-1/1_3_8.png" alt></p>
+<p><img src="1_3_8.png" alt></p>
 <p>Internet Identityの認証画面が表示されます。ここで、「Create New」をクリックします。</p>
-<p><img src="../../public/images/ICP-Encrypted-Notes/section-1/1_3_9.png" alt></p>
+<p><img src="1_3_9.png" alt></p>
 <p>「Create Passkey」をクリックします。</p>
-<p><img src="../../public/images/ICP-Encrypted-Notes/section-1/1_3_10.png" alt></p>
+<p><img src="1_3_10.png" alt></p>
 <p>表示されている文字を入力し、「Next」をクリックします。</p>
-<p><img src="../../public/images/ICP-Encrypted-Notes/section-1/1_3_11.png" alt></p>
+<p><img src="1_3_11.png" alt></p>
 <p>Internet Identityが表示されます。開発用のIdentityは、10000からとなります。</p>
-<p><img src="../../public/images/ICP-Encrypted-Notes/section-1/1_3_12.png" alt></p>
+<p><img src="1_3_12.png" alt></p>
 <p>これで認証が完了しました。アプリケーションに戻る（または自動で切り替わる）と、ログイン成功のメッセージが表示されて<code>/notes</code>に移動していることを確認しましょう。</p>
-<p><img src="../../public/images/ICP-Encrypted-Notes/section-1/1_3_13.png" alt></p>
+<p><img src="1_3_13.png" alt></p>
 <h3 id="📝-このレッスンで追加したコード">📝 このレッスンで追加したコード</h3>
 <ul>
 <li><code>src/hooks/authContext.ts</code></li>
@@ -8240,7 +8240,7 @@ export const Home = () =&gt; {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-3_ユーザーの認証機能を実装しよう.md","level":"1.29.2.1","depth":3,"next":{"title":"lesson-5_ノートの編集・削除機能を完成させよう.md","level":"1.29.2.2","depth":3,"path":"ICP-Encrypted-Notes/section-1/lesson-5_ノートの編集・削除機能を完成させよう.md","ref":"ICP-Encrypted-Notes/section-1/lesson-5_ノートの編集・削除機能を完成させよう.md","articles":[]},"previous":{"title":"[section-1]","level":"1.29.2","depth":2,"ref":"","articles":[{"title":"lesson-3_ユーザーの認証機能を実装しよう.md","level":"1.29.2.1","depth":3,"path":"ICP-Encrypted-Notes/section-1/lesson-3_ユーザーの認証機能を実装しよう.md","ref":"ICP-Encrypted-Notes/section-1/lesson-3_ユーザーの認証機能を実装しよう.md","articles":[]},{"title":"lesson-5_ノートの編集・削除機能を完成させよう.md","level":"1.29.2.2","depth":3,"path":"ICP-Encrypted-Notes/section-1/lesson-5_ノートの編集・削除機能を完成させよう.md","ref":"ICP-Encrypted-Notes/section-1/lesson-5_ノートの編集・削除機能を完成させよう.md","articles":[]},{"title":"lesson-2_インタフェースを定義しよう.md","level":"1.29.2.3","depth":3,"path":"ICP-Encrypted-Notes/section-1/lesson-2_インタフェースを定義しよう.md","ref":"ICP-Encrypted-Notes/section-1/lesson-2_インタフェースを定義しよう.md","articles":[]},{"title":"lesson-1_ノートの管理機能を実装しよう.md","level":"1.29.2.4","depth":3,"path":"ICP-Encrypted-Notes/section-1/lesson-1_ノートの管理機能を実装しよう.md","ref":"ICP-Encrypted-Notes/section-1/lesson-1_ノートの管理機能を実装しよう.md","articles":[]},{"title":"lesson-4_ノートの取得・追加機能を完成させよう.md","level":"1.29.2.5","depth":3,"path":"ICP-Encrypted-Notes/section-1/lesson-4_ノートの取得・追加機能を完成させよう.md","ref":"ICP-Encrypted-Notes/section-1/lesson-4_ノートの取得・追加機能を完成させよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ICP-Encrypted-Notes/section-1/lesson-3_ユーザーの認証機能を実装しよう.md","mtime":"2024-02-04T17:20:42.484Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-3_ユーザーの認証機能を実装しよう.md","level":"1.29.2.1","depth":3,"next":{"title":"lesson-5_ノートの編集・削除機能を完成させよう.md","level":"1.29.2.2","depth":3,"path":"ICP-Encrypted-Notes/section-1/lesson-5_ノートの編集・削除機能を完成させよう.md","ref":"ICP-Encrypted-Notes/section-1/lesson-5_ノートの編集・削除機能を完成させよう.md","articles":[]},"previous":{"title":"[section-1]","level":"1.29.2","depth":2,"ref":"","articles":[{"title":"lesson-3_ユーザーの認証機能を実装しよう.md","level":"1.29.2.1","depth":3,"path":"ICP-Encrypted-Notes/section-1/lesson-3_ユーザーの認証機能を実装しよう.md","ref":"ICP-Encrypted-Notes/section-1/lesson-3_ユーザーの認証機能を実装しよう.md","articles":[]},{"title":"lesson-5_ノートの編集・削除機能を完成させよう.md","level":"1.29.2.2","depth":3,"path":"ICP-Encrypted-Notes/section-1/lesson-5_ノートの編集・削除機能を完成させよう.md","ref":"ICP-Encrypted-Notes/section-1/lesson-5_ノートの編集・削除機能を完成させよう.md","articles":[]},{"title":"lesson-2_インタフェースを定義しよう.md","level":"1.29.2.3","depth":3,"path":"ICP-Encrypted-Notes/section-1/lesson-2_インタフェースを定義しよう.md","ref":"ICP-Encrypted-Notes/section-1/lesson-2_インタフェースを定義しよう.md","articles":[]},{"title":"lesson-1_ノートの管理機能を実装しよう.md","level":"1.29.2.4","depth":3,"path":"ICP-Encrypted-Notes/section-1/lesson-1_ノートの管理機能を実装しよう.md","ref":"ICP-Encrypted-Notes/section-1/lesson-1_ノートの管理機能を実装しよう.md","articles":[]},{"title":"lesson-4_ノートの取得・追加機能を完成させよう.md","level":"1.29.2.5","depth":3,"path":"ICP-Encrypted-Notes/section-1/lesson-4_ノートの取得・追加機能を完成させよう.md","ref":"ICP-Encrypted-Notes/section-1/lesson-4_ノートの取得・追加機能を完成させよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ICP-Encrypted-Notes/section-1/lesson-3_ユーザーの認証機能を実装しよう.md","mtime":"2024-02-05T09:48:33.412Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

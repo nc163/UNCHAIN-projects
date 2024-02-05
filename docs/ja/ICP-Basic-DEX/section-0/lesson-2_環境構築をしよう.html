@@ -7970,7 +7970,7 @@
 <p>Motokoは、DFINITY財団が開発中の新しいソフトウェア言語で、インターネット・コンピュータ・ブロックチェーン上で信頼性と保守性の高いウェブサイト、企業システム、インターネットシステムを、できるだけ幅広い層の開発者が簡単に作成できるように設計されています。今回はこのプログラミング言語を使用して、バックエンドを構築してきます！</p>
 <p>コーディングのサポートツールとして、以下の拡張機能のインストールをお勧めします。</p>
 <p><strong>Motoko</strong></p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-0/0_2_1.png" alt></p>
+<p><img src="0_2_1.png" alt></p>
 <h3 id="✨-nodejs-の確認をする">✨ Node.js の確認をする</h3>
 <p><code>node</code> / <code>npm</code>がインストールされている必要があります。お持ちでない場合は、<a href="https://hardhat.org/tutorial/setting-up-the-environment.html" target="_blank">こちら</a>にアクセスし、インストールをしてください（Hardhatのためのサイトですが気にしないでください）。</p>
 <p><code>node v16</code>をインストールすることを推奨しています。</p>
@@ -7980,7 +7980,7 @@
 <pre><code>dfx new icp_basic_dex
 </code></pre><p><code>dfx new</code>コマンドは、プロジェクトディレクトリ、テンプレートファイル、および新しいGitリポジトリを作成します。
 プロジェクトが作成されると、このように出力されます。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-0/0_2_2.png" alt></p>
+<p><img src="0_2_2.png" alt></p>
 <p>作成されたプロジェクトが以下のような構成になっていることを確認してください。</p>
 <pre><code>icp_basic_dex/
 ├── .env
@@ -8049,7 +8049,7 @@ URLs:
 <p>以下のコマンドを実行し、開発サーバーを起動します。</p>
 <pre><code>npm start
 </code></pre><p>ブラウザからアクセスできることを確認してみます。ターミナル上に出力されたURLにアクセスしてみましょう。以下のようなサンプルプロジェクトのUIが表示されます。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-0/0_2_3.png" alt></p>
+<p><img src="0_2_3.png" alt></p>
 <p>これで、準備は完了です！ バックグラウンドで実行されているキャニスター実行環境を、一度止めておきましょう。最初にwebpackが起動しているターミナル上で<code>Control + C</code>を押すなどして、サーバーを停止します。</p>
 <pre><code>webpack 5.75.0 compiled successfully in 485 ms
 # Control+Cで停止
@@ -8104,7 +8104,7 @@ URLs:
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-2_環境構築をしよう.md","level":"1.21.1.2","depth":3,"next":{"title":"[section-1]","level":"1.21.2","depth":2,"ref":"","articles":[{"title":"lesson-1_オリジナルのトークンをデプロイしてみよう.md","level":"1.21.2.1","depth":3,"path":"ICP-Basic-DEX/section-1/lesson-1_オリジナルのトークンをデプロイしてみよう.md","ref":"ICP-Basic-DEX/section-1/lesson-1_オリジナルのトークンをデプロイしてみよう.md","articles":[]},{"title":"lesson-5_入金・出金機能をテストしてみよう.md","level":"1.21.2.2","depth":3,"path":"ICP-Basic-DEX/section-1/lesson-5_入金・出金機能をテストしてみよう.md","ref":"ICP-Basic-DEX/section-1/lesson-5_入金・出金機能をテストしてみよう.md","articles":[]},{"title":"lesson-3_DEXのトークンを管理する機能を実装しよう.md","level":"1.21.2.3","depth":3,"path":"ICP-Basic-DEX/section-1/lesson-3_DEXのトークンを管理する機能を実装しよう.md","ref":"ICP-Basic-DEX/section-1/lesson-3_DEXのトークンを管理する機能を実装しよう.md","articles":[]},{"title":"lesson-2_Faucet機能を実装しよう.md","level":"1.21.2.4","depth":3,"path":"ICP-Basic-DEX/section-1/lesson-2_Faucet機能を実装しよう.md","ref":"ICP-Basic-DEX/section-1/lesson-2_Faucet機能を実装しよう.md","articles":[]},{"title":"lesson-4_入金・出金の機能を実装しよう.md","level":"1.21.2.5","depth":3,"path":"ICP-Basic-DEX/section-1/lesson-4_入金・出金の機能を実装しよう.md","ref":"ICP-Basic-DEX/section-1/lesson-4_入金・出金の機能を実装しよう.md","articles":[]}]},"previous":{"title":"lesson-1_プロジェクトの概要を掴もう.md","level":"1.21.1.1","depth":3,"path":"ICP-Basic-DEX/section-0/lesson-1_プロジェクトの概要を掴もう.md","ref":"ICP-Basic-DEX/section-0/lesson-1_プロジェクトの概要を掴もう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ICP-Basic-DEX/section-0/lesson-2_環境構築をしよう.md","mtime":"2024-02-04T17:20:42.477Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-2_環境構築をしよう.md","level":"1.21.1.2","depth":3,"next":{"title":"[section-1]","level":"1.21.2","depth":2,"ref":"","articles":[{"title":"lesson-1_オリジナルのトークンをデプロイしてみよう.md","level":"1.21.2.1","depth":3,"path":"ICP-Basic-DEX/section-1/lesson-1_オリジナルのトークンをデプロイしてみよう.md","ref":"ICP-Basic-DEX/section-1/lesson-1_オリジナルのトークンをデプロイしてみよう.md","articles":[]},{"title":"lesson-5_入金・出金機能をテストしてみよう.md","level":"1.21.2.2","depth":3,"path":"ICP-Basic-DEX/section-1/lesson-5_入金・出金機能をテストしてみよう.md","ref":"ICP-Basic-DEX/section-1/lesson-5_入金・出金機能をテストしてみよう.md","articles":[]},{"title":"lesson-3_DEXのトークンを管理する機能を実装しよう.md","level":"1.21.2.3","depth":3,"path":"ICP-Basic-DEX/section-1/lesson-3_DEXのトークンを管理する機能を実装しよう.md","ref":"ICP-Basic-DEX/section-1/lesson-3_DEXのトークンを管理する機能を実装しよう.md","articles":[]},{"title":"lesson-2_Faucet機能を実装しよう.md","level":"1.21.2.4","depth":3,"path":"ICP-Basic-DEX/section-1/lesson-2_Faucet機能を実装しよう.md","ref":"ICP-Basic-DEX/section-1/lesson-2_Faucet機能を実装しよう.md","articles":[]},{"title":"lesson-4_入金・出金の機能を実装しよう.md","level":"1.21.2.5","depth":3,"path":"ICP-Basic-DEX/section-1/lesson-4_入金・出金の機能を実装しよう.md","ref":"ICP-Basic-DEX/section-1/lesson-4_入金・出金の機能を実装しよう.md","articles":[]}]},"previous":{"title":"lesson-1_プロジェクトの概要を掴もう.md","level":"1.21.1.1","depth":3,"path":"ICP-Basic-DEX/section-0/lesson-1_プロジェクトの概要を掴もう.md","ref":"ICP-Basic-DEX/section-0/lesson-1_プロジェクトの概要を掴もう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ICP-Basic-DEX/section-0/lesson-2_環境構築をしよう.md","mtime":"2024-02-05T09:48:33.289Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

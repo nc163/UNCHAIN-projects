@@ -7957,9 +7957,9 @@
 <p><a href="https://www.larvalabs.com/cryptopunks" target="_blank">Cryptopunks</a>（クリプトパンクス）や <a href="https://boredapeyachtclub.com/#/" target="_blank">Bored Ape Yacht Club</a>（BAYC：ボアードエイプ・ヨットクラブ）などのNFTプロジェクトを知っていますか？</p>
 <p>これらのプロジェクトは、数億ドルの収益を生み出し、所有者の一部は億万長者となっています。</p>
 <p><a href="https://www.larvalabs.com/cryptopunks" target="_blank">Cryptopunks</a>（クリプトパンクス）。
-<img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_1.jpeg" alt></p>
+<img src="1_1_1.jpeg" alt></p>
 <p><a href="https://boredapeyachtclub.com/#/" target="_blank">Bored Ape Yacht Club</a>（BAYC：ボアードエイプ・ヨットクラブ）。
-<img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_2.jpeg" alt></p>
+<img src="1_1_2.jpeg" alt></p>
 <p>これらは、数量が限られたアバターのコレクションです。</p>
 <p>各アバターは一意（ユニーク）であり、一連の特徴（肌の色、髪型など）を持っています。</p>
 <p><strong>さまざまな特徴を画像として作成した後、コードよってそれらを組み合わせ生成する NFT のことを Generative Art NFT と呼びます。</strong></p>
@@ -8014,15 +8014,15 @@ setuptools 58.1.0
 <ol>
 <li><a href="https://github.com/unchain-tech/Polygon-Generative-NFT" target="_blank">こちら</a>からunchain-tech/ETH-NFT-Collectionリポジトリにアクセスをして、ページ右上の<code>Fork</code>ボタンをクリックします。</li>
 </ol>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_14.png" alt></p>
+<p><img src="1_1_14.png" alt></p>
 <ol>
 <li>Create a new forkページが開くので、「Copy the <code>main</code> branch only」という項目に<strong>チェックが入っていることを確認します</strong>。</li>
 </ol>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_15.png" alt></p>
+<p><img src="1_1_15.png" alt></p>
 <p>設定が完了したら<code>Create fork</code>ボタンをクリックします。あなたのGitHubアカウントに<code>Polygon-Generative-NFT</code>リポジトリのフォークが作成されたことを確認してください。</p>
 <p>それでは、フォークしたリポジトリをローカル環境にクローンしましょう。</p>
 <p>まず、下図のように、<code>Code</code>ボタンをクリックして<code>SSH</code>を選択し、Gitリンクをコピーしましょう。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_16.png" alt></p>
+<p><img src="1_1_16.png" alt></p>
 <p>ターミナル上で作業を行う任意のディレクトリに移動し、先ほどコピーしたリンクを用いて下記を実行してください。</p>
 <pre><code>git clone コピーした_github_リンク
 </code></pre><p>無事に複製されたらローカル開発環境の準備は完了です。</p>
@@ -8059,7 +8059,7 @@ setuptools 58.1.0
 <pre><code>yarn client start
 </code></pre><p>あなたのローカル環境で、Webサイトのフロントエンドが立ち上がりましたか？</p>
 <p>例)ローカル環境で表示されているWebサイト</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-1/1_2_6.png" alt></p>
+<p><img src="1_2_6.png" alt></p>
 <p>上記のような形でフロントエンドが確認できれば成功です。</p>
 <p>これからフロントエンドの表示を確認したい時は、ターミナルに向かい、<code>Polygon-Generative-NFT</code>ディレクトリ上で、<code>yarn client start</code>を実行します。これからも必要となる作業ですので、よく覚えておいてください。</p>
 <p>ターミナルを閉じるときは、以下のコマンドが使えます ✍️</p>
@@ -8186,9 +8186,9 @@ artifacts         contracts         node_modules      scripts
 <p>今回は、「Scrappy Squirrels」プロジェクトに使用されたデータを使って、Generative Artを生成していきます。</p>
 <p>「Scrappy Squirrels」は85以上の特徴を用いて生成されています。</p>
 <p>以下はそのサンプルです。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_5.png" alt></p>
+<p><img src="1_1_5.png" alt></p>
 <p>「Scrappy Squirrels」は、下記のようなPNG画像を重ねて生成されます。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_6.png" alt></p>
+<p><img src="1_1_6.png" alt></p>
 <p>上図の左上から時計回りに、画像を順番に重ねていくと、中央の画像が作成されます。</p>
 <p>この処理を実行する上で、下記の点に注意しましょう。</p>
 <ul>
@@ -8206,11 +8206,11 @@ artifacts         contracts         node_modules      scripts
 <p>オリジナルで画像を作成する場合、さまざまな特徴カテゴリを作成し、それに付随する画像を複数作成します。</p>
 <p>ただし、特徴カテゴリの数が増えると、可能な組み合わせの数も指数関数的に増えていくことに注意してください。</p>
 <p>「Scrappy Squirrels」プロジェクトでは、下記のように8つの特徴カテゴリを作成します。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_7.png" alt></p>
+<p><img src="1_1_7.png" alt></p>
 <p>各特徴のカテゴリごとに、特徴的な画像の数挟まざまです。</p>
 <p>たとえば、特徴のカテゴリ「Shirt（シャツ）」には下記のように、複数の種類の画像を格納できます。</p>
 <p>※ 現在のサンプルでは、簡単のため<code>blue_dot.png</code>のみが格納されています。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_8.png" alt></p>
+<p><img src="1_1_8.png" alt></p>
 <p>今回使用する特徴カテゴリとそれに付随する画像は、<code>packages/library</code>の<code>asset</code>フォルダの中にあります。</p>
 <p>下記のディレクトリ構造を参考に、中身を確認してみてください。</p>
 <pre><code>library
@@ -8236,7 +8236,7 @@ artifacts         contracts         node_modules      scripts
 <p><code>CONFIG</code>は<code>[]</code>でカプセル化されているPythonのリストです。</p>
 <p>積み重ねる特徴カテゴリの順番に沿って、カテゴリそれぞれのリストが含まれています。</p>
 <p>順番は、<code>assets</code>フォルダに格納されている特徴カテゴリフォルダの順番に起因しています。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_9.png" alt></p>
+<p><img src="1_1_9.png" alt></p>
 <p><strong>ここでの順序は非常に重要です。</strong></p>
 <p>それでは、以下のように、<code>config.py</code>を新しく設定していきましょう。</p>
 <pre><code class="lang-py">CONFIG = [
@@ -8353,7 +8353,7 @@ artifacts         contracts         node_modules      scripts
 <p>Pythonリストは、<code>rarity_weights</code>の重みを割り当てる最も一般的な方法です。</p>
 <p>それでは、<code>assets</code>の中の特徴カテゴリフォルダ<code>Wristbands</code>に下記のような6つの画像が格納されているのを確認しましょう。</p>
 <p><strong>これらの画像を<code>Name</code>で昇順（アルファベット順）にソートすると、次のようになります。</strong></p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_10.png" alt></p>
+<p><img src="1_1_10.png" alt></p>
 <p>次に、<code>config.py</code>の<code>Wristbands</code>に定義した<code>rarity_weights</code>を見てみましょう。</p>
 <pre><code class="lang-javascript">{
     <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-number">8</span>,
@@ -8383,7 +8383,7 @@ artifacts         contracts         node_modules      scripts
 <pre><code>&apos;rarity_weights&apos;: [100, 5, 5, 5, 15, 5, 1]
 </code></pre><p>最初の重み(<code>100</code>)は、リストバンドをつけない場合の重みになります。</p>
 <p>2つ目の重みは黒(<code>black.png</code>)のバンド、3つ目の重みは白のバンド(<code>dark-green.png</code>)、といった具合に関連付けを行っています。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_11.png" alt></p>
+<p><img src="1_1_11.png" alt></p>
 <p><strong>重みの値が大きいほど、特定の特徴がよく見られます。</strong></p>
 <blockquote>
 <p>✍️: 重みと希少性の感性は以下のようになります。
@@ -8444,9 +8444,9 @@ Task complete!
 <h3 id="👀-生成されたアバターを確認する">👀 生成されたアバターを確認する</h3>
 <p><code>packages/library</code>に向かい、新しく作成された<code>output</code>フォルダを見ていきましょう。</p>
 <p><code>What would you like to call this edition?</code>で命名した<code>edition</code>は下記のように保存されています。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_12.png" alt></p>
+<p><img src="1_1_12.png" alt></p>
 <p><code>edition</code>フォルダの中の<code>images</code>フォルダを開き、下記のように、ユニークな「Scrappy Squirrels」のアバターが格納されていることを確認しましょう。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-1/1_1_13.png" alt></p>
+<p><img src="1_1_13.png" alt></p>
 <p>あなたのコレクションの中に<code>metadata.csv</code>が存在しているかと思います。</p>
 <p>このCSVファイルは、下記のようになっています。</p>
 <pre><code>    ,background    ,body    ,eyes        ,head_gear, ...
@@ -8507,7 +8507,7 @@ Task complete!
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-1_環境構築をする.md","level":"1.30.2.1","depth":3,"next":{"title":"lesson-2_Pinataを使ってIPFSにNFTをアップロードしよう.md","level":"1.30.2.2","depth":3,"path":"Polygon-Generative-NFT/section-1/lesson-2_Pinataを使ってIPFSにNFTをアップロードしよう.md","ref":"Polygon-Generative-NFT/section-1/lesson-2_Pinataを使ってIPFSにNFTをアップロードしよう.md","articles":[]},"previous":{"title":"[section-1]","level":"1.30.2","depth":2,"ref":"","articles":[{"title":"lesson-1_環境構築をする.md","level":"1.30.2.1","depth":3,"path":"Polygon-Generative-NFT/section-1/lesson-1_環境構築をする.md","ref":"Polygon-Generative-NFT/section-1/lesson-1_環境構築をする.md","articles":[]},{"title":"lesson-2_Pinataを使ってIPFSにNFTをアップロードしよう.md","level":"1.30.2.2","depth":3,"path":"Polygon-Generative-NFT/section-1/lesson-2_Pinataを使ってIPFSにNFTをアップロードしよう.md","ref":"Polygon-Generative-NFT/section-1/lesson-2_Pinataを使ってIPFSにNFTをアップロードしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Generative-NFT/section-1/lesson-1_環境構築をする.md","mtime":"2024-02-04T17:20:42.519Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-1_環境構築をする.md","level":"1.30.2.1","depth":3,"next":{"title":"lesson-2_Pinataを使ってIPFSにNFTをアップロードしよう.md","level":"1.30.2.2","depth":3,"path":"Polygon-Generative-NFT/section-1/lesson-2_Pinataを使ってIPFSにNFTをアップロードしよう.md","ref":"Polygon-Generative-NFT/section-1/lesson-2_Pinataを使ってIPFSにNFTをアップロードしよう.md","articles":[]},"previous":{"title":"[section-1]","level":"1.30.2","depth":2,"ref":"","articles":[{"title":"lesson-1_環境構築をする.md","level":"1.30.2.1","depth":3,"path":"Polygon-Generative-NFT/section-1/lesson-1_環境構築をする.md","ref":"Polygon-Generative-NFT/section-1/lesson-1_環境構築をする.md","articles":[]},{"title":"lesson-2_Pinataを使ってIPFSにNFTをアップロードしよう.md","level":"1.30.2.2","depth":3,"path":"Polygon-Generative-NFT/section-1/lesson-2_Pinataを使ってIPFSにNFTをアップロードしよう.md","ref":"Polygon-Generative-NFT/section-1/lesson-2_Pinataを使ってIPFSにNFTをアップロードしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Generative-NFT/section-1/lesson-1_環境構築をする.md","mtime":"2024-02-05T09:48:33.424Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

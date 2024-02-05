@@ -7956,26 +7956,26 @@
                                 <h3 id="🐣-swap-の仕組みを理解しましょう">🐣 swap の仕組みを理解しましょう</h3>
 <p>AMMではアルゴリズムに従ってswapできるトークンの量を決定します。
 ここではUniswapと同様に式</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_1_5.png" alt></p>
+<p><img src="2_1_5.png" alt></p>
 <p>を使用します。</p>
 <p>yは流動性プールにある一方のトークンYの量、xは他方のトークンXの量です。</p>
 <p>kは固定定数です。
 つまり、プールにある双方のトークン量の積は常に一定です。</p>
 <p>⚠️ 実際には、流動性の提供時やswap時に手数料を考慮するとkは変化しますが、
 あくまで</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_1_5.png" alt></p>
+<p><img src="2_1_5.png" alt></p>
 <p>の法則に基づいてトークンの価格を算出しています。</p>
 <p>上式を図にすると以下のような曲線を描きます。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_1_1.png" alt></p>
+<p><img src="2_1_1.png" alt></p>
 <p>xの量が増えるほどyの量が減り、yの量が増えるほどxの量は減るような式になっています。</p>
 <p>つまりトークンXからYへswapする場合は、ユーザからプールへXの送信がありプール内にXの量が増えるので、
 プール内のYの量は減らします。
 減らした分のYの量をユーザへ送信することでswapが完了します。</p>
 <p>今の処理を図で見てみましょう。
 トークンXからYへのswap時、プール内のトークンの量の変化は下の図のA地点-&gt;B地点への移動で表すことができます。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_1_2.png" alt></p>
+<p><img src="2_1_2.png" alt></p>
 <p>逆にトークンYからXへのswapは以下のように考えられます。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_1_3.png" alt></p>
+<p><img src="2_1_3.png" alt></p>
 <p>このようにAMMの内部では基本式に基づいて価格決定をしています。</p>
 <p>X-&gt;Yへのswapが続きプール内にXの量が増えるだけ、同じXの量でswapできるYの量は減ります。
 Xの価値は下がりYの価値は上がります。</p>
@@ -7990,24 +7990,24 @@ Discordの<code>#avalanche</code>で聞くのも良いでしょう。
 <p>ユーザは<code>トークンX</code>を投入し、<code>トークンY</code>を受け取る状況を考えます（X -&gt; Yへのswap）</p>
 <p>この時、投入する<code>トークンX</code>の量をx&apos;、受け取る<code>トークンY</code>の量をy&apos; で表すことにします。</p>
 <p>🦕 シチュエーション1: x&apos; からy&apos; を算出する</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_1_2.png" alt></p>
+<p><img src="2_1_2.png" alt></p>
 <p>プールに入るx&apos; の量が分かっていて、x&apos; を元にプールから出る量y&apos; を算出する方法を導きます。</p>
 <p>基本式は以下で、Kは定数というものでした。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_1_5.png" alt></p>
+<p><img src="2_1_5.png" alt></p>
 <p>つまりx&apos; とy&apos; 分の増減があってもプールに残るXとYの積は一定ということです。
 これを式にすると以下のようになります。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_1_6.png" alt></p>
+<p><img src="2_1_6.png" alt></p>
 <p>式の左辺が上図のA地点、右辺が上図のB地点のKを表しています。
 さらに今回求めたいy&apos; について上の式を解いていきます。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_1_7.png" alt></p>
+<p><img src="2_1_7.png" alt></p>
 <p>シンプルな式が導き出されました。
 この計算式を利用することでy&apos; を求めることができます。</p>
 <p>🐬 シチュエーション2: y&apos; からx&apos; を算出する</p>
 <p>図はシチュエーション1と同じものです。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_1_2.png" alt></p>
+<p><img src="2_1_2.png" alt></p>
 <p>ここでは先ほどとは逆に、プールから出る量y&apos; があらかじめ指定された状態で、どのくらいの量のx&apos; をプールに入れなければいけないのかを求めます。</p>
 <p>計算は先ほどとほとんど同じで、今度はx&apos; について解きます。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_1_8.png" alt></p>
+<p><img src="2_1_8.png" alt></p>
 <p>以上でユーザがswapをする際に、swap元のトークンの量から受け取れるswap先のトークンの量を求めたい時はシチュエーション1の式を、
 swapによって受け取りたいswap先のトークンの量からどのくらいswap元のトークンが必要かを求めたい時はシチュエーション2の式を利用すれば良いことがわかりました。</p>
 <h3 id="🙋‍♂️-質問する">🙋‍♂️ 質問する</h3>
@@ -8057,7 +8057,7 @@ swapによって受け取りたいswap先のトークンの量からどのくら
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-1_swapを理解しよう.md","level":"1.9.5.3","depth":3,"next":{"title":"[Polygon-Mobile-dApp]","level":"1.10","depth":1,"ref":"","articles":[{"title":"[section-0]","level":"1.10.1","depth":2,"ref":"","articles":[{"title":"lesson-1_Polygonネットワーク上でMobileアプリを構築しよう.md","level":"1.10.1.1","depth":3,"path":"Polygon-Mobile-dApp/section-0/lesson-1_Polygonネットワーク上でMobileアプリを構築しよう.md","ref":"Polygon-Mobile-dApp/section-0/lesson-1_Polygonネットワーク上でMobileアプリを構築しよう.md","articles":[]}]},{"title":"[section-1]","level":"1.10.2","depth":2,"ref":"","articles":[{"title":"lesson-3_ローカル環境にコントラクトをデプロイしよう.md","level":"1.10.2.1","depth":3,"path":"Polygon-Mobile-dApp/section-1/lesson-3_ローカル環境にコントラクトをデプロイしよう.md","ref":"Polygon-Mobile-dApp/section-1/lesson-3_ローカル環境にコントラクトをデプロイしよう.md","articles":[]},{"title":"lesson-2_スマートコントラクトを作成しよう.md","level":"1.10.2.2","depth":3,"path":"Polygon-Mobile-dApp/section-1/lesson-2_スマートコントラクトを作成しよう.md","ref":"Polygon-Mobile-dApp/section-1/lesson-2_スマートコントラクトを作成しよう.md","articles":[]},{"title":"lesson-1_プロジェクトのセットアップをしよう.md","level":"1.10.2.3","depth":3,"path":"Polygon-Mobile-dApp/section-1/lesson-1_プロジェクトのセットアップをしよう.md","ref":"Polygon-Mobile-dApp/section-1/lesson-1_プロジェクトのセットアップをしよう.md","articles":[]}]},{"title":"[section-3]","level":"1.10.3","depth":2,"ref":"","articles":[{"title":"lesson-1_動作状況をGifに収めよう.md","level":"1.10.3.1","depth":3,"path":"Polygon-Mobile-dApp/section-3/lesson-1_動作状況をGifに収めよう.md","ref":"Polygon-Mobile-dApp/section-3/lesson-1_動作状況をGifに収めよう.md","articles":[]}]},{"title":"[section-2]","level":"1.10.4","depth":2,"ref":"","articles":[{"title":"lesson-2_Flutterでフロントを開発しよう（UI編）.md","level":"1.10.4.1","depth":3,"path":"Polygon-Mobile-dApp/section-2/lesson-2_Flutterでフロントを開発しよう（UI編）.md","ref":"Polygon-Mobile-dApp/section-2/lesson-2_Flutterでフロントを開発しよう（UI編）.md","articles":[]},{"title":"lesson-1_Flutterでフロントを開発しよう（ロジック編）.md","level":"1.10.4.2","depth":3,"path":"Polygon-Mobile-dApp/section-2/lesson-1_Flutterでフロントを開発しよう（ロジック編）.md","ref":"Polygon-Mobile-dApp/section-2/lesson-1_Flutterでフロントを開発しよう（ロジック編）.md","articles":[]}]}]},"previous":{"title":"lesson-2_swap時の手数料を理解しよう.md","level":"1.9.5.2","depth":3,"path":"AVAX-AMM/section-2/lesson-2_swap時の手数料を理解しよう.md","ref":"AVAX-AMM/section-2/lesson-2_swap時の手数料を理解しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"AVAX-AMM/section-2/lesson-1_swapを理解しよう.md","mtime":"2024-02-04T17:20:42.430Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-1_swapを理解しよう.md","level":"1.9.5.3","depth":3,"next":{"title":"[Polygon-Mobile-dApp]","level":"1.10","depth":1,"ref":"","articles":[{"title":"[section-0]","level":"1.10.1","depth":2,"ref":"","articles":[{"title":"lesson-1_Polygonネットワーク上でMobileアプリを構築しよう.md","level":"1.10.1.1","depth":3,"path":"Polygon-Mobile-dApp/section-0/lesson-1_Polygonネットワーク上でMobileアプリを構築しよう.md","ref":"Polygon-Mobile-dApp/section-0/lesson-1_Polygonネットワーク上でMobileアプリを構築しよう.md","articles":[]}]},{"title":"[section-1]","level":"1.10.2","depth":2,"ref":"","articles":[{"title":"lesson-3_ローカル環境にコントラクトをデプロイしよう.md","level":"1.10.2.1","depth":3,"path":"Polygon-Mobile-dApp/section-1/lesson-3_ローカル環境にコントラクトをデプロイしよう.md","ref":"Polygon-Mobile-dApp/section-1/lesson-3_ローカル環境にコントラクトをデプロイしよう.md","articles":[]},{"title":"lesson-2_スマートコントラクトを作成しよう.md","level":"1.10.2.2","depth":3,"path":"Polygon-Mobile-dApp/section-1/lesson-2_スマートコントラクトを作成しよう.md","ref":"Polygon-Mobile-dApp/section-1/lesson-2_スマートコントラクトを作成しよう.md","articles":[]},{"title":"lesson-1_プロジェクトのセットアップをしよう.md","level":"1.10.2.3","depth":3,"path":"Polygon-Mobile-dApp/section-1/lesson-1_プロジェクトのセットアップをしよう.md","ref":"Polygon-Mobile-dApp/section-1/lesson-1_プロジェクトのセットアップをしよう.md","articles":[]}]},{"title":"[section-3]","level":"1.10.3","depth":2,"ref":"","articles":[{"title":"lesson-1_動作状況をGifに収めよう.md","level":"1.10.3.1","depth":3,"path":"Polygon-Mobile-dApp/section-3/lesson-1_動作状況をGifに収めよう.md","ref":"Polygon-Mobile-dApp/section-3/lesson-1_動作状況をGifに収めよう.md","articles":[]}]},{"title":"[section-2]","level":"1.10.4","depth":2,"ref":"","articles":[{"title":"lesson-2_Flutterでフロントを開発しよう（UI編）.md","level":"1.10.4.1","depth":3,"path":"Polygon-Mobile-dApp/section-2/lesson-2_Flutterでフロントを開発しよう（UI編）.md","ref":"Polygon-Mobile-dApp/section-2/lesson-2_Flutterでフロントを開発しよう（UI編）.md","articles":[]},{"title":"lesson-1_Flutterでフロントを開発しよう（ロジック編）.md","level":"1.10.4.2","depth":3,"path":"Polygon-Mobile-dApp/section-2/lesson-1_Flutterでフロントを開発しよう（ロジック編）.md","ref":"Polygon-Mobile-dApp/section-2/lesson-1_Flutterでフロントを開発しよう（ロジック編）.md","articles":[]}]}]},"previous":{"title":"lesson-2_swap時の手数料を理解しよう.md","level":"1.9.5.2","depth":3,"path":"AVAX-AMM/section-2/lesson-2_swap時の手数料を理解しよう.md","ref":"AVAX-AMM/section-2/lesson-2_swap時の手数料を理解しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"AVAX-AMM/section-2/lesson-1_swapを理解しよう.md","mtime":"2024-02-05T09:48:33.033Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

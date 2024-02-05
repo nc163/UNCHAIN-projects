@@ -7968,20 +7968,20 @@
 <ul>
 <li>「設定」→「ネットワークの変更」→「Devnet」から変更できます。</li>
 </ul>
-<p><img src="../../public/images/Solana-Online-Store/section-1/1_1_1.png" alt="phantom wallet settings"></p>
+<p><img src="1_1_1.png" alt="phantom wallet settings"></p>
 <p>※ 本プロジェクトではBraveとChromeでのみ動作が確認できます。</p>
 <h3 id="🤖-ローカル開発環境を設定する">🤖 ローカル開発環境を設定する</h3>
 <p>※ GitHubアカウントの初期設定がお済みでない方は、アカウント設定を行ってからお進みください。</p>
 <p>まだ<code>GitHub</code>のアカウントをお持ちでない方は、<a href="https://qiita.com/okumurakengo/items/848f7177765cf25fcde0" target="_blank">こちら</a> の手順に沿ってアカウントを作成してください。</p>
 <p><code>GitHub</code>のアカウントをお持ちの方は、下記の手順に沿ってフロントエンドの基盤となるリポジトリをあなたのGitHubに<a href="https://denno-sekai.com/github-fork/" target="_blank">フォーク</a>しましょう。</p>
 <p>1. <a href="https://github.com/unchain-tech/Solana-Online-Store" target="_blank">こちら</a>からunchain-tech/Solana-Online-Storeリポジトリにアクセスをして、ページ右上の<code>Fork</code>ボタンをクリックします。</p>
-<p><img src="../../public/images/Solana-Online-Store/section-1/1_1_2.png" alt></p>
+<p><img src="1_1_2.png" alt></p>
 <p>2. Create a new forkページが開くので、「Copy the <code>main</code> branch only」という項目に<strong>チェックが入っていることを確認します</strong>。</p>
-<p><img src="../../public/images/Solana-Online-Store/section-1/1_1_3.png" alt></p>
+<p><img src="1_1_3.png" alt></p>
 <p>3. 設定が完了したら<code>Create fork</code>ボタンをクリックします。あなたのGitHubアカウントに<code>Solana-Online-Store</code>リポジトリのフォークが作成されたことを確認してください。</p>
 <p>それでは、フォークしたリポジトリをローカル環境にクローンしましょう。</p>
 <p><code>Code</code>ボタンをクリックして<code>SSH</code>を選択し、Gitリンクをコピーしましょう。</p>
-<p><img src="../../public/images/Solana-Online-Store/section-1/1_1_4.png" alt></p>
+<p><img src="1_1_4.png" alt></p>
 <p>ターミナルで任意の作業ディレクトリに移動し、先ほどコピーしたリンクを貼り付け、下記を実行してください。</p>
 <pre><code>git clone コピーした_github_リンク
 </code></pre><p>無事に複製されたらローカル開発環境の準備は完了です。</p>
@@ -7995,7 +7995,7 @@
 <p>3. <code>yarn dev</code>を実行します。</p>
 <p>これらを実行すると、ローカルサーバーでWebアプリケーションが立ち上がり、中心のあたりにかわいらしい女の子の画像が表示されるはずです。</p>
 <p>※自動的にWebアプリケーションが立ち上がらない場合は、ブラウザに<code>http://localhost:3000</code>と入力してWebアプリケーションを確認しましょう!</p>
-<p><img src="../../public/images/Solana-Online-Store/section-1/1_1_5.jpg" alt></p>
+<p><img src="1_1_5.jpg" alt></p>
 <h3 id="✅-テストスクリプトについて">✅ テストスクリプトについて</h3>
 <p>このプロジェクトには、コンポーネントのテストスクリプトが<code>__tests__/コンポーネント名.test.js</code>として格納されています。これらは、期待するMVPの機能が実装されているかをテストする内容となっており、テストフレームワークとして<a href="https://jestjs.io/ja/" target="_blank">Jest</a>を、UIコンポーネントのテストを行うために<a href="https://testing-library.com/" target="_blank">Testing Library</a>を導入しています。Solanaネットワークとやり取りを行う機能をモック（模擬）しているため、ブラウザ上で実際に動作確認を行うよりもより迅速に機能テストを行うことが可能です。対象コンポーネントの実装が完成したら、テストを実行してみましょう!</p>
 <p>ただし、あくまでも模擬的なので、各コンポーネントの実装ができたら実際にSolanaネットワークを使用した動作確認をブラウザ上で行いましょう 🚀</p>
@@ -8047,7 +8047,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-1_環境を構築しよう.md","level":"1.3.2.3","depth":3,"next":{"title":"[section-3]","level":"1.3.3","depth":2,"ref":"","articles":[{"title":"lesson-1_商品を追加しよう.md","level":"1.3.3.1","depth":3,"path":"Solana-Online-Store/section-3/lesson-1_商品を追加しよう.md","ref":"Solana-Online-Store/section-3/lesson-1_商品を追加しよう.md","articles":[]}]},"previous":{"title":"lesson-3_ダウンロード機能を実装しよう.md","level":"1.3.2.2","depth":3,"path":"Solana-Online-Store/section-1/lesson-3_ダウンロード機能を実装しよう.md","ref":"Solana-Online-Store/section-1/lesson-3_ダウンロード機能を実装しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Solana-Online-Store/section-1/lesson-1_環境を構築しよう.md","mtime":"2024-02-04T17:20:42.541Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-1_環境を構築しよう.md","level":"1.3.2.3","depth":3,"next":{"title":"[section-3]","level":"1.3.3","depth":2,"ref":"","articles":[{"title":"lesson-1_商品を追加しよう.md","level":"1.3.3.1","depth":3,"path":"Solana-Online-Store/section-3/lesson-1_商品を追加しよう.md","ref":"Solana-Online-Store/section-3/lesson-1_商品を追加しよう.md","articles":[]}]},"previous":{"title":"lesson-3_ダウンロード機能を実装しよう.md","level":"1.3.2.2","depth":3,"path":"Solana-Online-Store/section-1/lesson-3_ダウンロード機能を実装しよう.md","ref":"Solana-Online-Store/section-1/lesson-3_ダウンロード機能を実装しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Solana-Online-Store/section-1/lesson-1_環境を構築しよう.md","mtime":"2024-02-05T09:48:32.959Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

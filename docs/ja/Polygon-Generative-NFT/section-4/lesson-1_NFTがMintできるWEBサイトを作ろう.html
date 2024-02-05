@@ -8008,7 +8008,7 @@
 <p>そのうえで関数を呼び出し、正しいパラメータを渡し戻り値を解析するためには、関数とコントラクトに関する詳細（名前、引数、型など）をフロントエンドに指定する必要があります。</p>
 <p>これがまさにABIファイルの役割です。</p>
 <p><code>packages/contract/artifacts/contracts/NFTCollectible.sol/NFTCollectible.json</code>をVS Codeで開き中身を確認してみましょう。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-4/4_1_2.png" alt></p>
+<p><img src="4_1_2.png" alt></p>
 <p><code>NFTCollectible.json</code>に記載されているすべてのコードが、ABIファイルです。</p>
 <p>まず、JSONファイルをReactプロジェクトにコピーする必要があります。</p>
 <p><code>packages/client/src</code>フォルダに<code>contracts</code>という新しいフォルダを作成し、<code>NFTCollectible.json</code>ファイルをコピーして貼り付けましょう。</p>
@@ -8114,7 +8114,7 @@
 }
 </code></pre>
 <p>あなたのWebサイトは、このように表示されるはずです。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-4/4_1_3.png" alt></p>
+<p><img src="4_1_3.png" alt></p>
 <p>CSSスタイルや静的要素（画像、ヘッダ、フッタ、ソーシャルメディアリンクなど）を追加して、Webサイトの外観を自由にカスタマイズしてください。</p>
 <p>ここまで、プロジェクトの基礎となるブロックはほぼそろいました。</p>
 <p>これで、ユーザーがウォレットをWebサイトに接続する準備が整いました。</p>
@@ -8142,7 +8142,7 @@
 <li>ステップ: Webページ上で右クリック → <code>Inspect</code> → <code>Console</code></li>
 </ul>
 <p>MetaMaskがインストールされていれば、<code>Wallet exists! We’re ready to go!</code>というメッセージがConsoleに表示されているはずです。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-4/4_1_4.png" alt></p>
+<p><img src="4_1_4.png" alt></p>
 <p>MetaMaskエクステンションをインストールしたからといって、アクセスしたすべてのWebサイトにMetaMaskが自動的に接続されるわけではありません。</p>
 <p>MetaMaskがユーザーにウォレットを接続するように促す必要があるのです。</p>
 <p>そこで登場するのが<code>Connect Wallet</code>機能です。</p>
@@ -8200,16 +8200,16 @@
 <h3 id="🌐-ウォレット接続のテストを実行する">🌐 ウォレット接続のテストを実行する</h3>
 <p>上記のコードをすべて<code>App.js</code>に反映させたら、MetaMaskのプラグインをクリックし、あなたのウォレットアドレスの接続状況を確認しましょう。</p>
 <p>もし、下図のように<code>Connected</code>と表示されている場合は、<code>Connected</code>の文字をクリックします。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-4/4_1_5.png" alt></p>
+<p><img src="4_1_5.png" alt></p>
 <p>そこで、Webサイトとあなたのウォレットアドレスの接続を一度解除します。</p>
 <ul>
 <li><code>Disconnect this account</code>を選択してください。</li>
 </ul>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-4/4_1_6.png" alt></p>
+<p><img src="4_1_6.png" alt></p>
 <p>次にローカルサーバーにホストされているあなたのWebサイトをリフレッシュして、<code>Connect Wallet</code>ボタンを押してください。</p>
 <p>MetaMaskがWebサイトとの接続を促してきますので、同意しましょう。</p>
 <p>下記のように、Consoleにあなたのパブリックウォレットアドレスが出力されていれば、ウォレット接続のテストは成功です。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-4/4_1_7.png" alt></p>
+<p><img src="4_1_7.png" alt></p>
 <p>ウォレットが接続されたら、<code>Connect Wallet</code>ボタンを<code>Mint NFT</code>ボタンに置き換えていきましょう。</p>
 <p><code>App.js</code>の戻り値で、<code>Connect Wallet</code>ボタンのレンダリングを条件付きレンダリングに置き換えてみましょう。</p>
 <p><code>return ()</code>の中身を下記のように変更してください。</p>
@@ -8221,10 +8221,10 @@
 );
 </code></pre>
 <p>これで、私たちのWebサイトはこのようになります。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-4/4_1_8.png" alt></p>
+<p><img src="4_1_8.png" alt></p>
 <p>ページを更新して、MetaMaskエクステンションを確認してみましょう。</p>
 <p>MetaMaskはまだWebサイトに接続されていることを伝えていますが、WebサイトにはまだConnect Walletボタンが表示されていることがわかります。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-4/4_1_9.png" alt></p>
+<p><img src="4_1_9.png" alt></p>
 <p>Reactに慣れている人なら、なぜこのようなことが起こるのかお分かりでしょう。</p>
 <p>結局のところ、<code>connectWallet</code>関数の中だけで<code>setCurrentAccount</code>を設定しているのです。</p>
 <p>実際には、<code>App.js</code>がロードされるたびに（つまり更新するたびに）、ユーザーのウォレットがWebサイトに接続されているか確認する必要があります。</p>
@@ -8480,7 +8480,7 @@
 <p>MetaMaskが0.01 ETH + ガス代を支払うよう促すので、同意してください。</p>
 <p>トランザクションの処理には約15 ～ 20秒かかります。</p>
 <p>処理が完了したら、MetaMaskのポップアップとコンソール出力の両方でトランザクションが確認できます。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-4/4_1_10.png" alt></p>
+<p><img src="4_1_10.png" alt></p>
 <blockquote>
 <p>⚠️: 2022 年 4 月 1 日より、Mint ボタンすると下記のようなエラーが発生しています。</p>
 <pre><code>MetaMask - RPC Error: Internal JSON-RPC error.
@@ -8492,7 +8492,7 @@ code: -32603
 <p>Polygonがほかのサイドチェーンと異なる最大の利点は、世界最大のNFTマーケットプレイスであるOpenSeaにサポートされていることです。</p>
 <p><a href="https://testnets.opensea.io/" target="_blank">testnets.opensea.io</a> にアクセスし、あなたのコントラクトアドレスを検索してください。</p>
 <p>MintされたNFTがコレレクションとしてアップロードされているのがわかるでしょう。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-4/4_1_11.png" alt></p>
+<p><img src="4_1_11.png" alt></p>
 <h3 id="🙋‍♂️-質問する">🙋‍♂️ 質問する</h3>
 <p>ここまでの作業で何かわからないことがある場合は、Discordの<code>#polygon</code>で質問をしてください。</p>
 <p>ヘルプをするときのフローが円滑になるので、エラーレポートには下記の3点を記載してください ✨</p>
@@ -8544,7 +8544,7 @@ code: -32603
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-1_NFTがMintできるWEBサイトを作ろう.md","level":"1.30.4.1","depth":3,"next":{"title":"lesson-2_VercelにWEBサイトをデプロイしよう.md","level":"1.30.4.2","depth":3,"path":"Polygon-Generative-NFT/section-4/lesson-2_VercelにWEBサイトをデプロイしよう.md","ref":"Polygon-Generative-NFT/section-4/lesson-2_VercelにWEBサイトをデプロイしよう.md","articles":[]},"previous":{"title":"[section-4]","level":"1.30.4","depth":2,"ref":"","articles":[{"title":"lesson-1_NFTがMintできるWEBサイトを作ろう.md","level":"1.30.4.1","depth":3,"path":"Polygon-Generative-NFT/section-4/lesson-1_NFTがMintできるWEBサイトを作ろう.md","ref":"Polygon-Generative-NFT/section-4/lesson-1_NFTがMintできるWEBサイトを作ろう.md","articles":[]},{"title":"lesson-2_VercelにWEBサイトをデプロイしよう.md","level":"1.30.4.2","depth":3,"path":"Polygon-Generative-NFT/section-4/lesson-2_VercelにWEBサイトをデプロイしよう.md","ref":"Polygon-Generative-NFT/section-4/lesson-2_VercelにWEBサイトをデプロイしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Generative-NFT/section-4/lesson-1_NFTがMintできるWEBサイトを作ろう.md","mtime":"2024-02-04T17:20:42.522Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-1_NFTがMintできるWEBサイトを作ろう.md","level":"1.30.4.1","depth":3,"next":{"title":"lesson-2_VercelにWEBサイトをデプロイしよう.md","level":"1.30.4.2","depth":3,"path":"Polygon-Generative-NFT/section-4/lesson-2_VercelにWEBサイトをデプロイしよう.md","ref":"Polygon-Generative-NFT/section-4/lesson-2_VercelにWEBサイトをデプロイしよう.md","articles":[]},"previous":{"title":"[section-4]","level":"1.30.4","depth":2,"ref":"","articles":[{"title":"lesson-1_NFTがMintできるWEBサイトを作ろう.md","level":"1.30.4.1","depth":3,"path":"Polygon-Generative-NFT/section-4/lesson-1_NFTがMintできるWEBサイトを作ろう.md","ref":"Polygon-Generative-NFT/section-4/lesson-1_NFTがMintできるWEBサイトを作ろう.md","articles":[]},{"title":"lesson-2_VercelにWEBサイトをデプロイしよう.md","level":"1.30.4.2","depth":3,"path":"Polygon-Generative-NFT/section-4/lesson-2_VercelにWEBサイトをデプロイしよう.md","ref":"Polygon-Generative-NFT/section-4/lesson-2_VercelにWEBサイトをデプロイしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Generative-NFT/section-4/lesson-1_NFTがMintできるWEBサイトを作ろう.md","mtime":"2024-02-05T09:48:33.426Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

@@ -8009,53 +8009,53 @@ cp artifacts/contracts/IAllowList.sol/IAllowList.json ../client/artifacts
 </code></pre><p>以上でコントラクトの情報を反映することができました。</p>
 <h3 id="アカウントの用意">アカウントの用意</h3>
 <p>手形取引をシミュレーションするためにネットワークの管理者アカウントと別にもう1つユーザアカウントを用意しました。</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_1.png" alt></p>
+<p><img src="3_3_1.png" alt></p>
 <p>ユーザアカウントにTESTトークンを送信します。</p>
 <p>管理者アカウントの送金ボタンを押下します。</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_2.png" alt></p>
+<p><img src="3_3_2.png" alt></p>
 <p><code>自分のアカウント間での振替</code>を選択</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_3.png" alt></p>
+<p><img src="3_3_3.png" alt></p>
 <p>送金先アカウントの選択</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_4.png" alt></p>
+<p><img src="3_3_4.png" alt></p>
 <p>100TEST送金</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_5.png" alt></p>
+<p><img src="3_3_5.png" alt></p>
 <p>ユーザアカウントに100TEST送金されました。</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_6.png" alt></p>
+<p><img src="3_3_6.png" alt></p>
 <p>🖥️ 画面で確認しましょう</p>
 <p>それでは<code>AVAX-Subnet</code>ディレクトリ直下で以下のコマンドを実行し、ブラウザで<code>http://localhost:3000</code>へアクセスします。</p>
 <pre><code>yarn client dev
 </code></pre><p>アプリにユーザアカウントでアクセスします。</p>
 <p>別のアカウントで接続済みの場合、以下の手順で接続を解除できますので、解除後windowをリロードしてください。</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_7.png" alt></p>
+<p><img src="3_3_7.png" alt></p>
 <p>ユーザアカウントから管理者アカウントに対してBillの発行を試みます。<br>※ここで確認できるように、ユーザアカウントのネットワーク権限はまだ<code>None</code>です。</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_10.png" alt></p>
+<p><img src="3_3_10.png" alt></p>
 <p>必要な情報を入力して<code>ISSUE</code>ボタンを押下した後、Metamaskのアクティビティを確認すると直前のトランザクションが失敗していることがわかります。</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_11.png" alt></p>
+<p><img src="3_3_11.png" alt></p>
 <blockquote>
 <p>フロントエンドのコード内、関数呼び出し後にSuccessかerrorをアラートで表示すようにしているはずですが確認ができる場合とできない場合があります。<br>もしその理由がご存知の方がいれば教えて頂けると嬉しいです！<br>ひとまずここではMetamaskの履歴からトランザクションの結果を確認することとします 💁</p>
 </blockquote>
 <p>次に管理者アカウントに切り替え、同じくBillの発行をユーザカウントに対して試みます。</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_12.png" alt></p>
+<p><img src="3_3_12.png" alt></p>
 <p><code>ISSUE</code>押下後にMetamaskを確認するとトランザクションが成功しています。</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_13.png" alt></p>
+<p><img src="3_3_13.png" alt></p>
 <p><code>ViewBill</code>ページに移動すると、画面右側に自分が発行したBillが表示されます。<br>（画面左側は自分が受取人のBillが表示されます）</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_14.png" alt></p>
+<p><img src="3_3_14.png" alt></p>
 <p>続いて、<code>Admin</code>ページに移動し、画面右側の入力フォームにユーザアカウントのアドレスを入力し、<code>ENABLE</code>を押下します。<br>（画面右側には発行者・受取人関わらず全てのBillが表示されます）</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_15.png" alt></p>
+<p><img src="3_3_15.png" alt></p>
 <p>トランザクションの成功を確認します。</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_16.png" alt></p>
+<p><img src="3_3_16.png" alt></p>
 <p>ユーザアカウントに切り替えます。<br><code>ViewBill</code>ページに移動すると,（先ほど管理者アカウントが発行した）自分が受取人のBillが表示されます。<br>※ネットワーク権限が<code>Enabled</code>になっています！</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_17.png" alt></p>
+<p><img src="3_3_17.png" alt></p>
 <p><code>CASH</code>を押下すると、今回は権限があるためトランザクションを提出することができます。<br>少し待ってから画面をリロードすると<code>CASH</code>が完了しています。(<code>CASH</code>ボタンの色が変わります)</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_18.png" alt></p>
+<p><img src="3_3_18.png" alt></p>
 <p>また、初めに試みたようにBillの発行を行い、少し待ってから<code>ViewBill</code>ページを表示すると自分が発行者のBillが表示されます。</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_19.png" alt></p>
+<p><img src="3_3_19.png" alt></p>
 <h3 id="🗯️-トラブルシューティング">🗯️ トラブルシューティング</h3>
 <p>トランザクションを提出することは可能でも、リクエストがキュー待ちになり停止してしまうことがあります。  </p>
 <p>その後<code>ISSUE</code>などのボタンを押しても何も反応が無くなってしまいます。</p>
 <p>その場合は以下の手順から、<code>アカウントをリセット</code>を実行すると履歴がリセットされ解消されます。</p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_8.png" alt></p>
-<p><img src="../../public/images/AVAX-Subnet/section-3/3_3_9.png" alt></p>
+<p><img src="3_3_8.png" alt></p>
+<p><img src="3_3_9.png" alt></p>
 <h3 id="🌔-参考リンク">🌔 参考リンク</h3>
 <blockquote>
 <p><a href="https://github.com/unchain-dev/AVAX-Subnet" target="_blank">こちら</a>に本プロジェクトの完成形のレポジトリがあります。<br>期待通り動かない場合は参考にしてみてください。  </p>
@@ -8108,7 +8108,7 @@ cp artifacts/contracts/IAllowList.sol/IAllowList.json ../client/artifacts
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-3_コントラクトと接続しよう.md","level":"1.27.3.3","depth":3,"next":{"title":"[section-4]","level":"1.27.4","depth":2,"ref":"","articles":[{"title":"lesson-1_プロジェクトをまとめましょう.md","level":"1.27.4.1","depth":3,"path":"AVAX-Subnet/section-4/lesson-1_プロジェクトをまとめましょう.md","ref":"AVAX-Subnet/section-4/lesson-1_プロジェクトをまとめましょう.md","articles":[]}]},"previous":{"title":"lesson-1_開発環境を用意しよう.md","level":"1.27.3.2","depth":3,"path":"AVAX-Subnet/section-3/lesson-1_開発環境を用意しよう.md","ref":"AVAX-Subnet/section-3/lesson-1_開発環境を用意しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"AVAX-Subnet/section-3/lesson-3_コントラクトと接続しよう.md","mtime":"2024-02-04T17:20:42.447Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-3_コントラクトと接続しよう.md","level":"1.27.3.3","depth":3,"next":{"title":"[section-4]","level":"1.27.4","depth":2,"ref":"","articles":[{"title":"lesson-1_プロジェクトをまとめましょう.md","level":"1.27.4.1","depth":3,"path":"AVAX-Subnet/section-4/lesson-1_プロジェクトをまとめましょう.md","ref":"AVAX-Subnet/section-4/lesson-1_プロジェクトをまとめましょう.md","articles":[]}]},"previous":{"title":"lesson-1_開発環境を用意しよう.md","level":"1.27.3.2","depth":3,"path":"AVAX-Subnet/section-3/lesson-1_開発環境を用意しよう.md","ref":"AVAX-Subnet/section-3/lesson-1_開発環境を用意しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"AVAX-Subnet/section-3/lesson-3_コントラクトと接続しよう.md","mtime":"2024-02-05T09:48:33.397Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

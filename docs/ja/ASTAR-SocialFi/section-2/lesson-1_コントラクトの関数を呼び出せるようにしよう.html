@@ -7970,9 +7970,9 @@
 <pre><code>NEXT_PUBLIC_CONTRACT_ADDRESS=contract_address
 NEXT_PUBLIC_UNKNOWN_IMAGE_URL=unknown_image
 </code></pre><p>下のように代入してみてください。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-2/2_1_10.png" alt></p>
+<p><img src="2_1_10.png" alt></p>
 <p>次にさきほどコントラクトを実装して後に更新した<code>metadata.json</code>を一番上の階層(<code>pages</code>と同じ階層)に加えましょう。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-2/2_1_9.png" alt></p>
+<p><img src="2_1_9.png" alt></p>
 <p>次に<code>linter</code>の設定をしましょう。linterをきちんと設定しないと無駄な部分にエラーが発生してアプリのデプロイ時に問題があるように写りデプロイができないようになります。</p>
 <p>一番上の階層(<code>pages</code>と同じ階層)に<code>.eslintrc.json</code>ファイルがあるので下のように編集しましょう。</p>
 <p>[<code>eslintrc.json</code>]</p>
@@ -8062,15 +8062,15 @@ NEXT_PUBLIC_UNKNOWN_IMAGE_URL=unknown_image
 <p>次に、フロントエンドで使用する画像をプロジェクトの中に入れておきましょう。</p>
 <p>下の画像を添えられている名前の通りに、ディレクトリ構造の一番上の階層にある<code>public</code>に保存してください。</p>
 <p>[<code>Astar_logo.png</code>]</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-2/2_1_1.png" alt></p>
+<p><img src="2_1_1.png" alt></p>
 <p>[<code>cross_mark_2_logo-removebg.png</code>]</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-2/2_1_2.png" alt></p>
+<p><img src="2_1_2.png" alt></p>
 <p>[<code>cross_star_2_logo-removebg.png</code>]</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-2/2_1_3.png" alt></p>
+<p><img src="2_1_3.png" alt></p>
 <p>[<code>cross_star_6_logo-removebg.png</code>]</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-2/2_1_4.png" alt></p>
+<p><img src="2_1_4.png" alt></p>
 <p>[<code>unchain_logo.png</code>]</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-2/2_1_5.png" alt></p>
+<p><img src="2_1_5.png" alt></p>
 <p>次にNext.jsではURLの画像を参照するためには<code>next.config.js</code>に参照したいURLの頭の部分を登録する必要があるので下のように書き換えましょう。</p>
 <p>[<code>next.config.js</code>]</p>
 <pre><code class="lang-js"><span class="hljs-comment">/** <span class="hljs-doctag">@type</span> {<span class="hljs-type">import(&apos;next&apos;).NextConfig</span>} */</span>
@@ -8364,8 +8364,8 @@ props.<span class="hljs-title function_">setApi</span>(connectedApi);
 <p>ではどれくらいのガス代に設定すればいいのかということですが方法は2つあります。</p>
 <p>1つはプロジェクト内で計算するというものでもう1つは<code>Polkadot.jsサイト</code>で確かめるというものです。</p>
 <p>今回は後者で行います。下のように情報を書き込む関数には<code>exec</code>ボタンがあるのでそれを押せばガス代の最大値が出てくるので、それと同じ値を入れましょう。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-2/2_1_6.png" alt>
-<img src="../../public/images/ASTAR-SocialFi/section-2/2_1_7.png" alt></p>
+<p><img src="2_1_6.png" alt>
+<img src="2_1_7.png" alt></p>
 <p>次の2つはコントラクトから情報を引き出すタイプの関数です。こちらはガス代を消費することはないのでガス代の欄は<code>-1</code>に設定しておけばOKです。</p>
 <p>最終的な結果は<code>output</code>という変数に入るのでそれをフロントに反映させることになります。</p>
 <pre><code class="lang-ts"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">getMessageList</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params">props: PropsGML</span>) =&gt; {
@@ -8975,7 +8975,7 @@ props.<span class="hljs-title function_">setApi</span>(connectedApi);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-1_コントラクトの関数を呼び出せるようにしよう.md","level":"1.14.4.3","depth":3,"next":{"title":"[Solana-Wallet]","level":"1.15","depth":1,"ref":"","articles":[{"title":"[section-0]","level":"1.15.1","depth":2,"ref":"","articles":[{"title":"lesson-1_Solanaのウォレット開発にチャレンジしてみよう.md","level":"1.15.1.1","depth":3,"path":"Solana-Wallet/section-0/lesson-1_Solanaのウォレット開発にチャレンジしてみよう.md","ref":"Solana-Wallet/section-0/lesson-1_Solanaのウォレット開発にチャレンジしてみよう.md","articles":[]},{"title":"lesson-2_環境構築をしよう.md","level":"1.15.1.2","depth":3,"path":"Solana-Wallet/section-0/lesson-2_環境構築をしよう.md","ref":"Solana-Wallet/section-0/lesson-2_環境構築をしよう.md","articles":[]}]},{"title":"[section-1]","level":"1.15.2","depth":2,"ref":"","articles":[{"title":"lesson-2_ウォレットを復元・インポートしよう.md","level":"1.15.2.1","depth":3,"path":"Solana-Wallet/section-1/lesson-2_ウォレットを復元・インポートしよう.md","ref":"Solana-Wallet/section-1/lesson-2_ウォレットを復元・インポートしよう.md","articles":[]},{"title":"lesson-1_ウォレットを作成しよう.md","level":"1.15.2.2","depth":3,"path":"Solana-Wallet/section-1/lesson-1_ウォレットを作成しよう.md","ref":"Solana-Wallet/section-1/lesson-1_ウォレットを作成しよう.md","articles":[]}]},{"title":"[section-3]","level":"1.15.3","depth":2,"ref":"","articles":[{"title":"lesson-1_エアドロップ機能を作ろう.md","level":"1.15.3.1","depth":3,"path":"Solana-Wallet/section-3/lesson-1_エアドロップ機能を作ろう.md","ref":"Solana-Wallet/section-3/lesson-1_エアドロップ機能を作ろう.md","articles":[]},{"title":"lesson-3_VercelにWEBサイトをデプロイしよう.md","level":"1.15.3.2","depth":3,"path":"Solana-Wallet/section-3/lesson-3_VercelにWEBサイトをデプロイしよう.md","ref":"Solana-Wallet/section-3/lesson-3_VercelにWEBサイトをデプロイしよう.md","articles":[]},{"title":"lesson-2_送金機能を作ろう.md","level":"1.15.3.3","depth":3,"path":"Solana-Wallet/section-3/lesson-2_送金機能を作ろう.md","ref":"Solana-Wallet/section-3/lesson-2_送金機能を作ろう.md","articles":[]}]},{"title":"[section-2]","level":"1.15.4","depth":2,"ref":"","articles":[{"title":"lesson-1_残高を取得しよう.md","level":"1.15.4.1","depth":3,"path":"Solana-Wallet/section-2/lesson-1_残高を取得しよう.md","ref":"Solana-Wallet/section-2/lesson-1_残高を取得しよう.md","articles":[]}]}]},"previous":{"title":"lesson-2_使用するコンポーネントを作成しよう.md","level":"1.14.4.2","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","ref":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ASTAR-SocialFi/section-2/lesson-1_コントラクトの関数を呼び出せるようにしよう.md","mtime":"2024-02-04T17:20:42.425Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-1_コントラクトの関数を呼び出せるようにしよう.md","level":"1.14.4.3","depth":3,"next":{"title":"[Solana-Wallet]","level":"1.15","depth":1,"ref":"","articles":[{"title":"[section-0]","level":"1.15.1","depth":2,"ref":"","articles":[{"title":"lesson-1_Solanaのウォレット開発にチャレンジしてみよう.md","level":"1.15.1.1","depth":3,"path":"Solana-Wallet/section-0/lesson-1_Solanaのウォレット開発にチャレンジしてみよう.md","ref":"Solana-Wallet/section-0/lesson-1_Solanaのウォレット開発にチャレンジしてみよう.md","articles":[]},{"title":"lesson-2_環境構築をしよう.md","level":"1.15.1.2","depth":3,"path":"Solana-Wallet/section-0/lesson-2_環境構築をしよう.md","ref":"Solana-Wallet/section-0/lesson-2_環境構築をしよう.md","articles":[]}]},{"title":"[section-1]","level":"1.15.2","depth":2,"ref":"","articles":[{"title":"lesson-2_ウォレットを復元・インポートしよう.md","level":"1.15.2.1","depth":3,"path":"Solana-Wallet/section-1/lesson-2_ウォレットを復元・インポートしよう.md","ref":"Solana-Wallet/section-1/lesson-2_ウォレットを復元・インポートしよう.md","articles":[]},{"title":"lesson-1_ウォレットを作成しよう.md","level":"1.15.2.2","depth":3,"path":"Solana-Wallet/section-1/lesson-1_ウォレットを作成しよう.md","ref":"Solana-Wallet/section-1/lesson-1_ウォレットを作成しよう.md","articles":[]}]},{"title":"[section-3]","level":"1.15.3","depth":2,"ref":"","articles":[{"title":"lesson-1_エアドロップ機能を作ろう.md","level":"1.15.3.1","depth":3,"path":"Solana-Wallet/section-3/lesson-1_エアドロップ機能を作ろう.md","ref":"Solana-Wallet/section-3/lesson-1_エアドロップ機能を作ろう.md","articles":[]},{"title":"lesson-3_VercelにWEBサイトをデプロイしよう.md","level":"1.15.3.2","depth":3,"path":"Solana-Wallet/section-3/lesson-3_VercelにWEBサイトをデプロイしよう.md","ref":"Solana-Wallet/section-3/lesson-3_VercelにWEBサイトをデプロイしよう.md","articles":[]},{"title":"lesson-2_送金機能を作ろう.md","level":"1.15.3.3","depth":3,"path":"Solana-Wallet/section-3/lesson-2_送金機能を作ろう.md","ref":"Solana-Wallet/section-3/lesson-2_送金機能を作ろう.md","articles":[]}]},{"title":"[section-2]","level":"1.15.4","depth":2,"ref":"","articles":[{"title":"lesson-1_残高を取得しよう.md","level":"1.15.4.1","depth":3,"path":"Solana-Wallet/section-2/lesson-1_残高を取得しよう.md","ref":"Solana-Wallet/section-2/lesson-1_残高を取得しよう.md","articles":[]}]}]},"previous":{"title":"lesson-2_使用するコンポーネントを作成しよう.md","level":"1.14.4.2","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","ref":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ASTAR-SocialFi/section-2/lesson-1_コントラクトの関数を呼び出せるようにしよう.md","mtime":"2024-02-05T09:48:33.198Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

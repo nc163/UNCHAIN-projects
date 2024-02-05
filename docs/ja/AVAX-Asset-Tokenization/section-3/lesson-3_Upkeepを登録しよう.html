@@ -7960,13 +7960,13 @@
 <h3 id="🪙-link-を手に入れましょう">🪙 LINK を手に入れましょう</h3>
 <p>まずUpkeepを実行してくれるノードに対して<code>LINK</code>トークンを支払う必要があるため、 <code>LINK</code>を手に入れます。</p>
 <p><a href="https://docs.chain.link/resources/link-token-contracts/" target="_blank">こちら</a>のリンク先の<code>Fuji testnet</code>の部分を参照してください。</p>
-<p><img src="../../public/images/AVAX-Asset-Tokenization/section-3/2_1_5.png" alt></p>
+<p><img src="2_1_5.png" alt></p>
 <p>Metamaskで特定の(<code>LINK</code>を取得するつもりの)アカウントが表示された状態で、 <code>Add to wallet</code>をクリックすると、 そのアカウントに<code>LINK</code>が表示されるようになります。</p>
-<p><img src="../../public/images/AVAX-Asset-Tokenization/section-3/2_1_6.png" alt></p>
+<p><img src="2_1_6.png" alt></p>
 <p>続いて、 <a href="https://faucets.chain.link/fuji" target="_blank">こちら</a>からLINKを取得します。</p>
-<p><img src="../../public/images/AVAX-Asset-Tokenization/section-3/2_1_7.png" alt></p>
+<p><img src="2_1_7.png" alt></p>
 <p>20LINKを取得できているはずです。</p>
-<p><img src="../../public/images/AVAX-Asset-Tokenization/section-3/2_1_8.png" alt></p>
+<p><img src="2_1_8.png" alt></p>
 <h3 id="🦆-コントラクトを再デプロイしましょう。">🦆 コントラクトを再デプロイしましょう。</h3>
 <p><a href="../../docs/AVAX-Asset-Tokenization/ja/section-2/lesson-3_%E3%82%B3%E3%83%B3%E3%83%88%E3%83%A9%E3%82%AF%E3%83%88%E3%81%A8%E6%8E%A5%E7%B6%9A%E3%81%97%E3%82%88%E3%81%86.md">section-2/lesson-3</a>で行なったコントラクトのデプロイとフロントエンドへの反映の流れを参考に、
 新しく実装したコントラクトの再デプロイと、 ついでにフロントエンドへの反映もここで行いましょう。</p>
@@ -7989,21 +7989,21 @@
 <p><a href="https://automation.chain.link/fuji" target="_blank">こちら</a>より<code>Chainlink Automation</code>のページに移動します。</p>
 <p><code>Connect wallet</code>をクリックし、LINKを取得したアカウントを選択します。</p>
 <p>その後<code>Register new Upkeep</code>をクリックします。</p>
-<p><img src="../../public/images/AVAX-Asset-Tokenization/section-3/2_1_1.png" alt></p>
+<p><img src="2_1_1.png" alt></p>
 <p><code>Custom Logic</code>をクリックします。</p>
-<p><img src="../../public/images/AVAX-Asset-Tokenization/section-3/2_1_2.png" alt></p>
+<p><img src="2_1_2.png" alt></p>
 <p>デプロイしたコントラクトのアドレスを貼り付け、 <code>Next</code>をクリックします。</p>
-<p><img src="../../public/images/AVAX-Asset-Tokenization/section-3/2_1_3.png" alt></p>
+<p><img src="2_1_3.png" alt></p>
 <p>次のページにおいて、 以下のように詳細を入力し、 <code>Register Upkeep</code>をクリックします。
 ※ admin addressは先ほど<strong>LINK を取得したアカウントのアドレス</strong>を貼り付けてください。
 その他は任意の値を入れて頂いて構いません。</p>
-<p><img src="../../public/images/AVAX-Asset-Tokenization/section-3/2_1_4.png" alt></p>
+<p><img src="2_1_4.png" alt></p>
 <p>しばらくするとトランザクションが完了します。</p>
-<p><img src="../../public/images/AVAX-Asset-Tokenization/section-3/2_1_9.png" alt></p>
+<p><img src="2_1_9.png" alt></p>
 <p><code>View Upkeep</code>をクリックすると、 登録したUpkeepの詳細が表示されます。
 (登録後は<a href="https://automation.chain.link/fuji" target="_blank">Chainlink Automation ホームページ</a>からでもupkeepを確認できます)</p>
 <p>後ほどこちらのページの<code>History</code>の欄で実際に<code>Upkeep</code>関数が実行されたかを確認できます。</p>
-<p><img src="../../public/images/AVAX-Asset-Tokenization/section-3/2_1_10.png" alt></p>
+<p><img src="2_1_10.png" alt></p>
 <h3 id="🎍-挙動の確認方法">🎍 挙動の確認方法</h3>
 <p>ここで<code>Upkeep</code>が動くことを簡単に確認します。</p>
 <p>既にフロントエンドに新コントラクトの情報は反映してあるので、 <code>AVAX-Asset-Tokenization</code>ディレクトリ直下で以下のコマンドを実行してください！</p>
@@ -8012,15 +8012,15 @@
 <p>はじめに<code>For Farmer</code>ボタンをクリックしページを移動します。</p>
 <p><code>Tokenize</code>タブにてフォームを記入してNFTを作成しますが、 ここで消費期限を現在より前に設定してみてください。</p>
 <p>例)</p>
-<p><img src="../../public/images/AVAX-Asset-Tokenization/section-3/2_1_13.png" alt></p>
+<p><img src="2_1_13.png" alt></p>
 <p><code>generate NFT</code>でコントラクトを作成後、
 <a href="https://automation.chain.link/fuji" target="_blank">Chainlink Automation ホームページ</a>の<code>My upkeeps</code>から作成したUpkeepをクリックします。
 Upkeepのページを開くと、 ページ下部にHistoryという欄があります。
 ここに<code>Perform Upkeep</code>が動いた履歴があるはずです。</p>
-<p><img src="../../public/images/AVAX-Asset-Tokenization/section-3/2_1_11.png" alt></p>
+<p><img src="2_1_11.png" alt></p>
 <p><code>Perform Upkeep</code>によって期限切れのNFTは削除されたので、
 ブラウザ上で<code>For Buyers</code>のページへ移動し、 デプロイされたNFTの情報を見ようとしても表示されないはずです。</p>
-<p><img src="../../public/images/AVAX-Asset-Tokenization/section-3/2_1_14.png" alt></p>
+<p><img src="2_1_14.png" alt></p>
 <h3 id="🌔-参考リンク">🌔 参考リンク</h3>
 <blockquote>
 <p><a href="https://github.com/unchain-dev/AVAX-Asset-Tokenization" target="_blank">こちら</a>に本プロジェクトの完成形のレポジトリがあります。
@@ -8080,7 +8080,7 @@ Upkeepのページを開くと、 ページ下部にHistoryという欄があり
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-3_Upkeepを登録しよう.md","level":"1.25.3.2","depth":3,"next":{"title":"lesson-1_コントラクトの自動実行について.md","level":"1.25.3.3","depth":3,"path":"AVAX-Asset-Tokenization/section-3/lesson-1_コントラクトの自動実行について.md","ref":"AVAX-Asset-Tokenization/section-3/lesson-1_コントラクトの自動実行について.md","articles":[]},"previous":{"title":"lesson-2_自動実行を実装しよう.md","level":"1.25.3.1","depth":3,"path":"AVAX-Asset-Tokenization/section-3/lesson-2_自動実行を実装しよう.md","ref":"AVAX-Asset-Tokenization/section-3/lesson-2_自動実行を実装しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"AVAX-Asset-Tokenization/section-3/lesson-3_Upkeepを登録しよう.md","mtime":"2024-02-04T17:20:42.436Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-3_Upkeepを登録しよう.md","level":"1.25.3.2","depth":3,"next":{"title":"lesson-1_コントラクトの自動実行について.md","level":"1.25.3.3","depth":3,"path":"AVAX-Asset-Tokenization/section-3/lesson-1_コントラクトの自動実行について.md","ref":"AVAX-Asset-Tokenization/section-3/lesson-1_コントラクトの自動実行について.md","articles":[]},"previous":{"title":"lesson-2_自動実行を実装しよう.md","level":"1.25.3.1","depth":3,"path":"AVAX-Asset-Tokenization/section-3/lesson-2_自動実行を実装しよう.md","ref":"AVAX-Asset-Tokenization/section-3/lesson-2_自動実行を実装しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"AVAX-Asset-Tokenization/section-3/lesson-3_Upkeepを登録しよう.md","mtime":"2024-02-05T09:48:33.376Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

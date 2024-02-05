@@ -7959,36 +7959,36 @@
 <h3 id="🖥️-サブグラフパッケージのセットアップ">🖥️ サブグラフパッケージのセットアップ</h3>
 <p>まず、Edge and NodeのSimonが作成したScaffold-ETH 2の特別なビルドを使って始めましょう。ありがとう、Simon! 🫡</p>
 <p>Scaffold-ETH 2とThe Graphをセットアップするために、合計4つの異なるウィンドウが必要になります。</p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-0/0_3_1.png" alt></p>
+<p><img src="0_3_1.png" alt></p>
 <pre><code>git clone -b subgraph-package \
   https://github.com/scaffold-eth/scaffold-eth-2.git \
   scaffold-eth-2-subgraph-package
 </code></pre><p>これをあなたのマシンにチェックアウトしたら、ディレクトリに移動し、yarnを使用してすべての依存関係をインストールします。</p>
 <pre><code>cd scaffold-eth-2-subgraph-package &amp;&amp; \
   yarn install
-</code></pre><p><img src="../../public/images/TheGraph-ScaffoldEth2/section-0/0_3_2.png" alt></p>
+</code></pre><p><img src="0_3_2.png" alt></p>
 <p>次に、スマートコントラクトをデプロイしてテストするために、ローカルブロックチェーンを起動する必要があります。Scaffold-ETH 2はデフォルトでHardhatを使用しています。チェーンを起動するには、次のyarnコマンドを入力します。</p>
 <pre><code>yarn chain
-</code></pre><p><img src="../../public/images/TheGraph-ScaffoldEth2/section-0/0_3_3.png" alt></p>
+</code></pre><p><img src="0_3_3.png" alt></p>
 <blockquote>
 <p>このウィンドウを開いたままにしておくと、hardhat コンソールからの出力を確認できます。🖥️</p>
 </blockquote>
 <p>次に、フロントエンドアプリケーションを起動します。Scaffold-ETH 2はデフォルトでNextJSを使用しており、単純なyarnコマンドで起動することもできます。新しいコマンドラインを開き、次のコマンドを入力します。</p>
 <pre><code>yarn start
-</code></pre><p><img src="../../public/images/TheGraph-ScaffoldEth2/section-0/0_3_4.png" alt></p>
+</code></pre><p><img src="0_3_4.png" alt></p>
 <blockquote>
 <p>このウィンドウも常に開いておくと、NextJS に加えたコード変更のデバッグ、パフォーマンスのチェック、またはサーバーが適切に動作しているかを確認できます。</p>
 </blockquote>
 <p>次に、スマートコントラクトをデプロイするための第三のウィンドウを開きます。Scaffold-ETHには他にも便利なコマンドがあります。デプロイを行うには、単に以下を実行します…</p>
 <pre><code>yarn deploy
-</code></pre><p><img src="../../public/images/TheGraph-ScaffoldEth2/section-0/0_3_5.png" alt></p>
+</code></pre><p><img src="0_3_5.png" alt></p>
 <blockquote>
 <p>デプロイにかかったガスの量と共に、トランザクションとアドレスが表示されるはずです。⛽</p>
 </blockquote>
 <p><a href="http://localhost:3000" target="_blank">http://localhost:3000</a> にアクセスすると、NextJSアプリケーションが表示されます。Scaffold-ETH 2のメニューや機能を探索してみましょう！ 緊急事態ですね、これはすごい！ 🔥</p>
 <p>setGreeting関数にアップデートを送信してテストすることができます。これを行うには、右上のバーナーウォレットアドレスの隣にある現金アイコンをクリックしてガスを入手する必要があります。これにより、フォーセットから1 ETHが送られます。</p>
 <p>次に、「Debug Contracts」に移動し、setGreetingの下の文字列フィールドをクリックしてお好きな文字を入力し、「SEND」をクリックします。</p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-0/0_3_6.png" alt></p>
+<p><img src="0_3_6.png" alt></p>
 <p>これが完了すると、成功したことを確認するために展開できるTransaction Receiptが表示されます。</p>
 
                                 
@@ -8033,7 +8033,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-3_Scaffold-ETH 2のセットアップ.md","level":"1.11.1.4","depth":3,"next":{"title":"lesson-1_コースの紹介.md","level":"1.11.1.5","depth":3,"path":"TheGraph-ScaffoldEth2/section-0/lesson-1_コースの紹介.md","ref":"TheGraph-ScaffoldEth2/section-0/lesson-1_コースの紹介.md","articles":[]},"previous":{"title":"lesson-2_必要条件.md","level":"1.11.1.3","depth":3,"path":"TheGraph-ScaffoldEth2/section-0/lesson-2_必要条件.md","ref":"TheGraph-ScaffoldEth2/section-0/lesson-2_必要条件.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"TheGraph-ScaffoldEth2/section-0/lesson-3_Scaffold-ETH 2のセットアップ.md","mtime":"2024-02-04T17:20:42.555Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-3_Scaffold-ETH 2のセットアップ.md","level":"1.11.1.4","depth":3,"next":{"title":"lesson-1_コースの紹介.md","level":"1.11.1.5","depth":3,"path":"TheGraph-ScaffoldEth2/section-0/lesson-1_コースの紹介.md","ref":"TheGraph-ScaffoldEth2/section-0/lesson-1_コースの紹介.md","articles":[]},"previous":{"title":"lesson-2_必要条件.md","level":"1.11.1.3","depth":3,"path":"TheGraph-ScaffoldEth2/section-0/lesson-2_必要条件.md","ref":"TheGraph-ScaffoldEth2/section-0/lesson-2_必要条件.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"TheGraph-ScaffoldEth2/section-0/lesson-3_Scaffold-ETH 2のセットアップ.md","mtime":"2024-02-05T09:48:33.041Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

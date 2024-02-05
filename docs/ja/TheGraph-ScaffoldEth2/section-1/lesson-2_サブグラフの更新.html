@@ -7983,7 +7983,7 @@ type SendMessage @entity(immutable: true) {
   blockTimestamp: BigInt!
   transactionHash: Bytes!
 }
-</code></pre><p><img src="../../public/images/TheGraph-ScaffoldEth2/section-1/1_2_1.png" alt></p>
+</code></pre><p><img src="1_2_1.png" alt></p>
 <h4 id="✅-サブグラフマニフェストの更新">✅ サブグラフマニフェストの更新</h4>
 <p>これらのエンティティをサブグラフYAML構成に追加し、イベントハンドラも追加する必要があります。</p>
 <blockquote>
@@ -7999,10 +7999,10 @@ type SendMessage @entity(immutable: true) {
           handler: handleGreetingChange
         - event: SendMessage(address,address,string)
           handler: handleSendMessage
-</code></pre><p><img src="../../public/images/TheGraph-ScaffoldEth2/section-1/1_2_2.png" alt></p>
+</code></pre><p><img src="1_2_2.png" alt></p>
 <p>ここまでステップ通りに進んでいる場合は、次に新しいabiをコピーしてコードを再生成する必要があります。</p>
 <pre><code>yarn abi-copy &amp;&amp; yarn codegen
-</code></pre><p><img src="../../public/images/TheGraph-ScaffoldEth2/section-1/1_2_3.png" alt></p>
+</code></pre><p><img src="1_2_3.png" alt></p>
 <h4 id="✅-マッピングスクリプトの更新">✅ マッピングスクリプトの更新</h4>
 <p>次に、先ほど編集したファイルのマッピングを更新する必要があります。</p>
 <blockquote>
@@ -8047,7 +8047,7 @@ export function handleSendMessage(event: SendMessageEvent): void {
   entity.save()
 }
 </code></pre><p>この変更により、エディタ内でのリントエラーは消えるでしょう。</p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-1/1_2_4.png" alt></p>
+<p><img src="1_2_4.png" alt></p>
 <p>これでほぼ完成です... あとは公開するだけ！</p>
 
                                 
@@ -8092,7 +8092,7 @@ export function handleSendMessage(event: SendMessageEvent): void {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-2_サブグラフの更新.md","level":"1.11.2.2","depth":3,"next":{"title":"lesson-3_デプロイ.md","level":"1.11.2.3","depth":3,"path":"TheGraph-ScaffoldEth2/section-1/lesson-3_デプロイ.md","ref":"TheGraph-ScaffoldEth2/section-1/lesson-3_デプロイ.md","articles":[]},"previous":{"title":"lesson-1_イベントの追加.md","level":"1.11.2.1","depth":3,"path":"TheGraph-ScaffoldEth2/section-1/lesson-1_イベントの追加.md","ref":"TheGraph-ScaffoldEth2/section-1/lesson-1_イベントの追加.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"TheGraph-ScaffoldEth2/section-1/lesson-2_サブグラフの更新.md","mtime":"2024-02-04T17:20:42.557Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-2_サブグラフの更新.md","level":"1.11.2.2","depth":3,"next":{"title":"lesson-3_デプロイ.md","level":"1.11.2.3","depth":3,"path":"TheGraph-ScaffoldEth2/section-1/lesson-3_デプロイ.md","ref":"TheGraph-ScaffoldEth2/section-1/lesson-3_デプロイ.md","articles":[]},"previous":{"title":"lesson-1_イベントの追加.md","level":"1.11.2.1","depth":3,"path":"TheGraph-ScaffoldEth2/section-1/lesson-1_イベントの追加.md","ref":"TheGraph-ScaffoldEth2/section-1/lesson-1_イベントの追加.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"TheGraph-ScaffoldEth2/section-1/lesson-2_サブグラフの更新.md","mtime":"2024-02-05T09:48:33.044Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

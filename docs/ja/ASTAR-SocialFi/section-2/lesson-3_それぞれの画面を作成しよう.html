@@ -7959,7 +7959,7 @@
 <p>[<code>index.tsx</code>]</p>
 <p>こちらにはウォレットを接続する前の画面のUIが記述されています。</p>
 <p>ボタンを押すと<code>ホーム画面</code>に遷移するという関数が動きます。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-2/2_3_1.png" alt></p>
+<p><img src="2_3_1.png" alt></p>
 <p>ウォレットコネクトする前の画面のUIが記述されています。</p>
 <pre><code class="lang-ts"><span class="hljs-keyword">import</span> <span class="hljs-keyword">type</span> { <span class="hljs-title class_">NextPage</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;next&quot;</span>;
 <span class="hljs-keyword">import</span> <span class="hljs-title class_">Head</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;next/head&quot;</span>;
@@ -8067,7 +8067,7 @@
 <p>では次に<code>ホーム画面</code>,<code>プロフィール画面</code>,<code>メッセージ画面</code>を作成していきましょう！</p>
 <p>どの画面でも<code>useEffect</code>にチェーン接続のための関数や投稿取得関数を渡すことで画面を開くとコントラクトに格納してある投稿が見られるようになっています！</p>
 <p>[<code>home.tsx</code>]</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-2/2_3_2.png" alt></p>
+<p><img src="2_3_2.png" alt></p>
 <p>ホーム画面です。</p>
 <p>useEffect関数の中にある関数群の説明を軽くするとまずブロックチェーンとの接続とアカウントとの接続が行われます。</p>
 <p>その後チェーンとの接続が確認されたら接続されているアカウントに紐づいているプロフィールと全体の投稿リストを取得します。</p>
@@ -8188,7 +8188,7 @@
 }
 </code></pre>
 <p>[<code>profile.tsx</code>]</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-2/2_3_3.png" alt></p>
+<p><img src="2_3_3.png" alt></p>
 <p>プロフィール画面です。useEffect内で動いている関数はホーム画面のものとほぼ同じで、全体の投稿リストか特定のアカウントの投稿リストを取得するかの違いです。</p>
 <pre><code class="lang-ts"><span class="hljs-keyword">import</span> { <span class="hljs-title class_">ApiPromise</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@polkadot/api&quot;</span>;
 <span class="hljs-keyword">import</span> <span class="hljs-keyword">type</span> { <span class="hljs-title class_">InjectedAccountWithMeta</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@polkadot/extension-inject/types&quot;</span>;
@@ -8327,7 +8327,7 @@
 }
 </code></pre>
 <p>[<code>message.tsx</code>]</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-2/2_3_4.png" alt></p>
+<p><img src="2_3_4.png" alt></p>
 <p>メッセージ画面です。</p>
 <p>ここでもuseEffect関数内で動く関数はホーム画面のものとほとんど変わりません。メッセージ相手の情報を取得するかの違いです。</p>
 <pre><code class="lang-ts"><span class="hljs-keyword">import</span> { <span class="hljs-title class_">ApiPromise</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@polkadot/api&quot;</span>;
@@ -8535,7 +8535,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-3_それぞれの画面を作成しよう.md","level":"1.14.4.1","depth":3,"next":{"title":"lesson-2_使用するコンポーネントを作成しよう.md","level":"1.14.4.2","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","ref":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","articles":[]},"previous":{"title":"[section-2]","level":"1.14.4","depth":2,"ref":"","articles":[{"title":"lesson-3_それぞれの画面を作成しよう.md","level":"1.14.4.1","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-3_それぞれの画面を作成しよう.md","ref":"ASTAR-SocialFi/section-2/lesson-3_それぞれの画面を作成しよう.md","articles":[]},{"title":"lesson-2_使用するコンポーネントを作成しよう.md","level":"1.14.4.2","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","ref":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","articles":[]},{"title":"lesson-1_コントラクトの関数を呼び出せるようにしよう.md","level":"1.14.4.3","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-1_コントラクトの関数を呼び出せるようにしよう.md","ref":"ASTAR-SocialFi/section-2/lesson-1_コントラクトの関数を呼び出せるようにしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ASTAR-SocialFi/section-2/lesson-3_それぞれの画面を作成しよう.md","mtime":"2024-02-04T17:20:42.426Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-3_それぞれの画面を作成しよう.md","level":"1.14.4.1","depth":3,"next":{"title":"lesson-2_使用するコンポーネントを作成しよう.md","level":"1.14.4.2","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","ref":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","articles":[]},"previous":{"title":"[section-2]","level":"1.14.4","depth":2,"ref":"","articles":[{"title":"lesson-3_それぞれの画面を作成しよう.md","level":"1.14.4.1","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-3_それぞれの画面を作成しよう.md","ref":"ASTAR-SocialFi/section-2/lesson-3_それぞれの画面を作成しよう.md","articles":[]},{"title":"lesson-2_使用するコンポーネントを作成しよう.md","level":"1.14.4.2","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","ref":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","articles":[]},{"title":"lesson-1_コントラクトの関数を呼び出せるようにしよう.md","level":"1.14.4.3","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-1_コントラクトの関数を呼び出せるようにしよう.md","ref":"ASTAR-SocialFi/section-2/lesson-1_コントラクトの関数を呼び出せるようにしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ASTAR-SocialFi/section-2/lesson-3_それぞれの画面を作成しよう.md","mtime":"2024-02-05T09:48:33.196Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

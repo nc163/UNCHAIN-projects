@@ -7965,7 +7965,7 @@
 <pre><code>solana config get
 </code></pre><p>このコマンドはAnchorがどこにデプロイするかを知る方法です。</p>
 <p>Solanaネットワークの接続先の設定が<code>https://api.devnet.solana.com</code>となっていることを確認してください。</p>
-<p><img src="../../public/images/Solana-dApp/section-3/3_1_1.jpg" alt="solana config"></p>
+<p><img src="3_1_1.jpg" alt="solana config"></p>
 <p>それでは、次にDevnet上のSOLをエアドロップしましょう。</p>
 <p>エアドロップはとても簡単です。</p>
 <p>以下のコマンドを2回実行してください。</p>
@@ -7974,7 +7974,7 @@
 <pre><code>solana balance
 </code></pre><p>ウォレットに4 SOLが入っていることを確認できました（Devnetでの残高を取得しています）。</p>
 <p>※ 現時点では、一度にエアドロップできるSOLの量は2 SOLまでです。</p>
-<p><img src="../../public/images/Solana-dApp/section-3/3_1_2.jpg" alt="airdrop"></p>
+<p><img src="3_1_2.jpg" alt="airdrop"></p>
 <h3 id="✨-変数を変更する">✨ 変数を変更する</h3>
 <p>Devnetに接続するために、<code>Anchor.toml</code>の変数を変更する必要があります。</p>
 <p>まず、<code>[programs.localnet]</code>を<code>[programs.devnet]</code>に変更します。</p>
@@ -8022,12 +8022,12 @@ anchor build
 <pre><code>anchor deploy
 </code></pre><p>デプロイには少し時間がかかる場合があります。</p>
 <p>以下の画像のように<code>Deploy success</code>という単語が表示されていればデプロイ完了です。</p>
-<p><img src="../../public/images/Solana-dApp/section-3/3_1_3.jpg" alt="Deploy success"></p>
+<p><img src="3_1_3.jpg" alt="Deploy success"></p>
 <p>完了したら、<a href="https://explorer.solana.com/?cluster=devnet" target="_blank">Solana Explorer</a>にアクセスして、すべてがうまくいったかどうかを確認します。</p>
 <p>※ 今回はDevnetにデプロイしたため、必ず右上の接続先が[Devnet]になっているかどうか確認する必要があります。</p>
 <p>エスプローラーで、プログラムID ( <code>solana address -k target/deploy/myepicproject-keypair.json</code>で取得したID)を貼り付けて検索します。</p>
 <p>デプロイされたSolanaプログラムが表示されたら、下にスクロールしてトランザクション履歴を確認すると、そこにデプロイ履歴が表示されているので確認してみてください。</p>
-<p><img src="../../public/images/Solana-dApp/section-3/3_1_4.jpg" alt="solana explorer"></p>
+<p><img src="3_1_4.jpg" alt="solana explorer"></p>
 <blockquote>
 <p>⚠️ 注意</p>
 <p>Solana プログラムを変更する際は、毎回再デプロイして上記のステップを踏む必要があります。</p>
@@ -8081,7 +8081,7 @@ anchor build
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-1_SolanaプログラムをDevnetにデプロイしよう！.md","level":"1.20.3.1","depth":3,"next":{"title":"lesson-3_Webアプリケーションを完成させよう！.md","level":"1.20.3.2","depth":3,"path":"Solana-dApp/section-3/lesson-3_Webアプリケーションを完成させよう！.md","ref":"Solana-dApp/section-3/lesson-3_Webアプリケーションを完成させよう！.md","articles":[]},"previous":{"title":"[section-3]","level":"1.20.3","depth":2,"ref":"","articles":[{"title":"lesson-1_SolanaプログラムをDevnetにデプロイしよう！.md","level":"1.20.3.1","depth":3,"path":"Solana-dApp/section-3/lesson-1_SolanaプログラムをDevnetにデプロイしよう！.md","ref":"Solana-dApp/section-3/lesson-1_SolanaプログラムをDevnetにデプロイしよう！.md","articles":[]},{"title":"lesson-3_Webアプリケーションを完成させよう！.md","level":"1.20.3.2","depth":3,"path":"Solana-dApp/section-3/lesson-3_Webアプリケーションを完成させよう！.md","ref":"Solana-dApp/section-3/lesson-3_Webアプリケーションを完成させよう！.md","articles":[]},{"title":"lesson-2_SolanaプログラムとWebアプリケーションを接続しよう！.md","level":"1.20.3.3","depth":3,"path":"Solana-dApp/section-3/lesson-2_SolanaプログラムとWebアプリケーションを接続しよう！.md","ref":"Solana-dApp/section-3/lesson-2_SolanaプログラムとWebアプリケーションを接続しよう！.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Solana-dApp/section-3/lesson-1_SolanaプログラムをDevnetにデプロイしよう！.md","mtime":"2024-02-04T17:20:42.550Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-1_SolanaプログラムをDevnetにデプロイしよう！.md","level":"1.20.3.1","depth":3,"next":{"title":"lesson-3_Webアプリケーションを完成させよう！.md","level":"1.20.3.2","depth":3,"path":"Solana-dApp/section-3/lesson-3_Webアプリケーションを完成させよう！.md","ref":"Solana-dApp/section-3/lesson-3_Webアプリケーションを完成させよう！.md","articles":[]},"previous":{"title":"[section-3]","level":"1.20.3","depth":2,"ref":"","articles":[{"title":"lesson-1_SolanaプログラムをDevnetにデプロイしよう！.md","level":"1.20.3.1","depth":3,"path":"Solana-dApp/section-3/lesson-1_SolanaプログラムをDevnetにデプロイしよう！.md","ref":"Solana-dApp/section-3/lesson-1_SolanaプログラムをDevnetにデプロイしよう！.md","articles":[]},{"title":"lesson-3_Webアプリケーションを完成させよう！.md","level":"1.20.3.2","depth":3,"path":"Solana-dApp/section-3/lesson-3_Webアプリケーションを完成させよう！.md","ref":"Solana-dApp/section-3/lesson-3_Webアプリケーションを完成させよう！.md","articles":[]},{"title":"lesson-2_SolanaプログラムとWebアプリケーションを接続しよう！.md","level":"1.20.3.3","depth":3,"path":"Solana-dApp/section-3/lesson-2_SolanaプログラムとWebアプリケーションを接続しよう！.md","ref":"Solana-dApp/section-3/lesson-2_SolanaプログラムとWebアプリケーションを接続しよう！.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Solana-dApp/section-3/lesson-1_SolanaプログラムをDevnetにデプロイしよう！.md","mtime":"2024-02-05T09:48:33.283Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

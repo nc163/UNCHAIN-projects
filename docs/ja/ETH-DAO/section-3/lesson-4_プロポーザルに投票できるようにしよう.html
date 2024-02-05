@@ -8132,9 +8132,9 @@ Done in 54.29s.
 </li>
 </ol>
 <p>ページを更新すると、🌈 の横に先ほどあなたが提案した2つの提案が表示され、すべての提案データを閲覧することができるはずです。</p>
-<p><img src="../../public/images/ETH-DAO/section-3/3_4_1.png" alt></p>
+<p><img src="3_4_1.png" alt></p>
 <p>なお、既に投票済みの場合は以下のように表示されます。</p>
-<p><img src="../../public/images/ETH-DAO/section-3/3_4_2.png" alt></p>
+<p><img src="3_4_2.png" alt></p>
 <p>さて、それではこれからユーザーが投票する際、賛成・反対・棄権の中から選択肢を選べるようにしていきましょう。</p>
 <p>まず、以下の<code>AddressZero</code>をインポートします。</p>
 <pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { <span class="hljs-title class_">AddressZero</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@ethersproject/constants&apos;</span>;
@@ -8290,12 +8290,12 @@ Done in 54.29s.
     );
 </code></pre>
 <p>この変更により、以下のような画面が表示され、実際に投票を行えるようになりました。</p>
-<p><img src="../../public/images/ETH-DAO/section-3/3_4_3.png" alt></p>
+<p><img src="3_4_3.png" alt></p>
 <p>今回は、24時間後に投票を受付できなくなるように設定しています。</p>
 <p>24時間後に「提案への賛成票＞提案への反対票」となった場合は、どのメンバーもガバナンスコントラクトを通じて提案を実行することができるようになります。</p>
 <p>ちなみに、ここで2つの提案に対し<code>For</code>を選択して<code>Submit Votes</code>ボタンを押下するとMetaMaskが立ち上がり確認を求められます。</p>
 <p>確認後、正常に動作すると以下のようにボタンが<code>You Already Voted</code>となり、コンソールに<code>successfuly voted</code>と表示されます。</p>
-<p><img src="../../public/images/ETH-DAO/section-3/3_4_4.png" alt></p>
+<p><img src="3_4_4.png" alt></p>
 <h3 id="🙋‍♂️-質問する">🙋‍♂️ 質問する</h3>
 <p>ここまでの作業で何かわからないことがある場合は、Discordの<code>#ethereum</code>で質問をしてください。</p>
 <p>ヘルプをするときのフローが円滑になるので、エラーレポートには下記の4点を記載してください ✨</p>
@@ -8350,7 +8350,7 @@ Done in 54.29s.
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-4_プロポーザルに投票できるようにしよう.md","level":"1.23.3.2","depth":3,"next":{"title":"lesson-3_トレジャリーと投票コントラクトをつくろう.md","level":"1.23.3.3","depth":3,"path":"ETH-DAO/section-3/lesson-3_トレジャリーと投票コントラクトをつくろう.md","ref":"ETH-DAO/section-3/lesson-3_トレジャリーと投票コントラクトをつくろう.md","articles":[]},"previous":{"title":"lesson-1_ガバナンストークンのコントラクトをデプロイしよう.md","level":"1.23.3.1","depth":3,"path":"ETH-DAO/section-3/lesson-1_ガバナンストークンのコントラクトをデプロイしよう.md","ref":"ETH-DAO/section-3/lesson-1_ガバナンストークンのコントラクトをデプロイしよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ETH-DAO/section-3/lesson-4_プロポーザルに投票できるようにしよう.md","mtime":"2024-02-04T17:20:42.451Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-4_プロポーザルに投票できるようにしよう.md","level":"1.23.3.2","depth":3,"next":{"title":"lesson-3_トレジャリーと投票コントラクトをつくろう.md","level":"1.23.3.3","depth":3,"path":"ETH-DAO/section-3/lesson-3_トレジャリーと投票コントラクトをつくろう.md","ref":"ETH-DAO/section-3/lesson-3_トレジャリーと投票コントラクトをつくろう.md","articles":[]},"previous":{"title":"lesson-1_ガバナンストークンのコントラクトをデプロイしよう.md","level":"1.23.3.1","depth":3,"path":"ETH-DAO/section-3/lesson-1_ガバナンストークンのコントラクトをデプロイしよう.md","ref":"ETH-DAO/section-3/lesson-1_ガバナンストークンのコントラクトをデプロイしよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ETH-DAO/section-3/lesson-4_プロポーザルに投票できるようにしよう.md","mtime":"2024-02-05T09:48:33.355Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

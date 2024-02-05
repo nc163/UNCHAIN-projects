@@ -7957,15 +7957,15 @@
 <p>さあ、少しわくわくしてきましたか？ これから、自分自身のメタデータを作成する手順を順に説明しましょう。</p>
 <p>まず、画像を準備する必要があります。ここでは、ChainIDEのシールド画像を4枚用意しました。もちろん、自分で用意した画像を使ってもOKです。</p>
 <p>ブロンズ・シールド</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_1.png" alt="image-20230223101752414"></p>
+<p><img src="3_2_1.png" alt="image-20230223101752414"></p>
 <p>シルバー・シールド</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_2.png" alt="image-20230223101816151"></p>
+<p><img src="3_2_2.png" alt="image-20230223101816151"></p>
 <p>ゴールド・シールド</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_3.png" alt="image-20230223101836025"></p>
+<p><img src="3_2_3.png" alt="image-20230223101836025"></p>
 <p>プラチナ・シールド</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_4.png" alt="image-20230223101907097"></p>
+<p><img src="3_2_4.png" alt="image-20230223101907097"></p>
 <p>これらの画像をローカルデバイスに保存しましょう。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_5.png" alt="image-20230223102231474"></p>
+<p><img src="3_2_5.png" alt="image-20230223102231474"></p>
 <p>次に、別のフォルダへ新しいファイルを4つ作成し、それぞれ1、2、3、4と名前をつけます。以下の内容を記入してください（画像のIPFSリンクは未完成です。画像をIPFSにアップロードした後、再度記入してください）。</p>
 <p>1</p>
 <pre><code class="lang-json">{
@@ -8011,31 +8011,31 @@
     }]
 }
 </code></pre>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_6.png" alt="image-20230223103510159"></p>
+<p><img src="3_2_6.png" alt="image-20230223103510159"></p>
 <h3 id="🔧-ipfs経由でnft画像とメタデータをアップロード">🔧 IPFS経由でNFT画像とメタデータをアップロード</h3>
 <p>前述の通り、IPFSにファイルをアップロードするにはノードが必要であり、自身でIPFSノードを実行することは難しいと感じるかもしれません。</p>
 <p><a href="https://nft.storage/" target="_blank">NFT Storage</a>や<a href="https://textile.io/" target="_blank">Textile</a>はよく使われるIPFSノードプロバイダです。ここでは、デモ用に<a href="https://nft.storage/" target="_blank">NFT Storage</a>を使用します。</p>
 <p>「<code>Login</code>」をクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_7.png" alt="image-20230223103835432"></p>
+<p><img src="3_2_7.png" alt="image-20230223103835432"></p>
 <p>「<code>Upload</code>」をクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_8.png" alt="image-20230223104125770"></p>
+<p><img src="3_2_8.png" alt="image-20230223104125770"></p>
 <p>「CAR files supported! What is a CAR?」をクリックします（CARは、複数のファイルで同じルートCIDを取得してIPFSへ一度にアップロードすることを可能にします。これは<code>baseURI</code>に必要な機能であり、また、一度に画像をアップロードするのに便利です）。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_9.png" alt="image-20230223104827000"></p>
+<p><img src="3_2_9.png" alt="image-20230223104827000"></p>
 <p><a href="https://car.ipfs.io" target="_blank">https://car.ipfs.io</a> をクリックします。</p>
 <p>「<code>Open file picker</code>」クリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_10.png" alt="image-20230223104942040"></p>
+<p><img src="3_2_10.png" alt="image-20230223104942040"></p>
 <p>すべての画像をまとめて選択し、「<code>Open</code>」をクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_11.png" alt="image-20230223105028884"></p>
+<p><img src="3_2_11.png" alt="image-20230223105028884"></p>
 <p>「<code>Download .car file</code>」をクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_12.png" alt="image-20230223105114628"></p>
+<p><img src="3_2_12.png" alt="image-20230223105114628"></p>
 <p><a href="https://nft.storage/new-file/" target="_blank">NFT.Storage</a>に戻り、「<code>Choose File</code>」をクリックして、先ほどダウンロードしたCARファイルを選択します。次に「<code>Upload</code>」をクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_13.png" alt="image-20230223105418010"></p>
+<p><img src="3_2_13.png" alt="image-20230223105418010"></p>
 <p>生成されたCIDをクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_14.png" alt="image-20230223105546864"></p>
+<p><img src="3_2_14.png" alt="image-20230223105546864"></p>
 <p>「Bronze」に対応するCIDをクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_15.png" alt="image-20230223110400663"></p>
+<p><img src="3_2_15.png" alt="image-20230223110400663"></p>
 <p>この画像のCIDをコピーします。これはURLのアドレスバーの前の部分です。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_16.png" alt="image-20230223110602486"></p>
+<p><img src="3_2_16.png" alt="image-20230223110602486"></p>
 <p>コピーしたCIDを、ローカルコンピュータの対応するメタデータに貼り付けます。</p>
 <p>以下は私のものです。</p>
 <p>1</p>
@@ -8086,7 +8086,7 @@
 <p>必要な変更を加えた後、もう一度メタデータをCARファイルとしてアップロードする手順を追ってみましょう。</p>
 <p>1〜4すべてのメタデータファイルを更新した後、先ほど画像をCARファイルとしてアップロードした手順を参考に今度はメタデータファイルをアップロードしましょう。</p>
 <p>アップロードが完了したら、<code>ipfs://METADATA_CAR_CID</code>にアクセスしてみましょう。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-3/3_2_17.png" alt="image-20230223120843152"></p>
+<p><img src="3_2_17.png" alt="image-20230223120843152"></p>
 <p>このメタデータCARのCIDをコピーします：<code>bafybeihuwmkxnqban2ukneymhwctxfqec5ywrdiqyc7vmyegftrrllf7gq</code></p>
 <p>IPFSのbaseURIに変換します：<code>ipfs://bafybeihuwmkxnqban2ukneymhwctxfqec5ywrdiqyc7vmyegftrrllf7gq/</code></p>
 <h3 id="🙋‍♂️-質問する">🙋‍♂️ 質問する</h3>
@@ -8135,7 +8135,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-2_メタデータの設定.md","level":"1.19.3.1","depth":3,"next":{"title":"lesson-1_メタデータとIPFSの紹介.md","level":"1.19.3.2","depth":3,"path":"Polygon-Whitelist-NFT/section-3/lesson-1_メタデータとIPFSの紹介.md","ref":"Polygon-Whitelist-NFT/section-3/lesson-1_メタデータとIPFSの紹介.md","articles":[]},"previous":{"title":"[section-3]","level":"1.19.3","depth":2,"ref":"","articles":[{"title":"lesson-2_メタデータの設定.md","level":"1.19.3.1","depth":3,"path":"Polygon-Whitelist-NFT/section-3/lesson-2_メタデータの設定.md","ref":"Polygon-Whitelist-NFT/section-3/lesson-2_メタデータの設定.md","articles":[]},{"title":"lesson-1_メタデータとIPFSの紹介.md","level":"1.19.3.2","depth":3,"path":"Polygon-Whitelist-NFT/section-3/lesson-1_メタデータとIPFSの紹介.md","ref":"Polygon-Whitelist-NFT/section-3/lesson-1_メタデータとIPFSの紹介.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Whitelist-NFT/section-3/lesson-2_メタデータの設定.md","mtime":"2024-02-04T17:20:42.534Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-2_メタデータの設定.md","level":"1.19.3.1","depth":3,"next":{"title":"lesson-1_メタデータとIPFSの紹介.md","level":"1.19.3.2","depth":3,"path":"Polygon-Whitelist-NFT/section-3/lesson-1_メタデータとIPFSの紹介.md","ref":"Polygon-Whitelist-NFT/section-3/lesson-1_メタデータとIPFSの紹介.md","articles":[]},"previous":{"title":"[section-3]","level":"1.19.3","depth":2,"ref":"","articles":[{"title":"lesson-2_メタデータの設定.md","level":"1.19.3.1","depth":3,"path":"Polygon-Whitelist-NFT/section-3/lesson-2_メタデータの設定.md","ref":"Polygon-Whitelist-NFT/section-3/lesson-2_メタデータの設定.md","articles":[]},{"title":"lesson-1_メタデータとIPFSの紹介.md","level":"1.19.3.2","depth":3,"path":"Polygon-Whitelist-NFT/section-3/lesson-1_メタデータとIPFSの紹介.md","ref":"Polygon-Whitelist-NFT/section-3/lesson-1_メタデータとIPFSの紹介.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Whitelist-NFT/section-3/lesson-2_メタデータの設定.md","mtime":"2024-02-05T09:48:33.252Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

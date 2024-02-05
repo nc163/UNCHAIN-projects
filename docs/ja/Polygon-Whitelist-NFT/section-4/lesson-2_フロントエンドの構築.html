@@ -7957,9 +7957,9 @@
 <h3 id="🛠-プロジェクトの生成">🛠 プロジェクトの生成</h3>
 <p>ChainIDEの画面下にある、ターミナルパネルを操作していきます。</p>
 <p>まずは「Sandbox」を選択し、「Click to add Sandbox +」をクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_2_7.png" alt></p>
+<p><img src="4_2_7.png" alt></p>
 <p>Sandboxが立ち上がったことを確認しましょう。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_2_8.png" alt></p>
+<p><img src="4_2_8.png" alt></p>
 <p><code>node</code>のバージョンが18.17.0以上になっていることを確認します。</p>
 <pre><code>node -v
 </code></pre><p>それより古かった場合、安定バージョンをインストールして、新しくインストールしたバージョンを確認します。</p>
@@ -7982,13 +7982,13 @@ node -v
 ✔ Would you like to use App Router? (recommended) … [No]
 ✔ Would you like to customize the default import alias? … [No]
 </code></pre><p><code>client/</code>が作成されたことを確認しましょう。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_2_9.png" alt></p>
+<p><img src="4_2_9.png" alt></p>
 <p>clientフォルダに移動して、必要なパッケージをインストールします。</p>
 <pre><code>cd client
 yarn add @metamask/providers@^13.0.0 ethers@^5
 </code></pre><p>ファイルの整理をしましょう。</p>
 <p><code>pages/api/</code>を削除します。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_2_10.png" alt></p>
+<p><img src="4_2_10.png" alt></p>
 <p>それでは、ファイルの更新をしていきます。</p>
 <p><code>styles/global.css</code>を下記のコードで上書きしましょう。</p>
 <pre><code class="lang-css"><span class="hljs-selector-tag">html</span>,
@@ -8034,8 +8034,8 @@ yarn add @metamask/providers@^13.0.0 ethers@^5
 }
 </code></pre>
 <p>clientフォルダの中に、<code>@types/global.d.ts</code>を作成します。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_2_11.png" alt></p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_2_12.png" alt></p>
+<p><img src="4_2_11.png" alt></p>
+<p><img src="4_2_12.png" alt></p>
 <p>下記のコードを記述しましょう。</p>
 <pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { <span class="hljs-title class_">MetaMaskInpageProvider</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@metamask/providers&apos;</span>;
 
@@ -8222,11 +8222,11 @@ yarn add @metamask/providers@^13.0.0 ethers@^5
 <pre><code class="lang-tsx"> <span class="hljs-keyword">const</span> contractAddress = <span class="hljs-string">&quot;&quot;</span>;
 </code></pre>
 <p>ここに、Deploy &amp; Interactionパネルからコピーできる<code>Shield</code>コントラクトのアドレスを入力する必要があります。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_2_3.png" alt="image-20230223155653780"></p>
+<p><img src="4_2_3.png" alt="image-20230223155653780"></p>
 <pre><code class="lang-tsx"><span class="hljs-keyword">const</span> abi = ;
 </code></pre>
 <p>ABIは、ブロックチェーンとのやりとりに使用されるインタフェースファイルです。こちらからコピーできます。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_2_4.png" alt="image-20230223155913909"></p>
+<p><img src="4_2_4.png" alt="image-20230223155913909"></p>
 <p>したがって、完成した<code>pages/index.tsx</code>は次のようになります。ただし、<code>contractAddress</code>は人によって異なるため、皆さんのファイル内容はそれぞれ異なることを忘れないでください。</p>
 <pre><code class="lang-tsx"><span class="hljs-keyword">import</span> <span class="hljs-title class_">Head</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;next/head&apos;</span>;
 <span class="hljs-keyword">import</span> { <span class="hljs-title class_">Inter</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;next/font/google&apos;</span>;
@@ -8403,7 +8403,7 @@ yarn add @metamask/providers@^13.0.0 ethers@^5
 <p>基本的に<code>return</code>文の中は<code>&quot;value: 0.01&quot;</code>、<code>&quot;Connect&quot;</code>、<code>&quot;Mint&quot;</code>などの要素の構造を形成します。</p>
 <p><code>CSS</code>はこれらの要素をページの中央に配置します。</p>
 <p>一方、<code>TypeScript</code>はこれらのボタンがクリックされたときに発生するアクションを定義するために使用されます。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_2_6.png" alt></p>
+<p><img src="4_2_6.png" alt></p>
 <p>次に、<code>&quot;Connect&quot;</code>と<code>&quot;Mint&quot;</code>の機能がどのように実装されているかを説明しましょう。他の機能についても同様のアプローチを推定できるはずです。</p>
 <pre><code class="lang-tsx"><span class="hljs-keyword">import</span> { ethers } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;ethers&apos;</span>;
 </code></pre>
@@ -8545,7 +8545,7 @@ yarn add @metamask/providers@^13.0.0 ethers@^5
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-2_フロントエンドの構築.md","level":"1.19.4.3","depth":3,"next":{"title":"[section-5]","level":"1.19.5","depth":2,"ref":"","articles":[{"title":"lesson-2_コントラクトの自動テスト.md","level":"1.19.5.1","depth":3,"path":"Polygon-Whitelist-NFT/section-5/lesson-2_コントラクトの自動テスト.md","ref":"Polygon-Whitelist-NFT/section-5/lesson-2_コントラクトの自動テスト.md","articles":[]},{"title":"lesson-3_GitHub連携.md","level":"1.19.5.2","depth":3,"path":"Polygon-Whitelist-NFT/section-5/lesson-3_GitHub連携.md","ref":"Polygon-Whitelist-NFT/section-5/lesson-3_GitHub連携.md","articles":[]},{"title":"lesson-1_モノレポの設定.md","level":"1.19.5.3","depth":3,"path":"Polygon-Whitelist-NFT/section-5/lesson-1_モノレポの設定.md","ref":"Polygon-Whitelist-NFT/section-5/lesson-1_モノレポの設定.md","articles":[]}]},"previous":{"title":"lesson-1_コントラクトのデプロイ.md","level":"1.19.4.2","depth":3,"path":"Polygon-Whitelist-NFT/section-4/lesson-1_コントラクトのデプロイ.md","ref":"Polygon-Whitelist-NFT/section-4/lesson-1_コントラクトのデプロイ.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Whitelist-NFT/section-4/lesson-2_フロントエンドの構築.md","mtime":"2024-02-04T17:20:42.535Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-2_フロントエンドの構築.md","level":"1.19.4.3","depth":3,"next":{"title":"[section-5]","level":"1.19.5","depth":2,"ref":"","articles":[{"title":"lesson-2_コントラクトの自動テスト.md","level":"1.19.5.1","depth":3,"path":"Polygon-Whitelist-NFT/section-5/lesson-2_コントラクトの自動テスト.md","ref":"Polygon-Whitelist-NFT/section-5/lesson-2_コントラクトの自動テスト.md","articles":[]},{"title":"lesson-3_GitHub連携.md","level":"1.19.5.2","depth":3,"path":"Polygon-Whitelist-NFT/section-5/lesson-3_GitHub連携.md","ref":"Polygon-Whitelist-NFT/section-5/lesson-3_GitHub連携.md","articles":[]},{"title":"lesson-1_モノレポの設定.md","level":"1.19.5.3","depth":3,"path":"Polygon-Whitelist-NFT/section-5/lesson-1_モノレポの設定.md","ref":"Polygon-Whitelist-NFT/section-5/lesson-1_モノレポの設定.md","articles":[]}]},"previous":{"title":"lesson-1_コントラクトのデプロイ.md","level":"1.19.4.2","depth":3,"path":"Polygon-Whitelist-NFT/section-4/lesson-1_コントラクトのデプロイ.md","ref":"Polygon-Whitelist-NFT/section-4/lesson-1_コントラクトのデプロイ.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Whitelist-NFT/section-4/lesson-2_フロントエンドの構築.md","mtime":"2024-02-05T09:48:33.270Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

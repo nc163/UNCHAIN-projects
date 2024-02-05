@@ -7959,28 +7959,28 @@
 <p>まずは<code>Add Voter画面</code>に移動して投票者を追加してみましょう。これはコントラクトをdeployした人しかできないので、コントラクトをdeployしたwalletのidでサインインしているかを確認してください。</p>
 <p>前のセクションで作成したコントラクトをdeployしたwallet idとは別のwallet idに対して投票券を配布（mint）してみましょう。</p>
 <p>配布先に使うwallet idを入力欄に入れてaddボタンを押してください。下のようなメッセージが返ってきていればOKです！</p>
-<p><img src="../../public/images/NEAR-Election-dApp/section-4/4_1_1.png" alt>
-<img src="../../public/images/NEAR-Election-dApp/section-4/4_1_2.png" alt></p>
+<p><img src="4_1_1.png" alt>
+<img src="4_1_2.png" alt></p>
 <p>次に候補者を追加してみましょう。</p>
 <p><code>Add Candidate画面</code>へ移動して<code>Image URI, Name, Manifest</code>の入力欄を埋めてAddボタンを押しましょう。 <code>Image URI</code>についてはIPFSで保存されたもののCIDであればなんでもいいです。</p>
 <p><a href="https://www.pinata.cloud/" target="_blank">こちら</a>は有名なIPFSで保存できるサービスの1つである<code>pinata</code>です。特にこだわりがない方はこちらで画像をアップロードしてみてください。</p>
 <p>候補者のNFTのmintができたら<code>Home画面</code>に移ってみましょう。
 下のように追加した候補者の情報が追加されていれば成功です！
-<img src="../../public/images/NEAR-Election-dApp/section-4/4_1_3.png" alt>
-<img src="../../public/images/NEAR-Election-dApp/section-4/4_1_4.png" alt>
-<img src="../../public/images/NEAR-Election-dApp/section-4/4_1_5.png" alt></p>
+<img src="4_1_3.png" alt>
+<img src="4_1_4.png" alt>
+<img src="4_1_5.png" alt></p>
 <p>では次に投票をしてみましょう。</p>
 <p>先ほど投票券を配布したwalletのidでサインインし直してみてください。</p>
 <p>画面右上の<code>Sign Outボタン</code>を押せば<code>Sign In画面</code>に行くことができます。</p>
 <p>投票券の配布先に指定したwalletのidでサインインできたら、まずはコントラクトを作成したwalletのidでしか投票券を配布（mint）できないかをテストしてみましょう。</p>
 <p><code>Add Voter画面</code>へ移り先ほどと同じように別のwalletのidを入力欄に入れて<code>Addボタン</code>を押してみてください。下のようなメッセージが返ってきていれば成功です。</p>
-<p><img src="../../public/images/NEAR-Election-dApp/section-4/4_1_6.png" alt></p>
+<p><img src="4_1_6.png" alt></p>
 <p>では<code>Home画面</code>に移動して実際に投票をしてみましょう。</p>
 <p>得票数が<code>1</code>になっている候補者に投票してみましょう！<code>vote</code>ボタンを押して確認メッセージが出たらOKを押してトランザクションの画面に移ってapproveボタンを押しましょう。</p>
 <p>下のように得票数が変化していれば成功です！</p>
-<p><img src="../../public/images/NEAR-Election-dApp/section-4/4_1_7.png" alt></p>
+<p><img src="4_1_7.png" alt></p>
 <p>また、もう一度<code>Voteボタン</code>を押してみましょう。次のようにすでに投票していることがメッセージで来ていたら成功です！</p>
-<p><img src="../../public/images/NEAR-Election-dApp/section-4/4_1_8.png" alt></p>
+<p><img src="4_1_8.png" alt></p>
 <h3 id="🙋‍♂️-質問する">🙋‍♂️ 質問する</h3>
 <p>ここまでの作業で何かわからないことがある場合は、Discordの<code>#near</code>で質問をしてください。</p>
 <p>ヘルプをするときのフローが円滑になるので、エラーレポートには下記の4点を記載してください ✨</p>
@@ -8029,7 +8029,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-1_作成したdAppを使ってみよう.md","level":"1.2.4.1","depth":3,"next":{"title":"lesson-2_Netlifyにdeployしよう.md","level":"1.2.4.2","depth":3,"path":"NEAR-Election-dApp/section-4/lesson-2_Netlifyにdeployしよう.md","ref":"NEAR-Election-dApp/section-4/lesson-2_Netlifyにdeployしよう.md","articles":[]},"previous":{"title":"[section-4]","level":"1.2.4","depth":2,"ref":"","articles":[{"title":"lesson-1_作成したdAppを使ってみよう.md","level":"1.2.4.1","depth":3,"path":"NEAR-Election-dApp/section-4/lesson-1_作成したdAppを使ってみよう.md","ref":"NEAR-Election-dApp/section-4/lesson-1_作成したdAppを使ってみよう.md","articles":[]},{"title":"lesson-2_Netlifyにdeployしよう.md","level":"1.2.4.2","depth":3,"path":"NEAR-Election-dApp/section-4/lesson-2_Netlifyにdeployしよう.md","ref":"NEAR-Election-dApp/section-4/lesson-2_Netlifyにdeployしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"NEAR-Election-dApp/section-4/lesson-1_作成したdAppを使ってみよう.md","mtime":"2024-02-04T17:20:42.501Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-1_作成したdAppを使ってみよう.md","level":"1.2.4.1","depth":3,"next":{"title":"lesson-2_Netlifyにdeployしよう.md","level":"1.2.4.2","depth":3,"path":"NEAR-Election-dApp/section-4/lesson-2_Netlifyにdeployしよう.md","ref":"NEAR-Election-dApp/section-4/lesson-2_Netlifyにdeployしよう.md","articles":[]},"previous":{"title":"[section-4]","level":"1.2.4","depth":2,"ref":"","articles":[{"title":"lesson-1_作成したdAppを使ってみよう.md","level":"1.2.4.1","depth":3,"path":"NEAR-Election-dApp/section-4/lesson-1_作成したdAppを使ってみよう.md","ref":"NEAR-Election-dApp/section-4/lesson-1_作成したdAppを使ってみよう.md","articles":[]},{"title":"lesson-2_Netlifyにdeployしよう.md","level":"1.2.4.2","depth":3,"path":"NEAR-Election-dApp/section-4/lesson-2_Netlifyにdeployしよう.md","ref":"NEAR-Election-dApp/section-4/lesson-2_Netlifyにdeployしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"NEAR-Election-dApp/section-4/lesson-1_作成したdAppを使ってみよう.md","mtime":"2024-02-05T09:48:32.954Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

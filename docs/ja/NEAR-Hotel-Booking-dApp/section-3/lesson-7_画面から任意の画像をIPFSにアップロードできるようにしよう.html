@@ -7958,7 +7958,7 @@
 <p>🖼 IPFSについては、<a href="https://unchain-portal.netlify.app/projects/103-ETH-NFT-Maker/section-2-lesson-1" target="_blank">ETH-NFT-Maker の Section2-Lesson1</a>で解説しているのでそちらをご覧ください！</p>
 <p>IPFSへのファイルアップロードについては、デスクトップアプリをダウンロードして、手動でも行うことができるのですが、もし画面からボタンを押すだけでアップロードすることができたら使いやすくて便利ですよね！ このレッスンではそのための画面を作成していきます！</p>
 <p>今回は、IPFSにアクセスするためのAPIを提供している<a href="https://www.pinata.cloud/" target="_blank">Pinata</a>を利用します！
-<img src="../../public/images/NEAR-Hotel-Booking-dApp/section-4/4_7_1.png" alt>
+<img src="4_7_1.png" alt>
 もしアカウントを作成していない場合は、<a href="https://www.pinata.cloud/" target="_blank">Pinata</a>にアクセスしてアカウントを作成してください！</p>
 <p>アカウントを作成したらいよいよ開発に移ります！
 まずは、開発に必要なモジュールを追加でインストールしましょう！
@@ -7994,19 +7994,19 @@
 3. クレデンシャル情報をコピー＆ペーストする
 </code></pre><h4 id="1-pinata-のサイトにログインする。">1. Pinata のサイトにログインする。</h4>
 <p>事前にアカウントを作成して<a href="https://www.pinata.cloud/" target="_blank">https://www.pinata.cloud/</a>にアクセスしましょう！</p>
-<p><img src="../../public/images/NEAR-Hotel-Booking-dApp/section-4/4_7_1.png" alt></p>
+<p><img src="4_7_1.png" alt></p>
 <h4 id="2-api-クレデンシャル情報を作成する。">2. API クレデンシャル情報を作成する。</h4>
 <p>次にAPI用のクレデンシャル情報を作成しましょう！
 ログイン後のページの右上のメニューボタンから「API Keys」を選択してクリックします！</p>
-<p><img src="../../public/images/NEAR-Hotel-Booking-dApp/section-4/4_7_2.png" alt></p>
+<p><img src="4_7_2.png" alt></p>
 <p>次に表示される画面でAPIのクレデンシャル情報を作成できます。
 左上の「+ New Key」ボタンをクリックしましょう！</p>
-<p><img src="../../public/images/NEAR-Hotel-Booking-dApp/section-4/4_7_3.png" alt></p>
+<p><img src="4_7_3.png" alt></p>
 <p>うまくいけば下のような画面が表示されるはずなので必要事項を入力しましょう。
 特に制限がなければ全てONにて最後に名前を決めましょう！</p>
-<p><img src="../../public/images/NEAR-Hotel-Booking-dApp/section-4/4_7_4.png" alt></p>
+<p><img src="4_7_4.png" alt></p>
 <p>クレデンシャル情報の作成に成功したら下記の様な画面が出てくるはずです！</p>
-<p><img src="../../public/images/NEAR-Hotel-Booking-dApp/section-4/4_7_5.png" alt></p>
+<p><img src="4_7_5.png" alt></p>
 <p>おめでとうございます！ これでPinataのAPIを利用するためのクレデンシャル情報を作成することができました！</p>
 <h4 id="3-クレデンシャル情報をコピーペーストする">3. クレデンシャル情報をコピー&amp;ペーストする</h4>
 <p>次に利用するのはここで表示されているAPI KeyとAPI Secretなのでこの2つをコピーしてしまいましょう！
@@ -8132,7 +8132,7 @@ PINATA_API_Secret=&lt;YOUR_API_SECRET&gt;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-title class_">UploadButton</span>;
 </code></pre>
 <p>下記のようなフォームとボタンが表示される様になります！</p>
-<p><img src="../../public/images/NEAR-Hotel-Booking-dApp/section-4/4_7_6.png" alt></p>
+<p><img src="4_7_6.png" alt></p>
 <p>追加した内容を見ていきましょう！</p>
 <p>ファイルの冒頭で先ほど<code>dev-account.env</code>ファイルに設定した環境変数を読み込んでいます。</p>
 <pre><code class="lang-js"><span class="hljs-comment">// dev-account.envファイルから読み込む環境変数</span>
@@ -8244,7 +8244,7 @@ PINATA_API_Secret=&lt;YOUR_API_SECRET&gt;
 </code></pre>
 <p>内容としては至ってシンプルでファイルの先頭で先ほど作成した<code>UploadButton</code>コンポーネントを読み込んで画面の見出しの下に配置しただけになります！</p>
 <p>これでUpload画面が実装できました！ 画面は次の様に表示されます！</p>
-<p><img src="../../public/images/NEAR-Hotel-Booking-dApp/section-4/4_7_8.png" alt></p>
+<p><img src="4_7_8.png" alt></p>
 <h3 id="画面遷移の機能を拡張しよう">画面遷移の機能を拡張しよう</h3>
 <p>さてUpload画面用のコンポーネントは作成しましたが、完成まであと一歩です！</p>
 <p>今のままではUpload画面に遷移できないので<code>NavBar</code>コンポーネントに設定を追加してあげる必要があります。</p>
@@ -8426,7 +8426,7 @@ export default App;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-7_画面から任意の画像をIPFSにアップロードできるようにしよう.md","level":"1.16.3.7","depth":3,"next":{"title":"[section-4]","level":"1.16.4","depth":2,"ref":"","articles":[{"title":"lesson-1_NetlifyにWebアプリケーションをデプロイをしよう.md","level":"1.16.4.1","depth":3,"path":"NEAR-Hotel-Booking-dApp/section-4/lesson-1_NetlifyにWebアプリケーションをデプロイをしよう.md","ref":"NEAR-Hotel-Booking-dApp/section-4/lesson-1_NetlifyにWebアプリケーションをデプロイをしよう.md","articles":[]}]},"previous":{"title":"lesson-2_画面遷移を実装しよう.md","level":"1.16.3.6","depth":3,"path":"NEAR-Hotel-Booking-dApp/section-3/lesson-2_画面遷移を実装しよう.md","ref":"NEAR-Hotel-Booking-dApp/section-3/lesson-2_画面遷移を実装しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"NEAR-Hotel-Booking-dApp/section-3/lesson-7_画面から任意の画像をIPFSにアップロードできるようにしよう.md","mtime":"2024-02-04T17:20:42.508Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-7_画面から任意の画像をIPFSにアップロードできるようにしよう.md","level":"1.16.3.7","depth":3,"next":{"title":"[section-4]","level":"1.16.4","depth":2,"ref":"","articles":[{"title":"lesson-1_NetlifyにWebアプリケーションをデプロイをしよう.md","level":"1.16.4.1","depth":3,"path":"NEAR-Hotel-Booking-dApp/section-4/lesson-1_NetlifyにWebアプリケーションをデプロイをしよう.md","ref":"NEAR-Hotel-Booking-dApp/section-4/lesson-1_NetlifyにWebアプリケーションをデプロイをしよう.md","articles":[]}]},"previous":{"title":"lesson-2_画面遷移を実装しよう.md","level":"1.16.3.6","depth":3,"path":"NEAR-Hotel-Booking-dApp/section-3/lesson-2_画面遷移を実装しよう.md","ref":"NEAR-Hotel-Booking-dApp/section-3/lesson-2_画面遷移を実装しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"NEAR-Hotel-Booking-dApp/section-3/lesson-7_画面から任意の画像をIPFSにアップロードできるようにしよう.md","mtime":"2024-02-05T09:48:33.214Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

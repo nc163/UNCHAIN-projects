@@ -7958,12 +7958,12 @@
                                 <h3 id="🐝-gemcase-で-nft-を確認する">🐝 gemcase で NFT を確認する</h3>
 <p>コントラクトのアドレス(<code>Contract deployed to</code>に続く<code>0x..</code>)をターミナルからコピーします。</p>
 <p>次に、<a href="https://gemcase.vercel.app/" target="_blank">gemcase(NFTを閲覧できるサービス)</a> に先ほどコピーしたコントラクトアドレスを含めた必要な情報を下のように打ち込んでいきます。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-2/2_4_7.png" alt></p>
+<p><img src="2_4_7.png" alt></p>
 <p>そして<code>View</code>ボタンをクリックするとコレクションの詳細が表示されます。</p>
 <p>私のコレクションはこのような形で表示されます。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-2/2_4_8.png" alt></p>
+<p><img src="2_4_8.png" alt></p>
 <p>下にスクロールすると他のコレクションが見れるので<code>View</code>ボタンをクリックしてみましょう。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-2/2_4_9.png" alt></p>
+<p><img src="2_4_9.png" alt></p>
 <p><code>deploy.js</code>で、10個のNFTを自分用にキープしてから、3個NFTをMintしました。</p>
 <p>したがって、表示できるNFTコレクションは、13個となっているはずです。</p>
 <h3 id="📝-etherscan-を使ってコントラクトを-verify（検証）する">📝 Etherscan を使ってコントラクトを verify（検証）する</h3>
@@ -7973,14 +7973,14 @@
 <p>まず、Etherscanのアカウントを取得して、API Keyを取得しましょう。</p>
 <p>アカウントをまだお持ちでない場合は、<a href="https://etherscan.io/register" target="_blank">https://etherscan.io/register</a> にアクセスして、無料のユーザーアカウントを作成してください。</p>
 <p>アカウントが作成できたら、<code>My Profile</code>画面に移動してください。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-2/2_4_2.png" alt></p>
+<p><img src="2_4_2.png" alt></p>
 <p><code>API Keys</code>タブを選択し、<code>+ Add</code>ボタンを押したら、<code>Create API Key</code>のポップアップが表示されるので、あなたのAPIに任意の名前をつけましょう。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-2/2_4_3.png" alt></p>
+<p><img src="2_4_3.png" alt></p>
 <p>次に、あなたが作成したAPIの横の<code>Edit</code>ボタンを選択してください。ポップアップが表示されるので、<code>apiKey</code>を取得しましょう。</p>
 <p>次に、ターミナルで<code>packages/contract</code>に移動して、次のコマンドを実行してください。</p>
 <p>Etherscanでverificationを行うために必要なツールをインストールします。</p>
 <pre><code>yarn add --dev @nomiclabs/hardhat-etherscan@^3.1.7
-</code></pre><p><img src="../../public/images/Polygon-Generative-NFT/section-2/2_4_4.png" alt></p>
+</code></pre><p><img src="2_4_4.png" alt></p>
 <p>次に、<code>packages/contract</code>ディレクトリにある<code>.env</code>を開きます。</p>
 <p><code>YOUR ETHERSCAN apiKey HERE</code>の部分にEtherscanから取得した<code>apiKey</code>を貼り付けたら、下記のコードを<code>.env</code>に追加しましょう。</p>
 <pre><code>ETHERSCAN_API = &quot;YOUR ETHERSCAN apiKey HERE&quot;
@@ -8028,10 +8028,10 @@ Successfully verified contract NFTCollectible on Etherscan.
 https://sepolia.etherscan.io/address/0x94E614a7D82d9dD24CBED7607a40eBE4243491dF#code
 </code></pre><p>出力された<code>sepolia.etherscan.io</code>のURLにアクセスしてみましょう。</p>
 <p>私の <a href="https://sepolia.etherscan.io/address/0x94E614a7D82d9dD24CBED7607a40eBE4243491dF#code" target="_blank">URL リンク</a> の中身は下記のように表示されます。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-2/2_4_5.png" alt></p>
+<p><img src="2_4_5.png" alt></p>
 <p><code>Contract</code>タブの横に小さな緑のチェックマーク ✅ が表示されているでしょうか？</p>
 <p>✅ は、ユーザーがMetaMaskを使ってし、Etherscan自体からコントラクトの機能を呼び出せるようになったということを意味します。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-2/2_4_6.png" alt></p>
+<p><img src="2_4_6.png" alt></p>
 <p><code>Contract</code>タブの中の<code>Write Contract</code>を選択して以下を試してみましょう。</p>
 <ul>
 <li><p>コントラクトをデプロイするのに使用したMetaMaskアカウントに接続し、<code>withdraw</code>関数を呼び出します。</p>
@@ -8095,7 +8095,7 @@ https://sepolia.etherscan.io/address/0x94E614a7D82d9dD24CBED7607a40eBE4243491dF#
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-4_NFTをgemcaseで確認しよう.md","level":"1.30.5.2","depth":3,"next":{"title":"lesson-1_スマートコントラクトを作ろう.md","level":"1.30.5.3","depth":3,"path":"Polygon-Generative-NFT/section-2/lesson-1_スマートコントラクトを作ろう.md","ref":"Polygon-Generative-NFT/section-2/lesson-1_スマートコントラクトを作ろう.md","articles":[]},"previous":{"title":"lesson-3_ローカル環境でコントラクトをデプロイしよう.md","level":"1.30.5.1","depth":3,"path":"Polygon-Generative-NFT/section-2/lesson-3_ローカル環境でコントラクトをデプロイしよう.md","ref":"Polygon-Generative-NFT/section-2/lesson-3_ローカル環境でコントラクトをデプロイしよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Generative-NFT/section-2/lesson-4_NFTをgemcaseで確認しよう.md","mtime":"2024-02-04T17:20:42.521Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-4_NFTをgemcaseで確認しよう.md","level":"1.30.5.2","depth":3,"next":{"title":"lesson-1_スマートコントラクトを作ろう.md","level":"1.30.5.3","depth":3,"path":"Polygon-Generative-NFT/section-2/lesson-1_スマートコントラクトを作ろう.md","ref":"Polygon-Generative-NFT/section-2/lesson-1_スマートコントラクトを作ろう.md","articles":[]},"previous":{"title":"lesson-3_ローカル環境でコントラクトをデプロイしよう.md","level":"1.30.5.1","depth":3,"path":"Polygon-Generative-NFT/section-2/lesson-3_ローカル環境でコントラクトをデプロイしよう.md","ref":"Polygon-Generative-NFT/section-2/lesson-3_ローカル環境でコントラクトをデプロイしよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Generative-NFT/section-2/lesson-4_NFTをgemcaseで確認しよう.md","mtime":"2024-02-05T09:48:33.428Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

@@ -8026,18 +8026,18 @@
 <blockquote>
 <p><strong>✅ テストを実行してみよう</strong></p>
 <p>ログイン機能を実装したので、ここで<code>npm run test</code>を実行してみましょう！</p>
-<p><img src="../../public/images/XRPL-NFT-Maker/section-3/3_2_5.png" alt="test1"></p>
+<p><img src="3_2_5.png" alt="test1"></p>
 <p><strong>not connected</strong>（未ログイン）と<strong>connected</strong>（ログイン済み）、それぞれの状況においてテストを行なっており、合計5つのテストにパスすることが期待されます。</p>
 <p><strong>not connected</strong>のテストに注目してみます。connectボタンが表示されるかだけではなく、ボタンのクリック操作を行なった結果<code>authorize</code>関数が呼び出されているかを確認することもできます。</p>
 <p>なお、テスト実行時には実際の<code>Xumm</code>が呼び出されないようにモックしています。</p>
 </blockquote>
 <p>この時点で<code>npm start</code>からアプリケーションを起動してみましょう！</p>
 <p>次のような画面が表示されれば成功です。</p>
-<p><img src="../../public/images/XRPL-NFT-Maker/section-3/3_2_1.png" alt></p>
+<p><img src="3_2_1.png" alt></p>
 <p>ここで一度Xummへログインをしてみましょう。</p>
 <p>先ほど作成したConnectボタンを押下してみてください。
 次のようなポップアップが表示されるはずです。</p>
-<p><img src="../../public/images/XRPL-NFT-Maker/section-3/3_2_2.png" alt></p>
+<p><img src="3_2_2.png" alt></p>
 <p>このQRコードをXummで読み取ってみましょう。</p>
 <p>読み取り後、SignInへ署名することでログインが完了します！</p>
 <p>Webアプリケーションにアカウントのアドレスが表示されていればログイン成功です！</p>
@@ -8073,14 +8073,14 @@
 <blockquote>
 <p><strong>✅ テストを実行してみよう</strong></p>
 <p>画像のアップロード機能を実装したので、再度テスト結果を確認してみましょう。</p>
-<p><img src="../../public/images/XRPL-NFT-Maker/section-3/3_2_6.png" alt="test2"></p>
+<p><img src="3_2_6.png" alt="test2"></p>
 <p>ここまでで合計6つのテストにパスすることが期待されます。</p>
 <p><code>should exists img tag when select img</code>に注目してみます。このテストは、ファイルのアップロード操作を行なった結果画像が表示されるか（<code>&lt;img&gt;</code>要素が取得できるか）を確認しています。</p>
 </blockquote>
 <p>実際にブラウザから操作してみましょう。</p>
 <p>アプリケーションを起動後ファイルを選択ボタンを押して好きな画像を選択してみましょう。</p>
 <p>ブラウザに選択した画像が表示されれば成功です！</p>
-<p><img src="../../public/images/XRPL-NFT-Maker/section-3/3_2_3.png" alt></p>
+<p><img src="3_2_3.png" alt></p>
 <h3 id="📝-nftのmint処理を実装しよう">📝 NFTのMint処理を実装しよう</h3>
 <p>次にXummを通じてNFTを発行する処理を実装していきましょう。
 uploadImage関数の下に次のコードを追加してください。</p>
@@ -8266,14 +8266,14 @@ Xummでトランザクション署名画面を開いたり署名したりする�
   });
 </code></pre>
 <p>それでは改めてテストを実行してみましょう。</p>
-<p><img src="../../public/images/XRPL-NFT-Maker/section-3/3_2_7.png" alt="test3"></p>
+<p><img src="3_2_7.png" alt="test3"></p>
 <p><code>should mint success</code>に注目してみます。このテストは、ミントボタンのクリック操作を行なった結果、期待するNFTの詳細ページが開かれるか（<code>window.open関数</code>が期待するNFTのIDを含んだ引数で実行されるか）を確認しています。</p>
 <p>ここまでで全てのテストにパスすることが期待されます。</p>
 </blockquote>
 <p>実際にブラウザから操作してみましょう。</p>
 <p>画像を選択しミント・Xummでのトランザクションの署名を行うと、Bithompのページが開きます。</p>
 <p>選択した画像が表示されていれば成功です！</p>
-<p><img src="../../public/images/XRPL-NFT-Maker/section-3/3_2_4.png" alt></p>
+<p><img src="3_2_4.png" alt></p>
 <h3 id="🙋‍♂️-質問する">🙋‍♂️ 質問する</h3>
 <p>ここまでの作業で何かわからないことがある場合は、Discordの<code>#xrpl</code>で質問をしてください。</p>
 <p>ヘルプをするときのフローが円滑になるので、エラーレポートには下記の3点を記載してください ✨</p>
@@ -8326,7 +8326,7 @@ Xummでトランザクション署名画面を開いたり署名したりする�
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-2_webアプリケーションからNFTをmintしよう.md","level":"1.5.3.2","depth":3,"next":{"title":"[section-4]","level":"1.5.4","depth":2,"ref":"","articles":[{"title":"lesson-1_Webアプリをアップデートしよう.md","level":"1.5.4.1","depth":3,"path":"XRPL-NFT-Maker/section-4/lesson-1_Webアプリをアップデートしよう.md","ref":"XRPL-NFT-Maker/section-4/lesson-1_Webアプリをアップデートしよう.md","articles":[]},{"title":"lesson-2_Vercelを使ってアプリをデプロイしよう.md","level":"1.5.4.2","depth":3,"path":"XRPL-NFT-Maker/section-4/lesson-2_Vercelを使ってアプリをデプロイしよう.md","ref":"XRPL-NFT-Maker/section-4/lesson-2_Vercelを使ってアプリをデプロイしよう.md","articles":[]}]},"previous":{"title":"lesson-1_フロントエンドの準備.md","level":"1.5.3.1","depth":3,"path":"XRPL-NFT-Maker/section-3/lesson-1_フロントエンドの準備.md","ref":"XRPL-NFT-Maker/section-3/lesson-1_フロントエンドの準備.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"XRPL-NFT-Maker/section-3/lesson-2_webアプリケーションからNFTをmintしよう.md","mtime":"2024-02-04T17:20:42.560Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-2_webアプリケーションからNFTをmintしよう.md","level":"1.5.3.2","depth":3,"next":{"title":"[section-4]","level":"1.5.4","depth":2,"ref":"","articles":[{"title":"lesson-1_Webアプリをアップデートしよう.md","level":"1.5.4.1","depth":3,"path":"XRPL-NFT-Maker/section-4/lesson-1_Webアプリをアップデートしよう.md","ref":"XRPL-NFT-Maker/section-4/lesson-1_Webアプリをアップデートしよう.md","articles":[]},{"title":"lesson-2_Vercelを使ってアプリをデプロイしよう.md","level":"1.5.4.2","depth":3,"path":"XRPL-NFT-Maker/section-4/lesson-2_Vercelを使ってアプリをデプロイしよう.md","ref":"XRPL-NFT-Maker/section-4/lesson-2_Vercelを使ってアプリをデプロイしよう.md","articles":[]}]},"previous":{"title":"lesson-1_フロントエンドの準備.md","level":"1.5.3.1","depth":3,"path":"XRPL-NFT-Maker/section-3/lesson-1_フロントエンドの準備.md","ref":"XRPL-NFT-Maker/section-3/lesson-1_フロントエンドの準備.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"XRPL-NFT-Maker/section-3/lesson-2_webアプリケーションからNFTをmintしよう.md","mtime":"2024-02-05T09:48:32.974Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

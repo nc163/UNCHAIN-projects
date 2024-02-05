@@ -8158,10 +8158,10 @@ export default function Container({ currentAccount }: Props) {
 </code></pre>
 <p>ブラウザで<code>http://localhost:3000</code>へアクセスします。</p>
 <p><code>Faucet</code>タブをクリックすると以下のような表示がされます。</p>
-<p><img src="../../public/images/AVAX-AMM/section-3/3_4_1.png" alt></p>
+<p><img src="3_4_1.png" alt></p>
 <p>入力欄に10と入力し、<code>Fund</code>をクリックします。
 トランザクションに署名し、しばらく待つと（ポップアップが表示されokを押した後）右側の<code>Your Details</code>のUSDCの部分が10増えているはずです。</p>
-<p><img src="../../public/images/AVAX-AMM/section-3/3_4_2.png" alt></p>
+<p><img src="3_4_2.png" alt></p>
 <p><code>Change</code>ボタンをクリックするとUSDC -&gt; JOEへ変更されるため、JOEに関しても同じようにfaucetを利用することができます。</p>
 <p>それでは<code>Faucet.tsx</code>の中身を見ましょう。</p>
 <p>使用する状態変数は以下の通りです。</p>
@@ -8425,7 +8425,7 @@ export default function Container({ currentAccount }: Props) {
 </code></pre>
 <p>ブラウザで<code>http://localhost:3000</code>へアクセスします。</p>
 <p><code>Provide</code>タブをクリックすると以下のような表示がされます。</p>
-<p><img src="../../public/images/AVAX-AMM/section-3/3_4_3.png" alt></p>
+<p><img src="3_4_3.png" alt></p>
 <p>入力欄にそれぞれ100と入力し、<code>Provide</code>をクリックします。</p>
 <p>provideの実行では以下のトランザクションへの署名が必要です。</p>
 <ul>
@@ -8437,7 +8437,7 @@ export default function Container({ currentAccount }: Props) {
 それぞれに署名をし、しばらく待つと最後に<code>provide</code>の署名について求められるので署名をします。
 🙌 こちらのUI改善できる方がいらっしゃればUNCHAINにて共有して頂けると大変助かります！</p>
 <p>しばらく待つと（ポップアップが表示されokを押した後）右側の<code>Your Details</code>が更新されます！</p>
-<p><img src="../../public/images/AVAX-AMM/section-3/3_4_4.png" alt></p>
+<p><img src="3_4_4.png" alt></p>
 <p>それでは<code>Provide.tsx</code>の中身を見ましょう。</p>
 <p>使用する状態変数は以下の通りです。</p>
 <pre><code class="lang-ts"><span class="hljs-keyword">const</span> [amountOfToken0, setAmountOfToken0] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">&apos;&apos;</span>); <span class="hljs-comment">// ユーザが指定したtoken0の預けるトークンの量を保持します。</span>
@@ -8691,7 +8691,7 @@ export default function Container({ currentAccount }: Props) {
 </code></pre>
 <p>ブラウザで<code>http://localhost:3000</code>へアクセスします。</p>
 <p><code>Swap</code>タブをクリックすると以下のような表示がされます。</p>
-<p><img src="../../public/images/AVAX-AMM/section-3/3_4_5.png" alt></p>
+<p><img src="3_4_5.png" alt></p>
 <p>USDC入力欄に50と入力すると、swapにより受けることができるJOEの量が表示されます。
 <code>Swap</code>をクリックします。</p>
 <p>swapの実行では以下のトランザクションへの署名が必要です。</p>
@@ -8701,9 +8701,9 @@ export default function Container({ currentAccount }: Props) {
 </ul>
 <p>初めに表示された<code>approve</code>のトランザクションに署名し、しばらく待つと<code>swap</code>の署名について求められるので署名をします。</p>
 <p>ここでは以下の図のようなことを行っています。</p>
-<p><img src="../../public/images/AVAX-AMM/section-3/swap.drawio.svg" alt></p>
+<p><img src="swap.drawio.svg" alt></p>
 <p>しばらく待つと（ポップアップが表示されokを押した後）右側の<code>Your Details</code>が更新されます！</p>
-<p><img src="../../public/images/AVAX-AMM/section-3/3_4_6.png" alt></p>
+<p><img src="3_4_6.png" alt></p>
 <p>それでは<code>Swap.tsx</code>の中身を見ましょう。</p>
 <p>使用する状態変数は以下の通りです。</p>
 <pre><code class="lang-ts"><span class="hljs-comment">// スワップ元とスワップ先のトークンを格納します。</span>
@@ -8963,11 +8963,11 @@ export default function Container({ currentAccount }: Props) {
 </code></pre>
 <p>ブラウザで<code>http://localhost:3000</code>へアクセスします。</p>
 <p><code>Withdraw</code>タブをクリックすると以下のような表示がされます。</p>
-<p><img src="../../public/images/AVAX-AMM/section-3/3_4_7.png" alt></p>
+<p><img src="3_4_7.png" alt></p>
 <p><code>Max</code>ボタンをクリックするとユーザの保有するシェアが入力値となり、引き出すことのできるトークンの量がそれぞれ下に表示されます。
 <code>Withdraw</code>をクリックします。</p>
 <p>トランザクションに署名し、しばらく待つと（ポップアップが表示されokを押した後）右側の<code>Your Details</code>が更新されます！</p>
-<p><img src="../../public/images/AVAX-AMM/section-3/3_4_8.png" alt></p>
+<p><img src="3_4_8.png" alt></p>
 <p>今回は1つのアカウントで挙動を確かめているためMaxのシェアでトークンを引き出すとプールは空になり、ユーザの保有するトークンの量が元々保有していた量に戻ります。</p>
 <p><code>Withdraw.tsx</code>の中身はこれまでの実装に比べるとシンプルです。</p>
 <p>主な処理は以下の流れで行われます。</p>
@@ -9035,7 +9035,7 @@ export default function Container({ currentAccount }: Props) {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-4_フロントエンドを完成させよう.md","level":"1.9.3.3","depth":3,"next":{"title":"lesson-3_コントラクトと接続しよう.md","level":"1.9.3.4","depth":3,"path":"AVAX-AMM/section-3/lesson-3_コントラクトと接続しよう.md","ref":"AVAX-AMM/section-3/lesson-3_コントラクトと接続しよう.md","articles":[]},"previous":{"title":"lesson-2_フロントエンドのベースを作成しよう.md","level":"1.9.3.2","depth":3,"path":"AVAX-AMM/section-3/lesson-2_フロントエンドのベースを作成しよう.md","ref":"AVAX-AMM/section-3/lesson-2_フロントエンドのベースを作成しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"AVAX-AMM/section-3/lesson-4_フロントエンドを完成させよう.md","mtime":"2024-02-04T17:20:42.432Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-4_フロントエンドを完成させよう.md","level":"1.9.3.3","depth":3,"next":{"title":"lesson-3_コントラクトと接続しよう.md","level":"1.9.3.4","depth":3,"path":"AVAX-AMM/section-3/lesson-3_コントラクトと接続しよう.md","ref":"AVAX-AMM/section-3/lesson-3_コントラクトと接続しよう.md","articles":[]},"previous":{"title":"lesson-2_フロントエンドのベースを作成しよう.md","level":"1.9.3.2","depth":3,"path":"AVAX-AMM/section-3/lesson-2_フロントエンドのベースを作成しよう.md","ref":"AVAX-AMM/section-3/lesson-2_フロントエンドのベースを作成しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"AVAX-AMM/section-3/lesson-4_フロントエンドを完成させよう.md","mtime":"2024-02-05T09:48:33.021Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

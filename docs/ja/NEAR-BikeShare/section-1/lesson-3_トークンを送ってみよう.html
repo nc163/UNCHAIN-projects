@@ -7969,7 +7969,7 @@
 <p>トークンを発行するためにコマンドラインから以下のコマンドを実行しましょう！</p>
 <pre><code>$ near call sub.$ID new &apos;{&quot;owner_id&quot;: &quot;&apos;$ID&apos;&quot;, &quot;total_supply&quot;: &quot;1000000000000000&quot;, &quot;metadata&quot;: { &quot;spec&quot;: &quot;ft-1.0.0&quot;, &quot;name&quot;: &quot;My First Token&quot;, &quot;symbol&quot;: &quot;MYFT&quot;, &quot;decimals&quot;: 8 }}&apos; --accountId $ID
 </code></pre><p>実行結果
-<img src="../../public/images/NEAR-BikeShare/section-1/1_3_1.png" alt></p>
+<img src="1_3_1.png" alt></p>
 <p><code>near cli</code>でコントラクトのメソッドを呼ぶ場合はこのような構文になっています。</p>
 <pre><code>near call (or view) [コントラクトのデプロイされたアカウント名] [メソッド名] [メソッドの引数(json形式)]
 </code></pre><p>つまり、先ほどのコマンドでは、<code>sub.ft_account.testnet</code>のコントラクト(<code>ftコントラクト</code>)の
@@ -7983,7 +7983,7 @@ metadata: ftに関するメタデータ
 <p>また、<code>--accountId</code>によってどのアカウントから<code>new</code>メソッドを呼び出すかを指定していました。</p>
 <p><code>new</code>メソッドの呼び出しを終えたら、<a href="https://wallet.testnet.near.org/" target="_blank">testnet wallet</a>から
 owner_idで指定したアカウントにftが発行されていることを確認しましょう！</p>
-<p><img src="../../public/images/NEAR-BikeShare/section-1/1_3_2.png" alt></p>
+<p><img src="1_3_2.png" alt></p>
 <h3 id="🎈-コントラクトのメソッドについて">🎈 コントラクトのメソッドについて</h3>
 <p>ブロックチェーン上にデプロイされたスマートコントラクトにはメソッド（関数）が用意されています。
 コントラクトのメソッドを呼び出すことでそのコントラクトの機能を使えるということです。
@@ -8005,7 +8005,7 @@ owner_idで指定したアカウントにftが発行されていることを確�
 </ul>
 <h3 id="🚢-トークンを転送しよう">🚢 トークンを転送しよう</h3>
 <p>トークンを転送するために <a href="https://wallet.testnet.near.org/" target="_blank">testnet wallet</a> から（好きな名前で）他のアカウントを作成しましょう。</p>
-<p><img src="../../public/images/NEAR-BikeShare/section-1/1_3_3.png" alt></p>
+<p><img src="1_3_3.png" alt></p>
 <p>ここでは<code>ft_receiver.testnet</code>というアカウントを作成しました。
 コマンドラインから操作できるように<code>near-cli</code>で作成したアカウントにログインしましょう。</p>
 <pre><code>$ near login
@@ -8013,7 +8013,7 @@ owner_idで指定したアカウントにftが発行されていることを確�
 以下を実行しましょう。</p>
 <pre><code>$ near call sub.$ID storage_deposit &apos;&apos; --accountId ft_receiver.testnet --amount 0.00125
 </code></pre><p>実行結果
-<img src="../../public/images/NEAR-BikeShare/section-1/1_3_4.png" alt></p>
+<img src="1_3_4.png" alt></p>
 <p>このアカウントの登録作業は<code>ftコントラクト</code>が<a href="https://nomicon.io/Standards/StorageManagement" target="_blank">NEP-145</a>という規約（ルール）に則ったストレージマネジメントを採用していることが所以です。</p>
 <blockquote>
 <p>ストレージマネージメント
@@ -8029,11 +8029,11 @@ NEAR は<a href="https://docs.near.org/concepts/storage/storage-staking" target=
 コマンドラインで以下を実行します。</p>
 <pre><code>$ near call sub.$ID ft_transfer &apos;{&quot;receiver_id&quot;: &quot;ft_receiver.testnet&quot;, &quot;amount&quot;: &quot;19&quot;}&apos; --accountId $ID --amount 0.000000000000000000000001
 </code></pre><p>実行結果（結果に表示されるURLをブラウザに貼り付けるとトランザクションの内容が見られます）。
-<img src="../../public/images/NEAR-BikeShare/section-1/1_3_5.png" alt></p>
+<img src="1_3_5.png" alt></p>
 <p>結果を<a href="https://wallet.testnet.near.org/" target="_blank">testnet wallet</a>で確認することもできますが、<code>viewメソッド</code>の<code>ft_balance_of</code>を使用して<code>ft_receiver.testnet</code>の残高を確認してみましょう。</p>
 <pre><code>$ near view sub.$ID ft_balance_of &apos;{&quot;account_id&quot;: &quot;ft_receiver.testnet&quot;}&apos;
 </code></pre><p>実行結果
-<img src="../../public/images/NEAR-BikeShare/section-1/1_3_6.png" alt></p>
+<img src="1_3_6.png" alt></p>
 <p>トークンの転送が完了しました 🎉</p>
 <h3 id="🙋‍♂️-質問する">🙋‍♂️ 質問する</h3>
 <p>ここまでの作業で何かわからないことがある場合は、Discordの<code>#near</code>で質問をしてください。</p>
@@ -8087,7 +8087,7 @@ NEAR は<a href="https://docs.near.org/concepts/storage/storage-staking" target=
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-3_トークンを送ってみよう.md","level":"1.7.2.1","depth":3,"next":{"title":"lesson-4_コントラクトの中身を覗いてみよう.md","level":"1.7.2.2","depth":3,"path":"NEAR-BikeShare/section-1/lesson-4_コントラクトの中身を覗いてみよう.md","ref":"NEAR-BikeShare/section-1/lesson-4_コントラクトの中身を覗いてみよう.md","articles":[]},"previous":{"title":"[section-1]","level":"1.7.2","depth":2,"ref":"","articles":[{"title":"lesson-3_トークンを送ってみよう.md","level":"1.7.2.1","depth":3,"path":"NEAR-BikeShare/section-1/lesson-3_トークンを送ってみよう.md","ref":"NEAR-BikeShare/section-1/lesson-3_トークンを送ってみよう.md","articles":[]},{"title":"lesson-4_コントラクトの中身を覗いてみよう.md","level":"1.7.2.2","depth":3,"path":"NEAR-BikeShare/section-1/lesson-4_コントラクトの中身を覗いてみよう.md","ref":"NEAR-BikeShare/section-1/lesson-4_コントラクトの中身を覗いてみよう.md","articles":[]},{"title":"lesson-2_コントラクトをデプロイしよう.md","level":"1.7.2.3","depth":3,"path":"NEAR-BikeShare/section-1/lesson-2_コントラクトをデプロイしよう.md","ref":"NEAR-BikeShare/section-1/lesson-2_コントラクトをデプロイしよう.md","articles":[]},{"title":"lesson-1_コントラクトをセットアップしよう.md","level":"1.7.2.4","depth":3,"path":"NEAR-BikeShare/section-1/lesson-1_コントラクトをセットアップしよう.md","ref":"NEAR-BikeShare/section-1/lesson-1_コントラクトをセットアップしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"NEAR-BikeShare/section-1/lesson-3_トークンを送ってみよう.md","mtime":"2024-02-04T17:20:42.493Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-3_トークンを送ってみよう.md","level":"1.7.2.1","depth":3,"next":{"title":"lesson-4_コントラクトの中身を覗いてみよう.md","level":"1.7.2.2","depth":3,"path":"NEAR-BikeShare/section-1/lesson-4_コントラクトの中身を覗いてみよう.md","ref":"NEAR-BikeShare/section-1/lesson-4_コントラクトの中身を覗いてみよう.md","articles":[]},"previous":{"title":"[section-1]","level":"1.7.2","depth":2,"ref":"","articles":[{"title":"lesson-3_トークンを送ってみよう.md","level":"1.7.2.1","depth":3,"path":"NEAR-BikeShare/section-1/lesson-3_トークンを送ってみよう.md","ref":"NEAR-BikeShare/section-1/lesson-3_トークンを送ってみよう.md","articles":[]},{"title":"lesson-4_コントラクトの中身を覗いてみよう.md","level":"1.7.2.2","depth":3,"path":"NEAR-BikeShare/section-1/lesson-4_コントラクトの中身を覗いてみよう.md","ref":"NEAR-BikeShare/section-1/lesson-4_コントラクトの中身を覗いてみよう.md","articles":[]},{"title":"lesson-2_コントラクトをデプロイしよう.md","level":"1.7.2.3","depth":3,"path":"NEAR-BikeShare/section-1/lesson-2_コントラクトをデプロイしよう.md","ref":"NEAR-BikeShare/section-1/lesson-2_コントラクトをデプロイしよう.md","articles":[]},{"title":"lesson-1_コントラクトをセットアップしよう.md","level":"1.7.2.4","depth":3,"path":"NEAR-BikeShare/section-1/lesson-1_コントラクトをセットアップしよう.md","ref":"NEAR-BikeShare/section-1/lesson-1_コントラクトをセットアップしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"NEAR-BikeShare/section-1/lesson-3_トークンを送ってみよう.md","mtime":"2024-02-05T09:48:32.985Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

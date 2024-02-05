@@ -8024,15 +8024,15 @@ count = <span class="hljs-keyword">await</span> wavePortalContract.<span class="
 </code></pre>
 <p>ユーザーにETHが送金されたか確認するために、ローカル環境でWebアプリケーションを開いて<code>wave</code>を送ってみましょう。</p>
 <p>Webアプリケーションを<code>Inspect</code>して、下記のような結果がConsoleに出力されているか確認しましょう。</p>
-<p><img src="../../public/images/ETH-dApp/section-4/4_2_1.png" alt></p>
+<p><img src="4_2_1.png" alt></p>
 <p>ここでは、ユーザーがETHを獲得したこと、コントラクトの資金が<code>0.000996</code>から<code>0.000995</code>に減少したことがわかります。</p>
 <p>さらに詳しくトランザクションについて検証する場合は、<a href="https://sepolia.etherscan.io/" target="_blank">Sepolia Etherscan</a> を使用することをお勧めします。</p>
 <p>Sepolia Etherscanにコントラクトのアドレスを貼り付けて、発生したトランザクションを表示できます。</p>
 <p>それでは、上記で実行した最新のトランザクションを見ていきましょう。</p>
 <p>下図のように、確認したい<code>Txn Hash</code>を選択します。
-<img src="../../public/images/ETH-dApp/section-4/4_2_2.png" alt></p>
+<img src="4_2_2.png" alt></p>
 <p>トランザクションの情報が、確認できます。
-<img src="../../public/images/ETH-dApp/section-4/4_2_3.png" alt>
+<img src="4_2_3.png" alt>
 枠で囲った部分に、先程のトランザクションの結果が表示されています。</p>
 <p>少額のETHをコントラクトアドレスからユーザーアドレスに転送したことがわかります。</p>
 <h3 id="🌍-サーバーにホストしてみよう">🌍 サーバーにホストしてみよう</h3>
@@ -8048,16 +8048,16 @@ git push
 </code></pre><p>次に、GitHub上の<code>ETH-dApp</code>にローカル環境に存在する<code>ETH-dApp</code>のファイルとディレクトリが反映されていることを確認してください。</p>
 <p>Vercelのアカウントを取得したら、下記を実行しましょう。</p>
 <p>1. <code>Dashboard</code>へ進んで、<code>New Project</code>を選択してください。</p>
-<p><img src="../../public/images/ETH-dApp/section-4/4_2_4.png" alt></p>
+<p><img src="4_2_4.png" alt></p>
 <p>2. <code>Import Git Repository</code>で自分のGitHubアカウントを接続したら、<code>ETH-dApp</code>を選択し、<code>Import</code>してください。</p>
-<p><img src="../../public/images/ETH-dApp/section-4/4_2_5.png" alt></p>
+<p><img src="4_2_5.png" alt></p>
 <p>3. プロジェクトを作成します。<code>Root Directory</code>が「packages/client」となっていることを確認してください。</p>
-<p><img src="../../public/images/ETH-dApp/section-4/4_2_6.png" alt></p>
+<p><img src="4_2_6.png" alt></p>
 <p>4. <code>Deploy</code>ボタンを推しましょう。</p>
 <p>VercelはGitHubと連動しているので、GitHubが更新されるたびに自動でデプロイを行ってくれます。</p>
 <p>下記のように、<code>Building</code>ログが出力されます。
 基本的に<code>warning</code>は無視して問題ありません。</p>
-<p><img src="../../public/images/ETH-dApp/section-4/4_2_7.png" alt></p>
+<p><img src="4_2_7.png" alt></p>
 <p>こちらが、今回のプロジェクトで作成されるWebアプリケーションのデモは、<a href="https://eth-dapp-three.vercel.app/" target="_blank">こちら</a> です。</p>
 <p>これはMVP（=最小機能のついたプロダクト）です。</p>
 <p>ぜひCSSを駆使して、あなたのアプリケーションを魅力的なものにしてください 🪄</p>
@@ -8164,7 +8164,7 @@ PROD_ALCHEMY_KEY = メインネットにデプロイする際に使用するAlch
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-2_UIをアップグレードして自分だけのオリジナルアプリを作ろう.md","level":"1.28.4.2","depth":3,"next":{"title":"[section-2]","level":"1.28.5","depth":2,"ref":"","articles":[{"title":"lesson-1_コントラクトをテストネットにデプロイしよう.md","level":"1.28.5.1","depth":3,"path":"ETH-dApp/section-2/lesson-1_コントラクトをテストネットにデプロイしよう.md","ref":"ETH-dApp/section-2/lesson-1_コントラクトをテストネットにデプロイしよう.md","articles":[]},{"title":"lesson-3_WEBアプリからコントラクトを呼び出そう.md","level":"1.28.5.2","depth":3,"path":"ETH-dApp/section-2/lesson-3_WEBアプリからコントラクトを呼び出そう.md","ref":"ETH-dApp/section-2/lesson-3_WEBアプリからコントラクトを呼び出そう.md","articles":[]},{"title":"lesson-2_ウォレットをWEBアプリに接続しよう.md","level":"1.28.5.3","depth":3,"path":"ETH-dApp/section-2/lesson-2_ウォレットをWEBアプリに接続しよう.md","ref":"ETH-dApp/section-2/lesson-2_ウォレットをWEBアプリに接続しよう.md","articles":[]}]},"previous":{"title":"lesson-1_WEBアプリに抽選機能を実装しよう.md","level":"1.28.4.1","depth":3,"path":"ETH-dApp/section-4/lesson-1_WEBアプリに抽選機能を実装しよう.md","ref":"ETH-dApp/section-4/lesson-1_WEBアプリに抽選機能を実装しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ETH-dApp/section-4/lesson-2_UIをアップグレードして自分だけのオリジナルアプリを作ろう.md","mtime":"2024-02-04T17:20:42.476Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-2_UIをアップグレードして自分だけのオリジナルアプリを作ろう.md","level":"1.28.4.2","depth":3,"next":{"title":"[section-2]","level":"1.28.5","depth":2,"ref":"","articles":[{"title":"lesson-1_コントラクトをテストネットにデプロイしよう.md","level":"1.28.5.1","depth":3,"path":"ETH-dApp/section-2/lesson-1_コントラクトをテストネットにデプロイしよう.md","ref":"ETH-dApp/section-2/lesson-1_コントラクトをテストネットにデプロイしよう.md","articles":[]},{"title":"lesson-3_WEBアプリからコントラクトを呼び出そう.md","level":"1.28.5.2","depth":3,"path":"ETH-dApp/section-2/lesson-3_WEBアプリからコントラクトを呼び出そう.md","ref":"ETH-dApp/section-2/lesson-3_WEBアプリからコントラクトを呼び出そう.md","articles":[]},{"title":"lesson-2_ウォレットをWEBアプリに接続しよう.md","level":"1.28.5.3","depth":3,"path":"ETH-dApp/section-2/lesson-2_ウォレットをWEBアプリに接続しよう.md","ref":"ETH-dApp/section-2/lesson-2_ウォレットをWEBアプリに接続しよう.md","articles":[]}]},"previous":{"title":"lesson-1_WEBアプリに抽選機能を実装しよう.md","level":"1.28.4.1","depth":3,"path":"ETH-dApp/section-4/lesson-1_WEBアプリに抽選機能を実装しよう.md","ref":"ETH-dApp/section-4/lesson-1_WEBアプリに抽選機能を実装しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ETH-dApp/section-4/lesson-2_UIをアップグレードして自分だけのオリジナルアプリを作ろう.md","mtime":"2024-02-05T09:48:33.408Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

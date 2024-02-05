@@ -7959,23 +7959,23 @@
 <p>しかし結果を公開するという意味でデプロイしていきましょう！</p>
 <p>まずは先ほど行なったのと同じようにコントラクトを<code>Shibuya Network</code>にデプロイしましょう！ ただし、今回deployするのはテストネットですのでいくつかするべきことがあります。</p>
 <p>最初に<a href="https://portal.astar.network/#/astar/assets" target="_blank">こちら</a>にアクセスして<code>Shibuya Network</code>へ接続しましょう！</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_2_1.png" alt></p>
+<p><img src="3_2_1.png" alt></p>
 <p>接続ができたら右上の&apos;connect&apos;ボタンを押してpolkadot.jsのウォレットを接続しましょう！</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_2_2.png" alt>
-<img src="../../public/images/ASTAR-SocialFi/section-3/3_2_3.png" alt></p>
+<p><img src="3_2_2.png" alt>
+<img src="3_2_3.png" alt></p>
 <p>その後下のようにShibuya Networkで使用できるトークンSBYが0であることが確認できると思います。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_2_4.png" alt></p>
+<p><img src="3_2_4.png" alt></p>
 <p>その記載の右側にある<code>faucet</code>ボタンを押してSBYを取得しましょう！</p>
 <p>ロボットかどうかのチェックを終えて<code>verify</code>ボタンを押しましょう！ その後画面をリロードすればつなげているウォレットのSBYが10に増えているはずです。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_2_5.png" alt>
-<img src="../../public/images/ASTAR-SocialFi/section-3/3_2_6.png" alt></p>
+<p><img src="3_2_5.png" alt>
+<img src="3_2_6.png" alt></p>
 <p>これでdepoloyに使うためのトークンが取得できました！ では次に<a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.shibuya.astar.network#/explorer" target="_blank">こちら</a>へ移動してShibuya Networkへコントラクトをデプロイしましょう！</p>
 <p>デプロイの手順はローカルでやったものと同じですが、下の画像のように<code>deployment account</code>を先ほどトークンを取得したアカウントに切り替えましょう。そうでないとデプロイする時のガス代を支払うことができず失敗してしまいます。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_2_7.png" alt></p>
+<p><img src="3_2_7.png" alt></p>
 <p>すると下のように新しいコントラクトがデプロイされているはずです！ しかし先述したようにShibuya Networkはローカルに比べてとても遅いのでデプロイにもかなり時間がかかります。筆者がデプロイした時も1分以上かかりました 😅
 なのでデプロイをしてからしばらく待ってみましょう。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_2_8.png" alt>
-<img src="../../public/images/ASTAR-SocialFi/section-3/3_2_9.png" alt></p>
+<p><img src="3_2_8.png" alt>
+<img src="3_2_9.png" alt></p>
 <p>また、<code>hooks/connect.tsx</code>の中に格納してある<code>blockchainUrl</code>を<code>Blast: wss://shibuya.public.blastapi.io</code>に置き換えましょう。</p>
 <p>これによってコントラクトとのやりとりをローカルで立てることなく自律的に行わせる環境は整えることができました。</p>
 <p>最後に、<a href="https://vercel.com/" target="_blank">Vercel</a> にWebアプリケーションをホストする方法を学びます。</p>
@@ -8003,12 +8003,12 @@ contract_addressには先ほど<code>Shibuya Testnet</code>へデプロイした
 <li><code>VALUE</code>＝<code>imgUrlForUnknown</code></li>
 </ul>
 <p>また、<code>Root Directory</code>が「packages/client」となっていることを確認してください。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_2_15.png" alt></p>
+<p><img src="3_2_15.png" alt></p>
 <p>4. <code>Deploy</code>ボタンを推しましょう。</p>
 <p>VercelはGitHubと連動しているので、GitHubが更新されるたびに自動でデプロイを行ってくれます。</p>
 <p>下記のように、<code>Building</code>ログが出力されます。
 基本的に<code>warning</code>は無視して問題ありません。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_2_16.png" alt></p>
+<p><img src="3_2_16.png" alt></p>
 <p>これでデプロイは成功しました！</p>
 <p>アプリとしては機能してないかもしれませんが、アプリを完成させたということを示す証となります！</p>
 <p>先述しましたが、Shibuya Networkではアプリが機能せず完成が実質確認できないので下のようにローカルで作成した</p>
@@ -8020,11 +8020,11 @@ contract_addressには先ほど<code>Shibuya Testnet</code>へデプロイした
 <li>Message Room画面</li>
 </ol>
 <p>の5つをdiscordの<code>🔥｜completed-projects</code>チャンネルで共有しましょう！</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_2_10.png" alt>
-<img src="../../public/images/ASTAR-SocialFi/section-3/3_2_11.png" alt>
-<img src="../../public/images/ASTAR-SocialFi/section-3/3_2_12.png" alt>
-<img src="../../public/images/ASTAR-SocialFi/section-3/3_2_13.png" alt>
-<img src="../../public/images/ASTAR-SocialFi/section-3/3_2_14.png" alt></p>
+<p><img src="3_2_10.png" alt>
+<img src="3_2_11.png" alt>
+<img src="3_2_12.png" alt>
+<img src="3_2_13.png" alt>
+<img src="3_2_14.png" alt></p>
 <hr>
 <h3 id="🎫-nft-を取得しよう">🎫 NFT を取得しよう!</h3>
 <p>NFTを取得する条件は、以下のようになります。</p>
@@ -8085,7 +8085,7 @@ contract_addressには先ほど<code>Shibuya Testnet</code>へデプロイした
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-2_アプリをデプロイしよう.md","level":"1.14.3.2","depth":3,"next":{"title":"[section-2]","level":"1.14.4","depth":2,"ref":"","articles":[{"title":"lesson-3_それぞれの画面を作成しよう.md","level":"1.14.4.1","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-3_それぞれの画面を作成しよう.md","ref":"ASTAR-SocialFi/section-2/lesson-3_それぞれの画面を作成しよう.md","articles":[]},{"title":"lesson-2_使用するコンポーネントを作成しよう.md","level":"1.14.4.2","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","ref":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","articles":[]},{"title":"lesson-1_コントラクトの関数を呼び出せるようにしよう.md","level":"1.14.4.3","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-1_コントラクトの関数を呼び出せるようにしよう.md","ref":"ASTAR-SocialFi/section-2/lesson-1_コントラクトの関数を呼び出せるようにしよう.md","articles":[]}]},"previous":{"title":"lesson-1_作成したアプリの動作を確認しよう.md","level":"1.14.3.1","depth":3,"path":"ASTAR-SocialFi/section-3/lesson-1_作成したアプリの動作を確認しよう.md","ref":"ASTAR-SocialFi/section-3/lesson-1_作成したアプリの動作を確認しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ASTAR-SocialFi/section-3/lesson-2_アプリをデプロイしよう.md","mtime":"2024-02-04T17:20:42.427Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-2_アプリをデプロイしよう.md","level":"1.14.3.2","depth":3,"next":{"title":"[section-2]","level":"1.14.4","depth":2,"ref":"","articles":[{"title":"lesson-3_それぞれの画面を作成しよう.md","level":"1.14.4.1","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-3_それぞれの画面を作成しよう.md","ref":"ASTAR-SocialFi/section-2/lesson-3_それぞれの画面を作成しよう.md","articles":[]},{"title":"lesson-2_使用するコンポーネントを作成しよう.md","level":"1.14.4.2","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","ref":"ASTAR-SocialFi/section-2/lesson-2_使用するコンポーネントを作成しよう.md","articles":[]},{"title":"lesson-1_コントラクトの関数を呼び出せるようにしよう.md","level":"1.14.4.3","depth":3,"path":"ASTAR-SocialFi/section-2/lesson-1_コントラクトの関数を呼び出せるようにしよう.md","ref":"ASTAR-SocialFi/section-2/lesson-1_コントラクトの関数を呼び出せるようにしよう.md","articles":[]}]},"previous":{"title":"lesson-1_作成したアプリの動作を確認しよう.md","level":"1.14.3.1","depth":3,"path":"ASTAR-SocialFi/section-3/lesson-1_作成したアプリの動作を確認しよう.md","ref":"ASTAR-SocialFi/section-3/lesson-1_作成したアプリの動作を確認しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ASTAR-SocialFi/section-3/lesson-2_アプリをデプロイしよう.md","mtime":"2024-02-05T09:48:33.196Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

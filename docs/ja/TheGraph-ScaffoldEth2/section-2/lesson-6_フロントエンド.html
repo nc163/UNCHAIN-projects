@@ -7965,23 +7965,23 @@
 </blockquote>
 <pre><code>  targetNetwork: chains.sepolia,
 </code></pre><p>変更すると以下のようになります：</p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-2/2_6_1.png" alt></p>
+<p><img src="2_6_1.png" alt></p>
 <p>この変更を行ったら、scaffold-ETHに戻り、UIをリロードしてください。バーナーウォレットから切断されるので、Metamaskウォレットを使用してテストネットに接続します。</p>
 <p>&quot;CONNECT WALLET&quot;をクリックしてください...</p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-2/2_6_2.png" alt></p>
+<p><img src="2_6_2.png" alt></p>
 <p>Metamaskを選択してください...</p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-2/2_6_3.png" alt></p>
+<p><img src="2_6_3.png" alt></p>
 <p>ネットワークを切り替えてください...</p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-2/2_6_4.png" alt></p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-2/2_6_5.png" alt></p>
+<p><img src="2_6_4.png" alt></p>
+<p><img src="2_6_5.png" alt></p>
 <p>完了したら、sepoliaネットワーク上のdappに接続されているはずです。</p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-2/2_6_6.png" alt></p>
+<p><img src="2_6_6.png" alt></p>
 <h4 id="✅-知り合いにテストメッセージを送ってみよう！（または-vitalik-へ）">✅ 知り合いにテストメッセージを送ってみよう！（または Vitalik へ）</h4>
 <p>デプロイしたスマートコントラクトにイベントを送信したいと思います。フロントエンドが適切に設定されているので、これは比較的簡単に行うことができます。</p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-2/2_6_7.png" alt></p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-2/2_6_8.png" alt></p>
+<p><img src="2_6_7.png" alt></p>
+<p><img src="2_6_8.png" alt></p>
 <p>次に、Studioでメッセージが正常にインデックスされたかどうかを確認します。GraphiQLエクスプローラは、「Playground」ページにあります。</p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-2/2_6_9.png" alt></p>
+<p><img src="2_6_9.png" alt></p>
 <h4 id="✅-graphql-url-を開発用エンドポイントに更新する">✅ GraphQL URL を開発用エンドポイントに更新する</h4>
 <p>サブグラフの開発エンドポイントは、Subgraph Studioのdetailsタブで見つけることができます。</p>
 <blockquote>
@@ -7993,7 +7993,7 @@
     cache: new InMemoryCache(),
   });
 </code></pre><p>変更すると以下のようになります：</p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-2/2_6_10.png" alt></p>
+<p><img src="2_6_10.png" alt></p>
 <h4 id="✅-indexts-ファイルをまっさらな状態から始める">✅ index.ts ファイルをまっさらな状態から始める</h4>
 <p>必要なものをindex.tsファイルにインポートしましょう。また、return内の情報を全てクリアすることもできます。</p>
 <blockquote>
@@ -8016,7 +8016,7 @@ const Home: NextPage = () =&gt; {
 
 export default Home;
 </code></pre><p>変更後、ホームディレクトリは以下のようになります：</p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-2/2_6_11.png" alt></p>
+<p><img src="2_6_11.png" alt></p>
 <h4 id="✅-テーブル形式でメッセージを表示する">✅ テーブル形式でメッセージを表示する</h4>
 <p>最後に、メッセージを表示するためのテーブルを作ります。</p>
 <pre><code>        &lt;h1&gt;Messages&lt;/h1&gt;
@@ -8053,7 +8053,7 @@ export default Home;
 <pre><code>  const { loading, error, data: messagesData } = useQuery(GET_MESSAGES);
 
   const messages = messagesData?.sendMessages || [];
-</code></pre><p><img src="../../public/images/TheGraph-ScaffoldEth2/section-2/2_6_13.png" alt></p>
+</code></pre><p><img src="2_6_13.png" alt></p>
 <p>それを少しリファクタリングして、単なるテキストの代わりに<code>&lt;Address&gt;</code>コンポーネントを使いましょう。</p>
 <p>Addressコンポーネントをインポートします。</p>
 <pre><code>import { Address } from &quot;~~/components/scaffold-eth&quot;;
@@ -8064,7 +8064,7 @@ export default Home;
                 &lt;td&gt;{message.message}&lt;/td&gt;
               &lt;/tr&gt;
 </code></pre><p>これにより、長い文字列よりもはるかに見栄えがよくなります！ :D</p>
-<p><img src="../../public/images/TheGraph-ScaffoldEth2/section-2/2_6_14.png" alt></p>
+<p><img src="2_6_14.png" alt></p>
 <blockquote>
 <p>注：完全なファイルをご覧になりたい場合は、<a href="https://gist.github.com/kmjones1979/26ef9633b61b17f237e88eb41bb688de" target="_blank">こちら</a>をご覧ください！</p>
 </blockquote>
@@ -8111,7 +8111,7 @@ export default Home;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-6_フロントエンド.md","level":"1.11.3.2","depth":3,"next":{"title":"lesson-7_フロントエンドの公開.md","level":"1.11.3.3","depth":3,"path":"TheGraph-ScaffoldEth2/section-2/lesson-7_フロントエンドの公開.md","ref":"TheGraph-ScaffoldEth2/section-2/lesson-7_フロントエンドの公開.md","articles":[]},"previous":{"title":"lesson-2_デプロイヤーアカウントの作成.md","level":"1.11.3.1","depth":3,"path":"TheGraph-ScaffoldEth2/section-2/lesson-2_デプロイヤーアカウントの作成.md","ref":"TheGraph-ScaffoldEth2/section-2/lesson-2_デプロイヤーアカウントの作成.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"TheGraph-ScaffoldEth2/section-2/lesson-6_フロントエンド.md","mtime":"2024-02-04T17:20:42.558Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-6_フロントエンド.md","level":"1.11.3.2","depth":3,"next":{"title":"lesson-7_フロントエンドの公開.md","level":"1.11.3.3","depth":3,"path":"TheGraph-ScaffoldEth2/section-2/lesson-7_フロントエンドの公開.md","ref":"TheGraph-ScaffoldEth2/section-2/lesson-7_フロントエンドの公開.md","articles":[]},"previous":{"title":"lesson-2_デプロイヤーアカウントの作成.md","level":"1.11.3.1","depth":3,"path":"TheGraph-ScaffoldEth2/section-2/lesson-2_デプロイヤーアカウントの作成.md","ref":"TheGraph-ScaffoldEth2/section-2/lesson-2_デプロイヤーアカウントの作成.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"TheGraph-ScaffoldEth2/section-2/lesson-6_フロントエンド.md","mtime":"2024-02-05T09:48:33.046Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

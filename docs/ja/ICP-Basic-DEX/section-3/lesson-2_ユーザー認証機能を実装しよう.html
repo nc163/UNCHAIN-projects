@@ -7976,7 +7976,7 @@
 </code></pre>
 <h3 id="👤-認証ボタンを実装しよう">👤 認証ボタンを実装しよう</h3>
 <p>さて、ここからUIの作成を行なっていきましょう。まずは以下のようなヘッダーを作成します。ボタンを押したときに先ほど設定をしたInternet IdentityキャニスターにアクセスをしてユーザーのIDが取得できるようにします。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-3/3_2_1.png" alt></p>
+<p><img src="3_2_1.png" alt></p>
 <p>ここで実装する機能は、2つあります。</p>
 <ul>
 <li>ボタンが押されたときに、<code>Internet Identity</code>キャニスターを呼び出す</li>
@@ -8135,26 +8135,26 @@ URLs:
     icp_basic_dex_backend: http://127.0.0.1:4943/?canisterId=ryjl3-tyaaa-aaaaa-aaaba-cai&amp;id=renrk-eyaaa-aaaaa-aaada-cai
     internet_identity_div: http://127.0.0.1:4943/?canisterId=ryjl3-tyaaa-aaaaa-aaaba-cai&amp;id=rkp4c-7iaaa-aaaaa-aaaca-cai
 </code></pre><p>一番上に表示されている<code>icp_basic_dex_frontend:</code>のURLにアクセスしてみましょう。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-3/3_2_2.png" alt></p>
+<p><img src="3_2_2.png" alt></p>
 <p>ヘッダーとメッセージが確認できたらコンソールを立ち上げておき、右上のログインボタンを押してみましょう。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-3/3_2_3.png" alt></p>
+<p><img src="3_2_3.png" alt></p>
 <p>このレッスンの最初で設定をしたInternet Identityキャニスターに接続され、自動でInternet Identityと表示された画面が立ち上がります。それでは、認証を行なっていきたいと思います。</p>
 <p><code>Create Anchor</code>をクリックしましょう。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-3/3_2_4.png" alt></p>
+<p><img src="3_2_4.png" alt></p>
 <p>任意のデバイス名を入力し、<code>Create</code>ボタンを押します。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-3/3_2_5.png" alt></p>
+<p><img src="3_2_5.png" alt></p>
 <p>数秒待つと、表示された文字を入力するように要求されます。入力後<code>Confirm</code>ボタンを押して次に進みます。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-3/3_2_6.png" alt></p>
+<p><img src="3_2_6.png" alt></p>
 <p>新しい<code>Identity Anchor</code>の作成が完了したと表示されます。それでは、<code>Continue</code>ボタンを押して次に進みましょう。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-3/3_2_7.png" alt></p>
+<p><img src="3_2_7.png" alt></p>
 <p>リカバリー方法の選択画面が表示されます。作成された<code>Anchor</code>に紐づくデバイスを無くしてしまった時の復元方法を選択する画面になります。<code>Seed Phrase</code>を選択します。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-3/3_2_8.png" alt></p>
+<p><img src="3_2_8.png" alt></p>
 <p>画面が切り替わり、<code>Seed Phrase</code>が表示されます。下のチェックボックスにマークをして、<code>Continue</code>ボタンを押します。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-3/3_2_9.png" alt></p>
+<p><img src="3_2_9.png" alt></p>
 <p>ボタンを押すと自動でブラウザの画面がDEXアプリケーションに切り替わります。メッセージが消えていることと<code>console.log()</code>の結果を確認してみましょう。
 以下のようなログが確認できたら、ユーザー IDの取得成功です！</p>
 <pre><code>User Principal: 42iew-bwtbo-6ug3n-k7vur-fzjgy-b33z5-ctdd7-kcqby-3lwee-hsd2s-rqe
-</code></pre><p><img src="../../public/images/ICP-Basic-DEX/section-3/3_2_10.png" alt></p>
+</code></pre><p><img src="3_2_10.png" alt></p>
 <p>このレッスンで、ユーザー認証機能が実装できました！</p>
 <h3 id="🙋‍♂️-質問する">🙋‍♂️ 質問する</h3>
 <p>ここまでの作業で何かわからないことがある場合は、Discordの<code>#icp</code>で質問をしてください。</p>
@@ -8208,7 +8208,7 @@ URLs:
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-2_ユーザー認証機能を実装しよう.md","level":"1.21.3.2","depth":3,"next":{"title":"lesson-3_ユーザーボードを作成しよう.md","level":"1.21.3.3","depth":3,"path":"ICP-Basic-DEX/section-3/lesson-3_ユーザーボードを作成しよう.md","ref":"ICP-Basic-DEX/section-3/lesson-3_ユーザーボードを作成しよう.md","articles":[]},"previous":{"title":"lesson-1_フロントエンドの環境構築をしよう.md","level":"1.21.3.1","depth":3,"path":"ICP-Basic-DEX/section-3/lesson-1_フロントエンドの環境構築をしよう.md","ref":"ICP-Basic-DEX/section-3/lesson-1_フロントエンドの環境構築をしよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ICP-Basic-DEX/section-3/lesson-2_ユーザー認証機能を実装しよう.md","mtime":"2024-02-04T17:20:42.480Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-2_ユーザー認証機能を実装しよう.md","level":"1.21.3.2","depth":3,"next":{"title":"lesson-3_ユーザーボードを作成しよう.md","level":"1.21.3.3","depth":3,"path":"ICP-Basic-DEX/section-3/lesson-3_ユーザーボードを作成しよう.md","ref":"ICP-Basic-DEX/section-3/lesson-3_ユーザーボードを作成しよう.md","articles":[]},"previous":{"title":"lesson-1_フロントエンドの環境構築をしよう.md","level":"1.21.3.1","depth":3,"path":"ICP-Basic-DEX/section-3/lesson-1_フロントエンドの環境構築をしよう.md","ref":"ICP-Basic-DEX/section-3/lesson-1_フロントエンドの環境構築をしよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ICP-Basic-DEX/section-3/lesson-2_ユーザー認証機能を実装しよう.md","mtime":"2024-02-05T09:48:33.328Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

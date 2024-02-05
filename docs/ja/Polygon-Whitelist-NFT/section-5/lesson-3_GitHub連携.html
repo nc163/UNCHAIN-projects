@@ -7959,11 +7959,11 @@
 <h4 id="コントラクトアドレスとabiの設定">コントラクトアドレスとABIの設定</h4>
 <p>ShieldコントラクトのアドレスとABIを直接記載していましたが、コントラクトアドレスは<code>.env.local</code>ファイルから、ABIはビルド時に生成される<code>artifacts</code>フォルダからそれぞれ参照するようにしましょう。</p>
 <p>まずは<code>packages/client</code>フォルダ内に<code>.env.local</code>ファイルを作成しましょう。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_3_1.png" alt></p>
+<p><img src="5_3_1.png" alt></p>
 <p>作成したファイルに、下記を記述しましょう。<code>ADDRESS_OF_SHIELD_CONTRACT</code>には自身のShieldコントラクトアドレスを設定してください。</p>
 <pre><code>NEXT_PUBLIC_CONTRACT_ADDRESS=ADDRESS_OF_SHIELD_CONTRACT
 </code></pre><p>Section5 Lesson1でhardhat.config.tsを更新した際に、artifactsフォルダの生成先を<code>../client/artifacts</code>に設定したことを覚えていますか？ モノレポの動作確認で<code>yarn contract compile</code>を実行しているので、既に<code>packages/client</code>フォルダ内に生成されていることが確認できます。ABIはここからインポートするようにしましょう。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_3_2.png" alt></p>
+<p><img src="5_3_2.png" alt></p>
 <p>それでは、<code>pages/index.tsx</code>を更新しましょう。下記のimport文を追加して、<code>contractAddress</code>と<code>abi</code>を下記のように更新しましょう。</p>
 <pre><code class="lang-tsx"><span class="hljs-keyword">import</span> <span class="hljs-title class_">ShieldArtifact</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@/artifacts/contracts/Shield.sol/Shield.json&apos;</span>;
 
@@ -7973,7 +7973,7 @@
 <h4 id="gitignoreファイルの設定">.gitignoreファイルの設定</h4>
 <p>GitHub上へアップロードしないファイルを指定するために、<code>.gitignore</code>ファイルを設定しましょう。</p>
 <p>プロジェクトのルートに<code>.gitignore</code>ファイルを作成します。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_3_3.png" alt></p>
+<p><img src="5_3_3.png" alt></p>
 <p>下記をファイルに記載しましょう。</p>
 <pre><code>**/yarn-error.log*
 
@@ -7989,13 +7989,13 @@ artifacts
 </code></pre><p>お疲れ様でした！ これでGitHubにアップロードするための準備が完了しました。では、実際にアップロードをしてみましょう。</p>
 <h4 id="githubにアップロード">GitHubにアップロード</h4>
 <p>Git Managerを開き、「<code>Create a new repo</code>」を選択します。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_3_4.png" alt></p>
+<p><img src="5_3_4.png" alt></p>
 <p>OwnerがChainIDEのログインに使用した自身のGitHubアカウントであることを確認しましょう。Repository nameには<code>Polygon-Whitelist-NFT</code>と入力し、「<code>Create repository</code>」をクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_3_5.png" alt></p>
+<p><img src="5_3_5.png" alt></p>
 <p>Git Manager上に、Commit &amp; Push画面が表示されます。GitHubへプッシュを行うファイルを選択しましょう。.gitignoreファイルを設定しましたが、アップロードしたくないファイルが含まれていないかを確認することをお勧めします。ファイルを1つずつ確認しながら横にある「＋」でステージングを変更しても良いですし、全てのファイルを確認し終わったら一括でステージングを変更することもできます（CHANGESにカーソルを当てると＋ボタンが出現します）。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_3_6.png" alt></p>
+<p><img src="5_3_6.png" alt></p>
 <p>全てのファイルをステージングしたら、コミットメッセージを入力し、「<code>Commit &amp; Push</code>」をクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_3_7.png" alt></p>
+<p><img src="5_3_7.png" alt></p>
 <p>自身のGitHubアカウントにアクセスをして、Polygon-Whitelist-NFTリポジトリにファイルがアップロードされていることを確認しましょう。</p>
 <h3 id="🤟-vercelにwebアプリケーションをデプロイする">🤟 VercelにWebアプリケーションをデプロイする</h3>
 <p>Vercelにアプリケーションをデプロイする場合は、<a href="https://app.unchain.tech/learn/Solana-NFT-Drop/ja/4/2/" target="_blank">VercelでWebアプリケーションをデプロイする</a>を参考にしてみてください。</p>
@@ -8075,7 +8075,7 @@ artifacts
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-3_GitHub連携.md","level":"1.19.5.2","depth":3,"next":{"title":"lesson-1_モノレポの設定.md","level":"1.19.5.3","depth":3,"path":"Polygon-Whitelist-NFT/section-5/lesson-1_モノレポの設定.md","ref":"Polygon-Whitelist-NFT/section-5/lesson-1_モノレポの設定.md","articles":[]},"previous":{"title":"lesson-2_コントラクトの自動テスト.md","level":"1.19.5.1","depth":3,"path":"Polygon-Whitelist-NFT/section-5/lesson-2_コントラクトの自動テスト.md","ref":"Polygon-Whitelist-NFT/section-5/lesson-2_コントラクトの自動テスト.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Whitelist-NFT/section-5/lesson-3_GitHub連携.md","mtime":"2024-02-04T17:20:42.536Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-3_GitHub連携.md","level":"1.19.5.2","depth":3,"next":{"title":"lesson-1_モノレポの設定.md","level":"1.19.5.3","depth":3,"path":"Polygon-Whitelist-NFT/section-5/lesson-1_モノレポの設定.md","ref":"Polygon-Whitelist-NFT/section-5/lesson-1_モノレポの設定.md","articles":[]},"previous":{"title":"lesson-2_コントラクトの自動テスト.md","level":"1.19.5.1","depth":3,"path":"Polygon-Whitelist-NFT/section-5/lesson-2_コントラクトの自動テスト.md","ref":"Polygon-Whitelist-NFT/section-5/lesson-2_コントラクトの自動テスト.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Whitelist-NFT/section-5/lesson-3_GitHub連携.md","mtime":"2024-02-05T09:48:33.277Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

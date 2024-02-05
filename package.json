@@ -6,7 +6,7 @@
   "author": "SHØ <neila@users.noreply.github.com> (https://akxra.art/)",
   "scripts": {
     "serve": "honkit serve",
-    "build": "honkit build",
+    "build": "honkit build . docs",
     "textlint:check": "textlint docs/*/ja/**/*.md --ignore-path .textlintignore",
     "textlint:fix": "textlint --fix docs/*/ja/**/*.md --ignore-path .textlintignore",
     "prepare": "simple-git-hooks"

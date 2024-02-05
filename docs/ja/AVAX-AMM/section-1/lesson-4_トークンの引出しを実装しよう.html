@@ -7996,10 +7996,10 @@
     }
 </code></pre><p><code>getWithdrawEstimate</code>関数では、指定されたシェアの分に応じたトークンの量を算出します。</p>
 <p>シェアの総量(<code>totalShare</code>)に対する指定されたシェア(<code>share</code>)の割合は</p>
-<p><img src="../../public/images/AVAX-AMM/section-1/1_4_2.png" alt></p>
+<p><img src="1_4_2.png" alt></p>
 <p>で表されるので、
 シェアの分に応じたトークンの量は</p>
-<p><img src="../../public/images/AVAX-AMM/section-1/1_4_3.png" alt></p>
+<p><img src="1_4_3.png" alt></p>
 <p>で算出することができます。</p>
 <p><code>withdraw</code>関数では実際に引き出し処理を実装しています。</p>
 <p>初めに<code>getWithdrawEstimate</code>により各トークンのAMMから引き出す量を算出します。</p>
@@ -8109,7 +8109,7 @@ AMMコントラクトの状態変数が正しく変更されているかを確�
 <p>ターミナル上で以下のコマンドを実行してください。</p>
 <pre><code>yarn test
 </code></pre><p>以下のような表示がされたらテスト成功です！</p>
-<p><img src="../../public/images/AVAX-AMM/section-1/1_4_1.png" alt></p>
+<p><img src="1_4_1.png" alt></p>
 <h3 id="🌔-参考リンク">🌔 参考リンク</h3>
 <blockquote>
 <p><a href="https://github.com/unchain-tech/AVAX-AMM" target="_blank">こちら</a>に本プロジェクトの完成形のレポジトリがあります。</p>
@@ -8169,7 +8169,7 @@ AMMコントラクトの状態変数が正しく変更されているかを確�
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-4_トークンの引出しを実装しよう.md","level":"1.9.2.3","depth":3,"next":{"title":"lesson-2_Solidityでスマートコントラクトを作成しよう.md","level":"1.9.2.4","depth":3,"path":"AVAX-AMM/section-1/lesson-2_Solidityでスマートコントラクトを作成しよう.md","ref":"AVAX-AMM/section-1/lesson-2_Solidityでスマートコントラクトを作成しよう.md","articles":[]},"previous":{"title":"lesson-1_開発環境を用意しよう.md","level":"1.9.2.2","depth":3,"path":"AVAX-AMM/section-1/lesson-1_開発環境を用意しよう.md","ref":"AVAX-AMM/section-1/lesson-1_開発環境を用意しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"AVAX-AMM/section-1/lesson-4_トークンの引出しを実装しよう.md","mtime":"2024-02-04T17:58:07.497Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-4_トークンの引出しを実装しよう.md","level":"1.9.2.3","depth":3,"next":{"title":"lesson-2_Solidityでスマートコントラクトを作成しよう.md","level":"1.9.2.4","depth":3,"path":"AVAX-AMM/section-1/lesson-2_Solidityでスマートコントラクトを作成しよう.md","ref":"AVAX-AMM/section-1/lesson-2_Solidityでスマートコントラクトを作成しよう.md","articles":[]},"previous":{"title":"lesson-1_開発環境を用意しよう.md","level":"1.9.2.2","depth":3,"path":"AVAX-AMM/section-1/lesson-1_開発環境を用意しよう.md","ref":"AVAX-AMM/section-1/lesson-1_開発環境を用意しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"AVAX-AMM/section-1/lesson-4_トークンの引出しを実装しよう.md","mtime":"2024-02-05T09:48:33.017Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

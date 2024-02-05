@@ -7967,32 +7967,32 @@
 <p><strong>1. トークンを DEX に入金する</strong></p>
 <p>まずは、ユーザーボード上の<strong>Faucet</strong>ボタンを押してトークン<code>TGLD</code>を取得してみましょう。</p>
 <p>[ユーザーGLD]</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-4/4_1_1.png" alt></p>
+<p><img src="4_1_1.png" alt></p>
 <p>次に、<strong>Deposit</strong>ボタンを押して取得したトークンをDEXに入金します。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-4/4_1_2.png" alt></p>
+<p><img src="4_1_2.png" alt></p>
 <p><strong>2. オーダーを作成する</strong></p>
 <p>オーダーを作成しましょう。フォームに入力後、<strong>Submit Order</strong>ボタンを押します。ここでは、&quot;<code>TGLD</code> : 100を<code>TSLV</code> : 100に交換したい&quot; というオーダーを作成しています。</p>
 <p>[ユーザーGLD]</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-4/4_1_3.png" alt></p>
+<p><img src="4_1_3.png" alt></p>
 <p><strong>3. 別のユーザーがオーダーを購入する</strong></p>
 <p>今度は、別のユーザー（ユーザーSLV）でログインをしてみます。もう1つブラウザを開き、<strong>Login Internet Identity</strong>ボタンを押して、新しいアンカーを作成しましょう。</p>
 <p>左：[ユーザーGLD]</p>
 <p>右：[ユーザーSLV]</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-4/4_1_4.png" alt></p>
+<p><img src="4_1_4.png" alt></p>
 <p>認証後、トークン<code>TSLV</code>をFaucetから取得します。残高が更新されたら、トークン<code>TSLV</code>をDEXに入金します。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-4/4_1_5.png" alt></p>
+<p><img src="4_1_5.png" alt></p>
 <p>入金されたら、画像右（ユーザーSLV）のオーダー一覧に表示されている<strong>Buy</strong>ボタンを押してオーダーを購入してみましょう。実行後、オーダーが消えてユーザーボードのトークン量が更新されたことを確認しましょう。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-4/4_1_6.png" alt></p>
+<p><img src="4_1_6.png" alt></p>
 <p>今度は、オーダーが購入された画像左（ユーザーGLD）の残高が更新されているかを確認してみます。ユーザーボードを更新するために、画面のリロードを行いましょう。オーダーを購入したユーザーと同じPrincipalが表示されてしまうので、再度ログインをし直します。アンカーを入力して、<strong>Authorize</strong>ボタンを押します。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-4/4_1_7.png" alt></p>
+<p><img src="4_1_7.png" alt></p>
 <p>再ログイン後、ユーザーボードを確認してトークン量が更新されていることを確認しましょう。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-4/4_1_8.png" alt></p>
+<p><img src="4_1_8.png" alt></p>
 <p><strong>4. DEX からトークンを出金する</strong></p>
 <p>最後に、ユーザーGLDを操作して出金機能を確認します。今回は引き出すトークン量を<code>500</code>に設定しているのでまずは、<strong>Deposit</strong>ボタンを押してDEX内の残高を500以上にします。</p>
 <p>[ユーザーGLD]</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-4/4_1_9.png" alt></p>
+<p><img src="4_1_9.png" alt></p>
 <p><strong>Withdraw</strong>ボタンを押して、出金を行いトークンが移動したことを確認しましょう。</p>
-<p><img src="../../public/images/ICP-Basic-DEX/section-4/4_1_10.png" alt></p>
+<p><img src="4_1_10.png" alt></p>
 <p>DEXを操作して、ユーザー間でトークンを取引することができました！</p>
 <p>しかし、このままでは未完成なDEXになってしまいます。バックエンド側のコードを編集・再デプロイをした時にある問題が生じてしまいます。それは、再度デプロイをした際にデータがすべてリセットされてしまうことです。オーダーはもちろんのことユーザーがDEXに預けたトークンの残高が失われてしまいます。</p>
 <p>次のレッスンでは、この問題を解決するための機能を実装していきます！</p>
@@ -8048,7 +8048,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-1_DEXを操作してみよう.md","level":"1.21.4.2","depth":3,"next":{"title":"lesson-2_データを永続的に保存しよう.md","level":"1.21.4.3","depth":3,"path":"ICP-Basic-DEX/section-4/lesson-2_データを永続的に保存しよう.md","ref":"ICP-Basic-DEX/section-4/lesson-2_データを永続的に保存しよう.md","articles":[]},"previous":{"title":"lesson-3_メインネットにデプロイをしよう.md","level":"1.21.4.1","depth":3,"path":"ICP-Basic-DEX/section-4/lesson-3_メインネットにデプロイをしよう.md","ref":"ICP-Basic-DEX/section-4/lesson-3_メインネットにデプロイをしよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ICP-Basic-DEX/section-4/lesson-1_DEXを操作してみよう.md","mtime":"2024-02-04T17:20:42.482Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-1_DEXを操作してみよう.md","level":"1.21.4.2","depth":3,"next":{"title":"lesson-2_データを永続的に保存しよう.md","level":"1.21.4.3","depth":3,"path":"ICP-Basic-DEX/section-4/lesson-2_データを永続的に保存しよう.md","ref":"ICP-Basic-DEX/section-4/lesson-2_データを永続的に保存しよう.md","articles":[]},"previous":{"title":"lesson-3_メインネットにデプロイをしよう.md","level":"1.21.4.1","depth":3,"path":"ICP-Basic-DEX/section-4/lesson-3_メインネットにデプロイをしよう.md","ref":"ICP-Basic-DEX/section-4/lesson-3_メインネットにデプロイをしよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ICP-Basic-DEX/section-4/lesson-1_DEXを操作してみよう.md","mtime":"2024-02-05T09:48:33.331Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

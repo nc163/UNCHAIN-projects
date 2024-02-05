@@ -7956,7 +7956,7 @@
                                 <h3 id="📦-モノレポの設定">📦 モノレポの設定</h3>
 <p>ファイル構成をモノレポ構成に更新しましょう。モノレポとは、コントラクトとクライアント（またはその他構成要素）の全コードをまとめて1つのリポジトリで管理する方法です。</p>
 <p>プロジェクトのルートに<code>package.json</code>を作成します。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_1_1.png" alt></p>
+<p><img src="5_1_1.png" alt></p>
 <p>作成したpackage.jsonに下記を記述してください。</p>
 <pre><code class="lang-json">{
   <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;polygon-whitelist-nft&quot;</span>,
@@ -7976,18 +7976,18 @@
 }
 </code></pre>
 <p>次に、<code>workspaces</code>を構成していきましょう。プロジェクトのルートに<code>packages</code>フォルダを作成します。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_1_2.png" alt></p>
+<p><img src="5_1_2.png" alt></p>
 <h4 id="client">client</h4>
 <p><code>client</code>フォルダを<code>packages</code>フォルダの中に移動しましょう。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_1_3.png" alt></p>
+<p><img src="5_1_3.png" alt></p>
 <p>clientフォルダ内の<code>yarn.lock</code>ファイルを削除しましょう。モノレポ構成にする場合、プロジェクトのルートで一元管理されるため、各workspace内のyarn.lockファイルは不要になります。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_1_4.png" alt></p>
+<p><img src="5_1_4.png" alt></p>
 <h4 id="contract">contract</h4>
 <p>作成したコントラクトの自動テストを追加するため、<a href="https://hardhat.org/" target="_blank">Hardhat</a>を使用して<code>packages/contract</code>フォルダを構成していきたいと思います。</p>
 <p><code>packages</code>フォルダの中に<code>contract</code>フォルダを作成しましょう。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_1_5.png" alt></p>
+<p><img src="5_1_5.png" alt></p>
 <p>contractフォルダの中に<code>package.json</code>ファイルを作成します。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_1_6.png" alt></p>
+<p><img src="5_1_6.png" alt></p>
 <p>作成したpackage.jsonファイルに、下記を記述してください。</p>
 <pre><code class="lang-json">{
     <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;contract&quot;</span>,
@@ -8042,7 +8042,7 @@
 ✔ Do you want to add a .gitignore? (Y/n) · y
 </code></pre><p>⚠️ うまく表示されない（選択肢が表示されない、表示が詰まってしまう等）場合があります。そのような場合には、先にSection5 Lesson3に取り組み、GitHub上へアップロード後にローカル環境へクローンしてから再度残りのレッスンを再開することをおすすめします。</p>
 <p>プロジェクトの生成に成功した場合、現時点でこのような構成となっていることを確認しましょう。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-5/5_1_7.png" alt></p>
+<p><img src="5_1_7.png" alt></p>
 <p>それでは、<code>packages/contract</code>フォルダ内のファイルを更新していきましょう。</p>
 <p>まずは、プロジェクトのルートにあるcontractsフォルダを<code>packages/contract</code>フォルダ内に移動しましょう。下記のコマンドは、プロジェクトのルートで実行してください。</p>
 <pre><code>rm -r ./packages/contract/contracts/ &amp;&amp; mv ./contracts/ ./packages/contract/
@@ -8113,7 +8113,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-1_モノレポの設定.md","level":"1.19.5.3","depth":3,"next":{"title":"[section-2]","level":"1.19.6","depth":2,"ref":"","articles":[{"title":"lesson-1_NFTの紹介.md","level":"1.19.6.1","depth":3,"path":"Polygon-Whitelist-NFT/section-2/lesson-1_NFTの紹介.md","ref":"Polygon-Whitelist-NFT/section-2/lesson-1_NFTの紹介.md","articles":[]},{"title":"lesson-2_ミント機能.md","level":"1.19.6.2","depth":3,"path":"Polygon-Whitelist-NFT/section-2/lesson-2_ミント機能.md","ref":"Polygon-Whitelist-NFT/section-2/lesson-2_ミント機能.md","articles":[]}]},"previous":{"title":"lesson-3_GitHub連携.md","level":"1.19.5.2","depth":3,"path":"Polygon-Whitelist-NFT/section-5/lesson-3_GitHub連携.md","ref":"Polygon-Whitelist-NFT/section-5/lesson-3_GitHub連携.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Whitelist-NFT/section-5/lesson-1_モノレポの設定.md","mtime":"2024-02-04T17:20:42.535Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-1_モノレポの設定.md","level":"1.19.5.3","depth":3,"next":{"title":"[section-2]","level":"1.19.6","depth":2,"ref":"","articles":[{"title":"lesson-1_NFTの紹介.md","level":"1.19.6.1","depth":3,"path":"Polygon-Whitelist-NFT/section-2/lesson-1_NFTの紹介.md","ref":"Polygon-Whitelist-NFT/section-2/lesson-1_NFTの紹介.md","articles":[]},{"title":"lesson-2_ミント機能.md","level":"1.19.6.2","depth":3,"path":"Polygon-Whitelist-NFT/section-2/lesson-2_ミント機能.md","ref":"Polygon-Whitelist-NFT/section-2/lesson-2_ミント機能.md","articles":[]}]},"previous":{"title":"lesson-3_GitHub連携.md","level":"1.19.5.2","depth":3,"path":"Polygon-Whitelist-NFT/section-5/lesson-3_GitHub連携.md","ref":"Polygon-Whitelist-NFT/section-5/lesson-3_GitHub連携.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Whitelist-NFT/section-5/lesson-1_モノレポの設定.md","mtime":"2024-02-05T09:48:33.278Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

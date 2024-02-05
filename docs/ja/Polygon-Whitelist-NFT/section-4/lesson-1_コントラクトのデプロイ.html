@@ -7961,52 +7961,52 @@
 </blockquote>
 <p>最初に<code>Polygon Mumbai</code>テストネットでテストトークンを受け取ったことを覚えていますか？ 次に、このテストネットへ<code>Whitelist.sol</code>と<code>Shield.sol</code>のコントラクトをデプロイします。</p>
 <p>右上の「<code>Connected</code>」ボタンをクリックし、「<code>Disconnect</code>」を選択します。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_1.png" alt="image-20230223133803703"></p>
+<p><img src="4_1_1.png" alt="image-20230223133803703"></p>
 <p>「<code>Injected Web3 Provider</code>」を選択します。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_2.png" alt="image-20230223133842606"></p>
+<p><img src="4_1_2.png" alt="image-20230223133842606"></p>
 <p>「<code>Metamask</code>」をクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_3.png" alt="image-20230223134000225"></p>
+<p><img src="4_1_3.png" alt="image-20230223134000225"></p>
 <p>「<code>Mumbai</code>」を選択します。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_4.png" alt="image-20230223134208657"></p>
+<p><img src="4_1_4.png" alt="image-20230223134208657"></p>
 <h3 id="📝-whitelistsolをデプロイする">📝 Whitelist.solをデプロイする</h3>
 <p>まず<code>Whitelis.sol</code>をコンパイルします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_5.png" alt="image-20230223134424725"></p>
+<p><img src="4_1_5.png" alt="image-20230223134424725"></p>
 <p>Deploy &amp; Interactionパネルに移動し、最大4つの異なるホワイトリストアドレスを配列で入力します。例：<code>[&quot;0xa323A54987cE8F51A648AF2826beb49c368B8bC6&quot;,&quot;0x4f2249958655e1b78064cc3d1F1b8a0B12D1dbDE&quot;,&quot;0x03692A0187c6D8Be757Be0f0775b94B484fFC15D&quot;,&quot;0x643AAe9DA7f3542f370FD87ea1781bD54D541578&quot;]</code></p>
 <p>「<code>Deploy</code>」をクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_6.png" alt="image-20230223135017015"></p>
+<p><img src="4_1_6.png" alt="image-20230223135017015"></p>
 <p>次のステップは、JS VMを使うのとは異なり、コントラクトを検証することです。コントラクトを検証した後、Etherscanのようなプラットフォームでオープンソース化され、他の人がソースコードをレビューできるようになり、コントラクトの公正さと正確さが保証されます。</p>
 <p>ChainIDEは便利なVerifyプラグインを提供しています。ユーザーは対応するScan API Keyを取得するだけで、素早くコントラクトを検証することができます。</p>
 <p>Scan Verifierパネルに切り替え、「Polygon API Key」の隣にあるリダイレクトリンクをクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_7.png" alt="image-20230223135415733"></p>
+<p><img src="4_1_7.png" alt="image-20230223135415733"></p>
 <p>ログインページで、「<code>Login</code>」または「<code>Click to sign up</code>」のいずれかを選択します。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_8.png" alt="image-20230114122015922"></p>
+<p><img src="4_1_8.png" alt="image-20230114122015922"></p>
 <p>「<code>API Keys</code>」を選択します。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_9.png" alt="image-20230114122844649"></p>
+<p><img src="4_1_9.png" alt="image-20230114122844649"></p>
 <p>「<code>Add</code>」選択します。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_10.png" alt="image-20230114122902739"></p>
+<p><img src="4_1_10.png" alt="image-20230114122902739"></p>
 <p><code>AppName</code>に好きな名前を入力し、「<code>Continue</code>」をクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_11.png" alt="image-20230114122923433"></p>
+<p><img src="4_1_11.png" alt="image-20230114122923433"></p>
 <p>その後、<code>API Key</code>が生成されます（APIキーは他の人と共有しないでください。キーの使用速度には制限があります。私のキーの1つは<code>98TSWD2C57949VSZVFCZ15WKYDVSCMJKQM</code>です）。生成されたキーをコピーします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_12.png" alt="image-20230114122953738"></p>
+<p><img src="4_1_12.png" alt="image-20230114122953738"></p>
 <p>ChainIDEに貼り付けます。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_13.png" alt="image-20230223140212926"></p>
+<p><img src="4_1_13.png" alt="image-20230223140212926"></p>
 <p>また、<code>INTERACT</code>セクションで、対応するコンストラクタとコントラクトのアドレスをコピーします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_14.png" alt="image-20230223140319580"></p>
+<p><img src="4_1_14.png" alt="image-20230223140319580"></p>
 <p>Scan Verifierパネルに貼り付け、「<code>Verify</code>」をクリックします。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_15.png" alt="image-20230223140526416"></p>
+<p><img src="4_1_15.png" alt="image-20230223140526416"></p>
 <p>おめでとうございます、検証成功です！</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_16.png" alt="image-20230223141313801"></p>
+<p><img src="4_1_16.png" alt="image-20230223141313801"></p>
 <h3 id="🛡-shieldsolのデプロイ">🛡 Shield.solのデプロイ</h3>
 <p><code>Shield.sol</code>のコンパイルから始めましょう。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_17.png" alt="image-20230223141704965"></p>
+<p><img src="4_1_17.png" alt="image-20230223141704965"></p>
 <p>デプロイページに切り替えます。コンストラクタで</p>
 <ul>
 <li><code>baseURI</code>には、メタデータセクションで生成されたIPFS URIを指定します。私の場合はこちらです： <code>ipfs://bafybeihuwmkxnqban2ukneymhwctxfqec5ywrdiqyc7vmyegftrllf7gq/</code></li>
 <li><code>whitelistContract</code>には、今デプロイしたホワイトリストのアドレスを指定します。私のはこちらです：<code>0x78dd3EA257535E08BA0Ee5d2eB5E5c8C64304AFf</code></li>
 </ul>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_18.png" alt="image-20230223142123752"></p>
+<p><img src="4_1_18.png" alt="image-20230223142123752"></p>
 <p>デプロイ後、再びScan Verifierパネルに移動します。検証のために同じ<code>baseURI</code>と<code>whitelistContract</code>を入力します。また、デプロイしたばかりの<code>Shield.sol</code>コントラクトのアドレスも入力します。「<code>Verify</code>」をクリックし、検証が成功するのを待ちましょう。</p>
-<p><img src="../../public/images/Polygon-Whitelist-NFT/section-4/4_1_19.png" alt="image-20230223142357545"></p>
+<p><img src="4_1_19.png" alt="image-20230223142357545"></p>
 <p>素晴らしい、コントラクトに関する部分はほぼ完了しました。次は、ホワイトリストに登録されたユーザーがミント操作を行うためのフロントエンドページを開発する必要があります。</p>
 <h3 id="🙋‍♂️-質問する">🙋‍♂️ 質問する</h3>
 <p>ここまでの作業で何かわからないことがある場合は、Discordの<code>#polygon</code>で質問をしてください。</p>
@@ -8058,7 +8058,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-1_コントラクトのデプロイ.md","level":"1.19.4.2","depth":3,"next":{"title":"lesson-2_フロントエンドの構築.md","level":"1.19.4.3","depth":3,"path":"Polygon-Whitelist-NFT/section-4/lesson-2_フロントエンドの構築.md","ref":"Polygon-Whitelist-NFT/section-4/lesson-2_フロントエンドの構築.md","articles":[]},"previous":{"title":"lesson-3_コレクションのミントと管理.md","level":"1.19.4.1","depth":3,"path":"Polygon-Whitelist-NFT/section-4/lesson-3_コレクションのミントと管理.md","ref":"Polygon-Whitelist-NFT/section-4/lesson-3_コレクションのミントと管理.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Whitelist-NFT/section-4/lesson-1_コントラクトのデプロイ.md","mtime":"2024-02-04T17:20:42.534Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-1_コントラクトのデプロイ.md","level":"1.19.4.2","depth":3,"next":{"title":"lesson-2_フロントエンドの構築.md","level":"1.19.4.3","depth":3,"path":"Polygon-Whitelist-NFT/section-4/lesson-2_フロントエンドの構築.md","ref":"Polygon-Whitelist-NFT/section-4/lesson-2_フロントエンドの構築.md","articles":[]},"previous":{"title":"lesson-3_コレクションのミントと管理.md","level":"1.19.4.1","depth":3,"path":"Polygon-Whitelist-NFT/section-4/lesson-3_コレクションのミントと管理.md","ref":"Polygon-Whitelist-NFT/section-4/lesson-3_コレクションのミントと管理.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Whitelist-NFT/section-4/lesson-1_コントラクトのデプロイ.md","mtime":"2024-02-05T09:48:33.268Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

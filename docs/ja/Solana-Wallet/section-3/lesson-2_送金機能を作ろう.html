@@ -7958,7 +7958,7 @@
 <p>実際のアプリケーションでは、<code>SOL</code>を他の暗号通貨と交換したり、商品やサービスの代金の支払いに使ったり、あるいは誰かにSOLを贈ったりしたいですね。そのためには、自分のウォレットから他のウォレットに暗号通貨を送金するよう、ネットワーク台帳に知らせる方法が必要です。</p>
 <p>送金機能を作るうえで必要な情報はとして、送り手と受け手の2つのアドレスを受け取る関数が必要になりそうですね。また、送金する<code>SOL</code>または<code>Lamport</code>の数も情報として必要となります。</p>
 <p>一方で、重要な要素があります。それは、あなたが実際にその暗号通貨の所有者であり、送金を承認していることをネットワークに証明しなければならないということです。</p>
-<p><img src="../../public/images/Solana-Wallet/section-3/3_2_4.png" alt></p>
+<p><img src="3_2_4.png" alt></p>
 <p>大家さんへ家賃の支払いに使うような、伝統的な紙の小切手で考えてみるとわかりやすいかもしれませんね。</p>
 <p>小切手の左上には、あなたの名前と住所が印刷されています。また、受取人の名前を記入する欄があり、支払金額を記入する欄もあります。最後に、あなたが送金を承認していることを銀行に証明するために、小切手に署名する欄があります。</p>
 <p>ブロックチェーンの送金もかなり似ています。ネットワークがその取引を有効であると確認し、対応する残高を変更できるように、取引に署名する方法が必要です。署名は送信者を認証し、受信者に対してはメッセージが漏洩していないことを証明します。</p>
@@ -7971,7 +7971,7 @@
 <li>一般的な関数<code>sendAndConfirmTransaction</code></li>
 </ul>
 <p>トランザクションを送信したあと、さらに <strong>残高を更新するために確認を要求したい</strong> ので、２つ目を試してみるのが良さそうです。</p>
-<p><img src="../../public/images/Solana-Wallet/section-3/3_2_1.png" alt></p>
+<p><img src="3_2_1.png" alt></p>
 <p>この関数の仕様を読むと、</p>
 <ul>
 <li><code>Connection</code></li>
@@ -8006,7 +8006,7 @@
 <p>作成したトランザクションを見ると、送信者、受信者、金額といった有効なトランザクションに必要な構成要素が明らかに欠けていますが、入力できるはずの使い慣れた構造を持っているようです。</p>
 <p>それぞれを調査することもできますが、手始めとして有望だと思われる<code>instructions</code>プロパティを調べてみましょう。</p>
 <p>ドキュメントには直感的な進め方が書かれていないのが残念ですが、<a href="https://solana-labs.github.io/solana-web3.js/classes/SystemProgram.html" target="_blank"><code>SystemProgram</code></a> という便利そうなクラスに<code>transfer</code>メソッドがあり、 <strong>「ある口座から別の口座にlamportsを移す取引命令を生成する」</strong> と書かれています。これはまさに今必要としているメソッドのようですね!</p>
-<p><img src="../../public/images/Solana-Wallet/section-3/3_2_2.png" alt></p>
+<p><img src="3_2_2.png" alt></p>
 <h3 id="transfer">Transfer</h3>
 <p><code>transfer</code>メソッドは<code>TransferParams</code>オブジェクトを受け取ります。</p>
 <p>そして<code>TransferParams</code>は</p>
@@ -8016,7 +8016,7 @@
 <li>金額（lamports）</li>
 </ul>
 <p>この3つで構成されています。</p>
-<p><img src="../../public/images/Solana-Wallet/section-3/3_2_5.png" alt></p>
+<p><img src="3_2_5.png" alt></p>
 <p>これは私たちが取引に使いたいデータと一致していますね!</p>
 <p>ですので、 <code>instructions</code>は次のように組み立てることができます。</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// サンプルコード</span>
@@ -8034,7 +8034,7 @@
 <p><code>sendAndConfirmTransaction</code>関数の3つのパラメータのうち、2つ(<code>connection</code>と<code>transaction</code>)を用意しました</p>
 <h3 id="署名">署名</h3>
 <p>次に、<code>signers</code>の配列が必要です。この関数の仕様から、<code>signers</code>は少なくとも1つの<code>Signer</code>オブジェクトを含む配列になることが分かっています。<a href="https://solana-labs.github.io/solana-web3.js/interfaces/Signer.html" target="_blank">ドキュメント</a>で<code>Signer</code>の型を確認すると、<code>publicKey</code>と<code>secretKey</code>という2つのプロパティを持つオブジェクトのようです。</p>
-<p><img src="../../public/images/Solana-Wallet/section-3/3_2_3.png" alt></p>
+<p><img src="3_2_3.png" alt></p>
 <p><code>account</code>から両方を取得できるので、<code>signers</code>の配列を作成することができます。</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> signers = [
   {
@@ -8150,7 +8150,7 @@
 <p><code>Transfer</code>コンポーネントの実装が完了したので、テストスクリプトを実行して模擬的に動作確認をしてみましょう。</p>
 <p>ターミナル上で<code>npm run test</code>を実行します。</p>
 <p>components/Transfer/index.test.jsが<code>PASS</code>し、以下のようになっていたらOKです！</p>
-<p><img src="../../public/images/Solana-Wallet/section-3/3_2_6.png" alt></p>
+<p><img src="3_2_6.png" alt></p>
 <p>それでは、<code>Transfer</code>コンポーネントを<code>Home</code>コンポーネントに組み込んで送信フォームを表示しましょう。<code>pages/index.js</code>を更新していきます。</p>
 <p>インポート文を追加します。</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">Transfer</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../components/Transfer&apos;</span>;
@@ -8367,7 +8367,7 @@ export default function Home() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-2_送金機能を作ろう.md","level":"1.15.3.3","depth":3,"next":{"title":"[section-2]","level":"1.15.4","depth":2,"ref":"","articles":[{"title":"lesson-1_残高を取得しよう.md","level":"1.15.4.1","depth":3,"path":"Solana-Wallet/section-2/lesson-1_残高を取得しよう.md","ref":"Solana-Wallet/section-2/lesson-1_残高を取得しよう.md","articles":[]}]},"previous":{"title":"lesson-3_VercelにWEBサイトをデプロイしよう.md","level":"1.15.3.2","depth":3,"path":"Solana-Wallet/section-3/lesson-3_VercelにWEBサイトをデプロイしよう.md","ref":"Solana-Wallet/section-3/lesson-3_VercelにWEBサイトをデプロイしよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Solana-Wallet/section-3/lesson-2_送金機能を作ろう.md","mtime":"2024-02-04T17:20:42.546Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-2_送金機能を作ろう.md","level":"1.15.3.3","depth":3,"next":{"title":"[section-2]","level":"1.15.4","depth":2,"ref":"","articles":[{"title":"lesson-1_残高を取得しよう.md","level":"1.15.4.1","depth":3,"path":"Solana-Wallet/section-2/lesson-1_残高を取得しよう.md","ref":"Solana-Wallet/section-2/lesson-1_残高を取得しよう.md","articles":[]}]},"previous":{"title":"lesson-3_VercelにWEBサイトをデプロイしよう.md","level":"1.15.3.2","depth":3,"path":"Solana-Wallet/section-3/lesson-3_VercelにWEBサイトをデプロイしよう.md","ref":"Solana-Wallet/section-3/lesson-3_VercelにWEBサイトをデプロイしよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Solana-Wallet/section-3/lesson-2_送金機能を作ろう.md","mtime":"2024-02-05T09:48:33.203Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

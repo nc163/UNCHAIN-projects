@@ -7970,7 +7970,7 @@
 </code></pre><p>次に<a href="https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.polkadot.io#/explorer" target="_blank">polkadot.js</a>で先ほど作成した<code>wasmファイル,metadata.jsonファイル</code>をアップロードします。</p>
 <p>詳しい手順に関しては環境構築のほうで述べているのでそちらを参考にしてみてください。</p>
 <p>これでデプロイができたら下の画像のようにデプロイしたコントラクトの名前がでてくると思います</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-2/2_1_8.png" alt></p>
+<p><img src="2_1_8.png" alt></p>
 <p>polkadot.jsでは新しくデプロイしたものほど下にくるので、一番下のコントラクトが先ほどデプロイしたものとなります。</p>
 <p>皆さんの場合は環境構築でデプロイしたものと先ほどデプロイしたものしかないので、Messagesという部分を見れがその数が違うのですぐに違いがわかるかと思います。</p>
 <p>Messagesにはpolkadot.js上から呼べる関数の一覧が載っていて、実装しただけ関数の数が最初に比べて多くなっているはずです。</p>
@@ -7979,15 +7979,15 @@
 <p>下のように<code>Polkadot.js</code>の<code>Accounts</code>ボタンを押すとアカウントのリストが出てきます。</p>
 <p>その中からAliceというアカウントに大量のトークンが入っているので、そこから自分作成したアドレスに10 ASTLほど送りましょう。</p>
 <p>これをしないとトランザクションで使用するトークンが不足してきちんと関数が動きません。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_1_1.png" alt>
-<img src="../../public/images/ASTAR-SocialFi/section-3/3_1_2.png" alt></p>
+<p><img src="3_1_1.png" alt>
+<img src="3_1_2.png" alt></p>
 <p>これでコントラクトとフロントの接続をする準備のために後1つやることがあります。それはフロントエンドのコードの<code>.env</code>にコントラクトのアドレスを代入することです！</p>
 <p><code>Polkadot.js</code>でコントラクトアドレスを確認して下のように代入しましょう（NEXT_PUBLIC_UNKNOWN_IMAGE_URLには実際の画像のURLを入れる）!</p>
 <p>[<code>.env</code>]</p>
 <pre><code>NEXT_PUBLIC_CONTRACT_ADDRESS=WCpkcJenKkFZwk2tot1yhyvZuwFXD2xdzb7dyn2WMebKtC6
 NEXT_PUBLIC_UNKNOWN_IMAGE_URL=&quot;https://images.unsplash.com/...&quot;
-</code></pre><p><img src="../../public/images/ASTAR-SocialFi/section-3/3_1_18.png" alt></p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_1_19.png" alt></p>
+</code></pre><p><img src="3_1_18.png" alt></p>
+<p><img src="3_1_19.png" alt></p>
 <p>では早速ローカルで立てたノードが作った<a href="%60http:/localhost:3000/%60">サイト</a>を開いてみましょう！</p>
 <p>※設計上、画面遷移するごとにリロードしないときちんと動きません。UX的に悪く申し訳ないです 🙇</p>
 <p>※何か問題や予想外のことが発生した場合はまずは以下の2つを行ってみてください。</p>
@@ -8003,30 +8003,30 @@ NEXT_PUBLIC_UNKNOWN_IMAGE_URL=&quot;https://images.unsplash.com/...&quot;
 <p>すると<code>unknown</code>という名前で登録されるはずです（もう一度リロードをする必要がある場合があります）。これが初期の設定です。</p>
 <p>次に歯車マークをクリックしてプロフィールの名前と画像を設定してみましょう！</p>
 <p><a href="https://unsplash.com/" target="_blank">unsplash</a>上から画像を探してURLをコピーして貼り付けましょう。その後名前を設定して<code>set</code>ボタンを押してみましょう！</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_1_14.png" alt>
-<img src="../../public/images/ASTAR-SocialFi/section-3/3_1_4.png" alt></p>
+<p><img src="3_1_14.png" alt>
+<img src="3_1_4.png" alt></p>
 <p>同じように2つ目, 3つ目のアカウントも作成しておきましょう。</p>
 <p>新しいアカウントはヘッダーにあるアカウント一覧が見れるトグルをクリックしてすることで作成できます！</p>
 <p>ここで注意なのが新しいアカウントを作成するのは必ずプロフィール画面で行わないといけないということです。ホーム画面でやってしまうとプロフィールを作成する前に投稿のいいね数に従ってトークンを配布する関数が動いてしまいエラーになってしまうからです。</p>
 <p>きちんとできていれば下のようになっているはずです。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_1_15.png" alt>
-<img src="../../public/images/ASTAR-SocialFi/section-3/3_1_16.png" alt></p>
+<p><img src="3_1_15.png" alt>
+<img src="3_1_16.png" alt></p>
 <p>では次に右下のボタンを押してみましょう。投稿モーダルが出てくるはずです。</p>
 <p>次にモーダル内でURL、投稿内容を設定して投稿してみましょう。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_1_6.png" alt></p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_1_7.png" alt></p>
+<p><img src="3_1_6.png" alt></p>
+<p><img src="3_1_7.png" alt></p>
 <p>では次に他のアカウントのアイコンをクリックしてフォローしてみましょう。</p>
 <p>プロフィール画面に戻ると下のようにフォロー数とフォロワー数が増えているはずです。また、そのアカウントで投稿したものがみれるはずです。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_1_17.png" alt></p>
+<p><img src="3_1_17.png" alt></p>
 <p>では次にメッセージ画面に移動してみましょう！</p>
 <p>この画面には下のようにフォローした、またはフォローされたアカウントとのメッセージ欄があるはずです。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_1_8.png" alt></p>
+<p><img src="3_1_8.png" alt></p>
 <p>ではこのメッセージ欄をクリックして遷移先でメッセージを入力してみましょう。</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_1_9.png" alt></p>
+<p><img src="3_1_9.png" alt></p>
 <p>※設計上、メッセージを送信後一度前の画面に戻ってから再びそのメッセージルームに入らないとメッセージが更新されなくなっています 🙇</p>
 <p>下の画像のようになっていればOKです！</p>
-<p><img src="../../public/images/ASTAR-SocialFi/section-3/3_1_10.png" alt>
-<img src="../../public/images/ASTAR-SocialFi/section-3/3_1_11.png" alt></p>
+<p><img src="3_1_10.png" alt>
+<img src="3_1_11.png" alt></p>
 <p>これで期待している挙動は確認できましたね！ テストは成功です！</p>
 <h3 id="🙋‍♂️-質問する">🙋‍♂️ 質問する</h3>
 <p>わからないことがあれば、Discordの<code>#astar</code>でsection・Lesson名とともに質問をしてください 👋</p>
@@ -8071,7 +8071,7 @@ NEXT_PUBLIC_UNKNOWN_IMAGE_URL=&quot;https://images.unsplash.com/...&quot;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-1_作成したアプリの動作を確認しよう.md","level":"1.14.3.1","depth":3,"next":{"title":"lesson-2_アプリをデプロイしよう.md","level":"1.14.3.2","depth":3,"path":"ASTAR-SocialFi/section-3/lesson-2_アプリをデプロイしよう.md","ref":"ASTAR-SocialFi/section-3/lesson-2_アプリをデプロイしよう.md","articles":[]},"previous":{"title":"[section-3]","level":"1.14.3","depth":2,"ref":"","articles":[{"title":"lesson-1_作成したアプリの動作を確認しよう.md","level":"1.14.3.1","depth":3,"path":"ASTAR-SocialFi/section-3/lesson-1_作成したアプリの動作を確認しよう.md","ref":"ASTAR-SocialFi/section-3/lesson-1_作成したアプリの動作を確認しよう.md","articles":[]},{"title":"lesson-2_アプリをデプロイしよう.md","level":"1.14.3.2","depth":3,"path":"ASTAR-SocialFi/section-3/lesson-2_アプリをデプロイしよう.md","ref":"ASTAR-SocialFi/section-3/lesson-2_アプリをデプロイしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ASTAR-SocialFi/section-3/lesson-1_作成したアプリの動作を確認しよう.md","mtime":"2024-02-04T17:20:42.427Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-1_作成したアプリの動作を確認しよう.md","level":"1.14.3.1","depth":3,"next":{"title":"lesson-2_アプリをデプロイしよう.md","level":"1.14.3.2","depth":3,"path":"ASTAR-SocialFi/section-3/lesson-2_アプリをデプロイしよう.md","ref":"ASTAR-SocialFi/section-3/lesson-2_アプリをデプロイしよう.md","articles":[]},"previous":{"title":"[section-3]","level":"1.14.3","depth":2,"ref":"","articles":[{"title":"lesson-1_作成したアプリの動作を確認しよう.md","level":"1.14.3.1","depth":3,"path":"ASTAR-SocialFi/section-3/lesson-1_作成したアプリの動作を確認しよう.md","ref":"ASTAR-SocialFi/section-3/lesson-1_作成したアプリの動作を確認しよう.md","articles":[]},{"title":"lesson-2_アプリをデプロイしよう.md","level":"1.14.3.2","depth":3,"path":"ASTAR-SocialFi/section-3/lesson-2_アプリをデプロイしよう.md","ref":"ASTAR-SocialFi/section-3/lesson-2_アプリをデプロイしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ASTAR-SocialFi/section-3/lesson-1_作成したアプリの動作を確認しよう.md","mtime":"2024-02-05T09:48:33.195Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

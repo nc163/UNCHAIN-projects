@@ -7966,7 +7966,7 @@
 <p>プールにはトークンX、Yがそれぞれ<code>10,000</code>ずつあるとします。</p>
 <p>ユーザAがX -&gt; Yへ量　<code>1,000</code>をswapします。</p>
 <p>前回のレッスンの<code>シチュエーション 1</code>で導き出した式</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_2_1.png" alt></p>
+<p><img src="2_2_1.png" alt></p>
 <p>を使用すると、</p>
 <ul>
 <li>y&apos;: swapにより得られるYの量</li>
@@ -7976,14 +7976,14 @@
 </ul>
 <p>となります。</p>
 <p>🐟 手数料を考慮しない場合</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_2_2.png" alt></p>
+<p><img src="2_2_2.png" alt></p>
 <p>プール内のXは1,000増えます。
 Yは909減ります。</p>
 <p>プール内のトークンX、Yの量はそれぞれ<code>11,000</code>、<code>9,091</code>となります。</p>
 <p>🐿️ 手数料を考慮する場合</p>
 <p>ユーザはXの量に<code>1,000</code>を指定してswapを実行しますが、
 AMMの内部では<code>1,000</code>から0.3％ の3を引いて<code>997</code>で計算をします。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_2_3.png" alt></p>
+<p><img src="2_2_3.png" alt></p>
 <p>プール内のXは1,000増えます。
 Yは906減ります。</p>
 <p>プール内のトークンX、Yの量はそれぞれ<code>11,000</code>、<code>9,094</code>となります。</p>
@@ -8004,22 +8004,22 @@ Yは906減ります。</p>
 <p>手数料の仕組みについて理解したので、前回のレッスンで得られた計算式を手数料を考慮した計算式に変形します。</p>
 <p>🦕 シチュエーション1: x&apos; からy&apos; を算出する</p>
 <p>元の式は以下です。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_2_1.png" alt></p>
+<p><img src="2_2_1.png" alt></p>
 <p>x&apos;に関して、0.3％ 引いた0.997x&apos; とすれば良いのですが、
 後にsolidityで実装する際に小数を扱えないことに備えて
 全ての値に<code>1,000</code>をかけて3桁分繰り上げましょう。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_2_4.png" alt></p>
+<p><img src="2_2_4.png" alt></p>
 <p>両辺を<code>1,000</code>で割ると以下の式が導き出せます。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_2_5.png" alt></p>
+<p><img src="2_2_5.png" alt></p>
 <p>🐬 シチュエーション2: y&apos; からx&apos; を算出する</p>
 <p>元の式は以下です。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_2_6.png" alt></p>
+<p><img src="2_2_6.png" alt></p>
 <p>先ほどと同じようにx&apos; から0.3％ 引き、全ての値を3桁分繰り上げると以下のような形になります。</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_2_7.png" alt></p>
+<p><img src="2_2_7.png" alt></p>
 <p>右辺は分母と分子をそれぞれ<code>1,000</code>で割ると</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_2_8.png" alt></p>
+<p><img src="2_2_8.png" alt></p>
 <p>となり、両辺を<code>997</code>で割ると</p>
-<p><img src="../../public/images/AVAX-AMM/section-2/2_2_9.png" alt></p>
+<p><img src="2_2_9.png" alt></p>
 <p>x&apos;について式が導き出せました。</p>
 <p>ここで算出した計算式をAMMコントラクト内で実装していきます。</p>
 <h3 id="🙋‍♂️-質問する">🙋‍♂️ 質問する</h3>
@@ -8073,7 +8073,7 @@ Yは906減ります。</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-2_swap時の手数料を理解しよう.md","level":"1.9.5.2","depth":3,"next":{"title":"lesson-1_swapを理解しよう.md","level":"1.9.5.3","depth":3,"path":"AVAX-AMM/section-2/lesson-1_swapを理解しよう.md","ref":"AVAX-AMM/section-2/lesson-1_swapを理解しよう.md","articles":[]},"previous":{"title":"lesson-3_swapを実装しよう.md","level":"1.9.5.1","depth":3,"path":"AVAX-AMM/section-2/lesson-3_swapを実装しよう.md","ref":"AVAX-AMM/section-2/lesson-3_swapを実装しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"AVAX-AMM/section-2/lesson-2_swap時の手数料を理解しよう.md","mtime":"2024-02-04T17:20:42.430Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-2_swap時の手数料を理解しよう.md","level":"1.9.5.2","depth":3,"next":{"title":"lesson-1_swapを理解しよう.md","level":"1.9.5.3","depth":3,"path":"AVAX-AMM/section-2/lesson-1_swapを理解しよう.md","ref":"AVAX-AMM/section-2/lesson-1_swapを理解しよう.md","articles":[]},"previous":{"title":"lesson-3_swapを実装しよう.md","level":"1.9.5.1","depth":3,"path":"AVAX-AMM/section-2/lesson-3_swapを実装しよう.md","ref":"AVAX-AMM/section-2/lesson-3_swapを実装しよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"AVAX-AMM/section-2/lesson-2_swap時の手数料を理解しよう.md","mtime":"2024-02-05T09:48:33.032Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

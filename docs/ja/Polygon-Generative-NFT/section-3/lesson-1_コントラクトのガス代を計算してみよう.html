@@ -7976,12 +7976,12 @@
 <ul>
 <li><code>Create: NFTCollectible</code>と表記されているのコントラクトを確認してください。</li>
 </ul>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-3/3_1_1.png" alt></p>
+<p><img src="3_1_1.png" alt></p>
 <p>次に、コントラクトの作成に関連付けられている<code>Txn Hash</code>ハッシュをクリックしてください。</p>
 <p>トランザクションページに進んだら、<code>Click to see More</code>をクリックしましょう。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-3/3_1_2.png" alt></p>
+<p><img src="3_1_2.png" alt></p>
 <p><code>Gas limit &amp; Usage by Txn</code>を確認してください。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-3/3_1_3.png" alt></p>
+<p><img src="3_1_3.png" alt></p>
 <p><code>Gas limit &amp; Usage by Txn</code>の値は、コントラクトのデプロイに使用されたガスの量です。</p>
 <p>私のコントラクトをSepolia Test Networkにデプロイするのに、約386万ガスが消費されました。</p>
 <p>同じコントラクトをイーサリアムメインネットに展開すると、同じ量のガスを消費することになります。</p>
@@ -7996,7 +7996,7 @@
 </code></pre><p>ガス価格は、ネットワーク上のトラフィック量に応じて変動します。</p>
 <p>ここで現在のETHのガス価格を確認できます: <a href="https://etherscan.io/gastracker" target="_blank">https://etherscan.io/gastracker</a></p>
 <p>これは、私がコントラクトをデプロイした際のETHのガス価格です。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-3/3_1_4.png" alt></p>
+<p><img src="3_1_4.png" alt></p>
 <p>上図からわかるように、<strong>イーサリアムメインネットのガス価格は 約 40 Gwei であり、Sepolia で消費されたガス価格よりも大幅に高くなっています。</strong></p>
 <p>これで、ガスコストを見積もるのに必要なものがすべてそろいました。</p>
 <p>私のコントラクトをイーサリアムメインネットにデプロイする際のコストの計算式は以下になります。</p>
@@ -8009,7 +8009,7 @@
 <p>ユーザーも、私たちのコントラクトからNFTをMintする際にガス代を支払う必要があります。</p>
 <p>それでは、NFTを1つMintするのにかかる費用を計算してみましょう。</p>
 <p>もう一度、あなたのコントラクトアドレスをEtherscanで呼び出し、<code>Mint NFTs</code>と書かれているトランザクションの中身を見ていきましょう。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-3/3_1_5.png" alt></p>
+<p><img src="3_1_5.png" alt></p>
 <p>イーサリアムメインネット上で私のコントラクトからNFTを1つMintする際のコストの計算式は以下になります。</p>
 <pre><code>コスト = 40 Gwei （イーサリアムメインネットのガス価格） × 386,338（消費したガスの量）/ 3（一度に Mint した NFT の数） = 5,151,173 Gwei = 0.005 ETH
 </code></pre><p>1つのNFTをMintするために発生するガス料金は0.005 ETH（約1500円）です。</p>
@@ -8025,7 +8025,7 @@
 </blockquote>
 <p>前述の取引にどれだけのコストがかかるか、Polygonで試算してみましょう。まず、<a href="https://polygonscan.com/gastracker/" target="_blank">こちら</a> からPolygonのガス価格を見てみましょう。</p>
 <p>2022年2月現在、ガス料金は3 Gwei程度です。</p>
-<p><img src="../../public/images/Polygon-Generative-NFT/section-3/3_1_6.png" alt></p>
+<p><img src="3_1_6.png" alt></p>
 <p>これをベースに、Polygonのサイドチェーンでコントラクトをデプロイするコストを計算してみましょう。</p>
 <pre><code>コスト = 3 Gwei （イーサリアムメインネットのガス価格） × 3,860,000（消費したガスの量） = 11,580,000 Gwei = 0.0115 MATIC
 </code></pre><p>ガス料金は、現在のPolygonでの価格を反映させたものに変更しました。さらに重要なことは、Polygonで使用している通貨がMATICであることです。</p>
@@ -8094,7 +8094,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-1_コントラクトのガス代を計算してみよう.md","level":"1.30.3.2","depth":3,"next":{"title":"[section-4]","level":"1.30.4","depth":2,"ref":"","articles":[{"title":"lesson-1_NFTがMintできるWEBサイトを作ろう.md","level":"1.30.4.1","depth":3,"path":"Polygon-Generative-NFT/section-4/lesson-1_NFTがMintできるWEBサイトを作ろう.md","ref":"Polygon-Generative-NFT/section-4/lesson-1_NFTがMintできるWEBサイトを作ろう.md","articles":[]},{"title":"lesson-2_VercelにWEBサイトをデプロイしよう.md","level":"1.30.4.2","depth":3,"path":"Polygon-Generative-NFT/section-4/lesson-2_VercelにWEBサイトをデプロイしよう.md","ref":"Polygon-Generative-NFT/section-4/lesson-2_VercelにWEBサイトをデプロイしよう.md","articles":[]}]},"previous":{"title":"lesson-2_Polygon上にコントラクトをデプロイしてみよう.md","level":"1.30.3.1","depth":3,"path":"Polygon-Generative-NFT/section-3/lesson-2_Polygon上にコントラクトをデプロイしてみよう.md","ref":"Polygon-Generative-NFT/section-3/lesson-2_Polygon上にコントラクトをデプロイしてみよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Generative-NFT/section-3/lesson-1_コントラクトのガス代を計算してみよう.md","mtime":"2024-02-04T17:20:42.521Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-1_コントラクトのガス代を計算してみよう.md","level":"1.30.3.2","depth":3,"next":{"title":"[section-4]","level":"1.30.4","depth":2,"ref":"","articles":[{"title":"lesson-1_NFTがMintできるWEBサイトを作ろう.md","level":"1.30.4.1","depth":3,"path":"Polygon-Generative-NFT/section-4/lesson-1_NFTがMintできるWEBサイトを作ろう.md","ref":"Polygon-Generative-NFT/section-4/lesson-1_NFTがMintできるWEBサイトを作ろう.md","articles":[]},{"title":"lesson-2_VercelにWEBサイトをデプロイしよう.md","level":"1.30.4.2","depth":3,"path":"Polygon-Generative-NFT/section-4/lesson-2_VercelにWEBサイトをデプロイしよう.md","ref":"Polygon-Generative-NFT/section-4/lesson-2_VercelにWEBサイトをデプロイしよう.md","articles":[]}]},"previous":{"title":"lesson-2_Polygon上にコントラクトをデプロイしてみよう.md","level":"1.30.3.1","depth":3,"path":"Polygon-Generative-NFT/section-3/lesson-2_Polygon上にコントラクトをデプロイしてみよう.md","ref":"Polygon-Generative-NFT/section-3/lesson-2_Polygon上にコントラクトをデプロイしてみよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-Generative-NFT/section-3/lesson-1_コントラクトのガス代を計算してみよう.md","mtime":"2024-02-05T09:48:33.426Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

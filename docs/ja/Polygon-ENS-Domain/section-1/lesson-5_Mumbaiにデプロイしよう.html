@@ -7970,9 +7970,9 @@
 <h3 id="💎-alchemy-でネットワークを作成">💎 Alchemy でネットワークを作成</h3>
 <p><strong><em>なお Alchemy の Dadhboard がなかなか開けないなどの不調がごくまれに起こる場合があります。その場合は 1 日程度時間を置いてから作業すると回復します。この場合、こちらで何かをすることはできません。ひと休みですね。</em></strong></p>
 <p>Alchemyのアカウントを作成したら、Dashboardの<code>CREATE APP</code>ボタンを押してください。
-<img src="../../public/images/Polygon-ENS-Domain/section-1/1_5_1.png" alt></p>
+<img src="1_5_1.png" alt></p>
 <p>次に、下記の項目を埋めていきます。下図を参考にしてください。</p>
-<p><img src="../../public/images/Polygon-ENS-Domain/section-1/1_5_2.png" alt></p>
+<p><img src="1_5_2.png" alt></p>
 <ul>
 <li><code>NAME</code>: プロジェクトの名前(例: <code>CoolDomains</code>)</li>
 <li><code>DESCRIPTION</code>: プロジェクトの概要(例：<code>ENS on Polygon</code>)</li>
@@ -7980,7 +7980,7 @@
 <li><code>NETWORK</code>: <code>Polygon Mumbai</code>を選択。</li>
 </ul>
 <p>それから、作成したAppの<code>VIEW DETAILS</code>をクリックします。</p>
-<p><img src="../../public/images/Polygon-ENS-Domain/section-1/1_5_3.png" alt></p>
+<p><img src="1_5_3.png" alt></p>
 <p>プロジェクトを開いたら、<code>VIEW KEY</code>ボタンをクリックします。</p>
 <p>ポップアップが開くので、<code>HTTP</code>のリンクをコピーしてください。</p>
 <p>これがあなたが本番環境のネットワークに接続する際に使用する<code>API Key</code>になります。</p>
@@ -7995,11 +7995,11 @@
 <p><strong>1 . Matic Mainnet を MetaMask に接続する</strong></p>
 <p>Matic MainnetをMetaMaskに追加するには、次の手順に従ってください。</p>
 <p>まず、<a href="https://polygonscan.com/" target="_blank">Polygonscan</a> に向かい、ページの一番下までスクロールして、<code>Add Polygon Network</code>ボタンをクリックします。</p>
-<p><img src="../../public/images/Polygon-ENS-Domain/section-1/1_5_4.png" alt></p>
+<p><img src="1_5_4.png" alt></p>
 <p>下記のようなポップアップが立ち上がったら、<code>Switch Network</code>をクリックしましょう。</p>
-<p><img src="../../public/images/Polygon-ENS-Domain/section-1/1_5_5.png" alt></p>
+<p><img src="1_5_5.png" alt></p>
 <p><code>Matic Mainnet</code>があなたのMetaMaskにセットアップされました。</p>
-<p><img src="../../public/images/Polygon-ENS-Domain/section-1/1_5_6.png" alt></p>
+<p><img src="1_5_6.png" alt></p>
 <p><strong>2 . Polygon Mumbai-Testnet を MetaMask に接続する</strong></p>
 <p>Polygon Mumbai-TestnetをMetaMaskに追加するには、次の手順に従ってください。</p>
 <p>まず、<a href="https://mumbai.polygonscan.com/" target="_blank">mumbai.polygonscan.com</a> に向かい、ページの一番下までスクロールして、<code>Add Mumbai Network</code>ボタンをクリックします。</p>
@@ -8007,7 +8007,7 @@
 <h3 id="🚰-偽-matic-を入手する">🚰 偽 MATIC を入手する</h3>
 <p>MetaMaskとHardhatの両方でPolygonネットワークの設定が完了したら、偽のMATICを取得していきましょう。</p>
 <p><a href="https://faucet.polygon.technology/" target="_blank">こちら</a> にアクセスして、下記のように偽MATICをリクエストしてください。</p>
-<p><img src="../../public/images/Polygon-ENS-Domain/section-1/1_5_7.png" alt></p>
+<p><img src="1_5_7.png" alt></p>
 <p>1回のリクエストでは少量ですので、数回リクエストして、1 MATIC程度入手しましょう。</p>
 <p>間隔を置かずにリクエストするとはじかれることもあるので少し時間を置いてみましょう。</p>
 <p><strong>⚠️: Polygon のメインネットワークにコントラクトをデプロイする際の注意事項</strong></p>
@@ -8110,17 +8110,17 @@ Contract balance: 0.01
 <p>先に進む前に、問題ないか確認しましょう。 これは先ほどの<a href="https://mumbai.polygonscan.com/" target="_blank">Mumbai Polygonscan</a>を使用して行うことができます。</p>
 <p>ここで、ターミナルに出力されたコントラクトアドレスを貼り付けて、何が起こっているかを確認できます。</p>
 <p>すべてが問題なく機能した場合は、コントラクトに基づいて実行されたいくつかのトランザクションを確認できるはずです。</p>
-<p><img src="../../public/images/Polygon-ENS-Domain/section-1/1_5_8.png" alt></p>
+<p><img src="1_5_8.png" alt></p>
 <p>Polygonscanの使用に慣れると便利です。これは、問題が発生した場合にデプロイを追跡して問題を解決する最も簡単なツールです。Polygonscanに表示されない場合は、まだ処理中であるか、問題が発生したことを意味します。</p>
 <p>エラーがなければ、<strong>コントラクトをデプロイできました!</strong></p>
 <h3 id="🐝-opensea-で-nft-を確認する">🐝 OpenSea で NFT を確認する</h3>
 <p>コントラクトアドレス(<code>Contract deployed to</code>に続く<code>0x..</code>)をターミナルからコピーして、<a href="https://testnets.opensea.io/" target="_blank">テストネット用の OpenSea</a> に貼り付け、検索してみてください。
 <strong>コントラクトアドレスはご自身のターミナルに表示されているものを使用してください。</strong></p>
-<p><img src="../../public/images/Polygon-ENS-Domain/section-1/1_5_9.png" alt></p>
+<p><img src="1_5_9.png" alt></p>
 <p>独自のドメインコントラクトを作成し、<strong>ドメインを作成できました!</strong></p>
 <h3 id="🙀-nft-が-表示されない場合">🙀 NFT が 表示されない場合</h3>
 <p>数分待ってもNFTがOpenSeaに表示されない場合は、<a href="http://testnets.dev" target="_blank">testnets.dev</a>というサイトにアクセスしてください。 上部のテストネット選択でMatic Mumbaiを選択し、コントラクトアドレスを入力して、トークンIDを0に設定します。 これで実際のブロックチェーンであなたのドメインを見ることができます。</p>
-<p><img src="../../public/images/Polygon-ENS-Domain/section-1/1_5_10.png" alt></p>
+<p><img src="1_5_10.png" alt></p>
 <h3 id="🙋‍♂️-質問する">🙋‍♂️ 質問する</h3>
 <p>ここまでの作業で何かわからないことがある場合は、Discordの<code>#polygon</code>で質問をしてください。</p>
 <p>ヘルプをするときのフローが円滑になるので、エラーレポートには下記の3点を記載してください ✨</p>
@@ -8173,7 +8173,7 @@ Contract balance: 0.01
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-5_Mumbaiにデプロイしよう.md","level":"1.26.2.2","depth":3,"next":{"title":"lesson-2_スマートコントラクトを実行してみよう.md","level":"1.26.2.3","depth":3,"path":"Polygon-ENS-Domain/section-1/lesson-2_スマートコントラクトを実行してみよう.md","ref":"Polygon-ENS-Domain/section-1/lesson-2_スマートコントラクトを実行してみよう.md","articles":[]},"previous":{"title":"lesson-3_ネームサービスを作成して登録してみよう.md","level":"1.26.2.1","depth":3,"path":"Polygon-ENS-Domain/section-1/lesson-3_ネームサービスを作成して登録してみよう.md","ref":"Polygon-ENS-Domain/section-1/lesson-3_ネームサービスを作成して登録してみよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-ENS-Domain/section-1/lesson-5_Mumbaiにデプロイしよう.md","mtime":"2024-02-04T17:20:42.515Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-5_Mumbaiにデプロイしよう.md","level":"1.26.2.2","depth":3,"next":{"title":"lesson-2_スマートコントラクトを実行してみよう.md","level":"1.26.2.3","depth":3,"path":"Polygon-ENS-Domain/section-1/lesson-2_スマートコントラクトを実行してみよう.md","ref":"Polygon-ENS-Domain/section-1/lesson-2_スマートコントラクトを実行してみよう.md","articles":[]},"previous":{"title":"lesson-3_ネームサービスを作成して登録してみよう.md","level":"1.26.2.1","depth":3,"path":"Polygon-ENS-Domain/section-1/lesson-3_ネームサービスを作成して登録してみよう.md","ref":"Polygon-ENS-Domain/section-1/lesson-3_ネームサービスを作成して登録してみよう.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"Polygon-ENS-Domain/section-1/lesson-5_Mumbaiにデプロイしよう.md","mtime":"2024-02-05T09:48:33.384Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>

@@ -8028,11 +8028,11 @@ artifacts
 <p>まず、Etherscanのアカウントを取得して、<code>apiKey</code>を取得しましょう。</p>
 <p>アカウントをまだお持ちでない場合は、<a href="https://etherscan.io/register" target="_blank">https://etherscan.io/register</a> にアクセスして、無料のユーザーアカウントを作成してください。</p>
 <p>アカウントが作成できたら、<code>My Profile</code>画面に移動してください。</p>
-<p><img src="../../public/images/ETH-NFT-Collection/section-4/4_2_1.png" alt></p>
+<p><img src="4_2_1.png" alt></p>
 <p><code>API Keys</code>タブを選択し、<code>+ Add</code>ボタンを押したら、<code>Create API Key</code>のポップアップが表示されるので、あなたのAPIに任意の名前をつけましょう。</p>
-<p><img src="../../public/images/ETH-NFT-Collection/section-4/4_2_2.png" alt></p>
+<p><img src="4_2_2.png" alt></p>
 <p>次に、あなたが作成したAPIの横の<code>Edit</code>ボタンを選択してください。ポップアップが表示されるので、<code>apiKey</code>を取得しましょう。</p>
-<p><img src="../../public/images/ETH-NFT-Collection/section-4/4_2_3.png" alt></p>
+<p><img src="4_2_3.png" alt></p>
 <p>⚠️：Ethereum API keyは誰にも教えてはいけません!</p>
 <p>まず、<code>.env</code>ファイルを開き、先ほどEtherscanから取得した<code>apiKey</code>を<code>Your_Etherscan_apiKey</code>に貼り付けてください。</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// .env</span>
@@ -8075,15 +8075,15 @@ Successfully verified contract MyEpicNFT on Etherscan.
 https://sepolia.etherscan.io/address/0xF7d8473eF4555B158689Ae8F3c1b39c246A1244E#code
 </code></pre><p>出力されたURLリンクをブラウザに貼り付け、中身を確認してみましょう。</p>
 <p>私の <a href="https://sepolia.etherscan.io/address/0xF7d8473eF4555B158689Ae8F3c1b39c246A1244E#code" target="_blank">URL リンク</a> の中身は下記のように表示されます。</p>
-<p><img src="../../public/images/ETH-NFT-Collection/section-4/4_2_6.png" alt></p>
+<p><img src="4_2_6.png" alt></p>
 <p>Etherscanで <strong>Contract</strong> タブを選択すると、下図のような<code>0x608060405234801 ...</code>で始まる長いテキストのリストが表示されます。</p>
-<p><img src="../../public/images/ETH-NFT-Collection/section-4/4_2_12.png" alt></p>
+<p><img src="4_2_12.png" alt></p>
 <p>実は、このテキストのリストは、デプロイされたコントラクトのバイトコードです。</p>
 <ul>
 <li>バイトコードに関する詳しい説明は、<a href="https://e-words.jp/w/%E3%83%90%E3%82%A4%E3%83%88%E3%82%B3%E3%83%BC%E3%83%89.html" target="_blank">こちら</a> をご覧ください。</li>
 </ul>
 <p><code>Read Contract</code>と<code>Write Contract</code>の2つのサブタブが追加されたことを確認してださい。これらの機能を使えば、コントラクトをオンチェーンで簡単に操作できます。フロントエンドがなくても、コントラクトから直接関数を呼び出せるので、便利ですね 😊</p>
-<p><img src="../../public/images/ETH-NFT-Collection/section-4/4_2_11.png" alt></p>
+<p><img src="4_2_11.png" alt></p>
 <p>おめでとうございます!　これで、あなたのスマートコントラクトが世界中の誰でも見られるようになりました 🚀</p>
 <h3 id="🔮-プロジェクトを拡張する">🔮 プロジェクトを拡張する</h3>
 <p>このプロジェクトで学んだことは、web3への旅の始まりに過ぎません。</p>
@@ -8116,9 +8116,9 @@ https://sepolia.etherscan.io/address/0xF7d8473eF4555B158689Ae8F3c1b39c246A1244E#
 <li><code>Repository name</code>を設定（ここでは作成したプロジェクトと同じ名前<code>ETH-NFT-Collection</code>を設定しています）</li>
 <li>「Create repository」をクリック</li>
 </ol>
-<p><img src="../../public/images/ETH-NFT-Collection/section-4/4_2_13.png" alt></p>
+<p><img src="4_2_13.png" alt></p>
 <p>作成されたリポジトリのURLをコピーします。ここでは、<code>SSH</code>を選択しています。</p>
-<p><img src="../../public/images/ETH-NFT-Collection/section-4/4_2_14.png" alt></p>
+<p><img src="4_2_14.png" alt></p>
 <p>次に、ターミナル上で<code>ETH-NFT-Collection</code>ディレクトリにいることを確認し、以下のコマンドを実行します。</p>
 <p>スタータープロジェクト内の<code>.git</code>ディレクトリを削除します。</p>
 <pre><code>rm -rf packages/client/.git
@@ -8131,16 +8131,16 @@ git push origin main
 </code></pre><p>GitHub上の<code>ETH-NFT-Collection</code>にファイルが反映されていることを確認してください。</p>
 <p>それでは、Vercelの操作を行います。Vercelのアカウントを取得したら、下記を実行しましょう。</p>
 <p>1. <code>Dashboard</code>へ進んで、<code>New Project</code>を選択してください。</p>
-<p><img src="../../public/images/ETH-NFT-Collection/section-4/4_2_7.png" alt></p>
+<p><img src="4_2_7.png" alt></p>
 <p>2. <code>Import Git Repository</code>で自分のGitHubアカウントを接続したら、<code>ETH-NFT-Collection</code>を選択し、<code>Import</code>してください。</p>
-<p><img src="../../public/images/ETH-NFT-Collection/section-4/4_2_8.png" alt></p>
+<p><img src="4_2_8.png" alt></p>
 <p>3. プロジェクトを作成します。<code>Root Directory</code>が「packages/client」となっていることを確認してください。</p>
-<p><img src="../../public/images/ETH-NFT-Collection/section-4/4_2_9.png" alt></p>
+<p><img src="4_2_9.png" alt></p>
 <p>4. <code>Deploy</code>ボタンを推しましょう。</p>
 <p>VercelはGitHubと連動しているので、GitHubが更新されるたびに自動でデプロイを行ってくれます。</p>
 <p>下記のように、<code>Building</code>ログが出力されます。</p>
 <p>基本的に<code>warning</code>は無視して問題ありません。</p>
-<p><img src="../../public/images/ETH-NFT-Collection/section-4/4_2_10.png" alt></p>
+<p><img src="4_2_10.png" alt></p>
 <p>こちらが、今回のプロジェクトで作成されるWebアプリケーションのデモです。</p>
 <p><a href="https://nft-minter-jl0e7c9yw-yukis4san.vercel.app/" target="_blank">https://nft-minter-jl0e7c9yw-yukis4san.vercel.app/</a></p>
 <h3 id="🙋‍♂️-質問する">🙋‍♂️ 質問する</h3>
@@ -8209,7 +8209,7 @@ git push origin main
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"lesson-2_Vercelにアプリをデプロイしよう.md","level":"1.8.4.1","depth":3,"next":{"title":"lesson-1_WEBアプリをアップグレードしよう.md","level":"1.8.4.2","depth":3,"path":"ETH-NFT-Collection/section-4/lesson-1_WEBアプリをアップグレードしよう.md","ref":"ETH-NFT-Collection/section-4/lesson-1_WEBアプリをアップグレードしよう.md","articles":[]},"previous":{"title":"[section-4]","level":"1.8.4","depth":2,"ref":"","articles":[{"title":"lesson-2_Vercelにアプリをデプロイしよう.md","level":"1.8.4.1","depth":3,"path":"ETH-NFT-Collection/section-4/lesson-2_Vercelにアプリをデプロイしよう.md","ref":"ETH-NFT-Collection/section-4/lesson-2_Vercelにアプリをデプロイしよう.md","articles":[]},{"title":"lesson-1_WEBアプリをアップグレードしよう.md","level":"1.8.4.2","depth":3,"path":"ETH-NFT-Collection/section-4/lesson-1_WEBアプリをアップグレードしよう.md","ref":"ETH-NFT-Collection/section-4/lesson-1_WEBアプリをアップグレードしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ETH-NFT-Collection/section-4/lesson-2_Vercelにアプリをデプロイしよう.md","mtime":"2024-02-04T17:20:42.457Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-04T18:25:31.902Z"},"basePath":"../..","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"lesson-2_Vercelにアプリをデプロイしよう.md","level":"1.8.4.1","depth":3,"next":{"title":"lesson-1_WEBアプリをアップグレードしよう.md","level":"1.8.4.2","depth":3,"path":"ETH-NFT-Collection/section-4/lesson-1_WEBアプリをアップグレードしよう.md","ref":"ETH-NFT-Collection/section-4/lesson-1_WEBアプリをアップグレードしよう.md","articles":[]},"previous":{"title":"[section-4]","level":"1.8.4","depth":2,"ref":"","articles":[{"title":"lesson-2_Vercelにアプリをデプロイしよう.md","level":"1.8.4.1","depth":3,"path":"ETH-NFT-Collection/section-4/lesson-2_Vercelにアプリをデプロイしよう.md","ref":"ETH-NFT-Collection/section-4/lesson-2_Vercelにアプリをデプロイしよう.md","articles":[]},{"title":"lesson-1_WEBアプリをアップグレードしよう.md","level":"1.8.4.2","depth":3,"path":"ETH-NFT-Collection/section-4/lesson-1_WEBアプリをアップグレードしよう.md","ref":"ETH-NFT-Collection/section-4/lesson-1_WEBアプリをアップグレードしよう.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"lunr":{"maxIndexSize":200000,"ignoreSpecialCharacters":true},"highlight":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"UNCHAIN","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"タイトル","language":"ja","languages":{"ja":"ja","en":"en"},"gitbook":"*","description":"説明"},"file":{"path":"ETH-NFT-Collection/section-4/lesson-2_Vercelにアプリをデプロイしよう.md","mtime":"2024-02-05T09:48:33.007Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-02-05T10:00:08.716Z"},"basePath":"../..","book":{"language":"ja"}});
         });
     </script>
 </div>
