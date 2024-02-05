@@ -194,7 +194,7 @@ return (
 
 アプリを見ると、次の入力フォームが表示されます。
 
-![](/public/images/Polygon-ENS-Domain/section-2/2_3_1.png)
+![](2_3_1.png)
 
 **注：** 現在、Mintボタンは何も機能しません。これは予想できますね。
 
@@ -404,7 +404,7 @@ import contractAbi from './utils/contractABI.json';
 
 このような画面になるはずです。
 
-![](/public/images/Polygon-ENS-Domain/section-2/2_3_2.png)
+![](2_3_2.png)
 
 ここから行う必要があるのは、ドメイン名とレコードを入力し、`Mint`をクリックして、ガスを支払い（偽のMATICを使用）、トランザクションがマイニングされるのを待つだけです。
 
@@ -422,7 +422,7 @@ NFTミンティングサイトが実際にどのように機能するかを確�
 
 下は一例です。`nin-nin.ninja`をミントしました。
 
-![](/public/images/Polygon-ENS-Domain/section-2/2_3_3.png)
+![](2_3_3.png)
 
 (ガスについて詳しく知りたい方は英語になりますが[ここ](https://ethereum.org/en/developers/docs/gas/)を参照してみてください。)
 

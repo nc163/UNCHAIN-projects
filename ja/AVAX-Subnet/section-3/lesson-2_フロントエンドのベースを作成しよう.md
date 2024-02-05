@@ -392,7 +392,7 @@ yarn client dev
 
 以下のような画面が表示されれば成功です！  
 
-![](/public/images/AVAX-Subnet/section-3/3_2_1.png)
+![](3_2_1.png)
 
 画面右上の`Connect to wallet`ボタンを押下するとウォレットと接続することができます。  
 ⚠️ section-1で設定したネットワークの管理者アカウントで接続してください。ネットワークに`mySubnet`を選択した状態で行ってください。
@@ -400,15 +400,15 @@ yarn client dev
 MetaMaskの承認が終わると、`Connect to wallet`ボタンの部分があなたの接続しているウォレットのアドレスの表示に変更されます。  
 今はアラートが表示されるかと思いますが、無視してokを押下してください。
 
-![](/public/images/AVAX-Subnet/section-3/3_2_4.png)
+![](3_2_4.png)
 
 その他各ページはこのようになっております。
 
-![](/public/images/AVAX-Subnet/section-3/3_2_2.png)
+![](3_2_2.png)
 
-![](/public/images/AVAX-Subnet/section-3/3_2_3.png)
+![](3_2_3.png)
 
-![](/public/images/AVAX-Subnet/section-3/3_2_5.png)
+![](3_2_5.png)
 
 ### 🌔 参考リンク
 

@@ -225,7 +225,7 @@ npm run test
 
 components/GenerateWallet/index.test.jsが`PASS`していることを確認できたらOKです！
 
-![](/public/images/Solana-Wallet/section-1/1_1_1.png)
+![](1_1_1.png)
 
 ### 🖥 生成したウォレットアドレスを表示する
 

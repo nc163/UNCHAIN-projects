@@ -82,19 +82,19 @@
 
 デバイス一覧ページに、デバイスエイリアスが1つ表示されていることを確認します。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_5_1.png)
+![](2_5_1.png)
 
 次に、別のデバイスを追加してみましょう。シークレットブラウザを開き、http://localhost:8080にアクセスします。ログインボタンを押して認証ページが開いたら、「Use existing」を選択します。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_5_2.png)
+![](2_5_2.png)
 
 現在アプリケーションにログインしているInternet Identityと同じ値で認証します。ここでは10000で認証しています（画像右）。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_5_3.png)
+![](2_5_3.png)
 
 認証後、デバイス一覧ページを開くとデバイスエイリアスが2つ表示されているはずです。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_5_4.png)
+![](2_5_4.png)
 
 最初に使用していたブラウザ（画像では左）の画面をリロードすると、こちらでもデバイスエイリアスが2つ表示されていることが確認できるはずです。
 

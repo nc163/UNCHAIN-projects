@@ -227,7 +227,7 @@ yarn client dev
 
 背景は時間帯によって変化するようなCSSが適用されているため、白くなっている可能性がありますが問題はありません。
 
-![](/public/images/NEAR-Election-dApp/section-0/0_2_1.png)
+![](0_2_1.png)
 
 もし、`command not found: yarn`とエラーが出てしまった方は、以下の記事を参考にしてみてください。
 https://asapoon.com/error/2795/command-not-found-yarn/
@@ -291,7 +291,7 @@ module.exports = {
 ```
 
 下のように一部分が赤字に変わっていれば成功です！
-![](/public/images/NEAR-Election-dApp/section-0/0_2_2.png)
+![](0_2_2.png)
 
 では最後に、コントラクトのディレクトリ（ここではclient）内にある`contract`というディレクトリは削除してください。
 
@@ -327,8 +327,8 @@ contract/
 Rust、Tailwindで開発を行うときにエラーや候補を表示してくれる機能があるととても便利です！
 
 なのでvscodeを使っている方はぜひ下の2つの拡張機能を入れることをおすすめします。
-![](/public/images/NEAR-Election-dApp/section-0/0_2_3.png)
-![](/public/images/NEAR-Election-dApp/section-0/0_2_4.png)
+![](0_2_3.png)
+![](0_2_4.png)
 
 ### 🙋‍♂️ 質問する
 

@@ -51,19 +51,19 @@ Internet Identity用のキャニスター（Wasmモジュール）をGitHubの[�
 
 @dfinity/auth-clientは、WebアプリケーションをInternet Identityで認証するためのインタフェースを提供しています。ライブラリの[ドキュメント](https://agent-js.icp.xyz/auth-client/index.html)で、"login"と検索すると[`AuthClient.login`](https://agent-js.icp.xyz/auth-client/classes/AuthClient.html#login)が出てきます。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_3_1.png)
+![](1_3_1.png)
 
 参照してみると、これはAuthClientクラスから提供されるメソッドで「Internet Identityで認証するための新しいウィンドウを開く」とあります。ログインボタンが押されたときに呼び出すことで、ユーザーの認証機能に接続することができそうです。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_3_2.png)
+![](1_3_2.png)
 
 exampleのコードを確認すると、loginの前に[`AuthClient.create`](https://agent-js.icp.xyz/auth-client/classes/AuthClient.html#create)を呼び出しています。createメソッドもドキュメントに記載がありますが、「認証とアイデンティティを管理する`AuthClient`を作成する」メソッドのようです。
 
 createメソッドを実行することで、`AuthClient`というオブジェクトが作成されてloginなどのメソッドを呼び出すことができるようになります。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_3_3.png)
+![](1_3_3.png)
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_3_4.png)
+![](1_3_4.png)
 
 ですのでloginメソッドの例にあったように、まずはcreateメソッドを呼び出してAuthClientを作成し、loginメソッドを呼び出すという流れになります。
 
@@ -81,7 +81,7 @@ authClient.login({
 
 loginメソッドに戻って引数を確認してみましょう。すべてがオプションですが、`identityProvider`という引数にデフォルト値が設定されています。新しいウィンドウが開かれる際に、この引数で指定したURLにアクセスします。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_3_5.png)
+![](1_3_5.png)
 
 ローカル環境にデプロイをする開発用のInternet Identityを使用したいので、下記のようにURLを設定します。
 
@@ -91,7 +91,7 @@ const iiUrl = `http://${process.env.INTERNET_IDENTITY_CANISTER_ID}.localhost:494
 
 最後に、loginメソッドが成功したときと失敗したときの処理を考えます。成功時にはInternet Identityの値を取得したいので、利用できそうなメソッドを探してみると[`getIdentity`](https://agent-js.icp.xyz/auth-client/classes/AuthClient.html#getIdentity)メソッドが見つかります。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_3_6.png)
+![](1_3_6.png)
 
 ```tsx
 const identity = authClient.getIdentity();
@@ -204,31 +204,31 @@ npm run start
 
 Loopbackに表示されたURLにアクセスします。ここでは、ブラウザに[Brave](https://brave.com/ja/)を使用します。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_3_7.png)
+![](1_3_7.png)
 
 ホーム画面の「Login with Internet Identity」をクリックします。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_3_8.png)
+![](1_3_8.png)
 
 Internet Identityの認証画面が表示されます。ここで、「Create New」をクリックします。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_3_9.png)
+![](1_3_9.png)
 
 「Create Passkey」をクリックします。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_3_10.png)
+![](1_3_10.png)
 
 表示されている文字を入力し、「Next」をクリックします。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_3_11.png)
+![](1_3_11.png)
 
 Internet Identityが表示されます。開発用のIdentityは、10000からとなります。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_3_12.png)
+![](1_3_12.png)
 
 これで認証が完了しました。アプリケーションに戻る（または自動で切り替わる）と、ログイン成功のメッセージが表示されて`/notes`に移動していることを確認しましょう。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_3_13.png)
+![](1_3_13.png)
 
 ### 📝 このレッスンで追加したコード
 

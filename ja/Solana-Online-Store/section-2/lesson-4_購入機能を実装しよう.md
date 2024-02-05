@@ -485,7 +485,7 @@ yarn test
 
 テストがパスしたら、Buyコンポーネントの実装は完了です。
 
-![](/public/images/Solana-Online-Store/section-2/2_4_1.png)
+![](2_4_1.png)
 
 ブラウザ上で実際に操作してみましょう。
 

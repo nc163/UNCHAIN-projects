@@ -340,7 +340,7 @@ return (
 
 それでは、Webアプリケーションをリフレッシュして、下記のようにNFTキャラクターがフロントエンドに反映されていることを確認してください。
 
-![](/public/images/ETH-NFT-Game/section-3/3_5_1.png)
+![](3_5_1.png)
 
 ### ✨ Web アプリケーションから NFT キャラクター を Mint する
 
@@ -549,7 +549,7 @@ https://gemcase.vercel.app/view/evm/sepolia/CONTRACT_ADDRES/TOKEN_ID
 
 下記のように、オンライン上でもあなたのNFTキャラクターが表示されることを確認しましょう（画像は学習コンテンツ制作時に利用したRarible rinkeby testnetのものになります）。
 
-![](/public/images/ETH-NFT-Game/section-3/3_5_2.png)
+![](3_5_2.png)
 
 ### 🪄 おまけ
 

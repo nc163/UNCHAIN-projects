@@ -7,16 +7,16 @@
 
 `dai.png`
 
-![](/public/images/ETH-Yield-Farm/section-3/3_1_1.png)
+![](3_1_1.png)
 
 `farmer.png`
 
 
-![](/public/images/ETH-Yield-Farm/section-3/3_1_2.png)
+![](3_1_2.png)
 
 `token-logo.png`
 
-![](/public/images/ETH-Yield-Farm/section-3/3_1_3.png)
+![](3_1_3.png)
 
 次にUI部分を作成しましょう。
 
@@ -104,7 +104,7 @@ yarn client start
 ```
 
 下のような見た目になっていれば成功です！
-![](/public/images/ETH-Yield-Farm/section-3/3_2_2.png)
+![](3_2_2.png)
 
 次にフロントとウォレットの接続を作成していこうと思います。
 

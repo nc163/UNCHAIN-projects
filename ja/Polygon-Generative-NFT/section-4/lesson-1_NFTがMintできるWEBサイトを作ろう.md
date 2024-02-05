@@ -75,7 +75,7 @@ ABI（またはApplication Binary Interface）は、コントラクトのコン�
 
 `packages/contract/artifacts/contracts/NFTCollectible.sol/NFTCollectible.json`をVS Codeで開き中身を確認してみましょう。
 
-![](/public/images/Polygon-Generative-NFT/section-4/4_1_2.png)
+![](4_1_2.png)
 
 `NFTCollectible.json`に記載されているすべてのコードが、ABIファイルです。
 
@@ -209,7 +209,7 @@ const contractAddress = 'あなたのコントラクトアドレスを貼り付�
 
 あなたのWebサイトは、このように表示されるはずです。
 
-![](/public/images/Polygon-Generative-NFT/section-4/4_1_3.png)
+![](4_1_3.png)
 
 CSSスタイルや静的要素（画像、ヘッダ、フッタ、ソーシャルメディアリンクなど）を追加して、Webサイトの外観を自由にカスタマイズしてください。
 
@@ -252,7 +252,7 @@ const checkWalletIsConnected = async () => {
 
 MetaMaskがインストールされていれば、`Wallet exists! We’re ready to go!`というメッセージがConsoleに表示されているはずです。
 
-![](/public/images/Polygon-Generative-NFT/section-4/4_1_4.png)
+![](4_1_4.png)
 
 MetaMaskエクステンションをインストールしたからといって、アクセスしたすべてのWebサイトにMetaMaskが自動的に接続されるわけではありません。
 
@@ -347,13 +347,13 @@ setCurrentAccount(accounts[0]);
 
 もし、下図のように`Connected`と表示されている場合は、`Connected`の文字をクリックします。
 
-![](/public/images/Polygon-Generative-NFT/section-4/4_1_5.png)
+![](4_1_5.png)
 
 そこで、Webサイトとあなたのウォレットアドレスの接続を一度解除します。
 
 - `Disconnect this account`を選択してください。
 
-![](/public/images/Polygon-Generative-NFT/section-4/4_1_6.png)
+![](4_1_6.png)
 
 次にローカルサーバーにホストされているあなたのWebサイトをリフレッシュして、`Connect Wallet`ボタンを押してください。
 
@@ -361,7 +361,7 @@ MetaMaskがWebサイトとの接続を促してきますので、同意しまし
 
 下記のように、Consoleにあなたのパブリックウォレットアドレスが出力されていれば、ウォレット接続のテストは成功です。
 
-![](/public/images/Polygon-Generative-NFT/section-4/4_1_7.png)
+![](4_1_7.png)
 
 ウォレットが接続されたら、`Connect Wallet`ボタンを`Mint NFT`ボタンに置き換えていきましょう。
 
@@ -380,13 +380,13 @@ return (
 
 これで、私たちのWebサイトはこのようになります。
 
-![](/public/images/Polygon-Generative-NFT/section-4/4_1_8.png)
+![](4_1_8.png)
 
 ページを更新して、MetaMaskエクステンションを確認してみましょう。
 
 MetaMaskはまだWebサイトに接続されていることを伝えていますが、WebサイトにはまだConnect Walletボタンが表示されていることがわかります。
 
-![](/public/images/Polygon-Generative-NFT/section-4/4_1_9.png)
+![](4_1_9.png)
 
 Reactに慣れている人なら、なぜこのようなことが起こるのかお分かりでしょう。
 
@@ -707,7 +707,7 @@ MetaMaskが0.01 ETH + ガス代を支払うよう促すので、同意してく�
 
 処理が完了したら、MetaMaskのポップアップとコンソール出力の両方でトランザクションが確認できます。
 
-![](/public/images/Polygon-Generative-NFT/section-4/4_1_10.png)
+![](4_1_10.png)
 
 > ⚠️: 2022 年 4 月 1 日より、Mint ボタンすると下記のようなエラーが発生しています。
 >
@@ -726,7 +726,7 @@ Polygonがほかのサイドチェーンと異なる最大の利点は、世界�
 
 MintされたNFTがコレレクションとしてアップロードされているのがわかるでしょう。
 
-![](/public/images/Polygon-Generative-NFT/section-4/4_1_11.png)
+![](4_1_11.png)
 
 ### 🙋‍♂️ 質問する
 

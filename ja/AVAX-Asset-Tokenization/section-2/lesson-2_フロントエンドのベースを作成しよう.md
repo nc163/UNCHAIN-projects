@@ -512,27 +512,27 @@ yarn client dev
 
 以下のような画面が表示されれば成功です！
 
-![](/public/images/AVAX-Asset-Tokenization/section-2/2_2_1.png)
+![](2_2_1.png)
 
 画面右上の`Connect to wallet`ボタンを押下するとウォレットと接続することができます。
 ⚠️ この先ウォレットを接続する場合は、 ネットワークに`Fuji`を選択した状態で行ってください。
 
 MetaMaskの承認が終わると、 `Connect to wallet`ボタンの部分があなたの接続しているウォレットのアドレスの表示に変更されます。
 
-![](/public/images/AVAX-Asset-Tokenization/section-2/2_2_2.png)
+![](2_2_2.png)
 
 `For Farmer`ボタンを押すとページが切り替わります。
 
-![](/public/images/AVAX-Asset-Tokenization/section-2/2_2_3.png)
+![](2_2_3.png)
 
 `Tokenize`と`ViewBuyers`ボタンを切り替えると表示も切り替わります。
 
-![](/public/images/AVAX-Asset-Tokenization/section-2/2_2_5.png)
+![](2_2_5.png)
 
 右下の`Back to home`を押すとホームページに戻ります。
 `For Buyers`ボタンを押すとまたページが切り替わります。
 
-![](/public/images/AVAX-Asset-Tokenization/section-2/2_2_4.png)
+![](2_2_4.png)
 
 ### 🌔 参考リンク
 

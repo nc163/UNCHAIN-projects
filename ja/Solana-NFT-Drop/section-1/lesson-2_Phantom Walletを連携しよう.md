@@ -8,11 +8,11 @@
 
 1\. [こちら](https://github.com/unchain-tech/Solana-NFT-Drop)からunchain-tech/Solana-NFT-Dropリポジトリにアクセスをして、ページ右上の`Fork`ボタンをクリックします。
 
-![](/public/images/Solana-NFT-Drop/section-1/1_2_1.png)
+![](1_2_1.png)
 
 2\. Create a new forkページが開くので、「Copy the `main` branch only」という項目に**チェックが入っていることを確認します**。
 
-![](/public/images/Solana-NFT-Drop/section-1/1_2_2.png)
+![](1_2_2.png)
 
 3\. 設定が完了したら`Create fork`ボタンをクリックします。あなたのGitHubアカウントに`Solana-NFT-Drop`リポジトリのフォークが作成されたことを確認してください。
 
@@ -20,7 +20,7 @@
 
 `Code`ボタンをクリックして`SSH`を選択し、Gitリンクをコピーしましょう。
 
-![](/public/images/Solana-NFT-Drop/section-1/1_2_3.png)
+![](1_2_3.png)
 
 ターミナルで任意の作業ディレクトリに移動し、先ほどコピーしたリンクを貼り付け、下記を実行してください。
 
@@ -45,7 +45,7 @@ yarn dev
 
 **ローカル環境で表示されている Web サイト**
 
-![](/public/images/Solana-NFT-Drop/section-1/1_2_4.png)
+![](1_2_4.png)
 
 上記のような形でフロントエンドが確認できれば成功です。
 
@@ -76,11 +76,11 @@ Phantom WalletのネットワークをDevnetに変更してください。今回
 
 Phantom Wallet左上のメニューを開き、「Settings」に進みます。
 
-![](/public/images/Solana-NFT-Drop/section-1/1_2_6.png)
+![](1_2_6.png)
 
 「Developer Settings」に進み、`Testnet Mode`をオンにします。Solanaのテストネットが表示されるので、Devnetを選択します。
 
-![](/public/images/Solana-NFT-Drop/section-1/1_2_7.png)
+![](1_2_7.png)
 
 ※ 本プロジェクトではBraveとChromeでのみ動作が確認できます。
 
@@ -229,7 +229,7 @@ const TWITTER_HANDLE = 'あなたのTwitterハンドル';
 
 Webアプリケーションのコンソールに`Phantom Wallet found!`という行が表示されるはずです。
 
-![無題](/public/images/Solana-NFT-Drop/section-1/1_2_5.png)
+![無題](1_2_5.png)
 
 次に、ユーザーのウォレットにアクセスすることが**許可**されているか確認する必要があります。アクセスが許可されていると、Solanaプログラムの関数にアクセスできます。
 

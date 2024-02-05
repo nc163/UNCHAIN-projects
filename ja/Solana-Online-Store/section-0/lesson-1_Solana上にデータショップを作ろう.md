@@ -19,7 +19,7 @@
 
 以下は作成するWebアプリケーションのイメージです。
 
-![web application](/public/images/Solana-Online-Store/section-0/0_1_1.jpg)
+![web application](0_1_1.jpg)
 
 本プロジェクトは以下の3つのステップに分かれています。
 

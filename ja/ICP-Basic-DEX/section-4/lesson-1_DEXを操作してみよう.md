@@ -15,11 +15,11 @@
 
 [ユーザーGLD]
 
-![](/public/images/ICP-Basic-DEX/section-4/4_1_1.png)
+![](4_1_1.png)
 
 次に、**Deposit**ボタンを押して取得したトークンをDEXに入金します。
 
-![](/public/images/ICP-Basic-DEX/section-4/4_1_2.png)
+![](4_1_2.png)
 
 **2. オーダーを作成する**
 
@@ -27,7 +27,7 @@
 
 [ユーザーGLD]
 
-![](/public/images/ICP-Basic-DEX/section-4/4_1_3.png)
+![](4_1_3.png)
 
 **3. 別のユーザーがオーダーを購入する**
 
@@ -37,23 +37,23 @@
 
 右：[ユーザーSLV]
 
-![](/public/images/ICP-Basic-DEX/section-4/4_1_4.png)
+![](4_1_4.png)
 
 認証後、トークン`TSLV`をFaucetから取得します。残高が更新されたら、トークン`TSLV`をDEXに入金します。
 
-![](/public/images/ICP-Basic-DEX/section-4/4_1_5.png)
+![](4_1_5.png)
 
 入金されたら、画像右（ユーザーSLV）のオーダー一覧に表示されている**Buy**ボタンを押してオーダーを購入してみましょう。実行後、オーダーが消えてユーザーボードのトークン量が更新されたことを確認しましょう。
 
-![](/public/images/ICP-Basic-DEX/section-4/4_1_6.png)
+![](4_1_6.png)
 
 今度は、オーダーが購入された画像左（ユーザーGLD）の残高が更新されているかを確認してみます。ユーザーボードを更新するために、画面のリロードを行いましょう。オーダーを購入したユーザーと同じPrincipalが表示されてしまうので、再度ログインをし直します。アンカーを入力して、**Authorize**ボタンを押します。
 
-![](/public/images/ICP-Basic-DEX/section-4/4_1_7.png)
+![](4_1_7.png)
 
 再ログイン後、ユーザーボードを確認してトークン量が更新されていることを確認しましょう。
 
-![](/public/images/ICP-Basic-DEX/section-4/4_1_8.png)
+![](4_1_8.png)
 
 **4. DEX からトークンを出金する**
 
@@ -61,11 +61,11 @@
 
 [ユーザーGLD]
 
-![](/public/images/ICP-Basic-DEX/section-4/4_1_9.png)
+![](4_1_9.png)
 
 **Withdraw**ボタンを押して、出金を行いトークンが移動したことを確認しましょう。
 
-![](/public/images/ICP-Basic-DEX/section-4/4_1_10.png)
+![](4_1_10.png)
 
 DEXを操作して、ユーザー間でトークンを取引することができました！
 

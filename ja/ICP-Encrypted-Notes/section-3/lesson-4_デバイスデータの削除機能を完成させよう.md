@@ -144,15 +144,15 @@ logout関数では、デバイスデータとAuthClient内のデータを削除�
 
 まずは、現在の状態を確認しましょう。前回のレッスンで動作確認を行った状態のままであれば、2つのデバイスが登録されているはずです。
 
-![](/public/images/ICP-Encrypted-Notes/section-3/3_4_1.png)
+![](3_4_1.png)
 
 どちらか一方のデバイスを削除してみましょう。
 
-![](/public/images/ICP-Encrypted-Notes/section-3/3_4_2.png)
+![](3_4_2.png)
 
 削除されたデバイスは、ログインページにリダイレクトされて`This device has been deleted.`というメッセージが表示されているはずです。
 
-![](/public/images/ICP-Encrypted-Notes/section-3/3_4_3.png)
+![](3_4_3.png)
 
 ### 📝 このレッスンで追加したコード
 

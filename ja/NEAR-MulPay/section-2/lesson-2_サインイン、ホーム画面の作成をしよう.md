@@ -407,10 +407,10 @@ yarn client flutter:run
 ```
 
 エミュレータであれば下のような画面が表示されていれば成功です。
-![](/public/images/NEAR-MulPay/section-2/2_2_1.png)
+![](2_2_1.png)
 
 デスクトップ版であれば下のような画面が表示されていれば成功です。
-![](/public/images/NEAR-MulPay/section-2/2_2_6.png)
+![](2_2_6.png)
 
 **👀 Wallet接続時のトラブルシューティング**
 
@@ -678,10 +678,10 @@ class Home extends StatelessWidget {
 では再びエミュレータを立ち上げてきちんと動いているかみていきましょう！
 
 正常に動いている場合は、エミュレータであれば下のように表示されているはずです。
-![](/public/images/NEAR-MulPay/section-2/2_2_2.png)
+![](2_2_2.png)
 
 デスクトップ版であれば下のような画面が表示されていれば成功です。
-![](/public/images/NEAR-MulPay/section-2/2_2_3.png)
+![](2_2_3.png)
 
 トークンのリストは上下にスクロールできるようになっていて、トークンの数が増えてもきちんと動くようになっています！
 

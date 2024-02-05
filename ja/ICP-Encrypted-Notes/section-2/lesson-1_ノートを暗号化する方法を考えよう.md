@@ -12,7 +12,7 @@
 3. 暗号化されたノートをバックエンドキャニスターに保存する。
 4. 対称鍵でノートを復号する。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_1_1.png)
+![](2_1_1.png)
 
 ここで課題となるのは、異なるデバイスでノートを共有したいときです。
 
@@ -29,25 +29,25 @@
 
 1. 公開鍵と秘密鍵を生成する。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_1_2.png)
+![](2_1_2.png)
 
 2. 公開鍵をバックエンドキャニスターに保存する。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_1_3.png)
+![](2_1_3.png)
 
 3. 対称鍵を持っているブラウザが、バックエンドキャニスターに保存された公開鍵を取得する。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_1_4.png)
+![](2_1_4.png)
 
 4. 公開鍵で対称鍵を暗号化する。
 取得したそれぞれの公開鍵を使用して、対称鍵を暗号化します。暗号化された対称鍵は、バックエンドキャニスターに保存されます。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_1_5.png)
+![](2_1_5.png)
 
 5. 自身の公開鍵で暗号化された対称鍵を取得する。
 秘密鍵で暗号化された対称鍵を復号します。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_1_6.png)
+![](2_1_6.png)
 
 これで、対称鍵を共有することができました！
 

@@ -15,7 +15,7 @@ XRP Ledgeにアクセスするためのウォレットをダウンロードし�
 デフォルトではXummはメインネットへ接続しています。
 Xummアプリの設定→詳細設定→ノードからテストネットのノード`wss://testnet.xrpl-labs.com`を選択してください。
 
-![](/public/images/XRPL-NFT-Maker/section-1/1_2_1.png)
+![](1_2_1.png)
 
 ### 🚰 Faucetを取得する
 
@@ -31,11 +31,11 @@ Testnetを選択後Generate Testnet Credentialsボタンを押しましょう！
 
 Xummアプリ内下部の設定→アカウント→アカウントを追加する→既存のアカウントをインポートと選択します。
 
-![](/public/images/XRPL-NFT-Maker/section-1/1_2_2.png)
+![](1_2_2.png)
 
 さらに全権アクセス→シークレットキーと選択していき、先ほど取得したシークレットを入力します。
 
-![](/public/images/XRPL-NFT-Maker/section-1/1_2_3.png)
+![](1_2_3.png)
 
 Xummアプリ内のXRP残高が1000XRPになっていたら成功です！
 
@@ -48,11 +48,11 @@ Xummアプリ内のXRP残高が1000XRPになっていたら成功です！
 
 [Xumm Developer Console](https://apps.xumm.dev)へログインし、アプリケーションの作成を行ってください。
 
-![](/public/images/XRPL-NFT-Maker/section-1/1_2_4.png)
+![](1_2_4.png)
 
 メールアドレスやGithub、Xummでアカウントの作成が可能です。お好きな方法を選択してください！
 
-![](/public/images/XRPL-NFT-Maker/section-1/1_2_5.png)
+![](1_2_5.png)
 
 今回はテスト用のアプリケーションなので入力内容は仮のもので構いません。
 
@@ -60,7 +60,7 @@ Xummアプリ内のXRP残高が1000XRPになっていたら成功です！
 
 また、「Origin/Redirect URIs（one per line）to use」のフィールドに`http://localhost:3000`を入力して`Update Application`ボタンで設定を反映しておいてください。
 このフィールドに設定したURIからのみXummアプリからのアクセスを許可します。
-![](/public/images/XRPL-NFT-Maker/section-1/1_2_6.png)
+![](1_2_6.png)
 
 
 ### 🙋‍♂️ 質問する

@@ -6,15 +6,15 @@
 
 1 \. ホーム画面
 
-![](/public/images/AVAX-Messenger/section-2/2_2_2.png)
+![](2_2_2.png)
 
 2 \. メッセージ送信画面
 
-![](/public/images/AVAX-Messenger/section-2/2_2_3.png)
+![](2_2_3.png)
 
 3 \. メッセージ確認画面
 
-![](/public/images/AVAX-Messenger/section-2/2_2_4.png)
+![](2_2_4.png)
 
 ここでは初期設定で存在すると想定されるファイルを削除・編集することがあります。
 もし削除するファイルがあなたのフォルダ構成の中に無かった場合は、無視してください。
@@ -136,7 +136,7 @@ client
 そして新たに画像を追加します。
 
 以下の画像をダウンロードするか、あなたのお好きな画像を`favicon.png`という名前で`public`ディレクトリ内に保存してください。
-![](/public/images/AVAX-Messenger/section-2/2_2_1.png)
+![](2_2_1.png)
 
 この画像はあなたのwebアプリケーションのファビコンとなります！ 🙆‍♂️
 

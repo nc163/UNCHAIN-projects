@@ -264,7 +264,7 @@ npx hardhat test
 
 次のように表示されます。
 
-![](/public/images/Polygon-Mobile-dApp/section-1/1_2_2.png)
+![](1_2_2.png)
 
 ターミナル上で`ls`と入力してみて、下記のフォルダーとファイルが表示されていたら成功です。
 
@@ -330,7 +330,7 @@ Flutterでは、プロジェクトの名前に`-`や大文字を入れること�
 
 この段階で、フォルダ構造は下記のようになっていることを確認してください。
 
-![](/public/images/Polygon-Mobile-dApp/section-2/2_1_1.png)
+![](2_1_1.png)
 
 ### ✨ Flutterプロジェクトのセットアップをする。
 

@@ -115,15 +115,15 @@ Etherscanの **コントラクトの Verification（検証）** を行いまし�
 
 アカウントが作成できたら、`My Profile`画面に移動してください。
 
-![](/public/images/ETH-NFT-Collection/section-4/4_2_1.png)
+![](4_2_1.png)
 
 `API Keys`タブを選択し、`+ Add`ボタンを押したら、`Create API Key`のポップアップが表示されるので、あなたのAPIに任意の名前をつけましょう。
 
-![](/public/images/ETH-NFT-Collection/section-4/4_2_2.png)
+![](4_2_2.png)
 
 次に、あなたが作成したAPIの横の`Edit`ボタンを選択してください。ポップアップが表示されるので、`apiKey`を取得しましょう。
 
-![](/public/images/ETH-NFT-Collection/section-4/4_2_3.png)
+![](4_2_3.png)
 
 ⚠️：Ethereum API keyは誰にも教えてはいけません!
 
@@ -185,11 +185,11 @@ https://sepolia.etherscan.io/address/0xF7d8473eF4555B158689Ae8F3c1b39c246A1244E#
 
 私の [URL リンク](https://sepolia.etherscan.io/address/0xF7d8473eF4555B158689Ae8F3c1b39c246A1244E#code) の中身は下記のように表示されます。
 
-![](/public/images/ETH-NFT-Collection/section-4/4_2_6.png)
+![](4_2_6.png)
 
 Etherscanで **Contract** タブを選択すると、下図のような`0x608060405234801 ...`で始まる長いテキストのリストが表示されます。
 
-![](/public/images/ETH-NFT-Collection/section-4/4_2_12.png)
+![](4_2_12.png)
 
 実は、このテキストのリストは、デプロイされたコントラクトのバイトコードです。
 
@@ -197,7 +197,7 @@ Etherscanで **Contract** タブを選択すると、下図のような`0x608060
 
 `Read Contract`と`Write Contract`の2つのサブタブが追加されたことを確認してださい。これらの機能を使えば、コントラクトをオンチェーンで簡単に操作できます。フロントエンドがなくても、コントラクトから直接関数を呼び出せるので、便利ですね 😊
 
-![](/public/images/ETH-NFT-Collection/section-4/4_2_11.png)
+![](4_2_11.png)
 
 おめでとうございます!　これで、あなたのスマートコントラクトが世界中の誰でも見られるようになりました 🚀
 
@@ -241,11 +241,11 @@ Vercelに関する詳しい説明は、[こちら](https://zenn.dev/lollipop_onl
 2. `Repository name`を設定（ここでは作成したプロジェクトと同じ名前`ETH-NFT-Collection`を設定しています）
 3. 「Create repository」をクリック
 
-![](/public/images/ETH-NFT-Collection/section-4/4_2_13.png)
+![](4_2_13.png)
 
 作成されたリポジトリのURLをコピーします。ここでは、`SSH`を選択しています。
 
-![](/public/images/ETH-NFT-Collection/section-4/4_2_14.png)
+![](4_2_14.png)
 
 次に、ターミナル上で`ETH-NFT-Collection`ディレクトリにいることを確認し、以下のコマンドを実行します。
 
@@ -271,15 +271,15 @@ GitHub上の`ETH-NFT-Collection`にファイルが反映されていることを
 
 1\. `Dashboard`へ進んで、`New Project`を選択してください。
 
-![](/public/images/ETH-NFT-Collection/section-4/4_2_7.png)
+![](4_2_7.png)
 
 2\. `Import Git Repository`で自分のGitHubアカウントを接続したら、`ETH-NFT-Collection`を選択し、`Import`してください。
 
-![](/public/images/ETH-NFT-Collection/section-4/4_2_8.png)
+![](4_2_8.png)
 
 3\. プロジェクトを作成します。`Root Directory`が「packages/client」となっていることを確認してください。
 
-![](/public/images/ETH-NFT-Collection/section-4/4_2_9.png)
+![](4_2_9.png)
 
 4\. `Deploy`ボタンを推しましょう。
 
@@ -289,7 +289,7 @@ VercelはGitHubと連動しているので、GitHubが更新されるたびに�
 
 基本的に`warning`は無視して問題ありません。
 
-![](/public/images/ETH-NFT-Collection/section-4/4_2_10.png)
+![](4_2_10.png)
 
 こちらが、今回のプロジェクトで作成されるWebアプリケーションのデモです。
 

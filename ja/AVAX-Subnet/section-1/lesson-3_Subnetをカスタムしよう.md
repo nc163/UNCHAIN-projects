@@ -110,7 +110,7 @@ genesis fileを作成する前に作業用ディレクトリを用意しまし�
 
 また、前回作成したmySubnetがローカルネットワーク上で起動している場合、`avalanche network status`をターミナルで実行すると以下のような表示がされると思います。
 
-![](/public/images/AVAX-Subnet/section-1/1_3_1.png)
+![](1_3_1.png)
 
 `Avalanche-CLI`の操作に慣れるためにもう一度mySubnetを削除します。
 

@@ -4,7 +4,7 @@
 
 前述のとおり、メタデータは中央集権的に保存することもでき、例えば`AWS S3`に保存される場合、ゲームタイプのNFTがメタデータ内のコンテンツを簡単に拡張するのに便利です。一方、メタデータは`IPFS`や`Ar`のような分散型ストレージに保存することもでき、これによりメタデータの不変性が強化されます。このレッスンでは、`IPFS`上で必要なメタデータを生成する方法を学びます。
 
-![pngVGb7Gkv](/public/images/Polygon-Whitelist-NFT/section-3/3_1_1.png)
+![pngVGb7Gkv](3_1_1.png)
 
 IPFSは**InterPlanetary** File Systemの略で、ファイル、ウェブサイト、アプリケーションなどの保存と共有に使用される分散型ピアツーピアネットワークです。2015年に初めてリリースされ、[Protocol Labs](https://protocol.ai/)によって開発されました。
 
@@ -25,7 +25,7 @@ https://cloudflare-ipfs.com/ipfs/+CID
 
 https://cloudflare-ipfs.com/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/
 
-![image-20230223094941448](/public/images/Polygon-Whitelist-NFT/section-3/3_1_2.png)
+![image-20230223094941448](3_1_2.png)
 
 しかし、IPFSにファイルをアップロードするにはノードが必要であり、自分のIPFSノードを実行するのは難しいと思われるかもしれません。
 

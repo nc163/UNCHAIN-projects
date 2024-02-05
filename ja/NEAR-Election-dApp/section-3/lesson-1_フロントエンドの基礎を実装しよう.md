@@ -13,19 +13,19 @@
 
 `cross.png`
 
-![](/public/images/NEAR-Election-dApp/section-3/3_1_1.png)
+![](3_1_1.png)
 
 `like_icon.png`
 
-![](/public/images/NEAR-Election-dApp/section-3/3_1_2.png)
+![](3_1_2.png)
 
 `top_img.avif`
 
-![](/public/images/NEAR-Election-dApp/section-3/3_1_3.avif)
+![](3_1_3.avif)
 
 `unchain_logo.png`
 
-![](/public/images/NEAR-Election-dApp/section-3/3_1_4.png)
+![](3_1_4.png)
 
 最終的に以下のようなファイル構造になっていればOKです！
 
@@ -708,9 +708,9 @@ yarn install
 yarn client dev
 ```
 
-![](/public/images/NEAR-Election-dApp/section-3/3_1_5.png)
-![](/public/images/NEAR-Election-dApp/section-3/3_1_6.png)
-![](/public/images/NEAR-Election-dApp/section-3/3_1_7.png)
+![](3_1_5.png)
+![](3_1_6.png)
+![](3_1_7.png)
 
 このように画面がきちんと遷移していれば成功です！
 

@@ -127,15 +127,15 @@ const [currentNote, setCurrentNote] = useState<EncryptedNote | undefined>(
 
 まずは、ノートを追加してみましょう。ノートを追加するには、右上の「＋ New Note」をクリックします。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_4_1.png)
+![](1_4_1.png)
 
 モーダルが開いたら、テキストを入力して「Save」をクリックします。
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_4_2.png)
+![](1_4_2.png)
 
 追加したノートが表示されていたら実装は完成です！
 
-![](/public/images/ICP-Encrypted-Notes/section-1/1_4_3.png)
+![](1_4_3.png)
 
 ### 📝 このレッスンで追加したコード
 

@@ -33,11 +33,11 @@ GitHubのアカウントをお持ちの方は、下記の手順に沿ってプ�
 
 1. [こちら](https://github.com/unchain-tech/Polygon-ENS-Domain)からunchain-tech/Polygon-ENS-Domainリポジトリにアクセスをして、ページ右上の`Fork`ボタンをクリックします。
 
-![](/public/images/Polygon-ENS-Domain/section-1/1_1_3.png)
+![](1_1_3.png)
 
 2. Create a new forkページが開くので、「Copy the `main` branch only」という項目に**チェックが入っていることを確認します**。
 
-![](/public/images/Polygon-ENS-Domain/section-1/1_1_4.png)
+![](1_1_4.png)
 
 設定が完了したら`Create fork`ボタンをクリックします。あなたのGitHubアカウントに`Polygon-ENS-Domain`リポジトリのフォークが作成されたことを確認してください。
 
@@ -45,7 +45,7 @@ GitHubのアカウントをお持ちの方は、下記の手順に沿ってプ�
 
 まず、下図のように、`Code`ボタンをクリックして`SSH`を選択し、Gitリンクをコピーしましょう。
 
-![](/public/images/Polygon-ENS-Domain/section-1/1_1_5.png)
+![](1_1_5.png)
 
 ターミナル上で作業を行う任意のディレクトリに移動し、先ほどコピーしたリンクを用いて下記を実行してください。
 
@@ -104,7 +104,7 @@ yarn client start
 
 例)ローカル環境で表示されているWebサイト
 
-![](/public/images/Polygon-ENS-Domain/section-1/1_1_6.png)
+![](1_1_6.png)
 
 上記のような形でフロントエンドが確認できれば成功です。
 

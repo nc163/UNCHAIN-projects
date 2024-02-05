@@ -59,7 +59,7 @@ constructorとは、クラスのインスタンスが生成された際に呼び
 
 認証時に画像のような画面が表示された場合は、「More options」をクリックするとSection1 Lesson3で操作した画面に戻ることができます。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_3_1.png)
+![](2_3_1.png)
 
 認証後、アプリケーションに戻るとノート一覧の取得に失敗してエラーが発生しますが、これは`registerDevice`関数を呼び出していないためです。気にせずこのまま進みましょう。
 
@@ -70,7 +70,7 @@ constructorとは、クラスのインスタンスが生成された際に呼び
 
 このとき、ValueにはUUIDで生成されたデバイスエイリアスが保存されていることを確認しましょう。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_3_2.png)
+![](2_3_2.png)
 
 ### 🙋‍♂️ 質問する
 

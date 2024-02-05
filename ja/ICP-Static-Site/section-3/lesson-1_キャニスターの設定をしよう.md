@@ -93,7 +93,7 @@ http://127.0.0.1:4943?canisterId=YOUR_CANISTER_ID
 
 （実行例）
 
-![](/public/images/ICP-Static-Site/section-3/3_1_1.png)
+![](3_1_1.png)
 
 作成したサイトが問題なく表示されることを確認します。
 

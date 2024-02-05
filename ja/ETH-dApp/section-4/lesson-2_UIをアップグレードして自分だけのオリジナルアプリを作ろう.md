@@ -92,7 +92,7 @@ console.log(
 
 Webアプリケーションを`Inspect`して、下記のような結果がConsoleに出力されているか確認しましょう。
 
-![](/public/images/ETH-dApp/section-4/4_2_1.png)
+![](4_2_1.png)
 
 ここでは、ユーザーがETHを獲得したこと、コントラクトの資金が`0.000996`から`0.000995`に減少したことがわかります。
 
@@ -103,10 +103,10 @@ Sepolia Etherscanにコントラクトのアドレスを貼り付けて、発生
 それでは、上記で実行した最新のトランザクションを見ていきましょう。
 
 下図のように、確認したい`Txn Hash`を選択します。
-![](/public/images/ETH-dApp/section-4/4_2_2.png)
+![](4_2_2.png)
 
 トランザクションの情報が、確認できます。
-![](/public/images/ETH-dApp/section-4/4_2_3.png)
+![](4_2_3.png)
 枠で囲った部分に、先程のトランザクションの結果が表示されています。
 
 少額のETHをコントラクトアドレスからユーザーアドレスに転送したことがわかります。
@@ -137,15 +137,15 @@ Vercelのアカウントを取得したら、下記を実行しましょう。
 
 1\. `Dashboard`へ進んで、`New Project`を選択してください。
 
-![](/public/images/ETH-dApp/section-4/4_2_4.png)
+![](4_2_4.png)
 
 2\. `Import Git Repository`で自分のGitHubアカウントを接続したら、`ETH-dApp`を選択し、`Import`してください。
 
-![](/public/images/ETH-dApp/section-4/4_2_5.png)
+![](4_2_5.png)
 
 3\. プロジェクトを作成します。`Root Directory`が「packages/client」となっていることを確認してください。
 
-![](/public/images/ETH-dApp/section-4/4_2_6.png)
+![](4_2_6.png)
 
 4\. `Deploy`ボタンを推しましょう。
 
@@ -154,7 +154,7 @@ VercelはGitHubと連動しているので、GitHubが更新されるたびに�
 下記のように、`Building`ログが出力されます。
 基本的に`warning`は無視して問題ありません。
 
-![](/public/images/ETH-dApp/section-4/4_2_7.png)
+![](4_2_7.png)
 
 こちらが、今回のプロジェクトで作成されるWebアプリケーションのデモは、[こちら](https://eth-dapp-three.vercel.app/) です。
 

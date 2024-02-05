@@ -356,7 +356,7 @@ near call $NFT_CONTRACT_ID nft_transfer '{"receiver_id": "NEW_WALLET_ID", "token
 ```
 
 成功していれば下のように新しいwalletで見ることができます。
-![](/public/images/NEAR-Election-dApp/section-2/2_1_1.png)
+![](2_1_1.png)
 
 ### 🙋‍♂️ 質問する
 

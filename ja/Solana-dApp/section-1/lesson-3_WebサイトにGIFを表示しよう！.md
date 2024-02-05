@@ -10,7 +10,7 @@
 
 GIPHYで気に入った画像を選択したら、`Share`をクリックし、`Copy GIF Link`ボタンを押してリンクをコピーしておきます。
 
-![GIPHY](/public/images/Solana-dApp/section-1/1_3_1.jpg)
+![GIPHY](1_3_1.jpg)
 
 それでは、お気に入りのGIF画像へのリンクを`App.js`に反映させましょう。
 
@@ -95,7 +95,7 @@ return (
 
 これらすべてを変更したうえでPhantom Walletを接続すると、設定したGIFが全て表示されているはずです。
 
-![GIF Portal](/public/images/Solana-dApp/section-1/1_3_2.jpg)
+![GIF Portal](1_3_2.jpg)
 
 Webアプリケーションのスタイルは`App.css`で設定済みですが、好みに合わせて変更してみてください。
 

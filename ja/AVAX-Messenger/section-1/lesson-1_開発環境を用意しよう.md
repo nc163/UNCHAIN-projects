@@ -295,7 +295,7 @@ yarn test
 
 次のように表示されます。
 
-![](/public/images/AVAX-Messenger/section-1/1_2_2.png)
+![](1_2_2.png)
 
 
 ここまできたら、`packages/contract`フォルダーの中身を整理しましょう。

@@ -99,7 +99,7 @@ const [account, setAccount] = useState(undefined);
 >
 > ログイン機能を実装したので、ここで`npm run test`を実行してみましょう！
 >
-> ![test1](/public/images/XRPL-NFT-Maker/section-3/3_2_5.png)
+> ![test1](3_2_5.png)
 >
 > **not connected**（未ログイン）と**connected**（ログイン済み）、それぞれの状況においてテストを行なっており、合計5つのテストにパスすることが期待されます。
 >
@@ -111,14 +111,14 @@ const [account, setAccount] = useState(undefined);
 
 次のような画面が表示されれば成功です。
 
-![](/public/images/XRPL-NFT-Maker/section-3/3_2_1.png)
+![](3_2_1.png)
 
 ここで一度Xummへログインをしてみましょう。
 
 先ほど作成したConnectボタンを押下してみてください。
 次のようなポップアップが表示されるはずです。
 
-![](/public/images/XRPL-NFT-Maker/section-3/3_2_2.png)
+![](3_2_2.png)
 
 このQRコードをXummで読み取ってみましょう。
 
@@ -173,7 +173,7 @@ const [file, setFile] = useState(undefined);
 >
 > 画像のアップロード機能を実装したので、再度テスト結果を確認してみましょう。
 >
-> ![test2](/public/images/XRPL-NFT-Maker/section-3/3_2_6.png)
+> ![test2](3_2_6.png)
 >
 > ここまでで合計6つのテストにパスすることが期待されます。
 >
@@ -185,7 +185,7 @@ const [file, setFile] = useState(undefined);
 
 ブラウザに選択した画像が表示されれば成功です！
 
-![](/public/images/XRPL-NFT-Maker/section-3/3_2_3.png)
+![](3_2_3.png)
 
 ### 📝 NFTのMint処理を実装しよう
 
@@ -403,7 +403,7 @@ mint関数の処理を1つずつ説明していきます。
 >
 > それでは改めてテストを実行してみましょう。
 >
-> ![test3](/public/images/XRPL-NFT-Maker/section-3/3_2_7.png)
+> ![test3](3_2_7.png)
 >
 > `should mint success`に注目してみます。このテストは、ミントボタンのクリック操作を行なった結果、期待するNFTの詳細ページが開かれるか（`window.open関数`が期待するNFTのIDを含んだ引数で実行されるか）を確認しています。
 >
@@ -415,7 +415,7 @@ mint関数の処理を1つずつ説明していきます。
 
 選択した画像が表示されていれば成功です！
 
-![](/public/images/XRPL-NFT-Maker/section-3/3_2_4.png)
+![](3_2_4.png)
 
 ### 🙋‍♂️ 質問する
 

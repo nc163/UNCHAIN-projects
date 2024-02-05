@@ -101,7 +101,7 @@ Webアプリケーションに「Connect to Wallet」ボタンが表示されて
 
 **ユーザーがウォレットを Web アプリケーションに接続していない場合のみ、`Connect to Wallet`ボタンが表示されます。**
 
-![interface](/public/images/Solana-dApp/section-1/1_2_1.jpg)
+![interface](1_2_1.jpg)
 
 次に、Reactの`useState`を用いてユーザーのウォレットアドレスの`state`を管理し、`Connect to Wallet`ボタンを表示するかどうかを判断するためのフラグとして利用していきましょう。
 

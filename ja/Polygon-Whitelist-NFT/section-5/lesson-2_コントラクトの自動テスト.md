@@ -4,7 +4,7 @@
 
 packages/contract/testフォルダを更新しましょう。`Lock.ts`を削除し、`Whitelist.test.ts`と`Shield.test.ts`を作成します。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_2_1.png)
+![](5_2_1.png)
 
 作成したファイルに、テストを記述しましょう。
 

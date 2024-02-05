@@ -182,17 +182,17 @@ contract Whitelist {
 
 さて、次にJS VMを使ってこのコントラクトをコンパイルし、デプロイしてみましょう。
 
-![image-20230222180958479](/public/images/Polygon-Whitelist-NFT/section-1/1_3_1.png)
+![image-20230222180958479](1_3_1.png)
 
 ここでは、アドレスの配列を入力する必要があります。これは下記のJS VMアカウントから取得できます。必要に応じてアカウントを切り替えてください。
 
 例：`["0x5B38Da6a701c568545dCfcB03FcB875f56beddC4","0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2"]`
 
-![image-20230222180944652](/public/images/Polygon-Whitelist-NFT/section-1/1_3_2.png)
+![image-20230222180944652](1_3_2.png)
 
 デプロイが完了したら、コントラクトを呼び出すことができます。テストのためにいくつかのアドレスを入力してみてください。
 
-![image-20230222181353308](/public/images/Polygon-Whitelist-NFT/section-1/1_3_3.png)
+![image-20230222181353308](1_3_3.png)
 
 さて、これでホワイトリストのコントラクトは完成しました。次は、NFT（Non-Fungible Token）部分のスマートコントラクト作成モジュールに移ります。
 

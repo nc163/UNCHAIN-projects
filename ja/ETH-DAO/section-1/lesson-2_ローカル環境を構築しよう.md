@@ -29,11 +29,11 @@ GitHubのアカウントをお持ちの方は、下記の手順に沿ってプ�
 
 1. [こちら](https://github.com/unchain-tech/ETH-DAO)からunchain-tech/ETH-DAOリポジトリにアクセスをして、ページ右上の`Fork`ボタンをクリックします。
 
-![](/public/images/ETH-DAO/section-1/1_2_2.png)
+![](1_2_2.png)
 
 2. Create a new forkページが開くので、「Copy the `main` branch only」という項目に**チェックが入っていることを確認します**。
 
-![](/public/images/ETH-DAO/section-1/1_2_3.png)
+![](1_2_3.png)
 
 設定が完了したら`Create fork`ボタンをクリックします。あなたのGitHubアカウントに`ETH-DAO`リポジトリのフォークが作成されたことを確認してください。
 
@@ -41,7 +41,7 @@ GitHubのアカウントをお持ちの方は、下記の手順に沿ってプ�
 
 まず、下図のように、`Code`ボタンをクリックして`SSH`を選択し、Gitリンクをコピーしましょう。
 
-![](/public/images/ETH-DAO/section-1/1_2_4.png)
+![](1_2_4.png)
 
 ターミナル上で作業を行う任意のディレクトリに移動し、先ほどコピーしたリンクを用いて下記を実行してください。
 

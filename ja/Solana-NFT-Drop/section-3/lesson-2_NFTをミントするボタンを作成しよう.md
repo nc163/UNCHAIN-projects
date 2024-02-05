@@ -23,7 +23,7 @@ Solanaは現在、計算ユニットのデフォルト値を200k（200,000）と
 
 **[Phantom Walletの表示]**
 
-![無題](/public/images/Solana-NFT-Drop/section-3/3_2_4.png)
+![無題](3_2_4.png)
 
 **[Approve後のコンソール出力]**
 
@@ -187,7 +187,7 @@ return candyMachine && candyGuard ? (
 
 まず、Phantom Walletのパブリックアドレスを取得します。
 
-![無題](/public/images/Solana-NFT-Drop/section-3/3_2_1.png)
+![無題](3_2_1.png)
 
 次に、Devnetでトークンを得るためにターミナルで次のコマンドを実行します。
 
@@ -197,7 +197,7 @@ solana airdrop 2 INSERT_YOUR_PHANTOM_WALLET_ADDRESS
 
 トークンが取得できたら、ブラウザを操作してみましょう。`Mint NFT`をクリックすると、次のようなポップアップが表示されます。
 
-![無題](/public/images/Solana-NFT-Drop/section-3/3_2_2.png)
+![無題](3_2_2.png)
 
 [承認]をクリックして取引手数料を支払うと、Candy MachineにNFTを作成するように指示されます。
 
@@ -207,7 +207,7 @@ Phantom Walletを開き、所有NFT一覧に表示されるかどうかを確認
 
 Phantom Walletの左から2つ目のタブに切り替えてみましょう 👀
 
-![無題](/public/images/Solana-NFT-Drop/section-3/3_2_3.png)
+![無題](3_2_3.png)
 
 ### 🙋‍♂️ 質問する
 

@@ -60,7 +60,7 @@ export default Home;
 
 試しに、MetaMaskでネットワークを変えて警告のメッセージが表示されているか試してみましょう。
 
-![](/public/images/ETH-DAO/section-1/1_4_1.png)
+![](1_4_1.png)
 
 
 ### 🙋‍♂️ 質問する

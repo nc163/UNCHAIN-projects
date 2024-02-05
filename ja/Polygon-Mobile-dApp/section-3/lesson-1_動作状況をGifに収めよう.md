@@ -26,7 +26,7 @@ Gifに収めていただく内容は、以下の４ステップです。編集�
 
 下のGifのようになっていれば完了です。
 
-![](/public/images/Polygon-Mobile-dApp/section-4/4_1_1.gif)
+![](4_1_1.gif)
 
 ### 🤟 コードをGitHubに公開する。
 
@@ -34,13 +34,13 @@ Gifに収めていただく内容は、以下の４ステップです。編集�
 
 `Your repositories`ページを開き、`New`ボタンを押してください。
 
-![](/public/images/Polygon-Mobile-dApp/section-4/4_1_2.png)
+![](4_1_2.png)
 
 リポジトリに名前を付けたら、`Create repository`ボタンを押してください。
 
 次に、ディレクトリのリンクをコピーしましょう。
 
-![](/public/images/Polygon-Mobile-dApp/section-4/4_1_3.png)
+![](4_1_3.png)
 
 ターミナルに向かい、任意のディレクトリに移動し、コピーしたリンクを下記に貼り付け、実行しましょう。
 

@@ -575,19 +575,19 @@ yarn client dev
 
 ブラウザで http://localhost:3000 へアクセスすると以下のようにホーム画面が表示されます（ウォレットを接続している場合）
 
-![](/public/images/AVAX-Messenger/section-2/2_5_3.png)
+![](2_5_3.png)
 
 `send ->`リンクをクリックして画面を移動しましょう。
 メッセージの宛先アドレスを自分の公開アドレスにして、自分自身にメッセージを送信してみましょう！
 `send`ボタンをクリックすると承認画面が開くので承認します。
 
-![](/public/images/AVAX-Messenger/section-2/2_5_1.png)
+![](2_5_1.png)
 
 続いて、ホーム画面へ戻り、`check->`リンクをクリックして、メッセージ確認画面へ移動します。
 
 しばらくするとトランザクションが完了し、送信されたメッセージが表示されます。
 
-![](/public/images/AVAX-Messenger/section-2/2_5_2.png)
+![](2_5_2.png)
 
 ### 🌵 `ETH`と`AVAX`
 
@@ -786,11 +786,11 @@ yarn client dev
 
 ブラウザで http://localhost:3000 へアクセスして先ほど送信された自分宛のメッセージを`accept`してみましょう！
 
-![](/public/images/AVAX-Messenger/section-2/2_5_2.png)
+![](2_5_2.png)
 
 `accept`のトランザクションが完了すると確認済みとなり`accept`、`deny`ボタンが消えます。
 
-![](/public/images/AVAX-Messenger/section-2/2_5_6.png)
+![](2_5_6.png)
 
 ブラウザ上で`右クリック` -> `検証` -> `コンソール`を開きます。
 
@@ -801,7 +801,7 @@ Done --
 `0x..` ← これをコピーします。
 ```
 
-![](/public/images/AVAX-Messenger/section-2/2_5_7.png)
+![](2_5_7.png)
 
 ### 🌱 AVASCAN でトランザクションを確認する
 
@@ -809,7 +809,7 @@ Done --
 
 検索結果が表示され、`STATUS: SUCCESS`が表示されればトランザクションの成功を確認できます。
 
-![](/public/images/AVAX-Messenger/section-2/2_5_8.png)
+![](2_5_8.png)
 
 ### 🌔 参考リンク
 

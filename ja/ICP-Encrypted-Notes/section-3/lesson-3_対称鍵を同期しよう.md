@@ -312,13 +312,13 @@ trySyncSymmetricKey関数がtrueを返した時、対称鍵の同期が完了し
 
 シークレットブラウザの方では、下記のような出力が確認できるはずです。
 
-![](/public/images/ICP-Encrypted-Notes/section-3/3_3_1.png)
+![](3_3_1.png)
 
 `Symmetric key is not synchronized`が出力された後、`Waiting for key sync...`と出力されています。これは、対称鍵が同期されるのを待っている状態です。少し待つと、`Try syncing symmetric keys.`が出力されます。これはtrySyncSymmetricKey関数が呼び出されたことを示します。対称鍵が同期されると、今度は自分が同期処理を行う側になっていることもわかります。「3. ユーザーが別のデバイスで初めてログインをしたとき」で実装した部分がきちんと動作していますね！
 
 最後に、「2. ユーザーが再ログインをしたとき」の場合を確認してみましょう。どちらか一方のブラウザで`http://localhost:8080/`にアクセスしなおして、再度ログインをしてみましょう。
 
-![](/public/images/ICP-Encrypted-Notes/section-3/3_3_2.png)
+![](3_3_2.png)
 
 このとき、対称鍵はバックエンドキャニスターに保存されたままなので、すぐに対称鍵が取得できるはずです。
 

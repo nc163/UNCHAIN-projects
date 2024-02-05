@@ -13,15 +13,15 @@ Matic MainnetをMetaMaskに追加するには、次の手順に従ってくだ�
 
 まず、[Polygonscan](https://polygonscan.com/) に向かい、ページの一番下までスクロールして、`Add Polygon Network`ボタンをクリックします。
 
-![](/public/images/Polygon-Mobile-dApp/section-3/3_1_1.png)
+![](3_1_1.png)
 
 下記のようなポップアップが立ち上がったら、`Switch Network`をクリックしましょう。
 
-![](/public/images/Polygon-Mobile-dApp/section-3/3_1_2.png)
+![](3_1_2.png)
 
 `Matic Mainnet`があなたのMetaMaskにセットアップされました。
 
-![](/public/images/Polygon-Mobile-dApp/section-3/3_1_3.png)
+![](3_1_3.png)
 
 **2 \. Polygon Mumbai-Testnet を MetaMask に接続する**
 
@@ -37,7 +37,7 @@ MetaMaskでPolygonネットワークの設定が完了したら、偽のMATICを
 
 [こちら](https://faucet.polygon.technology/) にアクセスして、下記のように偽MATICをリクエストしてください。
 
-![](/public/images/Polygon-Mobile-dApp/section-3/3_1_4.png)
+![](3_1_4.png)
 
 Sepoliaとは異なり、これらのトークンの取得にそれほど問題はないはずです。
 
@@ -64,11 +64,11 @@ Sepoliaとは異なり、これらのトークンの取得にそれほど問題�
 
 まず、先ほどのリンクからログインして、`Create App`を選択し、下記のように設定してください。
 
-![](/public/images/Polygon-Mobile-dApp/section-3/3_1_5.png)
+![](3_1_5.png)
 
 下の画像で示す部分をクリックすると、`HTTP`を確認できます。
 
-![](/public/images/Polygon-Mobile-dApp/section-3/3_1_6.jpg)
+![](3_1_6.jpg)
 
 次に下記のコマンドを`todo-dApp-contract`フォルダ上でターミナルを開いて実行してください。
 

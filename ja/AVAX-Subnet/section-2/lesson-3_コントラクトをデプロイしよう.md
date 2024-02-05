@@ -13,15 +13,15 @@ TEST_ACCOUNT_PRIVATE_KEY="YOUR_PRIVATE_KEY"
 >
 > 1.  お使いのブラウザからMetaMaskを開き、管理者アカウントを選択します。
 >
-> ![](/public/images/AVAX-Subnet/section-2/3_3_1.png)
+> ![](3_3_1.png)
 >
 > 2.  それから、`Account details`を選択してください。
 >
-> ![](/public/images/AVAX-Subnet/section-2/3_3_2.png)
+> ![](3_3_2.png)
 >
 > 3.  `Account details`から`Export Private Key`をクリックしてください。
 >
-> ![](/public/images/AVAX-Subnet/section-2/3_3_3.png)
+> ![](3_3_3.png)
 >
 > 4.  MetaMask のパスワードを求められるので、入力したら`Confirm`を押します。  
 >     あなたの秘密鍵（＝ `Private Key` ）が表示されるので、クリックしてコピーします。

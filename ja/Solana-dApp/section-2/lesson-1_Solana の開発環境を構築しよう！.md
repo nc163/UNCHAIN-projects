@@ -115,7 +115,7 @@ solana-test-validator
 
 開始されると以下のように表示されます。
 
-![solana test validator](/public/images/Solana-dApp/section-2/2_1_1.jpg)
+![solana test validator](2_1_1.jpg)
 
 これで、ローカルバリデーターが実行されました。
 
@@ -217,7 +217,7 @@ anchor test
 
 出力の一番下に「1 passing」という緑色の単語が表示されていれば問題ありません。
 
-![anchor test](/public/images/Solana-dApp/section-2/2_1_2.jpg)
+![anchor test](2_1_2.jpg)
 
 これでようやくSolana環境のセットアップに成功しました。
 

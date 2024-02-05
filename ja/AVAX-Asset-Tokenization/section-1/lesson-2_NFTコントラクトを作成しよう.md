@@ -29,7 +29,7 @@ NFTの機能を持つスマートコントラクトです。
 
 ここでは`AssetTokenization`がフロントエンドとやり取りをすることと、 複数の`FarmNft`を管理しているという関係性が掴めれば十分です！
 
-![](/public/images/AVAX-Asset-Tokenization/section-1/1_1_2.png)
+![](1_1_2.png)
 
 ### 🥮 `FarmNft`コントラクトを作成する
 
@@ -370,7 +370,7 @@ yarn test
 以下のような表示がされます。
 実行したテスト名とそのテストがパスしたことがわかります。
 
-![](/public/images/AVAX-Asset-Tokenization/section-1/1_1_3.png)
+![](1_1_3.png)
 
 ### 🌔 参考リンク
 

@@ -178,15 +178,15 @@ generateKey(algorithm, extractable, keyUsages);
 
 ブラウザに戻り、再度ログインボタンを押しましょう。前回のレッスンでIdentityの生成を済ませているので、そこから再デプロイを行なっていない限り、生成したidentityを選択して進みます。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_4_1.png)
+![](2_4_1.png)
 
 開発環境下での動作確認なので、「Remind me later」を選択していただいて大丈夫です。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_4_2.png)
+![](2_4_2.png)
 
 認証が完了したら、ストレージを見てみましょう。`crypto-store`というデータベースが作成され、中に公開鍵と秘密鍵が保存されていること確認しましょう。
 
-![](/public/images/ICP-Encrypted-Notes/section-2/2_4_3.png)
+![](2_4_3.png)
 
 ### 📝 このレッスンで追加したコード
 

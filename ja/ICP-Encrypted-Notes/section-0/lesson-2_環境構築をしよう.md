@@ -54,11 +54,11 @@ GitHubのアカウントをお持ちの方は、下記の手順に沿ってプ�
 
 1\. [ICP-Encrypted-Notes](https://github.com/unchain-tech/ICP-Encrypted-Notes)にアクセスをして、ページ右上の`Fork`ボタンをクリックします。
 
-![](/public/images/ICP-Encrypted-Notes/section-0/0_2_1.png)
+![](0_2_1.png)
 
 2\. Create a new forkページが開くので、「Copy the `main` branch only」という項目に**チェックが入っていることを確認します**。
 
-![](/public/images/ICP-Encrypted-Notes/section-0/0_2_2.png)
+![](0_2_2.png)
 
 設定が完了したら`Create fork`ボタンをクリックします。あなたのGitHubアカウントに`ICP-Encrypted-Notes`リポジトリのフォークが作成されたことを確認してください。
 
@@ -66,7 +66,7 @@ GitHubのアカウントをお持ちの方は、下記の手順に沿ってプ�
 
 まず、下図のように、`Code`ボタンをクリックして`SSH`を選択し、Gitリンクをコピーしましょう。
 
-![](/public/images/ICP-Encrypted-Notes/section-0/0_2_3.png)
+![](0_2_3.png)
 
 ターミナル上で作業を行う任意のディレクトリに移動し、先ほどコピーしたリンクを用いて下記を実行してください。
 

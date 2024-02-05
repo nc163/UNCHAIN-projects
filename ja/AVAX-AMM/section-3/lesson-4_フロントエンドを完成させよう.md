@@ -225,12 +225,12 @@ export default function Container({ currentAccount }: Props) {
 
 `Faucet`タブをクリックすると以下のような表示がされます。
 
-![](/public/images/AVAX-AMM/section-3/3_4_1.png)
+![](3_4_1.png)
 
 入力欄に10と入力し、`Fund`をクリックします。
 トランザクションに署名し、しばらく待つと（ポップアップが表示されokを押した後）右側の`Your Details`のUSDCの部分が10増えているはずです。
 
-![](/public/images/AVAX-AMM/section-3/3_4_2.png)
+![](3_4_2.png)
 
 `Change`ボタンをクリックするとUSDC -> JOEへ変更されるため、JOEに関しても同じようにfaucetを利用することができます。
 
@@ -513,7 +513,7 @@ export default function Container({ currentAccount }: Props) {
 
 `Provide`タブをクリックすると以下のような表示がされます。
 
-![](/public/images/AVAX-AMM/section-3/3_4_3.png)
+![](3_4_3.png)
 
 入力欄にそれぞれ100と入力し、`Provide`をクリックします。
 
@@ -529,7 +529,7 @@ provideの実行では以下のトランザクションへの署名が必要で�
 
 しばらく待つと（ポップアップが表示されokを押した後）右側の`Your Details`が更新されます！
 
-![](/public/images/AVAX-AMM/section-3/3_4_4.png)
+![](3_4_4.png)
 
 それでは`Provide.tsx`の中身を見ましょう。
 
@@ -804,7 +804,7 @@ export default function Container({ currentAccount }: Props) {
 
 `Swap`タブをクリックすると以下のような表示がされます。
 
-![](/public/images/AVAX-AMM/section-3/3_4_5.png)
+![](3_4_5.png)
 
 USDC入力欄に50と入力すると、swapにより受けることができるJOEの量が表示されます。
 `Swap`をクリックします。
@@ -818,11 +818,11 @@ swapの実行では以下のトランザクションへの署名が必要です�
 
 ここでは以下の図のようなことを行っています。
 
-![](/public/images/AVAX-AMM/section-3/swap.drawio.svg)
+![](swap.drawio.svg)
 
 しばらく待つと（ポップアップが表示されokを押した後）右側の`Your Details`が更新されます！
 
-![](/public/images/AVAX-AMM/section-3/3_4_6.png)
+![](3_4_6.png)
 
 それでは`Swap.tsx`の中身を見ましょう。
 
@@ -1102,14 +1102,14 @@ export default function Container({ currentAccount }: Props) {
 
 `Withdraw`タブをクリックすると以下のような表示がされます。
 
-![](/public/images/AVAX-AMM/section-3/3_4_7.png)
+![](3_4_7.png)
 
 `Max`ボタンをクリックするとユーザの保有するシェアが入力値となり、引き出すことのできるトークンの量がそれぞれ下に表示されます。
 `Withdraw`をクリックします。
 
 トランザクションに署名し、しばらく待つと（ポップアップが表示されokを押した後）右側の`Your Details`が更新されます！
 
-![](/public/images/AVAX-AMM/section-3/3_4_8.png)
+![](3_4_8.png)
 
 今回は1つのアカウントで挙動を確かめているためMaxのシェアでトークンを引き出すとプールは空になり、ユーザの保有するトークンの量が元々保有していた量に戻ります。
 

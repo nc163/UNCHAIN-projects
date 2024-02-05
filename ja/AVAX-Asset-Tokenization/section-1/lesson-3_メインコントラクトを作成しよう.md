@@ -290,7 +290,7 @@ yarn test
 
 以下のような表示がされたらテスト成功です！
 
-![](/public/images/AVAX-Asset-Tokenization/section-1/1_1_4.png)
+![](1_1_4.png)
 
 ### 🌔 参考リンク
 

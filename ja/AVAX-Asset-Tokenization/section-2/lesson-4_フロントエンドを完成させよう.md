@@ -89,7 +89,7 @@ yarn client dev
 
 例)
 
-![](/public/images/AVAX-Asset-Tokenization/section-2/2_4_1.png)
+![](2_4_1.png)
 
 ※ お使いのコンピュータの外観/Appearanceの設定により、 白黒の表示が若干違う可能性があります。ここではDarkモードで確認しています。
 
@@ -101,7 +101,7 @@ yarn client dev
 
 ここで先ほど作成したNFTの情報が表示されるはずです。
 
-![](/public/images/AVAX-Asset-Tokenization/section-2/2_4_2.png)
+![](2_4_2.png)
 
 `Buy`ボタンをクッリクしトランザクションにサイン後、 しばらくすると`success`のアラートが表示されるはずなのでokをクリックしましょう。
 ※ 本来は別アカウントからの購入を想定していますが、 同じアカウントでも問題ありません。
@@ -110,7 +110,7 @@ yarn client dev
 
 再びホームページへ戻り、 `For Farmer`ボタンをクリック -> `ViewBuyers`タブをクリックするとNFT購入者のアドレスが表示されます。
 
-![](/public/images/AVAX-Asset-Tokenization/section-2/2_4_3.png)
+![](2_4_3.png)
 
 ### 🌔 参考リンク
 

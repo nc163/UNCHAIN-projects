@@ -188,7 +188,7 @@ runMain();
 
 さあ、`run.js`スクリプトを実行しましょう。 これを行うと、次のような結果が表示されます。
 
-![](/public/images/Polygon-ENS-Domain/section-1/1_4_1.png)
+![](1_4_1.png)
 
 **やりました!** シンプルなコントラクトコードだけで、ENSの基本的なアクションを実行できるようになりました。
 
@@ -200,7 +200,7 @@ runMain();
 
 OpenSeaにENSドメインを所有している場合、実際には次のようなものが表示されます。
 
-![](/public/images/Polygon-ENS-Domain/section-1/1_4_2.png)
+![](1_4_2.png)
 
 もしかしたら、なぜ私たちは自分のドメインをNFTにする必要があるのだろうと考えるかもしれません。
 
@@ -443,7 +443,7 @@ SVGは**多くの場合**カスタマイズできます。SVGをアニメーシ�
 
 最終的なNFTは以下のようなものになりました。
 
-![](/public/images/Polygon-ENS-Domain/section-1/1_4_3.png)
+![](1_4_3.png)
 
 SVGをカスタマイズしてみても面白いでしょう。興味がある方は、アニメーション化されたSVGを試すこともいいでしょう 👀
 
@@ -556,7 +556,7 @@ Contract balance: 0.1
 
 大きな違いは、コンソールの出力です。 私の外観です（このスクリーンショットのURIは短縮してあります）：
 
-![](/public/images/Polygon-ENS-Domain/section-1/1_4_4.png)
+![](1_4_4.png)
 
 `tokenURI`をコピーしてブラウザのアドレスに入力すると、JSONオブジェクトが表示されます。 別のタブでJSONオブジェクト内のimageの部分のみを貼り付けると、NFT画像が取得されます。
 
@@ -574,7 +574,7 @@ data:image/svg+xml;base64,[ここにデコードしたいimageの部分のデー
 
 ※imageの部分の長い文字の羅列データの後、末尾に"length":"xx"などが付いているとうまく動作しませんのでこの部分は省いてください。
 
-![](/public/images/Polygon-ENS-Domain/section-1/1_4_5.png)
+![](1_4_5.png)
 
 さぁ、ドメインサービスを作成することができましたね!
 

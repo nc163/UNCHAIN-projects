@@ -89,7 +89,7 @@ Solanaでは、アカウントのデータ読み込みは無料でできます�
 
 このとき、Phantom Walletのアドレスが必要になるので、以下の画像を参考にウォレットアドレスをコピーしましょう。
 
-![wallet address copy](/public/images/Solana-dApp/section-3/3_2_1.jpg)
+![wallet address copy](3_2_1.jpg)
 
 次に、ターミナルから以下のコマンドを実行します。
 
@@ -340,7 +340,7 @@ const renderConnectedContainer = () => {
 
 すべてがうまくいった場合は、コンソール上に以下のように表示されます。
 
-![console](/public/images/Solana-dApp/section-3/3_2_2.jpg)
+![console](3_2_2.jpg)
 
 ここで作成したアカウントを取得しました。
 

@@ -10,7 +10,7 @@
 yarn local-create
 ```
 
-![](/public/images/The_Graph-SE2-Subgraph-package/section-0/0_5_1.png)
+![](0_5_1.png)
 
 > サブグラフが作成されたことを示す出力と、docker内のgraph-nodeでのログ出力が表示されるはずです。
 
@@ -20,7 +20,7 @@ yarn local-create
 yarn local-ship
 ```
 
-![](/public/images/The_Graph-SE2-Subgraph-package/section-0/0_5_2.png)
+![](0_5_2.png)
 
 > このコマンドは、以下のことを一度に行います... 🚀🚀🚀
 
@@ -38,7 +38,7 @@ npm install -g ts-node
 
 サブグラフのデプロイが成功すると、以下のようになります：
 
-![](/public/images/The_Graph-SE2-Subgraph-package/section-0/0_5_3.png)
+![](0_5_3.png)
 
 ビルドが完了し、サブグラフのエンドポイントアドレスが表示されます。
 

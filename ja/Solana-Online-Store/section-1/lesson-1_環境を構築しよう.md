@@ -25,7 +25,7 @@ Chromeの方は[こちら](https://chrome.google.com/webstore/detail/phantom/bfn
 
 - 「設定」→「ネットワークの変更」→「Devnet」から変更できます。
 
-![phantom wallet settings](/public/images/Solana-Online-Store/section-1/1_1_1.png)
+![phantom wallet settings](1_1_1.png)
 
 ※ 本プロジェクトではBraveとChromeでのみ動作が確認できます。
 
@@ -40,11 +40,11 @@ Chromeの方は[こちら](https://chrome.google.com/webstore/detail/phantom/bfn
 
 1\. [こちら](https://github.com/unchain-tech/Solana-Online-Store)からunchain-tech/Solana-Online-Storeリポジトリにアクセスをして、ページ右上の`Fork`ボタンをクリックします。
 
-![](/public/images/Solana-Online-Store/section-1/1_1_2.png)
+![](1_1_2.png)
 
 2\. Create a new forkページが開くので、「Copy the `main` branch only」という項目に**チェックが入っていることを確認します**。
 
-![](/public/images/Solana-Online-Store/section-1/1_1_3.png)
+![](1_1_3.png)
 
 3\. 設定が完了したら`Create fork`ボタンをクリックします。あなたのGitHubアカウントに`Solana-Online-Store`リポジトリのフォークが作成されたことを確認してください。
 
@@ -52,7 +52,7 @@ Chromeの方は[こちら](https://chrome.google.com/webstore/detail/phantom/bfn
 
 `Code`ボタンをクリックして`SSH`を選択し、Gitリンクをコピーしましょう。
 
-![](/public/images/Solana-Online-Store/section-1/1_1_4.png)
+![](1_1_4.png)
 
 ターミナルで任意の作業ディレクトリに移動し、先ほどコピーしたリンクを貼り付け、下記を実行してください。
 
@@ -82,7 +82,7 @@ git clone コピーした_github_リンク
 
 ※自動的にWebアプリケーションが立ち上がらない場合は、ブラウザに`http://localhost:3000`と入力してWebアプリケーションを確認しましょう!
 
-![](/public/images/Solana-Online-Store/section-1/1_1_5.jpg)
+![](1_1_5.jpg)
 
 ### ✅ テストスクリプトについて
 

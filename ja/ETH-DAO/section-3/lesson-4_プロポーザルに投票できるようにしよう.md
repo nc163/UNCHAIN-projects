@@ -211,11 +211,11 @@ import { Proposal } from '@thirdweb-dev/sdk';
 
 ページを更新すると、🌈 の横に先ほどあなたが提案した2つの提案が表示され、すべての提案データを閲覧することができるはずです。
 
-![](/public/images/ETH-DAO/section-3/3_4_1.png)
+![](3_4_1.png)
 
 なお、既に投票済みの場合は以下のように表示されます。
 
-![](/public/images/ETH-DAO/section-3/3_4_2.png)
+![](3_4_2.png)
 
 さて、それではこれからユーザーが投票する際、賛成・反対・棄権の中から選択肢を選べるようにしていきましょう。
 
@@ -380,7 +380,7 @@ import { AddressZero } from '@ethersproject/constants';
 
 この変更により、以下のような画面が表示され、実際に投票を行えるようになりました。
 
-![](/public/images/ETH-DAO/section-3/3_4_3.png)
+![](3_4_3.png)
 
 今回は、24時間後に投票を受付できなくなるように設定しています。
 
@@ -390,7 +390,7 @@ import { AddressZero } from '@ethersproject/constants';
 
 確認後、正常に動作すると以下のようにボタンが`You Already Voted`となり、コンソールに`successfuly voted`と表示されます。
 
-![](/public/images/ETH-DAO/section-3/3_4_4.png)
+![](3_4_4.png)
 
 
 ### 🙋‍♂️ 質問する

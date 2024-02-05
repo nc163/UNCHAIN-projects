@@ -299,7 +299,7 @@ const imageToNFT = async (e) => {
 
 `web3.storage`のアカウント画面に行き、`create a token`のボタンを押してください。
 
-![](/public/images/ETH-NFT-Maker/section-3/3_3_1.png)
+![](3_3_1.png)
 
 すると、`Name your token`という記入画面があると思うので、そこに好きな名前をいれて`api_key`を作りましょう。
 
@@ -354,7 +354,7 @@ yarn client start
 
 Webアプリケーションで画像を選択して、下記のようなポップアップが立ち上がったら、`Confirm`を押してください。
 
-![](/public/images/ETH-NFT-Maker/section-3/3_3_2.png)
+![](3_3_2.png)
 
 ここで請求される少量のETHは、通称**ガス代**と呼ばれます。
 

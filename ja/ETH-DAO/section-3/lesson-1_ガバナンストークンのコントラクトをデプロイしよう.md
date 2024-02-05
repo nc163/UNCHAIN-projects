@@ -34,7 +34,7 @@ ENSチームは、ネットワークの初期サポーターに報酬を与え�
 
 これが彼らのやり方でした。
 
-![](/public/images/ETH-DAO/section-3/3_1_1.png)
+![](3_1_1.png)
 
 ここで強調しておきたいのは、これは独自の手法だということです。
 
@@ -112,21 +112,21 @@ Done in 40.70s.
 
 ここでも、**あなたのウォレット**からデプロイされたことがわかるので、**あなたがそれを所有している**ことがわかります。
 
-![](/public/images/ETH-DAO/section-3/3_1_2.png)
+![](3_1_2.png)
 
 作成したトークンをカスタムトークンとしてMetaMaskに追加することも可能です。
 
 MetaMask"Import Token" をクリックするだけです。
 
-![](/public/images/ETH-DAO/section-3/3_1_3.png)
+![](3_1_3.png)
 
 あなたのERC-20コントラクトのアドレスを貼り付けると、MetaMaskが魔法のように自動的にトークン・シンボルを追加してくれます。
 
-![](/public/images/ETH-DAO/section-3/3_1_4.png)
+![](3_1_4.png)
 
 そして、ウォレットに戻りスクロールすると追加されているのが確認できます。
 
-![](/public/images/ETH-DAO/section-3/3_1_5.png)
+![](3_1_5.png)
 
 さて、これで正式に自分のトークンを持つことができましたね！
 
@@ -173,7 +173,7 @@ const token = sdk.getContract(ERCTokenAddress, 'token');
 
 これで、トークンコントラクトが出来上がったことが確認できると思います。
 
-![](/public/images/ETH-DAO/section-3/3_1_6.png)
+![](3_1_6.png)
 
 ここでは、実際にトークン供給をミントし、 `amount`を設定し、トークンの最大供給量として設定しています。
 
@@ -193,13 +193,13 @@ Done in 32.95s.
 
 [Etherscan](https://sepolia.etherscan.io/) でERC-20コントラクトの画面を表示し、`More Info`から`Token Tracker`のリンクを表示させます。
 
-![](/public/images/ETH-DAO/section-3/3_1_7.png)
+![](3_1_7.png)
 
 すると、すべての供給情報とトークン保持者、トークンの移動履歴、移動したトークン量などが表示されます。
 
 また、ここでは「最大総供給量」も表示されます。
 
-![](/public/images/ETH-DAO/section-3/3_1_8.png)
+![](3_1_8.png)
 
 これをすべて、数行のTypeScriptで実現しました。
 
@@ -330,7 +330,7 @@ Done in 33.52s.
 
 ちなみに、EtherscanのERC-20コントラクトに戻ると、新しいトークンホルダーと、彼らが所有する`$TSC`の量がわかります。
 
-![](/public/images/ETH-DAO/section-3/3_1_9.png)
+![](3_1_9.png)
 
 
 ### 🙋‍♂️ 質問する

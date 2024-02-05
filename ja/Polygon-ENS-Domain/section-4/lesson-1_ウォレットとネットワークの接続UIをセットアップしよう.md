@@ -90,7 +90,7 @@ const App = () => {
 
 Mumbai上にいるときは次のようになります。
 
-![](/public/images/Polygon-ENS-Domain/section-4/4_1_1.png)
+![](4_1_1.png)
 
 ネットワークをチェックしているので`mumbai`のテストネット上にいない場合は、ミントフォームを無効にする必要があります。 これを`renderInputForm`の先頭に追加します。
 
@@ -114,7 +114,7 @@ const renderInputForm = () =>{
 
 入力フォームとミントボタンの代わりにテキストメッセージをレンダリングします。
 
-![](/public/images/Polygon-ENS-Domain/section-4/4_1_2.png)
+![](4_1_2.png)
 
 ### 🦊 MetaMaskでネットワークの追加、切り替え
 
@@ -211,7 +211,7 @@ const renderInputForm = () =>{
 
 例えばPolygon（Matic）のメインネットにいる場合、下のような画面になるでしょう。
 
-![](/public/images/Polygon-ENS-Domain/section-4/4_1_3.png)
+![](4_1_3.png)
 
 
 ### 🙋‍♂️ 質問する

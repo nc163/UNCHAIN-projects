@@ -75,13 +75,13 @@ export const HeadComponent = () => {
 
 続いて、ルートディレクトリ直下にある`public`フォルダの中に以下の画像を`banner.png`という名前で保存します。
 
-![](/public/images/ETH-DAO/section-1/1_3_1.png)
+![](1_3_1.png)
 
 これで、ヘッダーの準備が整いました。
 
 ⚠️ 以前にdApps開発取り組んだことがある場合、メタマスクの接続済みサイトから https://localhost:3000 を解除しておきましょう。
 
-![](/public/images/ETH-DAO/section-1/1_3_2.png)
+![](1_3_2.png)
 
 
 ### 🌟 ウォレットに接続してみよう
@@ -94,7 +94,7 @@ yarn dev
 
 ※ `localhost:3000`を開くと表示されます。
 
-![](/public/images/ETH-DAO/section-1/1_3_3.png)
+![](1_3_3.png)
 
 では、初期画面を更新していきましょう。
 
@@ -132,7 +132,7 @@ export default Home;
 
 ウォレットを認証が完了すると、このような画面となります。
 
-![](/public/images/ETH-DAO/section-1/1_3_4.png)
+![](1_3_4.png)
 
 ここでページをリロードしても、ウォレット接続が残っているのがわかると思います。
 

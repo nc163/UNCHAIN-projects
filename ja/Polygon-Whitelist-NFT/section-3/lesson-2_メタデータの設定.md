@@ -6,23 +6,23 @@
 
 ブロンズ・シールド
 
-![image-20230223101752414](/public/images/Polygon-Whitelist-NFT/section-3/3_2_1.png)
+![image-20230223101752414](3_2_1.png)
 
 シルバー・シールド
 
-![image-20230223101816151](/public/images/Polygon-Whitelist-NFT/section-3/3_2_2.png)
+![image-20230223101816151](3_2_2.png)
 
 ゴールド・シールド
 
-![image-20230223101836025](/public/images/Polygon-Whitelist-NFT/section-3/3_2_3.png)
+![image-20230223101836025](3_2_3.png)
 
 プラチナ・シールド
 
-![image-20230223101907097](/public/images/Polygon-Whitelist-NFT/section-3/3_2_4.png)
+![image-20230223101907097](3_2_4.png)
 
 これらの画像をローカルデバイスに保存しましょう。
 
-![image-20230223102231474](/public/images/Polygon-Whitelist-NFT/section-3/3_2_5.png)
+![image-20230223102231474](3_2_5.png)
 
 次に、別のフォルダへ新しいファイルを4つ作成し、それぞれ1、2、3、4と名前をつけます。以下の内容を記入してください（画像のIPFSリンクは未完成です。画像をIPFSにアップロードした後、再度記入してください）。
 
@@ -82,7 +82,7 @@
 }
 ```
 
-![image-20230223103510159](/public/images/Polygon-Whitelist-NFT/section-3/3_2_6.png)
+![image-20230223103510159](3_2_6.png)
 
 ### 🔧 IPFS経由でNFT画像とメタデータをアップロード
 
@@ -93,45 +93,45 @@
 
 「`Login`」をクリックします。
 
-![image-20230223103835432](/public/images/Polygon-Whitelist-NFT/section-3/3_2_7.png)
+![image-20230223103835432](3_2_7.png)
 
 「`Upload`」をクリックします。
 
-![image-20230223104125770](/public/images/Polygon-Whitelist-NFT/section-3/3_2_8.png)
+![image-20230223104125770](3_2_8.png)
 
 「CAR files supported! What is a CAR?」をクリックします（CARは、複数のファイルで同じルートCIDを取得してIPFSへ一度にアップロードすることを可能にします。これは`baseURI`に必要な機能であり、また、一度に画像をアップロードするのに便利です）。
 
-![image-20230223104827000](/public/images/Polygon-Whitelist-NFT/section-3/3_2_9.png)
+![image-20230223104827000](3_2_9.png)
 
 https://car.ipfs.io をクリックします。
 
 「`Open file picker`」クリックします。
 
-![image-20230223104942040](/public/images/Polygon-Whitelist-NFT/section-3/3_2_10.png)
+![image-20230223104942040](3_2_10.png)
 
 すべての画像をまとめて選択し、「`Open`」をクリックします。
 
-![image-20230223105028884](/public/images/Polygon-Whitelist-NFT/section-3/3_2_11.png)
+![image-20230223105028884](3_2_11.png)
 
 「`Download .car file`」をクリックします。
 
-![image-20230223105114628](/public/images/Polygon-Whitelist-NFT/section-3/3_2_12.png)
+![image-20230223105114628](3_2_12.png)
 
 [NFT.Storage](https://nft.storage/new-file/)に戻り、「`Choose File`」をクリックして、先ほどダウンロードしたCARファイルを選択します。次に「`Upload`」をクリックします。
 
-![image-20230223105418010](/public/images/Polygon-Whitelist-NFT/section-3/3_2_13.png)
+![image-20230223105418010](3_2_13.png)
 
 生成されたCIDをクリックします。
 
-![image-20230223105546864](/public/images/Polygon-Whitelist-NFT/section-3/3_2_14.png)
+![image-20230223105546864](3_2_14.png)
 
 「Bronze」に対応するCIDをクリックします。
 
-![image-20230223110400663](/public/images/Polygon-Whitelist-NFT/section-3/3_2_15.png)
+![image-20230223110400663](3_2_15.png)
 
 この画像のCIDをコピーします。これはURLのアドレスバーの前の部分です。
 
-![image-20230223110602486](/public/images/Polygon-Whitelist-NFT/section-3/3_2_16.png)
+![image-20230223110602486](3_2_16.png)
 
 コピーしたCIDを、ローカルコンピュータの対応するメタデータに貼り付けます。
 
@@ -201,7 +201,7 @@ https://car.ipfs.io をクリックします。
 
 アップロードが完了したら、`ipfs://METADATA_CAR_CID`にアクセスしてみましょう。
 
-![image-20230223120843152](/public/images/Polygon-Whitelist-NFT/section-3/3_2_17.png)
+![image-20230223120843152](3_2_17.png)
 
 このメタデータCARのCIDをコピーします：`bafybeihuwmkxnqban2ukneymhwctxfqec5ywrdiqyc7vmyegftrrllf7gq`
 

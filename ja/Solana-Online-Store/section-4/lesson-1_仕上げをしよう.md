@@ -89,11 +89,11 @@ git push
 
 1\. Vercelのダッシュボードから、`Add New...`をクリックし、`Project`を選択します。
 
-![new project](/public/images/Solana-Online-Store/section-4/4_1_1.png)
+![new project](4_1_1.png)
 
 2\. `Import Git Repository`で自分のGitHubアカウントを接続したら、Webアプリケーションのリポジトリを`Import`してください。
 
-![Import](/public/images/Solana-Online-Store/section-4/4_1_2.png)
+![Import](4_1_2.png)
 
 3\. プロジェクトの設定では、**FRAMEWORK PRESET** に`Next.js`、**ROOT DIRECTORY** に`./`を入力してください。
 
@@ -101,7 +101,7 @@ git push
 
 5\. **Environment Variables** に`.env.local`で設定した環境変数（NAME: NEXT_PUBLIC_OWNER_PUBLIC_KEY、VALUE: `phantom wallet address`）を直接入力してください( GitHubには`.env.local`ファイルを保存していないため、`Vercel`に直接記載する必要があります)。
 
-![Environment Variables1](/public/images/Solana-Online-Store/section-4/4_1_3.png)
+![Environment Variables1](4_1_3.png)
 
 6\.`Deploy`ボタンを押してデプロイします（VercelはGitHubと連動しているので、GitHubが更新されるたびに自動でデプロイを行ってくれます）。
 

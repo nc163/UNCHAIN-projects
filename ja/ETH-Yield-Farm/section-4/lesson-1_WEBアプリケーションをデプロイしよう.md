@@ -33,14 +33,14 @@ git push
 Vercelのアカウントを取得したら、下記を実行しましょう。
 
 1\. `Dashboard`へ進んで、`New Project`を選択してください。
-![](/public/images/ETH-Yield-Farm/section-4/4_1_1.png)
+![](4_1_1.png)
 
 2\. `Import Git Repository`で自分のGitHubアカウントを接続したら、`ETH-Yield-Farm`を選択し、`Import`してください。
-![](/public/images/ETH-Yield-Farm/section-4/4_1_2.png)
+![](4_1_2.png)
 
 3\. プロジェクトを作成します。`Root Directory`が「packages/client」となっていることを確認してください。
 
-![](/public/images/ETH-Yield-Farm/section-4/4_1_3.png)
+![](4_1_3.png)
 
 4\. `Deploy`ボタンを押しましょう。
 
@@ -50,7 +50,7 @@ VercelはGitHubと連動しているので、GitHubが更新されるたびに�
 
 基本的に`warning`は無視して問題ありません。
 
-![](/public/images/ETH-Yield-Farm/section-4/4_1_4.png)
+![](4_1_4.png)
 
 ### 🙋‍♂️ 質問する
 

@@ -79,8 +79,8 @@ Vercelに関する説明は、[こちら](https://zenn.dev/lollipop_onl/articles
 
 注：Vercelでは、環境変数`CI=false`を追加する必要があります。 これにより、`warning`が原因でビルドが失敗しないようになります。また、ルートディレクトリは`packages/client`に設定してください。
 
-![](/public/images/Polygon-ENS-Domain/section-4/4_3_1.png)
-![](/public/images/Polygon-ENS-Domain/section-4/4_3_3.png)
+![](4_3_1.png)
+![](4_3_3.png)
 
 
 設定を入力したら`deploy`ボタンを押してください。
@@ -98,7 +98,7 @@ Vercelに関する説明は、[こちら](https://zenn.dev/lollipop_onl/articles
 
 これで、ドメインサービスについてはもう習熟されています🎉
 
-![](/public/images/Polygon-ENS-Domain/section-4/4_3_2.png)
+![](4_3_2.png)
 
 [こちら](https://polygon-ens-domain-client.vercel.app/)が見本のプロジェクトとなります！
 

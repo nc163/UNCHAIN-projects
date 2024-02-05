@@ -5,10 +5,10 @@
 これらのプロジェクトは、数億ドルの収益を生み出し、所有者の一部は億万長者となっています。
 
 [Cryptopunks](https://www.larvalabs.com/cryptopunks)（クリプトパンクス）。
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_1.jpeg)
+![](1_1_1.jpeg)
 
 [Bored Ape Yacht Club](https://boredapeyachtclub.com/#/)（BAYC：ボアードエイプ・ヨットクラブ）。
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_2.jpeg)
+![](1_1_2.jpeg)
 
 これらは、数量が限られたアバターのコレクションです。
 
@@ -95,11 +95,11 @@ GitHubのアカウントをお持ちの方は、下記の手順に沿ってプ�
 
 1. [こちら](https://github.com/unchain-tech/Polygon-Generative-NFT)からunchain-tech/ETH-NFT-Collectionリポジトリにアクセスをして、ページ右上の`Fork`ボタンをクリックします。
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_14.png)
+![](1_1_14.png)
 
 2. Create a new forkページが開くので、「Copy the `main` branch only」という項目に**チェックが入っていることを確認します**。
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_15.png)
+![](1_1_15.png)
 
 設定が完了したら`Create fork`ボタンをクリックします。あなたのGitHubアカウントに`Polygon-Generative-NFT`リポジトリのフォークが作成されたことを確認してください。
 
@@ -107,7 +107,7 @@ GitHubのアカウントをお持ちの方は、下記の手順に沿ってプ�
 
 まず、下図のように、`Code`ボタンをクリックして`SSH`を選択し、Gitリンクをコピーしましょう。
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_16.png)
+![](1_1_16.png)
 
 ターミナル上で作業を行う任意のディレクトリに移動し、先ほどコピーしたリンクを用いて下記を実行してください。
 
@@ -175,7 +175,7 @@ yarn client start
 
 例)ローカル環境で表示されているWebサイト
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_2_6.png)
+![](1_2_6.png)
 
 上記のような形でフロントエンドが確認できれば成功です。
 
@@ -358,11 +358,11 @@ Hardhatは段階的に下記を実行しています。
 
 以下はそのサンプルです。
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_5.png)
+![](1_1_5.png)
 
 「Scrappy Squirrels」は、下記のようなPNG画像を重ねて生成されます。
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_6.png)
+![](1_1_6.png)
 
 上図の左上から時計回りに、画像を順番に重ねていくと、中央の画像が作成されます。
 
@@ -384,7 +384,7 @@ Hardhatは段階的に下記を実行しています。
 
 「Scrappy Squirrels」プロジェクトでは、下記のように8つの特徴カテゴリを作成します。
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_7.png)
+![](1_1_7.png)
 
 各特徴のカテゴリごとに、特徴的な画像の数挟まざまです。
 
@@ -392,7 +392,7 @@ Hardhatは段階的に下記を実行しています。
 
 ※ 現在のサンプルでは、簡単のため`blue_dot.png`のみが格納されています。
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_8.png)
+![](1_1_8.png)
 
 今回使用する特徴カテゴリとそれに付随する画像は、`packages/library`の`asset`フォルダの中にあります。
 
@@ -433,7 +433,7 @@ CONFIG = [
 
 順番は、`assets`フォルダに格納されている特徴カテゴリフォルダの順番に起因しています。
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_9.png)
+![](1_1_9.png)
 
 **ここでの順序は非常に重要です。**
 
@@ -570,7 +570,7 @@ Pythonリストは、`rarity_weights`の重みを割り当てる最も一般的�
 
 **これらの画像を`Name`で昇順（アルファベット順）にソートすると、次のようになります。**
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_10.png)
+![](1_1_10.png)
 
 次に、`config.py`の`Wristbands`に定義した`rarity_weights`を見てみましょう。
 
@@ -615,7 +615,7 @@ Pythonリストは、`rarity_weights`の重みを割り当てる最も一般的�
 
 2つ目の重みは黒(`black.png`)のバンド、3つ目の重みは白のバンド(`dark-green.png`)、といった具合に関連付けを行っています。
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_11.png)
+![](1_1_11.png)
 
 **重みの値が大きいほど、特定の特徴がよく見られます。**
 
@@ -698,11 +698,11 @@ Task complete!
 
 `What would you like to call this edition?`で命名した`edition`は下記のように保存されています。
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_12.png)
+![](1_1_12.png)
 
 `edition`フォルダの中の`images`フォルダを開き、下記のように、ユニークな「Scrappy Squirrels」のアバターが格納されていることを確認しましょう。
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_1_13.png)
+![](1_1_13.png)
 
 あなたのコレクションの中に`metadata.csv`が存在しているかと思います。
 

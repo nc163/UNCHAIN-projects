@@ -52,7 +52,7 @@ yarn client dev
 > ここでのcreate-next-appは`version 13.1.1`を使用しています（`yarn create next-app --version`で確認できます）。  
 > versionの違いによりここで表示されるフロントエンドが別のものでも、この後のディレクトリ構成などに大きな違いがなければ問題ありません。
 
-![](/public/images/AVAX-Subnet/section-3/3_1_1.png)
+![](3_1_1.png)
 
 上記のような形でフロントエンドが確認できれば成功です。
 
@@ -156,7 +156,7 @@ export default Home;
 
 以下のようなフロントエンドが確認できれば成功です。
 
-![](/public/images/AVAX-Subnet/section-3/3_1_2.png)
+![](3_1_2.png)
 
 ### 🙋‍♂️ 質問する
 

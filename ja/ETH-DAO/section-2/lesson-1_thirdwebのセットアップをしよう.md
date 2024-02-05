@@ -63,23 +63,23 @@ SDKでthirdwebのインフラサービスを利用するには、APIキーが必
 
 [こちら](https://thirdweb.com/dashboard/settings/api-keys)からthirdwebのダッシュボードにアクセスをして、ウォレット接続を行いSign inしましょう。
 
-![](/public/images/ETH-DAO/section-2/2_1_1.png)
+![](2_1_1.png)
 
 Sign inが完了したら、ダッシュボード右上の「+ Create API Key」をクリックします。
 
-![](/public/images/ETH-DAO/section-2/2_1_2.png)
+![](2_1_2.png)
 
 APIキーに任意の名前をつけて、「Next」をクリックします。
 
-![](/public/images/ETH-DAO/section-2/2_1_3.png)
+![](2_1_3.png)
 
 次に、APIキーの設定を行います。下記画像のようにサービス有効化とアクセス制限の設定を行い、最後に「Create」をクリックします。
 
-![](/public/images/ETH-DAO/section-2/2_1_4.png)
+![](2_1_4.png)
 
 画面上に作成したAPIキーの`Client ID`と`Secret Key`が表示されます。これらの値をコピーして、`.env.local`の`YOUR_CLIENT_ID`と`YOUR_SECRET_KEY`にそれぞれ設定しましょう。注意書きにもありますが、Secret Keyは表示されている画面を閉じると二度と取得することはできないので、大切に保管してください。設定と保管が完了したら、「I have stored the Secret Key securely」をクリックして画面を閉じます。
 
-![](/public/images/ETH-DAO/section-2/2_1_5.png)
+![](2_1_5.png)
 
 ### 🐣 テストネットから始める
 
@@ -112,19 +112,19 @@ APIキーに任意の名前をつけて、「Next」をクリックします。
 >
 > 1 \. MetaMask ウォレットのネットワークトグルを開く。
 >
-> ![](/public/images/ETH-DAO/section-2/2_1_6.png)
+> ![](2_1_6.png)
 >
 > 2 \. `Show/hide test networks`をクリック。
 >
-> ![](/public/images/ETH-DAO/section-2/2_1_7.png)
+> ![](2_1_7.png)
 >
 > 3 \. `Show test networks`を`ON`にする。
 >
-> ![](/public/images/ETH-DAO/section-2/2_1_8.png)
+> ![](2_1_8.png)
 >
 > 4 \. `Sepolia Test Network`を選択する。
 >
-> ![](/public/images/ETH-DAO/section-2/2_1_9.png)
+> ![](2_1_9.png)
 
 MetaMaskウォレットに`Sepolia Test Network`が設定されたら、下記のリンクの中から条件に合うものを選んで、少量の偽ETHを取得しましょう。
 

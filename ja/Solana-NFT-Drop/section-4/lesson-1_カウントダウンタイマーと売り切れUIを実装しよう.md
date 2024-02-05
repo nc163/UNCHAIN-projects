@@ -159,7 +159,7 @@ return candyMachine && candyGuard ? (
 
 ページを更新して、UIが反映されているか確認しましょう。
 
-![](/public/images/Solana-NFT-Drop/section-4/4_1_5.png)
+![](4_1_5.png)
 
 `CountdownTimer`コンポーネントに戻って、残りのロジックを実装します。タイマーのカウントダウンをリアルタイムで確認できるようにしましょう。
 
@@ -302,12 +302,12 @@ yarn test
 
 この時点でCountdownTimerコンポーネントのテストにパスし、`Test Suites:`の表示が`1 passed`となっていたら実装完了です。
 
-![](/public/images/Solana-NFT-Drop/section-4/4_1_3.png)
+![](4_1_3.png)
 
 
 実際にブラウザでも表示を確認してみましょう。
 
-![無題](/public/images/Solana-NFT-Drop/section-4/4_1_1.png)
+![無題](4_1_1.png)
 
 以上です。
 
@@ -439,13 +439,13 @@ yarn test
 
 すべてのテストにパスしていたら、実装完了です。
 
-![](/public/images/Solana-NFT-Drop/section-4/4_1_4.png)
+![](4_1_4.png)
 
 実際にブラウザでも表示を確認してみましょう。
 
 下記の画像は、NFTがすべてミントされた時に期待される表示です。
 
-![無題](/public/images/Solana-NFT-Drop/section-4/4_1_2.png)
+![無題](4_1_2.png)
 
 ### 🙋‍♂️ 質問する
 

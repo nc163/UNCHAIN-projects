@@ -8,7 +8,7 @@
 
 一方で、重要な要素があります。それは、あなたが実際にその暗号通貨の所有者であり、送金を承認していることをネットワークに証明しなければならないということです。
 
-![](/public/images/Solana-Wallet/section-3/3_2_4.png)
+![](3_2_4.png)
 
 大家さんへ家賃の支払いに使うような、伝統的な紙の小切手で考えてみるとわかりやすいかもしれませんね。
 
@@ -29,7 +29,7 @@
 
 トランザクションを送信したあと、さらに **残高を更新するために確認を要求したい** ので、２つ目を試してみるのが良さそうです。
 
-![](/public/images/Solana-Wallet/section-3/3_2_1.png)
+![](3_2_1.png)
 
 この関数の仕様を読むと、
 
@@ -77,7 +77,7 @@ console.log(transaction);
 
 ドキュメントには直感的な進め方が書かれていないのが残念ですが、[`SystemProgram`](https://solana-labs.github.io/solana-web3.js/classes/SystemProgram.html) という便利そうなクラスに`transfer`メソッドがあり、 **「ある口座から別の口座にlamportsを移す取引命令を生成する」** と書かれています。これはまさに今必要としているメソッドのようですね!
 
-![](/public/images/Solana-Wallet/section-3/3_2_2.png)
+![](3_2_2.png)
 
 ### Transfer
 
@@ -91,7 +91,7 @@ console.log(transaction);
 
 この3つで構成されています。
 
-![](/public/images/Solana-Wallet/section-3/3_2_5.png)
+![](3_2_5.png)
 
 これは私たちが取引に使いたいデータと一致していますね!
 
@@ -121,7 +121,7 @@ transaction.add(SystemProgram.transfer(params));
 
 次に、`signers`の配列が必要です。この関数の仕様から、`signers`は少なくとも1つの`Signer`オブジェクトを含む配列になることが分かっています。[ドキュメント](https://solana-labs.github.io/solana-web3.js/interfaces/Signer.html)で`Signer`の型を確認すると、`publicKey`と`secretKey`という2つのプロパティを持つオブジェクトのようです。
 
-![](/public/images/Solana-Wallet/section-3/3_2_3.png)
+![](3_2_3.png)
 
 `account`から両方を取得できるので、`signers`の配列を作成することができます。
 
@@ -265,7 +265,7 @@ return (
 
 components/Transfer/index.test.jsが`PASS`し、以下のようになっていたらOKです！
 
-![](/public/images/Solana-Wallet/section-3/3_2_6.png)
+![](3_2_6.png)
 
 それでは、`Transfer`コンポーネントを`Home`コンポーネントに組み込んで送信フォームを表示しましょう。`pages/index.js`を更新していきます。
 

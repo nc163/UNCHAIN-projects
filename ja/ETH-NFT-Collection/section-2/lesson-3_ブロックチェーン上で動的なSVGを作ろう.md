@@ -455,7 +455,7 @@ An NFT w/ ID 2 has been minted to 0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
 ターミナルに出力されたSVGの1つをコピーして、[ここ](https://www.svgviewer.dev/)に貼り付け、中身を確認してみましょう。
 
 下記のような結果が表示されていればテストは成功です。
-![](/public/images/ETH-NFT-Collection/section-2/2_3_1.png)
+![](2_3_1.png)
 
 ### 👩‍💻 メタデータを動的に生成する
 
@@ -814,7 +814,7 @@ NFT Previewを使用すれば、テストネットにデプロイしなくても
 
 下記のように`Token URI`が画像として確認できれば、テストは成功です。
 
-![](/public/images/ETH-NFT-Collection/section-2/2_3_2.png)
+![](2_3_2.png)
 
 ### 🚀 Sepolia Test Network にデプロイする
 
@@ -865,9 +865,9 @@ Minted NFT #1
 最後に、[gemcase](https://gemcase.vercel.app/) へアクセスをして、ミントされたNFTを確認してみましょう。
 
 下記のように、あなたのSquareNFTがgemcaseで確認できたでしょうか？
-![](/public/images/ETH-NFT-Collection/section-2/2_3_3.png)
+![](2_3_3.png)
 
-![](/public/images/ETH-NFT-Collection/section-2/2_3_4.png)
+![](2_3_4.png)
 
 ### 🙋‍♂️ 質問する
 

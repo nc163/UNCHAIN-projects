@@ -113,7 +113,7 @@ export default Home;
 
 このページを更新すると、このように表示されるはずです。
 
-![](/public/images/ETH-DAO/section-2/2_4_1.png)
+![](2_4_1.png)
 
 今の段階ではメンバーシップNFTを持っていないため、`😭 this user doesn't have a membership NFT.`と表示されます。
 
@@ -262,7 +262,7 @@ export default Home;
 
 それでは実際に`Mint your nft (FREE)`ボタンを押下してNFTをミントしてみましょう。
 
-![](/public/images/ETH-DAO/section-2/2_4_2.png)
+![](2_4_2.png)
 
 MetaMaskのポップアップが表示され、ガスを支払うことでNFTがMintされます。
 
@@ -274,11 +274,11 @@ NFTのミントが完了すると、以下のとおりコンソールにEthersca
 
 リンクにアクセスすると、このように表示されます。
 
-![](/public/images/ETH-DAO/section-2/2_4_3.png)
+![](2_4_3.png)
 
 一番最新のトランザクションにアクセスするとしたのようにERC-1155がclaimできていることがわかります。
 
-![](/public/images/ETH-DAO/section-2/2_4_8.png)
+![](2_4_8.png)
 
 このメンバーシップNFTはERC-1155なので、誰もが同じNFTの持ち主です。
 
@@ -383,13 +383,13 @@ MetaMaskはいくつでもアカウントを持つことができます。
 3つのケースをすべてテストするようにしてください。
 
 1. ウォレットの接続がされていないとき:
-![](/public/images/ETH-DAO/section-2/2_4_5.png)
+![](2_4_5.png)
 
 2. ウォレットは接続されているが、メンバーシップNFTを所有していないとき:
-![](/public/images/ETH-DAO/section-2/2_4_6.png)
+![](2_4_6.png)
 
 3. ウォレットが接続されており、メンバーシップNFTを所有しているとき:
-![](/public/images/ETH-DAO/section-2/2_4_7.png)
+![](2_4_7.png)
 
 
 ### 🙋‍♂️ 質問する

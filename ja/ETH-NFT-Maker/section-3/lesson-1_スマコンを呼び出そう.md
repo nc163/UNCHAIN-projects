@@ -100,7 +100,7 @@ yarn client start
 
 次に、`Console`を選択し、出力結果を確認してみましょう。
 
-![](/public/images/ETH-NFT-Maker/section-3/3_2_1.png)
+![](3_2_1.png)
 
 Consoleに`We have the ethereum object`と表示されているでしょうか？
 
@@ -406,13 +406,13 @@ yarn client start
 ローカルサーバーでWebサイトを立ち上げたら、MetaMaskのプラグインをクリックし、あなたのウォレットアドレスの接続状況を確認しましょう。
 もし、下図のように`Connected`と表示されている場合は、`Connected`の文字をクリックします。
 
-![](/public/images/ETH-NFT-Maker/section-3/3_2_2.png)
+![](3_2_2.png)
 
 そこで、Webサイトとあなたのウォレットアドレスの接続を一度解除します。
 
 - `Disconnect this account`を選択してください。
 
-![](/public/images/ETH-NFT-Maker/section-3/3_2_3.png)
+![](3_2_3.png)
 
 次にローカルサーバーにホストされているあなたのWebサイトをリフレッシュしてボタンの表示を確認してください。
 
@@ -420,13 +420,13 @@ yarn client start
 
 次に、右クリック → `Inspect`を選択し、Consoleを立ち上げましょう。下図のように、`No authorized account found`と出力されていれば成功です。
 
-![](/public/images/ETH-NFT-Maker/section-3/3_2_4.png)
+![](3_2_4.png)
 
 では、`Connect Wallet`ボタンを押してみましょう。
 
 下図のようにMetaMaskからウォレット接続を求められますので、承認してください。
 
-![](/public/images/ETH-NFT-Maker/section-3/3_2_5.png)
+![](3_2_5.png)
 
 MetaMaskの承認が終わると、ウォレット接続ボタンの表示が`If you choose image, you can mint your NFT`に変更されているはずです。
 

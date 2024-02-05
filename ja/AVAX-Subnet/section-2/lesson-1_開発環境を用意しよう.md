@@ -321,7 +321,7 @@ yarn test
 
 次のように表示されたら成功です! 🎉
 
-![](/public/images/AVAX-Subnet/section-2/1_1_1.png)
+![](1_1_1.png)
 
 ここまできたら,フォルダーの中身を整理しましょう。
 

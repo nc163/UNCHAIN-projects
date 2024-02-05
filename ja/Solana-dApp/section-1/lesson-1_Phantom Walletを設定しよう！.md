@@ -4,8 +4,8 @@
 
 まず、 [この GitHub リンク](https://github.com/unchain-tech/Solana-dApp) にアクセスして、ページの右上にある[Fork]ボタンを押してください。
 
-![](/public/images/Solana-dApp/section-1/1_1_4.png)
-![](/public/images/Solana-dApp/section-1/1_1_5.png)
+![](1_1_4.png)
+![](1_1_5.png)
 
 このリポジトリをフォークすると、自分のGitHubに同一のリポジトリがコピーされます。
 
@@ -13,7 +13,7 @@
 
 `Code`ボタンをクリックして、コピーしたリポジトリのリンクをコピーしてください。
 
-![github code button](/public/images/Solana-dApp/section-1/1_1_6.png)
+![github code button](1_1_6.png)
 
 最後に、ターミナルで`cd`コマンドを実行してプロジェクトが存在するディレクトリまで移動し、次のコマンドを実行します。
 
@@ -42,7 +42,7 @@ Chromeの方は[こちら](https://chrome.google.com/webstore/detail/phantom/bfn
 
 - 「設定」→「デベロッパー設定」→「ネットワークの変更」→「Devnet」から変更できます。
 
-![phantom wallet settings](/public/images/Solana-dApp/section-1/1_1_2.png)
+![phantom wallet settings](1_1_2.png)
 
 ※ 本プロジェクトではBraveとChromeでのみ動作が確認できます。
 
@@ -178,7 +178,7 @@ const TWITTER_HANDLE = "あなたのTwitterハンドル";
 
 ※ コンソールを表示するには、ブラウザ上で`右クリック` -> `検証` -> `コンソール`を開きます。
 
-![browser console](/public/images/Solana-dApp/section-1/1_1_3.png)
+![browser console](1_1_3.png)
 
 次に、WebアプリケーションがユーザーのPhantom Walletにアクセスすることが **許可** されているかどうかを確認します。
 

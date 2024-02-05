@@ -30,7 +30,7 @@ Solanaの`Devnet`は、開発者やユーザーが実際の経済的影響を伴
 
 ドキュメントを見直すと、 `Connection`のコンストラクタは2つの引数を必要とすることがわかります。
 
-![](/public/images/Solana-Wallet/section-2/2_1_1.png)
+![](2_1_1.png)
 
 `endpoint`の説明では、「fullnode JSON RPCエンドポイントへのURL」であることが言及されています。接続のためのURLを持っていないので、Solanaから見つけるか、URLを返す関数を探す必要があります。web3.jsのドキュメントで「URL」を検索すると、clusterApiUrlという関数があり、「指定したクラスターのRPC API URL」を返してくれることがわかります。さらに、Clusterの種類を見直すと、接続したいネットワークを指していることがわかります。
 
@@ -212,7 +212,7 @@ import GetBalance from '../components/GetBalance';
 
 [Sol Faucet](https://solfaucet.com/)というサイトを使えば、あなたのアカウントに`SOL`を付与することができます。
 
-![](/public/images/Solana-Wallet/section-2/2_1_2.png)
+![](2_1_2.png)
 
 フォームにウォレットアドレスを入力し、 `DEVNET`ボタンを押下してみましょう。少し待てば`1 SOL`が付与されるので、再度`残高を取得`ボタンを押して、SOLが増えているか確認してみてください!
 

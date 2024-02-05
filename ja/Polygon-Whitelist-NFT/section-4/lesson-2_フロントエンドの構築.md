@@ -6,11 +6,11 @@ ChainIDEの画面下にある、ターミナルパネルを操作していきま
 
 まずは「Sandbox」を選択し、「Click to add Sandbox +」をクリックします。
 
-![](/public/images/Polygon-Whitelist-NFT/section-4/4_2_7.png)
+![](4_2_7.png)
 
 Sandboxが立ち上がったことを確認しましょう。
 
-![](/public/images/Polygon-Whitelist-NFT/section-4/4_2_8.png)
+![](4_2_8.png)
 
 `node`のバージョンが18.17.0以上になっていることを確認します。
 
@@ -51,7 +51,7 @@ yarn create next-app
 
 `client/`が作成されたことを確認しましょう。
 
-![](/public/images/Polygon-Whitelist-NFT/section-4/4_2_9.png)
+![](4_2_9.png)
 
 clientフォルダに移動して、必要なパッケージをインストールします。
 
@@ -64,7 +64,7 @@ yarn add @metamask/providers@^13.0.0 ethers@^5
 
 `pages/api/`を削除します。
 
-![](/public/images/Polygon-Whitelist-NFT/section-4/4_2_10.png)
+![](4_2_10.png)
 
 それでは、ファイルの更新をしていきます。
 
@@ -121,9 +121,9 @@ body {
 
 clientフォルダの中に、`@types/global.d.ts`を作成します。
 
-![](/public/images/Polygon-Whitelist-NFT/section-4/4_2_11.png)
+![](4_2_11.png)
 
-![](/public/images/Polygon-Whitelist-NFT/section-4/4_2_12.png)
+![](4_2_12.png)
 
 下記のコードを記述しましょう。
 
@@ -323,7 +323,7 @@ export default function Home() {
 
 ここに、Deploy & Interactionパネルからコピーできる`Shield`コントラクトのアドレスを入力する必要があります。
 
-![image-20230223155653780](/public/images/Polygon-Whitelist-NFT/section-4/4_2_3.png)
+![image-20230223155653780](4_2_3.png)
 
 ```tsx
 const abi = ;
@@ -331,7 +331,7 @@ const abi = ;
 
 ABIは、ブロックチェーンとのやりとりに使用されるインタフェースファイルです。こちらからコピーできます。
 
-![image-20230223155913909](/public/images/Polygon-Whitelist-NFT/section-4/4_2_4.png)
+![image-20230223155913909](4_2_4.png)
 
 したがって、完成した`pages/index.tsx`は次のようになります。ただし、`contractAddress`は人によって異なるため、皆さんのファイル内容はそれぞれ異なることを忘れないでください。
 
@@ -517,7 +517,7 @@ export default function Home() {
 
 一方、`TypeScript`はこれらのボタンがクリックされたときに発生するアクションを定義するために使用されます。
 
-![](/public/images/Polygon-Whitelist-NFT/section-4/4_2_6.png)
+![](4_2_6.png)
 
 次に、`"Connect"`と`"Mint"`の機能がどのように実装されているかを説明しましょう。他の機能についても同様のアプローチを推定できるはずです。
 

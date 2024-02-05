@@ -49,7 +49,7 @@ const connection = new Connection(network, 'confirmed');
 
 驚いたことに、`Connection`クラスには`requestAirdrop`メソッドがあり、これは期待できそうです。これは2つのプロパティを受け取ります。 `to: PublicKey`と`lamports: number`です。
 
-![](/public/images/Solana-Wallet/section-3/3_1_1.png)
+![](3_1_1.png)
 
 ```javascript
 const signature = await connection.requestAirdrop(

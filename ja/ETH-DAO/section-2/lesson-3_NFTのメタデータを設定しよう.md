@@ -45,7 +45,7 @@ const editionDrop = sdk.getContract(editionDropAddress, 'edition-drop');
 
 忘れてしまった場合は、[thirdweb のダッシュボード](https://thirdweb.com/dashboard)からも参照することができます。
 
-![](/public/images/ETH-DAO/section-2/2_3_1.png)
+![](2_3_1.png)
 
 ここでは、`createBatch`を使ってコントラクトに実際のNFTを作成します。
 
@@ -170,7 +170,7 @@ Done in 27.07s.
 
 ターミナルに出力されたアドレスを[Etherscan](https://sepolia.etherscan.io/)で検索すれば、私たちがコントラクトとやり取りしているのが分かるはずです。
 
-![](/public/images/ETH-DAO/section-2/2_3_2.png)
+![](2_3_2.png)
 
 
 ### 🙋‍♂️ 質問する

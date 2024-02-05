@@ -25,11 +25,11 @@ Alchemyは、世界中のトランザクションを一元化し、マイナー�
 ### 💎 Alchemyでネットワークを作成
 
 Alchemyのアカウントを作成したら、`CREATE APP`ボタンを押してください。
-![](/public/images/Polygon-Generative-NFT/section-2/2_2_1.png)
+![](2_2_1.png)
 
 次に、下記の項目を埋めていきます。下図を参考にしてください。
 
-![](/public/images/Polygon-Generative-NFT/section-2/2_2_2.png)
+![](2_2_2.png)
 
 - `NAME`: プロジェクトの名前(例: `NFTCollectible`)
 - `DESCRIPTION`: プロジェクトの概要
@@ -38,11 +38,11 @@ Alchemyのアカウントを作成したら、`CREATE APP`ボタンを押して�
 
 それから、作成したAppの`VIEW DETAILS`をクリックします。
 
-![](/public/images/Polygon-Generative-NFT/section-2/2_2_3.png)
+![](2_2_3.png)
 
 プロジェクトを開いたら、`VIEW KEY`ボタンをクリックします。
 
-![](/public/images/Polygon-Generative-NFT/section-2/2_2_4.png)
+![](2_2_4.png)
 
 ポップアップが開くので、`HTTP`のリンクをコピーしてください。
 
@@ -93,16 +93,16 @@ Alchemyのアカウントを作成したら、`CREATE APP`ボタンを押して�
 
 >✍️: MetaMask で`Sepolia Test Network`を設定する方法
 > 1 \. MetaMask ウォレットのネットワークトグルを開く。
-> ![](/public/images/Polygon-Generative-NFT/section-2/2_2_5.png)
+> ![](2_2_5.png)
 >
 > 2 \. `Show/hide test networks`をクリック。
-> ![](/public/images/Polygon-Generative-NFT/section-2/2_2_6.png)
+> ![](2_2_6.png)
 >
 > 3 \. `Show test networks`を`ON`にする。
-> ![](/public/images/Polygon-Generative-NFT/section-2/2_2_7.png)
+> ![](2_2_7.png)
 >
 > 4 \. `Sepolia Test Network`を選択する。
-> ![](/public/images/Polygon-Generative-NFT/section-2/2_2_8.png)
+> ![](2_2_8.png)
 
 MetaMaskウォレットに`Sepolia Test Network`が設定されたら、下記のリンクの中から条件に合うものを選んで、少量の偽ETHを取得しましょう。
 
@@ -127,22 +127,22 @@ PRIVATE_KEY="YOUR_PRIVATE_SEPOLIA_ACCOUNT_KEY"
 2\. `YOUR_PRIVATE_SEPOLIA_ACCOUNT_KEY`の取得
 > 1\. お使いのブラウザから、MetaMask プラグインをクリックして、ネットワークを`Sepolia Test Network`に変更します。
 >
-> ![](/public/images/Polygon-Generative-NFT/section-2/2_2_8.png)
+> ![](2_2_8.png)
 >
 > 2\. それから、`Account details`を選択してください。
-> ![](/public/images/Polygon-Generative-NFT/section-2/2_2_10.png)
+> ![](2_2_10.png)
 >
 > 3\. `Account details`から`Export Private Key`をクリックしてください。
 >
-> ![](/public/images/Polygon-Generative-NFT/section-2/2_2_11.png)
+> ![](2_2_11.png)
 >
 > 4\. MetaMask のパスワードを求められるので、入力したら`Confirm`を推します。
 >
-> ![](/public/images/Polygon-Generative-NFT/section-2/2_2_12.png)
+> ![](2_2_12.png)
 >
 > 5\. あなたの秘密鍵（＝ `Private Key` ）が表示されるので、クリックしてコピーします。
 >
-> ![](/public/images/Polygon-Generative-NFT/section-2/2_2_13.png)
+> ![](2_2_13.png)
 >
 > `.env`の`YOUR_PRIVATE_SEPOLIA_ACCOUNT_KEY`の部分をここで取得した秘密鍵とを入れ替えます。
 

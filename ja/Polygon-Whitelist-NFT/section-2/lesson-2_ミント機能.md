@@ -35,13 +35,13 @@ Whitelistコントラクトでは、オーナーアドレスを設定し、`requ
 
 それでは、`contracts`ディレクトリの下に`interfaces`というフォルダを作成しましょう。
 
-![image-20230222235209219](/public/images/Polygon-Whitelist-NFT/section-2/2_2_1.png)
+![image-20230222235209219](2_2_1.png)
 
 `interfaces`フォルダ内に、`IWhitelist.sol`というスマートコントラクトファイルを作成します。
 
 > 注意：インターフェースのみを含むSolidityファイルは、通常、それらがインターフェースであることを示すための接頭辞`I`を持っています。
 
-![image-20230222235330497](/public/images/Polygon-Whitelist-NFT/section-2/2_2_2.png)
+![image-20230222235330497](2_2_2.png)
 
 `IWhitelist.sol`に次のコードを記述します。
 
@@ -58,7 +58,7 @@ interface IWhitelist {
 
 次に、`Shield.sol`を`contracts`フォルダ内に作成します。
 
-![image-20230223091938319](/public/images/Polygon-Whitelist-NFT/section-2/2_2_3.png)
+![image-20230223091938319](2_2_3.png)
 
 `Shield.sol`に次のコードを記述します。
 
@@ -276,11 +276,11 @@ contract Shield is ERC721Enumerable, Ownable {
 
 次に、`JS VM`を使用してこのスマートコントラクトをコンパイルしてデプロイします（ChainIDEが自動的に選択するコンパイラを使用しても問題ありません）。
 
-![image-20230223092112169](/public/images/Polygon-Whitelist-NFT/section-2/2_2_4.png)
+![image-20230223092112169](2_2_4.png)
 
 `DEPLOY`セクションを見るとわかるように、`baseURI`（メタデータのルートリンク）と`whitelistContract`（以前のホワイトリストのアドレス）を入力する必要があります。したがって、次はメタデータのルートリンクをどのように生成するか考えましょう。
 
-![image-20230223092203406](/public/images/Polygon-Whitelist-NFT/section-2/2_2_5.png)
+![image-20230223092203406](2_2_5.png)
 
 ### 🙋‍♂️ 質問する
 

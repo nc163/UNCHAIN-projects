@@ -240,7 +240,7 @@ yarn test
 
 テストがパスしたら、CreateProductコンポーネントの実装は完了です。
 
-![](/public/images/Solana-Online-Store/section-3/3_1_2.png)
+![](3_1_2.png)
 
 
 ### 🛒 商品追加ボタンの表示
@@ -407,7 +407,7 @@ export default function handler(req, res){
 
 ※値段の欄には数字だけを入れるよう、注意してください。
 
-![Create Product](/public/images/Solana-Online-Store/section-3/3_1_1.jpg)
+![Create Product](3_1_1.jpg)
 
 
 ### 🙋‍♂️ 質問する

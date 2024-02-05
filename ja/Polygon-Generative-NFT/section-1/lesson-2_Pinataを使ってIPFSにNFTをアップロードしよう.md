@@ -26,7 +26,7 @@
 
 下記のテーブルを見ていきましょう。
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_2_1.png)
+![](1_2_1.png)
 
 ここで、`ID`は特定のNFTを識別する一意の正の整数にすぎないことがわかります。
 
@@ -118,10 +118,10 @@ IPFSは、分散型で、コンテンツベースのアドレス指定を使用�
 [Pinata](https://www.pinata.cloud/) に向かい、アカウントを作成して、UIから前回のレッスンで作成したコレクションをアップロードしてみましょう。
 
 `Upload`から`Folder`を選択します。
-![](/public/images/Polygon-Generative-NFT/section-1/1_2_2.png)
+![](1_2_2.png)
 
 先ほど作成したコレクションを選択し、`images`フォルダーをアップロードします。
-![](/public/images/Polygon-Generative-NFT/section-1/1_2_3.png)
+![](1_2_3.png)
 
 ファイルをアップロードしたら、UIに表示されている「CID」をコピーしてください。
 
@@ -190,7 +190,7 @@ yarn library generate:JSON
 
 下記のように、NFT画像それぞれに対してJSONファイルが生成されていれば成功です。
 
-![](/public/images/Polygon-Generative-NFT/section-1/1_2_4.png)
+![](1_2_4.png)
 
 ### 💫 JSON ファイルを IPFS にアップロードする
 
@@ -199,7 +199,7 @@ yarn library generate:JSON
 `library/output/あなたのedition/json`フォルダを、`images`フォルダをアップロードしたときと同じ要領でIPFSにアップロードしてください。
 
 PinataにアップロードされたJSONファイルは下記のように表示されます。
-![](/public/images/Polygon-Generative-NFT/section-1/1_2_5.png)
+![](1_2_5.png)
 
 私の`#0 `番目のNFTコレクションのデータは以下のようになります。
 

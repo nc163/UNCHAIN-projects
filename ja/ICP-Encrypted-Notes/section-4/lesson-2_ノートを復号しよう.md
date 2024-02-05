@@ -108,11 +108,11 @@ Base64エンコーディングは、3バイトのバイナリデータを4文字
 
 前のレッスンで暗号化されたまま表示されていたノートが、復号されていますか？
 
-![](/public/images/ICP-Encrypted-Notes/section-4/4_2_1.png)
+![](4_2_1.png)
 
 また、デバイス間でノートが共有されていることも確認しておきましょう。
 
-![](/public/images/ICP-Encrypted-Notes/section-4/4_2_2.png)
+![](4_2_2.png)
 
 ### 🙋‍♂️ 質問する
 

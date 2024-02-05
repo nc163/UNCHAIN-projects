@@ -23,11 +23,11 @@ Androidのデバイスがない方は、デバッグで使うエミュレータ�
 エミュレータの方はmetamaskをインストールできないエラーにあうかもしれません。その時は[こちら](https://www.youtube.com/watch?v=oZlO1SxJmg8)の動画を参考にしてみてください。
 
 エミュレータはこのようになります！
-![](/public/images/NEAR-MulPay/section-0/0_2_1.png)
+![](0_2_1.png)
 
 metamaskのセットアップではアカウントを２つ（受信用・送金用）作成して、Aurora Testnetを追加しましょう。[こちら](https://docs.alchemy.com/docs/how-to-add-near-aurora-to-metamask)を参考にするとスムーズにAurora Testnetを追加できます！
 追加できたらこのようになります。
-![](/public/images/NEAR-MulPay/section-0/0_2_2.png)
+![](0_2_2.png)
 
 Flutterの環境構築はそれぞれのPCによって予期しないエラーが出ることがよくある（筆者の経験）ので何か問題があれば気軽にdiscordで質問してみてください！
 
@@ -38,12 +38,12 @@ Flutterの環境構築はそれぞれのPCによって予期しないエラー�
 2. アカウントを作成したら右上の`Create New Key`ボタンを押す
 3. web3 API（Formerly Ethereum）を選択して、プロジェクトの名前を記入して`Create`ボタンを押す
 4. dashboardの`Manage Key`ボタンを押して下の画面が出てきたら成功！
-   ![](/public/images/NEAR-MulPay/section-0/0_2_3.png)
+   ![](0_2_3.png)
 
 下にスクロールして`Aurora`用のhttp keyがあります。
 
 drop down buttonを押すとテストネット用のものがあります。これは後で使います！
-![](/public/images/NEAR-MulPay/section-0/0_2_4.png)
+![](0_2_4.png)
 
 最後に、web3ウォレットとdAppsを連携してくれる[WalletConnect](https://walletconnect.com/)のSDKを使用するために必要なProject IDを取得しましょう。[こちら](https://cloud.walletconnect.com/)にアクセスをしてください。
 手順は下の通りです。
@@ -52,7 +52,7 @@ drop down buttonを押すとテストネット用のものがあります。こ�
 2. アカウントを作成したら右上の`+ New Project`ボタンを押す
 3. 任意のプロジェクト名を入力して`Create`ボタンを押す
 4. プロジェクトが作成されたら完了！
-   ![](/public/images/NEAR-MulPay/section-0/0_2_5.png)
+   ![](0_2_5.png)
 
 Project IDは、後ほどフロントエンドを構築する際に必要となります。
 

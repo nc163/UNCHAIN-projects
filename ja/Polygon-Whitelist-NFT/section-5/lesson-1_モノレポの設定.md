@@ -4,7 +4,7 @@
 
 プロジェクトのルートに`package.json`を作成します。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_1_1.png)
+![](5_1_1.png)
 
 作成したpackage.jsonに下記を記述してください。
 
@@ -30,17 +30,17 @@
 
 次に、`workspaces`を構成していきましょう。プロジェクトのルートに`packages`フォルダを作成します。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_1_2.png)
+![](5_1_2.png)
 
 #### client
 
 `client`フォルダを`packages`フォルダの中に移動しましょう。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_1_3.png)
+![](5_1_3.png)
 
 clientフォルダ内の`yarn.lock`ファイルを削除しましょう。モノレポ構成にする場合、プロジェクトのルートで一元管理されるため、各workspace内のyarn.lockファイルは不要になります。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_1_4.png)
+![](5_1_4.png)
 
 #### contract
 
@@ -48,11 +48,11 @@ clientフォルダ内の`yarn.lock`ファイルを削除しましょう。モノ
 
 `packages`フォルダの中に`contract`フォルダを作成しましょう。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_1_5.png)
+![](5_1_5.png)
 
 contractフォルダの中に`package.json`ファイルを作成します。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_1_6.png)
+![](5_1_6.png)
 
 作成したpackage.jsonファイルに、下記を記述してください。
 
@@ -133,7 +133,7 @@ npx hardhat init
 
 プロジェクトの生成に成功した場合、現時点でこのような構成となっていることを確認しましょう。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_1_7.png)
+![](5_1_7.png)
 
 それでは、`packages/contract`フォルダ内のファイルを更新していきましょう。
 

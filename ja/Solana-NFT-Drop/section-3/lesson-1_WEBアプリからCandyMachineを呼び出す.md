@@ -277,7 +277,7 @@ return (
 
 先に進んでページを更新すると、コンソールに次のようなものが表示されます。
 
-![無題](/public/images/Solana-NFT-Drop/section-3/3_1_3.png)
+![無題](3_1_3.png)
 
 Solanaのdevnetからデータを取得できました。
 

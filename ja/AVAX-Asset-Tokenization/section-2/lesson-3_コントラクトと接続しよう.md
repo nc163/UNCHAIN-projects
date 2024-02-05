@@ -103,20 +103,20 @@ TEST_ACCOUNT_PRIVATE_KEY="YOUR_PRIVATE_KEY"
 >
 > 1.  お使いのブラウザから、MetaMask プラグインをクリックして、ネットワークを`Avalanche FUJI C-Chain`に変更します。
 >
-> ![](/public/images/AVAX-Asset-Tokenization/section-2/3_3_1.png)
+> ![](3_3_1.png)
 >
 > 2.  それから、`Account details`を選択してください。
 >
-> ![](/public/images/AVAX-Asset-Tokenization/section-2/3_3_2.png)
+> ![](3_3_2.png)
 >
 > 3.  `Account details`から`Export Private Key`をクリックしてください。
 >
-> ![](/public/images/AVAX-Asset-Tokenization/section-2/3_3_3.png)
+> ![](3_3_3.png)
 >
 > 4.  MetaMask のパスワードを求められるので、入力したら`Confirm`を押します。
 >     あなたの秘密鍵（＝ `Private Key` ）が表示されるので、クリックしてコピーします。
 >
-> ![](/public/images/AVAX-Asset-Tokenization/section-2/3_3_4.png)
+> ![](3_3_4.png)
 
 > - `.env`の`YOUR_PRIVATE_KEY`の部分をここで取得した秘密鍵とを入れ替えます。
 

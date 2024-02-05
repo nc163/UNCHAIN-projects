@@ -53,7 +53,7 @@ touch ./src/lib/Nav.svelte
 
 VS Codeの拡張機能をインストールした方は、クラスにカーソルを当てることでプロパティを確認することができます。下の例では、1行目の`sticky`というクラスのプロパティが表示されています。これは、ナビゲーションバーをページの一番上に固定します。
 
-![](/public/images/ICP-Static-Site/section-2/2_3_1.png)
+![](2_3_1.png)
 
 また、Tailwind CSSの[公式ドキュメント](https://tailwindcss.com/docs/position#sticky-positioning-elements)でも確認できます。ぜひ、コンテンツの最後にカスタマイズしてみましょう！
 
@@ -97,7 +97,7 @@ npm run dev
 
 ナビゲーションバーが表示されていたら完了です！
 
-![](/public/images/ICP-Static-Site/section-2/2_3_2.png)
+![](2_3_2.png)
 
 ### 🧱 フッターを作成しよう
 
@@ -145,7 +145,7 @@ touch ./src/lib/Footer.svelte
 
 ナビゲーションバーの下にフッターが表示されていたら完成です！
 
-![](/public/images/ICP-Static-Site/section-2/2_3_3.png)
+![](2_3_3.png)
 
 
 ### 🙋‍♂️ 質問する

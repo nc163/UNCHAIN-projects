@@ -1,10 +1,6 @@
 ## 💎 **UNCHAIN Developer Community へようこそ** 👋
 
-![](/public/images/README/unchain-banner.png)
-
-## 🌍 **プロジェクトのアップデートについて**
-
-[UNCHAIN](https://www.unchain.tech) のプロジェクトは全て[オープンソース](https://github.com/unchain-dev/UNCHAIN-projects/blob/main/LICENSE)で運用されています。
+![](/www.unchain.tech) のプロジェクトは全て[オープンソース](https://github.com/unchain-dev/UNCHAIN-projects/blob/main/LICENSE)で運用されています。
 
 プロジェクトに参加していて、「こうすればもっと分かりやすいのに!」「これは間違っている!」と思ったら、直接`pull request`を送ってくださると幸いです ✨
 

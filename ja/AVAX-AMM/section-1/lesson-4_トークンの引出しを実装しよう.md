@@ -48,12 +48,12 @@
 
 シェアの総量(`totalShare`)に対する指定されたシェア(`share`)の割合は
 
-![](/public/images/AVAX-AMM/section-1/1_4_2.png)
+![](1_4_2.png)
 
 で表されるので、
 シェアの分に応じたトークンの量は
 
-![](/public/images/AVAX-AMM/section-1/1_4_3.png)
+![](1_4_3.png)
 
 で算出することができます。
 
@@ -186,7 +186,7 @@ yarn test
 
 以下のような表示がされたらテスト成功です！
 
-![](/public/images/AVAX-AMM/section-1/1_4_1.png)
+![](1_4_1.png)
 
 ### 🌔 参考リンク
 

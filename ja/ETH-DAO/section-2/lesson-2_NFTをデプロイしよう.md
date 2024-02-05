@@ -62,7 +62,7 @@ export default sdk;
 
 次に、以下を参考に`package.json`に`"type": "module",`の記述を追加してESModulesを有効化してts-nodeを使用できるように設定を変更します。
 
-![](/public/images/ETH-DAO/section-2/2_2_1.png)
+![](2_2_1.png)
 
 続いて、`next.config.js`を以下のとおり変更します。
 
@@ -223,7 +223,7 @@ export const ownerWalletAddress = '0xa9eD1748Ffcda5442dCaEA242603E7e3FF09dD7F';
 
 _📝 備考： `editionDrop`のアドレスは、後で必要になるので保管しておいてください。もし紛失した場合は、いつでも [thirdweb のダッシュボード](https://thirdweb.com/dashboard)から取得することができます。_
 
-![](/public/images/ETH-DAO/section-2/2_2_2.png)
+![](2_2_2.png)
 
 TypeScriptだけでデプロイされた独自コントラクトですが、thirdwebが内部で実際に使用しているスマートコントラクトのコードは[こちら](https://github.com/thirdweb-dev/contracts/blob/main/contracts/drop/DropERC1155.sol)から確認できます。
 

@@ -10,35 +10,35 @@
 
 最初に[こちら](https://portal.astar.network/#/astar/assets)にアクセスして`Shibuya Network`へ接続しましょう！
 
-![](/public/images/ASTAR-SocialFi/section-3/3_2_1.png)
+![](3_2_1.png)
 
 接続ができたら右上の'connect'ボタンを押してpolkadot.jsのウォレットを接続しましょう！
 
-![](/public/images/ASTAR-SocialFi/section-3/3_2_2.png)
-![](/public/images/ASTAR-SocialFi/section-3/3_2_3.png)
+![](3_2_2.png)
+![](3_2_3.png)
 
 その後下のようにShibuya Networkで使用できるトークンSBYが0であることが確認できると思います。
 
-![](/public/images/ASTAR-SocialFi/section-3/3_2_4.png)
+![](3_2_4.png)
 
 その記載の右側にある`faucet`ボタンを押してSBYを取得しましょう！
 
 ロボットかどうかのチェックを終えて`verify`ボタンを押しましょう！ その後画面をリロードすればつなげているウォレットのSBYが10に増えているはずです。
 
-![](/public/images/ASTAR-SocialFi/section-3/3_2_5.png)
-![](/public/images/ASTAR-SocialFi/section-3/3_2_6.png)
+![](3_2_5.png)
+![](3_2_6.png)
 
 これでdepoloyに使うためのトークンが取得できました！ では次に[こちら](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.shibuya.astar.network#/explorer)へ移動してShibuya Networkへコントラクトをデプロイしましょう！
 
 デプロイの手順はローカルでやったものと同じですが、下の画像のように`deployment account`を先ほどトークンを取得したアカウントに切り替えましょう。そうでないとデプロイする時のガス代を支払うことができず失敗してしまいます。
 
-![](/public/images/ASTAR-SocialFi/section-3/3_2_7.png)
+![](3_2_7.png)
 
 すると下のように新しいコントラクトがデプロイされているはずです！ しかし先述したようにShibuya Networkはローカルに比べてとても遅いのでデプロイにもかなり時間がかかります。筆者がデプロイした時も1分以上かかりました 😅
 なのでデプロイをしてからしばらく待ってみましょう。
 
-![](/public/images/ASTAR-SocialFi/section-3/3_2_8.png)
-![](/public/images/ASTAR-SocialFi/section-3/3_2_9.png)
+![](3_2_8.png)
+![](3_2_9.png)
 
 また、`hooks/connect.tsx`の中に格納してある`blockchainUrl`を`Blast: wss://shibuya.public.blastapi.io`に置き換えましょう。
 
@@ -83,7 +83,7 @@ contract_addressには先ほど`Shibuya Testnet`へデプロイした時に取�
 
 また、`Root Directory`が「packages/client」となっていることを確認してください。
 
-![](/public/images/ASTAR-SocialFi/section-3/3_2_15.png)
+![](3_2_15.png)
 
 4\. `Deploy`ボタンを推しましょう。
 
@@ -92,7 +92,7 @@ VercelはGitHubと連動しているので、GitHubが更新されるたびに�
 下記のように、`Building`ログが出力されます。
 基本的に`warning`は無視して問題ありません。
 
-![](/public/images/ASTAR-SocialFi/section-3/3_2_16.png)
+![](3_2_16.png)
 
 これでデプロイは成功しました！
 
@@ -108,11 +108,11 @@ VercelはGitHubと連動しているので、GitHubが更新されるたびに�
 
 の5つをdiscordの`🔥｜completed-projects`チャンネルで共有しましょう！
 
-![](/public/images/ASTAR-SocialFi/section-3/3_2_10.png)
-![](/public/images/ASTAR-SocialFi/section-3/3_2_11.png)
-![](/public/images/ASTAR-SocialFi/section-3/3_2_12.png)
-![](/public/images/ASTAR-SocialFi/section-3/3_2_13.png)
-![](/public/images/ASTAR-SocialFi/section-3/3_2_14.png)
+![](3_2_10.png)
+![](3_2_11.png)
+![](3_2_12.png)
+![](3_2_13.png)
+![](3_2_14.png)
 
 ---
 

@@ -6,7 +6,7 @@ ShieldコントラクトのアドレスとABIを直接記載していました�
 
 まずは`packages/client`フォルダ内に`.env.local`ファイルを作成しましょう。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_3_1.png)
+![](5_3_1.png)
 
 作成したファイルに、下記を記述しましょう。`ADDRESS_OF_SHIELD_CONTRACT`には自身のShieldコントラクトアドレスを設定してください。
 
@@ -16,7 +16,7 @@ NEXT_PUBLIC_CONTRACT_ADDRESS=ADDRESS_OF_SHIELD_CONTRACT
 
 Section5 Lesson1でhardhat.config.tsを更新した際に、artifactsフォルダの生成先を`../client/artifacts`に設定したことを覚えていますか？ モノレポの動作確認で`yarn contract compile`を実行しているので、既に`packages/client`フォルダ内に生成されていることが確認できます。ABIはここからインポートするようにしましょう。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_3_2.png)
+![](5_3_2.png)
 
 それでは、`pages/index.tsx`を更新しましょう。下記のimport文を追加して、`contractAddress`と`abi`を下記のように更新しましょう。
 
@@ -33,7 +33,7 @@ GitHub上へアップロードしないファイルを指定するために、`.
 
 プロジェクトのルートに`.gitignore`ファイルを作成します。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_3_3.png)
+![](5_3_3.png)
 
 下記をファイルに記載しましょう。
 
@@ -61,19 +61,19 @@ artifacts
 
 Git Managerを開き、「`Create a new repo`」を選択します。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_3_4.png)
+![](5_3_4.png)
 
 OwnerがChainIDEのログインに使用した自身のGitHubアカウントであることを確認しましょう。Repository nameには`Polygon-Whitelist-NFT`と入力し、「`Create repository`」をクリックします。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_3_5.png)
+![](5_3_5.png)
 
 Git Manager上に、Commit & Push画面が表示されます。GitHubへプッシュを行うファイルを選択しましょう。.gitignoreファイルを設定しましたが、アップロードしたくないファイルが含まれていないかを確認することをお勧めします。ファイルを1つずつ確認しながら横にある「＋」でステージングを変更しても良いですし、全てのファイルを確認し終わったら一括でステージングを変更することもできます（CHANGESにカーソルを当てると＋ボタンが出現します）。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_3_6.png)
+![](5_3_6.png)
 
 全てのファイルをステージングしたら、コミットメッセージを入力し、「`Commit & Push`」をクリックします。
 
-![](/public/images/Polygon-Whitelist-NFT/section-5/5_3_7.png)
+![](5_3_7.png)
 
 自身のGitHubアカウントにアクセスをして、Polygon-Whitelist-NFTリポジトリにファイルがアップロードされていることを確認しましょう。
 
